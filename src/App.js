@@ -9,7 +9,7 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/home" element={<Homepage />} />
-        <Route path="/nursing-in-germany" element={<AllCoursesPage />} />
+        <Route path="/all-courses" element={<AllCoursesPage />} />
       </Routes>
       {/* Show Footer only if not on specified Landing Pages */}
     </>
