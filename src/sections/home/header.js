@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./header.css";
+import "../home/header.css"; // Ensure you have the correct path to your CSS file
 // Import video directly
-import headerBg from "../../assets/videos/image.png"; // Update with your actual file path and name
+import headerBg from "../../assets/videos/headerbg1.mp4"; // Update with your actual file path and name
 
 const HomeHeader = () => {
   const [formData, setState] = useState({
@@ -41,7 +41,7 @@ const HomeHeader = () => {
         <div className="row min-vh-100 align-items-center">
           <div className="col-lg-6">
             <div className="header-content text-white">
-              <h1 className="mb-4">Connect With us</h1>
+              <h1 className="mb-4">Let's Connect </h1>
               <button className="btn btn-primary px-4 py-2">
                 Learn the best tactics to ensure Cybersecurity
               </button>
