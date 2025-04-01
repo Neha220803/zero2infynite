@@ -1,11 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
+import AllCoursesPage from "./pages/courses";
+import Homepage from "./pages/homepage";
+
+function Layout() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
+        <Route path="/nursing-in-germany" element={<AllCoursesPage />} />
+      </Routes>
+      {/* Show Footer only if not on specified Landing Pages */}
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      Zero2Infynite Website
-    </div>
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
   );
 }
 
