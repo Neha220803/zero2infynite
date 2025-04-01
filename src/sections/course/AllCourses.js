@@ -1,12 +1,77 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import BlueCards from "../../components/cards/blueCards";
+import "./AllCourses.css";
+
+// Import course icons
+import icon1 from "../../assets/icons/course1.svg";
+import icon2 from "../../assets/icons/course2.svg";
+import icon3 from "../../assets/icons/course3.svg";
+import icon4 from "../../assets/icons/course4.svg";
+import icon5 from "../../assets/icons/course5.svg";
+import icon6 from "../../assets/icons/course6.svg";
 
 const AllCourses = () => {
+  // Course data with imported SVG icons and path URLs
+  const coursesData = [
+    {
+      id: 1,
+      title: "EC-Council Courses",
+      description:
+        "EC-Council offers cybersecurity certifications like CEH, CND, and ECIH.",
+      img: icon1,
+      path: "/courses/ec-council",
+    },
+    {
+      id: 2,
+      title: "CompTIA Courses",
+      description:
+        "CompTIA offers fundamental IT certifications including A+, Network+, and Security+.",
+      img: icon2,
+      path: "/courses/comptia",
+    },
+    {
+      id: 3,
+      title: "CISSP Training",
+      description:
+        "Advanced cybersecurity certification for security professionals.",
+      img: icon3,
+      path: "/courses/cissp",
+    },
+    {
+      id: 4,
+      title: "AWS Certification",
+      description: "Cloud computing certifications for Amazon Web Services.",
+      img: icon4,
+      path: "/courses/aws",
+    },
+    {
+      id: 5,
+      title: "Digital Marketing",
+      description:
+        "Learn digital marketing strategies and techniques for business growth.",
+      img: icon5,
+      path: "/courses/digital-marketing",
+    },
+    {
+      id: 6,
+      title: "Mobile Development",
+      description:
+        "Learn to build native and cross-platform mobile applications.",
+      img: icon6,
+      path: "/courses/mobile-development",
+    },
+  ];
+
   return (
     <div>
       <Container>
+        <Row className="mb-4">
+          <div className="section-title">Choose Your Courses Now</div>
+        </Row>
         <Row>
-          <div>Choose Your Courses Now </div>
+          {/* Pass coursesData as props to BlueCards component */}
+          <BlueCards coursesData={coursesData} />
         </Row>
       </Container>
     </div>
