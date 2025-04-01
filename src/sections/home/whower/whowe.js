@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../whower/whowe.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Only import the images we're actually using
-import visionImage from '../../../assets/images/whowe2.jpg';
-import missionImage from '../../../assets/images/whowe2.jpg';
-import valuesImage from '../../../assets/images/whowe1.jpg';
+import visionImage from '../../../assets/images/whowe.jpg';
+import missionImage from '../../../assets/images/whowe.jpg';
+import valuesImage from '../../../assets/images/whowe.jpg';
 
 const WhoWe = () => {
     const [activeIndex, setActiveIndex] = useState(0);
