@@ -5,6 +5,7 @@ const AllCoursesPage = () => {
   return (
     <div>
       <AllCourses />
+      <section className="min-vh-100">hiii</section>
     </div>
   );
 };

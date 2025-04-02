@@ -20,30 +20,30 @@ const AllCourses = () => {
       description:
         "EC-Council offers cybersecurity certifications like CEH, CND, and ECIH.",
       img: icon1,
-      path: "/courses/ec-council",
+      path: "/ec-council",
     },
     {
       id: 2,
-      title: "CompTIA Courses",
+      title: "Software Development",
       description:
-        "CompTIA offers fundamental IT certifications including A+, Network+, and Security+.",
+        "Software developers design, build, test, and maintain applications for various platforms and devices.",
       img: icon2,
-      path: "/courses/comptia",
+      path: "/comptia",
     },
     {
       id: 3,
-      title: "CISSP Training",
+      title: "Web Development",
       description:
         "Advanced cybersecurity certification for security professionals.",
       img: icon3,
-      path: "/courses/cissp",
+      path: "/cissp",
     },
     {
       id: 4,
-      title: "AWS Certification",
+      title: "Finance & Accounting",
       description: "Cloud computing certifications for Amazon Web Services.",
       img: icon4,
-      path: "/courses/aws",
+      path: "/aws",
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ const AllCourses = () => {
       description:
         "Learn digital marketing strategies and techniques for business growth.",
       img: icon5,
-      path: "/courses/digital-marketing",
+      path: "/digital-marketing",
     },
     {
       id: 6,
@@ -59,7 +59,7 @@ const AllCourses = () => {
       description:
         "Learn to build native and cross-platform mobile applications.",
       img: icon6,
-      path: "/courses/mobile-development",
+      path: "/mobile-development",
     },
   ];
 
@@ -69,7 +69,6 @@ const AllCourses = () => {
       <Container>
         <Row className="mb-4"></Row>
         <Row>
-          {/* Pass coursesData as props to BlueCards component */}
           <BlueCards coursesData={coursesData} />
         </Row>
       </Container>

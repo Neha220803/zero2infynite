@@ -1,0 +1,20 @@
+.blue-border-trans-card {
+  /* background-color: #275eae !important; */
+  color: white !important;
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 0px !important;
+  min-height: 200px !important;
+  justify-content: center !important;
+  padding: 21px !important;
+  align-items: center !important;
+  border: 2px solid black !important;
+  transition: all 0.3s ease-in-out !important;
+  transform-origin: top left !important;
+  cursor: pointer !important;
+}
+
+.blue-border-trans-card:hover {
+  transform: scale(1.02) !important;
+  border: 2px solid #275eae !important;
+}

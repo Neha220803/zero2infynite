@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { Card, CardBody, CardText, CardTitle, Col } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 // Course card component with individual hover state
 const BlueCard = ({ title, description, icon, path }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate(path);
+  };
 
   return (
     <Card
@@ -32,16 +38,11 @@ const BlueCard = ({ title, description, icon, path }) => {
             transition: "opacity 0.3s",
             opacity: isHovered ? 1 : 0,
             color: "white",
+            cursor: "pointer", // Add cursor pointer to indicate it's clickable
           }}
+          onClick={handleNavigate} // Add onClick handler to navigate
         >
-          <span className="me-2">
-            <a
-              href={path}
-              className="text-decoration-none text-white cursor-pointer"
-            >
-              Click to Continue
-            </a>
-          </span>
+          <span className="me-2">Click to Continue</span>
           <FaArrowRight />
         </div>
       )}
