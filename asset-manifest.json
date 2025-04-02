@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/zero2infynite/static/css/main.1cf327f3.css",
+    "main.js": "/zero2infynite/static/js/main.e98cd03d.js",
+    "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
+    "static/media/headerbg1.mp4": "/zero2infynite/static/media/headerbg1.0bd47a2d6ffbabec2081.mp4",
+    "static/media/logo.svg": "/zero2infynite/static/media/logo.6cf51c2ef528a9e1993fbf935dafe90b.svg",
+    "static/media/avator.webp": "/zero2infynite/static/media/avator.0215946a4b34594c8b9a.webp",
+    "static/media/course4.svg": "/zero2infynite/static/media/course4.309ac9dfbf702f2915242c230387b5f1.svg",
+    "static/media/course2.svg": "/zero2infynite/static/media/course2.adedfc3d2a6827afe92ba7bb37e62050.svg",
+    "static/media/icon2.svg": "/zero2infynite/static/media/icon2.771adf963d3e0e37bc39886727195f33.svg",
+    "static/media/course6.svg": "/zero2infynite/static/media/course6.3cd42de47205e8e79cfc599ec6301d85.svg",
+    "static/media/course1.svg": "/zero2infynite/static/media/course1.da2466113a4cf844e7c68aa8bc2e0ac9.svg",
+    "static/media/course3.svg": "/zero2infynite/static/media/course3.87b0cf3d0eae0dbe0647e0e77d2de8db.svg",
+    "static/media/icon1.svg": "/zero2infynite/static/media/icon1.b98619fd7fd937f0db59e3b326a03fc9.svg",
+    "static/media/course5.svg": "/zero2infynite/static/media/course5.8adb6ae7371f7e46247abfd9116f0adf.svg",
+    "index.html": "/zero2infynite/index.html",
+    "main.1cf327f3.css.map": "/zero2infynite/static/css/main.1cf327f3.css.map",
+    "main.e98cd03d.js.map": "/zero2infynite/static/js/main.e98cd03d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cf327f3.css",
+    "static/js/main.e98cd03d.js"
+  ]
+}
