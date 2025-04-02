@@ -1,22 +1,22 @@
+// HomeHeader.jsx
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "../home/header.css"; // Ensure you have the correct path to your CSS file
-// Import video directly
 import headerBg from "../../assets/videos/headerbg1.mp4"; // Update with your actual file path and name
 
 const HomeHeader = () => {
-  const [formData, setState] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    qualification: ""
+    qualification: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setState((prevState) => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -27,84 +27,77 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="header-container position-relative">
+    <div className="header-container position-relative d-flex align-items-center">
       {/* Video Background using imported video */}
       <video className="video-background" autoPlay loop muted>
         <source src={headerBg} type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support the video.
       </video>
 
       {/* Overlay for better text visibility */}
       <div className="overlay"></div>
-
-      <div className="container position-relative z-index-1">
-        <div className="row min-vh-100 align-items-center">
-          <div className="col-lg-6">
+      <Container className="position-relative z-index-1">
+        <Row className="d-flex justify-content-center align-items-center">
+          <Col lg={6}>
             <div className="header-content text-white">
-              <h1 className="mb-4">Let's Connect </h1>
-              <button className="btn btn-primary px-4 py-2">
+              <h1 className="mb-4">Let's Connect</h1>
+              <Button variant="primary" className="px-4 py-2">
                 Learn the best tactics to ensure Cybersecurity
-              </button>
+              </Button>
             </div>
-          </div>
-          <div className="col-lg-6">
+          </Col>
+          <Col lg={6}>
             <div className="form-container bg-dark p-4 rounded">
               <h2 className="text-white mb-4">Connect With us</h2>
-              <form onSubmit={handleSubmit}>
-                <div className="mb-3">
-                  <label htmlFor="name" className="form-label text-white">Name</label>
-                  <input
+              <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="name">
+                  <Form.Label className="text-white">Name</Form.Label>
+                  <Form.Control
                     type="text"
-                    className="form-control"
-                    id="name"
                     name="name"
                     placeholder="Zero 2 Infinite"
                     value={formData.name}
                     onChange={handleChange}
                   />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label text-white">Email</label>
-                  <input
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="email">
+                  <Form.Label className="text-white">Email</Form.Label>
+                  <Form.Control
                     type="email"
-                    className="form-control"
-                    id="email"
                     name="email"
                     placeholder="info@zero2infinite.com"
                     value={formData.email}
                     onChange={handleChange}
                   />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="phone" className="form-label text-white">Phone Number</label>
-                  <input
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="phone">
+                  <Form.Label className="text-white">Phone Number</Form.Label>
+                  <Form.Control
                     type="tel"
-                    className="form-control"
-                    id="phone"
                     name="phone"
                     placeholder="+91 98765 43210"
                     value={formData.phone}
                     onChange={handleChange}
                   />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="qualification" className="form-label text-white">Qualification</label>
-                  <input
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="qualification">
+                  <Form.Label className="text-white">Qualification</Form.Label>
+                  <Form.Control
                     type="text"
-                    className="form-control"
-                    id="qualification"
                     name="qualification"
                     placeholder="B.Tech"
                     value={formData.qualification}
                     onChange={handleChange}
                   />
-                </div>
-                <button type="submit" className="btn btn-primary w-100 py-2">Submit</button>
-              </form>
+                </Form.Group>
+                <Button type="submit" variant="primary" className="w-100 py-2">
+                  Submit
+                </Button>
+              </Form>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

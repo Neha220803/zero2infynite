@@ -1,83 +1,87 @@
 /* header.css */
 
 .header-container {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+  height: 80vh !important;
+  width: 100%;
+  overflow: hidden;
+  /* min-height: 100vh; */
+  position: relative;
 }
 
 .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
 .z-index-1 {
-    z-index: 1;
+  z-index: 1;
+  position: relative;
 }
 
 .form-container {
-    background-color: rgba(33, 37, 41, 0.5) !important;
-    /* Reduced from 0.9 to 0.7 */
-    border-radius: 8px;
-    padding: 30px !important;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(33, 37, 41, 0.5) !important;
+  /* Reduced from 0.9 to 0.7 */
+  border-radius: 8px;
+  padding: 30px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .header-content {
-    padding: 30px;
+  padding: 30px;
 }
 
 .header-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 .btn-primary {
-    background-color: #0d6efd;
-    border: none;
-    font-weight: 500;
+  background-color: #0d6efd;
+  border: none;
+  font-weight: 500;
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7;
+  background-color: #0b5ed7;
 }
 
 .form-control {
-    background-color: #f8f9fa;
-    border: none;
-    padding: 10px 15px;
+  background-color: #f8f9fa;
+  border: none;
+  padding: 10px 15px;
 }
 
 .form-control:focus {
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    border-color: transparent;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: transparent;
 }
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-    .form-container {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+  .form-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-    .header-content {
-        text-align: center;
-        padding: 15px;
-    }
+  .header-content {
+    text-align: center;
+    padding: 15px;
+  }
 }

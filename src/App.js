@@ -2,16 +2,19 @@ import "./App.css";
 import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
 import AllCoursesPage from "./pages/courses";
 import Homepage from "./pages/homepage";
+import FooterComp from "./components/footer/footer";
+import MainNavbar from "./components/nav/nav";
 
 function Layout() {
   return (
     <>
+      <MainNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/all-courses" element={<AllCoursesPage />} />
       </Routes>
-      {/* Show Footer only if not on specified Landing Pages */}
+      <FooterComp />
     </>
   );
 }
