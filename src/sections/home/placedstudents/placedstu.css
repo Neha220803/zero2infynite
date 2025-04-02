@@ -1,168 +1,179 @@
 /* PlacedStu.css */
 
 .placed-students-container {
-    padding: 40px 0;
-    background-color: rgb(153, 153, 158);
-    overflow: hidden;
+  padding: 40px 0;
+  background-color: rgb(231, 231, 231);
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .section-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 34px !important;
+  width: 50% !important;
+  /* font-weight: bold; */
+  color: #275eae !important;
 }
 
 .marquee-container {
-    width: 100%;
-    overflow: hidden;
-    padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
 }
 
 .marquee-content {
-    display: flex;
-    animation: scroll 40s linear infinite;
+  display: flex;
+  animation: scroll 40s linear infinite;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(-50%);
-    }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .student-card {
-    flex: 0 0 auto;
-    width: 220px;
-    margin: 0 20px;
-    position: relative;
-    text-align: center;
+  flex: 0 0 auto;
+  width: 220px;
+  margin: 0 20px;
+  position: relative;
+  text-align: center;
 }
 
 .student-image-container {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    margin: 0 auto;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .student-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .student-name-ribbon {
-    position: relative;
-    margin-top: -10px;
-    text-align: center;
-    z-index: 0;
+  position: relative;
+  margin-top: -10px;
+  text-align: center;
+  z-index: 0;
 }
 
 .ribbon-background {
-    display: inline-block;
-    background-color: #ffffff;
-    padding: 8px 20px;
-    border-radius: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 2;
-    transform: perspective(40px) rotateX(5deg);
-    min-width: 150px;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  transform: perspective(40px) rotateX(5deg);
+  min-width: 150px;
 }
 
 .ribbon-background::before,
 .ribbon-background::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 15px;
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 5px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  z-index: -1;
 }
 
 .ribbon-background::before {
-    left: -8px;
-    transform: skewX(-15deg);
+  left: -8px;
+  transform: skewX(-15deg);
 }
 
 .ribbon-background::after {
-    right: -8px;
-    transform: skewX(15deg);
+  right: -8px;
+  transform: skewX(15deg);
 }
 
 .student-name {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .student-details {
-    margin-top: 20px;
-    padding: 8px 15px;
-    background-color: #17a2b8;
-    background: linear-gradient(135deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
-    border-radius: 20px;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  padding: 8px 15px;
+  background-color: #17a2b8;
+  background: linear-gradient(
+    135deg,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  );
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .placed-text {
-    margin: 0;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .company-name {
-    margin: 5px 0 0;
-    font-size: 1rem;
-    font-weight: 700;
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 /* For devices that prefer reduced motion */
 @media (prefers-reduced-motion) {
-    .marquee-content {
-        animation: none;
-    }
+  .marquee-content {
+    animation: none;
+  }
 }
 
 /* Make it responsive */
 @media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-    }
+  .section-title {
+    font-size: 2rem;
+  }
 
-    .student-card {
-        width: 180px;
-        margin: 0 15px;
-    }
+  .student-card {
+    width: 180px;
+    margin: 0 15px;
+  }
 
-    .student-image-container {
-        width: 150px;
-        height: 150px;
-    }
+  .student-image-container {
+    width: 150px;
+    height: 150px;
+  }
 
-    .ribbon-background {
-        min-width: 120px;
-        padding: 6px 15px;
-    }
+  .ribbon-background {
+    min-width: 120px;
+    padding: 6px 15px;
+  }
 
-    .student-name {
-        font-size: 0.9rem;
-    }
+  .student-name {
+    font-size: 0.9rem;
+  }
 }

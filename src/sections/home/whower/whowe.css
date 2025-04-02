@@ -1,155 +1,106 @@
 /* whowe.css */
 
 .who-we-container {
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    /* Reduced height from 100vh to 70vh */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  /* Reduced height from 100vh to 70vh */
+  overflow: hidden;
 }
 
-.fullscreen-slider {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
 }
 
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    transition: transform 1.2s cubic-bezier(0.25, 1, 0.3, 1), opacity 1s ease;
-    will-change: transform, opacity;
-    backface-visibility: hidden;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-/* Improved sliding animation styles */
-.slide.right:not(.active) {
-    transform: translateX(100%);
-    opacity: 0;
-}
-
-.slide.left:not(.active) {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-.slide.active.right {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.slide.active.left {
-    transform: translateX(0);
-    opacity: 1;
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .blue-overlay {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    right: 0;
-    /* background-color: rgba(0, 48, 103, 0.9); */
-    padding: 8px 0;
-    /* Reduced padding since text was removed */
-    text-align: center;
-    height: 10px;
-    /* Set a small height to maintain the blue line */
-    transform: translateZ(0);
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(0, 48, 103, 0.9); */
+  padding: 8px 0;
+  /* Reduced padding since text was removed */
+  text-align: center;
+  height: 10px;
+  /* Set a small height to maintain the blue line */
+  transform: translateZ(0);
 }
 
 .card-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #275EAE4D;
-    padding: 20px;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-    transform: translateZ(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  right: 0;
+  background-color: rgba(39, 94, 174, 0.3);
+  padding: 20px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateZ(0);
 }
 
 .card-description h3 {
-    color: white;
-    margin-bottom: 10px;
-    font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .card-description p {
-    color: white;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-/* Moved dots-navigation inside card-description */
-.dots-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    z-index: 50;
-    margin-top: 5px;
+/* .carousel-indicators {
+  margin-bottom: 100px;
 }
 
-.nav-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  opacity: 0.5;
 }
 
-.nav-dot.active {
-    background-color: #003067;
-    transform: scale(1.2);
-}
-
-/* Animation for dots */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.nav-dot.active {
-    animation: pulse 2s infinite;
-}
+.carousel-indicators .active {
+  background-color: #003067;
+  opacity: 1;
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .who-we-container {
-        height: 60vh;
-        /* Even smaller on mobile */
-    }
+  .who-we-container {
+    height: 60vh;
+    /* Even smaller on mobile */
+  }
 
-    .blue-overlay {
-        bottom: 80px;
-    }
+  .blue-overlay {
+    bottom: 80px;
+  }
 
-    .card-description h3 {
-        font-size: 18px;
-    }
+  .card-description h3 {
+    font-size: 18px;
+  }
 
-    .card-description p {
-        font-size: 14px;
-    }
+  .card-description p {
+    font-size: 14px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 80px;
+  }
 }

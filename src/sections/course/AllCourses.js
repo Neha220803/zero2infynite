@@ -65,10 +65,9 @@ const AllCourses = () => {
 
   return (
     <div>
+      <div className="all-course-title">Choose Your Courses Now</div>
       <Container>
-        <Row className="mb-4">
-          <div className="section-title">Choose Your Courses Now</div>
-        </Row>
+        <Row className="mb-4"></Row>
         <Row>
           {/* Pass coursesData as props to BlueCards component */}
           <BlueCards coursesData={coursesData} />

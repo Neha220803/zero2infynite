@@ -38,15 +38,17 @@ const HomeHeader = () => {
       <div className="overlay"></div>
       <Container className="position-relative z-index-1">
         <Row className="d-flex justify-content-center align-items-center">
-          <Col lg={6}>
+          <Col lg={7}>
             <div className="header-content text-white">
-              <h1 className="mb-4">Let's Connect</h1>
-              <Button variant="primary" className="px-4 py-2">
+              <Button variant="primary" className="px-4 py-2 mb-4">
                 Learn the best tactics to ensure Cybersecurity
               </Button>
+              <h1 className="mb-4 w-75">
+                Become a Certified Cyber Security Expert
+              </h1>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col lg={5}>
             <div className="form-container bg-dark p-4 rounded">
               <h2 className="text-white mb-4">Connect With us</h2>
               <Form onSubmit={handleSubmit}>
@@ -55,7 +57,7 @@ const HomeHeader = () => {
                   <Form.Control
                     type="text"
                     name="name"
-                    placeholder="Zero 2 Infinite"
+                    placeholder="Enter Your Name"
                     value={formData.name}
                     onChange={handleChange}
                   />
@@ -65,7 +67,7 @@ const HomeHeader = () => {
                   <Form.Control
                     type="email"
                     name="email"
-                    placeholder="info@zero2infinite.com"
+                    placeholder="Enter your email"
                     value={formData.email}
                     onChange={handleChange}
                   />
@@ -75,7 +77,7 @@ const HomeHeader = () => {
                   <Form.Control
                     type="tel"
                     name="phone"
-                    placeholder="+91 98765 43210"
+                    placeholder="Enter your phone number"
                     value={formData.phone}
                     onChange={handleChange}
                   />
@@ -85,7 +87,7 @@ const HomeHeader = () => {
                   <Form.Control
                     type="text"
                     name="qualification"
-                    placeholder="B.Tech"
+                    placeholder="Enter your qualification"
                     value={formData.qualification}
                     onChange={handleChange}
                   />

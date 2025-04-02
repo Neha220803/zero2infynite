@@ -69,7 +69,7 @@ const WhyUs = () => {
   return (
     <div className="why-us-container">
       <div className="text-center mb-5">
-        <h2 className="section-title">
+        <h2 className="section-titl">
           Why to <span className="text-primary">Choose Us</span> ?
         </h2>
         <p className="section-description">

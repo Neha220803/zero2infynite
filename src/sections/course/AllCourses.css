@@ -17,3 +17,18 @@
 .all-courses-cards:hover {
   transform: scale(1.02) !important;
 }
+
+.all-course-title {
+  /* width: 470px;
+  height: 53px; */
+  width: 100% !important;
+  background-color: #2b7eaa !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  padding: 10px !important;
+  text-align: center !important;
+  font-size: 35px;
+  line-height: 52px;
+  color: #ffffff;
+}
