@@ -21,7 +21,7 @@ function Layout() {
 
 function App() {
   return (
-    <BrowserRouter basename="/zero2infynite">
+    <BrowserRouter basename="zero2infynite">
       <Layout />
     </BrowserRouter>
   );

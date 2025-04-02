@@ -1,6 +1,7 @@
 // Navbar.jsx
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaFacebookF,
@@ -93,28 +94,28 @@ const MainNavbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/home" className="nav-item">
+              <Nav.Link as={Link} to="/home" className="nav-item">
                 Home
               </Nav.Link>
-              <Nav.Link href="/all-courses" className="nav-item">
+              <Nav.Link as={Link} to="/all-courses" className="nav-item">
                 All Course
               </Nav.Link>
-              <Nav.Link href="/internship" className="nav-item">
+              <Nav.Link as={Link} href="/internship" className="nav-item">
                 Internship
               </Nav.Link>
-              <Nav.Link href="/projects" className="nav-item">
+              <Nav.Link as={Link} href="/projects" className="nav-item">
                 Projects
               </Nav.Link>
-              <Nav.Link href="/services" className="nav-item">
+              <Nav.Link as={Link} href="/services" className="nav-item">
                 Services
               </Nav.Link>
-              <Nav.Link href="/testimonial" className="nav-item">
+              <Nav.Link as={Link} href="/testimonial" className="nav-item">
                 Testimonial
               </Nav.Link>
-              <Nav.Link href="/about" className="nav-item">
+              <Nav.Link as={Link} href="/about" className="nav-item">
                 About Us
               </Nav.Link>
-              <Nav.Link href="/blogs" className="nav-item">
+              <Nav.Link as={Link} href="/blogs" className="nav-item">
                 Blogs
               </Nav.Link>
             </Nav>
