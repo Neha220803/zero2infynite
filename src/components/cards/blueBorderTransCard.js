@@ -6,7 +6,6 @@ import "./customCards.css";
 
 // Simplified component that only receives image and path props
 const BlueBorderTransCard = ({ image, path }) => {
-  const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
 
   const handleNavigate = () => {
@@ -16,11 +15,9 @@ const BlueBorderTransCard = ({ image, path }) => {
   return (
     <Card
       className="blue-border-trans-card h-100"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       style={{ position: "relative" }}
     >
-      <div className="card-image-container">
+      <div className="card-image-container" onClick={handleNavigate}>
         <img
           src={image}
           alt="Card image"
@@ -28,24 +25,6 @@ const BlueBorderTransCard = ({ image, path }) => {
           style={{ width: "100%", height: "auto" }}
         />
       </div>
-
-      {isHovered && (
-        <div
-          className="position-absolute d-flex align-items-center"
-          style={{
-            bottom: "15px",
-            right: "15px",
-            transition: "opacity 0.3s",
-            opacity: isHovered ? 1 : 0,
-            color: "white",
-            cursor: "pointer",
-          }}
-          onClick={handleNavigate}
-        >
-          <span className="me-2">Click to Continue</span>
-          <FaArrowRight />
-        </div>
-      )}
     </Card>
   );
 };

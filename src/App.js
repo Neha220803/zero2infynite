@@ -3,13 +3,13 @@ import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
 import AllCoursesPage from "./pages/courses";
 import Homepage from "./pages/homepage";
 import FooterComp from "./components/footer/footer";
-import MainNavbar from "./components/nav/nav";
 import EcCounsilPages from "./pages/EcCouncilPage";
+import SimpleNavbar from "./components/nav/newNav";
 
 function Layout() {
   return (
     <>
-      <MainNavbar />
+      <SimpleNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/home" element={<Homepage />} />
@@ -24,7 +24,7 @@ function Layout() {
 
 function App() {
   return (
-    <BrowserRouter basename="zero2infynite">
+    <BrowserRouter basename="/zero2infynite">
       <Layout />
     </BrowserRouter>
   );
