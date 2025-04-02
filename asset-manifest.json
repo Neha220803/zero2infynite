@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.2da434c0.css",
-    "main.js": "/zero2infynite/static/js/main.bd2e3d23.js",
+    "main.css": "/zero2infynite/static/css/main.f6eef51f.css",
+    "main.js": "/zero2infynite/static/js/main.6d09a645.js",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
     "static/media/headerbg1.mp4": "/zero2infynite/static/media/headerbg1.0bd47a2d6ffbabec2081.mp4",
     "static/media/logo.svg": "/zero2infynite/static/media/logo.6cf51c2ef528a9e1993fbf935dafe90b.svg",
@@ -17,11 +17,11 @@
     "static/media/icon1.svg": "/zero2infynite/static/media/icon1.b98619fd7fd937f0db59e3b326a03fc9.svg",
     "static/media/course5.svg": "/zero2infynite/static/media/course5.8adb6ae7371f7e46247abfd9116f0adf.svg",
     "index.html": "/zero2infynite/index.html",
-    "main.2da434c0.css.map": "/zero2infynite/static/css/main.2da434c0.css.map",
-    "main.bd2e3d23.js.map": "/zero2infynite/static/js/main.bd2e3d23.js.map"
+    "main.f6eef51f.css.map": "/zero2infynite/static/css/main.f6eef51f.css.map",
+    "main.6d09a645.js.map": "/zero2infynite/static/js/main.6d09a645.js.map"
   },
   "entrypoints": [
-    "static/css/main.2da434c0.css",
-    "static/js/main.bd2e3d23.js"
+    "static/css/main.f6eef51f.css",
+    "static/js/main.6d09a645.js"
   ]
 }
