@@ -1,17 +1,16 @@
 import React from "react";
-import "../placedstudents/placedstu.css";
-
+import "./placedStuScroll.css";
 // Import student images
-import amitImg from "../../../assets/icons/avator.webp"; // Update paths to match your actual file structure
-import azamImg from "../../../assets/icons/avator.webp";
-import joyalImg from "../../../assets/icons/avator.webp";
-import abhishekImg from "../../../assets/icons/avator.webp";
-import amaanImg from "../../../assets/icons/avator.webp";
-import sahilImg from "../../../assets/icons/avator.webp";
+import amitImg from "../../../assets/images/avathar.png"; // Update paths to match your actual file structure
+import azamImg from "../../../assets/images/avathar2.png";
+import joyalImg from "../../../assets/images/avathar3.png";
+import abhishekImg from "../../../assets/images/avathar4.png";
+import amaanImg from "../../../assets/images/avathar2.png";
+import sahilImg from "../../../assets/images/avathar3.png";
 import { Container } from "react-bootstrap";
 // Add more imports as needed
 
-const PlacedStu = () => {
+const PlacedStuScroll = () => {
   const placedStudents = [
     {
       id: 1,
@@ -105,4 +104,4 @@ const PlacedStu = () => {
   );
 };
 
-export default PlacedStu;
+export default PlacedStuScroll;

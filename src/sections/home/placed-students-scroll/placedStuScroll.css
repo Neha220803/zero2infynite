@@ -2,7 +2,7 @@
 
 .placed-students-container {
   padding: 40px 0;
-  background-color: rgb(231, 231, 231);
+
   overflow: hidden;
   display: flex !important;
   flex-direction: column !important;
@@ -120,13 +120,11 @@
   margin-top: 20px;
   padding: 8px 15px;
   background-color: #17a2b8;
-  background: linear-gradient(
-    135deg,
-    #1e5799 0%,
-    #2989d8 50%,
-    #207cca 51%,
-    #7db9e8 100%
-  );
+  background: linear-gradient(135deg,
+      #1e5799 0%,
+      #2989d8 50%,
+      #207cca 51%,
+      #7db9e8 100%);
   border-radius: 20px;
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
