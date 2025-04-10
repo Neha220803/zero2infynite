@@ -5,6 +5,12 @@ import Homepage from "./pages/homepage";
 import FooterComp from "./components/footer/footer";
 import EcCounsilPages from "./pages/EcCouncilPage";
 import SimpleNavbar from "./components/nav/newNav";
+import ProjectsPage from "./pages/projectsPage";
+import AboutUsPage from "./pages/aboutUsPage";
+import InternshipPage from "./pages/internshipPage";
+import ServicesPage from "./pages/servicesPage";
+import TestimonialPage from "./pages/testimonialPage";
+import BlogPage from "./pages/blogPage";
 
 function Layout() {
   return (
@@ -16,6 +22,18 @@ function Layout() {
         <Route path="/all-courses" element={<AllCoursesPage />} />
 
         <Route path="/ec-council" element={<EcCounsilPages />} />
+
+        <Route path="/projects" element={<ProjectsPage />} />
+
+        <Route path="/about" element={<AboutUsPage />} />
+
+        <Route path="/internship" element={<InternshipPage />} />
+
+        <Route path="/services" element={<ServicesPage />} />
+
+        <Route path="/testimonial" element={<TestimonialPage />} />
+
+        <Route path="/blogs" element={<BlogPage />} />
       </Routes>
       <FooterComp />
     </>

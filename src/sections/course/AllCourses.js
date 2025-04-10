@@ -65,7 +65,11 @@ const AllCourses = () => {
 
   return (
     <div>
-      <div className="all-course-title">Choose Your Courses Now</div>
+      <div className="text-center  all-course-title">
+        <h1>
+          Choose Your <span className="text-primary">Courses</span> Now
+        </h1>
+      </div>
       <Container>
         <Row className="mb-4"></Row>
         <Row>

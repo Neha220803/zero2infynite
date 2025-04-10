@@ -41,11 +41,17 @@ const HomeHeader = () => {
           <Col lg={7}>
             <div className="header-content text-white">
               <Button variant="primary" className="px-4 py-2 mb-4">
-                Learn the best tactics to ensure Cybersecurity
+                {/* Learn the best tactics to ensure Cybersecurity */}
+                Learn Cybersecurity with full flexible date and timings
               </Button>
-              <h1 className="mb-4 w-75">
-                Become a Certified Cyber Security Expert
+              <h1 className="mb-4">
+                Join the only company which focused on career oriented training
+                {/* with full flexible date and timings. */}
               </h1>
+              <p>
+                We track the process till you get placed or switch top domain
+                and ensure to get updated with the latest skills.
+              </p>
             </div>
           </Col>
           <Col lg={5}>

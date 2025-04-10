@@ -1,0 +1,22 @@
+.about-us-cards {
+    /* Rectangle 49 */
+
+    box-sizing: border-box !important;
+
+    background: #FFFFFF !important;
+    border: 1px solid #56B6F0 !important;
+    border-radius: 12px !important;
+    text-align: start !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: start !important;
+    align-items: start !important;
+    padding: 20px 18px !important;
+    height: 100% !important;
+    gap: 10px !important;
+}
+
+.about-us-cards-icons {
+    height: 60px !important;
+    width: auto !important;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./whowe.css";
+import "./whoAreWe.css";
 import { Carousel } from "react-bootstrap";
 // Only import the images we're actually using
 import visionImage from "../../../assets/images/who_are_we_1.jpg";

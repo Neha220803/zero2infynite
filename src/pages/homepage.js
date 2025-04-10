@@ -13,7 +13,9 @@ const Homepage = () => {
       <WhoWe />
       <WhyUs />
       <TestimonialsSection />
-      <section>Contact Us</section>
+      <section>
+        <h1>Contact Us Page</h1>
+      </section>
     </div>
   );
 };

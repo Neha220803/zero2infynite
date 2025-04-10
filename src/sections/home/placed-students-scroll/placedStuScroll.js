@@ -94,12 +94,12 @@ const PlacedStuScroll = () => {
           ))}
         </div>
       </div>
-      <Container className="d-flex align-items-center justify-content-center">
+      {/* <Container className="d-flex align-items-center justify-content-center">
         <h3 className="w-75 text-center mt-4">
           We use to track the process till you get placed or switch top domain
           and ensure to get updated with the latest skills.
         </h3>
-      </Container>
+      </Container> */}
     </div>
   );
 };

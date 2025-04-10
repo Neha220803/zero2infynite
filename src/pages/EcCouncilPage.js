@@ -46,9 +46,16 @@ const EcCouncilPages = () => {
   ];
 
   return (
-    <section className="py-5">
+    <section className="">
+      <Row className="">
+        <div className="text-center all-course-title">
+          <h1>
+            Choose Your <span className="text-primary">EC Council Course</span>{" "}
+            Now
+          </h1>
+        </div>
+      </Row>
       <Container>
-        <h1 className="text-center mb-5">EC-Council Certifications</h1>
         <Row>
           <BlueBorderTransCards coursesData={ecCouncilCourses} />
         </Row>
