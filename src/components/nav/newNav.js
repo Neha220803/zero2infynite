@@ -51,7 +51,7 @@ const SimpleNavbar = () => {
         style={{ backgroundColor: "#333333", color: "white" }}
       >
         <Container className="d-flex justify-content-between align-items-center">
-          <div className="d-flex">
+          <div className="d-none d-md-flex">
             <a href="#" className="me-3 text-white">
               <FaInstagram />
             </a>
@@ -68,7 +68,7 @@ const SimpleNavbar = () => {
           <div className="d-flex">
             <a
               href="tel:+919087924334"
-              className="me-4 text-decoration-none text-white"
+              className="me-4 text-decoration-none text-white d-none d-md-flex"
             >
               <FaPhoneAlt className="me-1" /> +91 90879 24334
             </a>

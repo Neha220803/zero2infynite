@@ -1,7 +1,7 @@
 // HomeHeader.jsx
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import "../home/header.css"; // Ensure you have the correct path to your CSS file
+import "./header.css"; // Ensure you have the correct path to your CSS file
 import headerBg from "../../assets/videos/headerbg1.mp4"; // Update with your actual file path and name
 
 const HomeHeader = () => {
@@ -38,11 +38,11 @@ const HomeHeader = () => {
       <div className="overlay"></div>
       <Container className="position-relative z-index-1">
         <Row className="d-flex justify-content-center align-items-center">
-          <Col lg={7}>
+          <Col lg={7} xs={12} sm={12}>
             <div className="header-content text-white">
-              <Button variant="primary" className="px-4 py-2 mb-4">
+              <Button variant="primary" className="px-md-4 py-md-2 mb-4">
                 {/* Learn the best tactics to ensure Cybersecurity */}
-                Learn Cybersecurity with full flexible date and timings
+                Learn Cybersecurity with full flexible date & timings
               </Button>
               <h1 className="mb-4">
                 Join the only company which focused on career oriented training
@@ -54,8 +54,8 @@ const HomeHeader = () => {
               </p>
             </div>
           </Col>
-          <Col lg={5}>
-            <div className="form-container bg-dark p-4 rounded">
+          <Col lg={5} xs={12} sm={12}>
+            <div className="form-container bg-dark p-4 rounded-4">
               <h2 className="text-white mb-4">Connect With us</h2>
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="name">
