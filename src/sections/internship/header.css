@@ -1,0 +1,47 @@
+.internship-page {
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.internship-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+
+.internship-item {}
+
+.internship-item:hover {
+    transform: translateY(-5px);
+}
+
+.internship-item h2 {
+    color: #2c5282;
+    margin-bottom: 1rem;
+}
+
+.internship-item p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.internship-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.internship-item li {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.internship-item li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2c5282;
+}

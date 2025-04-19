@@ -1,7 +1,6 @@
 import React from "react";
 import IndiCoureBasicInfo from "../sections/individual-courses/indi-coure-basic-info";
 import IndiCourseTableComp from "../sections/individual-courses/indi-course-table";
-import "./individualsCourses.css";
 
 const IndividualCourses = () => {
   return (
