@@ -11,6 +11,7 @@ import InternshipPage from "./pages/internshipPage";
 import ServicesPage from "./pages/servicesPage";
 import TestimonialPage from "./pages/testimonialPage";
 import BlogPage from "./pages/blogPage";
+import IndividualCourses from "./pages/individualCourses";
 
 function Layout() {
   return (
@@ -22,6 +23,7 @@ function Layout() {
         <Route path="/all-courses" element={<AllCoursesPage />} />
 
         <Route path="/ec-council" element={<EcCounsilPages />} />
+        <Route path="/ceh" element={<IndividualCourses />} />
 
         <Route path="/projects" element={<ProjectsPage />} />
 
