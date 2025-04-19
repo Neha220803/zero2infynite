@@ -23,7 +23,7 @@ function Layout() {
         <Route path="/all-courses" element={<AllCoursesPage />} />
 
         <Route path="/ec-council" element={<EcCounsilPages />} />
-        <Route path="/ceh" element={<IndividualCourses />} />
+        <Route path="/ec-council/ceh" element={<IndividualCourses />} />
 
         <Route path="/projects" element={<ProjectsPage />} />
 
