@@ -10,13 +10,13 @@ const FooterComp = () => {
     >
       <Container className="">
         <Row className="justify-content-center align-items-center text-center">
-          <Col xs={6} className="mb-2 mb-md-0">
-            <TelephoneFill className="me-2" />
-            Call us at 6584978550
-          </Col>
           <Col xs={6}>
             <Calendar2CheckFill className="me-2" />
             Request a call back
+          </Col>
+          <Col xs={6} className="mb-2 mb-md-0">
+            <TelephoneFill className="me-2" />
+            Call us at 6584978550
           </Col>
         </Row>
       </Container>

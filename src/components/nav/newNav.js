@@ -73,10 +73,10 @@ const SimpleNavbar = () => {
               <FaPhoneAlt className="me-1" /> +91 90879 24334
             </a>
             <a
-              href="mailto:info@zero2infynite.com"
+              href="mailto:pradhan@zero2infynite.com"
               className="text-decoration-none text-white"
             >
-              <MdEmail className="me-1" /> info@zero2infynite.com
+              <MdEmail className="me-1" /> pradhan@zero2infynite.com
             </a>
           </div>
         </Container>

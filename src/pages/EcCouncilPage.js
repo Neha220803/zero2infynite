@@ -16,7 +16,7 @@ const EcCouncilPages = () => {
     {
       id: 1,
       img: cehImage,
-      path: "/ec-council/ceh",
+      path: "/ethical-hacking-training-in-chennai",
     },
     {
       id: 2,

@@ -18,9 +18,7 @@ const IndiCoureBasicInfo = () => {
       <Row>
         <Col sm={12} xs={12} lg={8}>
           <div className="indi-course-left-wrap">
-            <h1 className="indi-section-title">
-              Certified Ethical Hacker Certification
-            </h1>
+            <h1 className="indi-section-title">Certified Ethical Hacker</h1>
             <div className="d-flex gap-3">
               <div className="best-seller-button">Best Seller</div>
               <div className="course-rating">
