@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { TelephoneFill, Calendar2CheckFill } from "react-bootstrap-icons";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import "./footer.css";
 
 const FooterComp = () => {
   return (
@@ -14,19 +15,19 @@ const FooterComp = () => {
           <Col xs={6}>
             <a
               href="https://wa.me/918111000953"
-              className="text-white text-decoration-none"
+              className="text-white text-decoration-none d-flex justify-content-center align-items-center"
             >
-              <FaWhatsapp className="me-2" />
+              <FaWhatsapp className="me-2 footer-icons" />
               Chat with us
             </a>
           </Col>
           <Col xs={6} className="mb-2 mb-md-0">
             <a
               href="https://wa.me/918111000953"
-              className="text-white text-decoration-none"
+              className="text-white text-decoration-none d-flex justify-content-center align-items-center"
             >
-              <TelephoneFill className="me-2" />
-              Call us at 8111000953
+              <FaPhone className="me-2 " />
+              <span className="d-md-block d-none">Call us at </span>8111000953
             </a>
           </Col>
         </Row>
