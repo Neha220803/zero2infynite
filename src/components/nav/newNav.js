@@ -70,7 +70,7 @@ const SimpleNavbar = () => {
               href="tel:+919087924334"
               className="me-4 text-decoration-none text-white d-none d-md-flex"
             >
-              <FaPhoneAlt className="me-1" /> +91 90879 24334
+              <FaPhoneAlt className="me-1" /> +91 81110 00953
             </a>
             <a
               href="mailto:pradhan@zero2infynite.com"

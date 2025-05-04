@@ -30,7 +30,7 @@ const IndiCourseTableComp = () => {
   }, []);
 
   return (
-    <Container>
+    <Container id="batches" className="indi-course-table-container">
       <Row>
         <h2 className="indi-section-title">
           Upcoming Batches Schedule for Certified Ethical Hacking Training in

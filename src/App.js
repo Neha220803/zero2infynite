@@ -41,7 +41,7 @@ function Layout() {
 
         <Route path="/blogs" element={<BlogPage />} />
       </Routes>
-      <WhatsappButtonsComp />
+      {/* <WhatsappButtonsComp /> */}
       <FooterComp />
     </>
   );
