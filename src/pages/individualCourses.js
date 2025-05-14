@@ -7,7 +7,7 @@ import IndiCorseSylabusComp from "../sections/individual-courses/syllabus/indiCo
 
 const IndividualCourses = () => {
   return (
-    <div className="d-flex flex-column justify-content-start align-items-center py-5 gap-5">
+    <div className="d-flex flex-column justify-content-start align-items-center py-2 gap-5">
       <IndiCoureBasicInfo />
       <NavSecondary />
       <IndiCourseTableComp />

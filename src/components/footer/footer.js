@@ -7,8 +7,8 @@ import "./footer.css";
 const FooterComp = () => {
   return (
     <div
-      className="bg-dark text-white py-2 position-fixed bottom-0 w-100"
-      style={{ zIndex: 1030 }}
+      className=" text-white py-2 position-fixed bottom-0 w-100"
+      style={{ zIndex: 1030, backgroundColor: "#275EAE" }}
     >
       <Container className="">
         <Row className="justify-content-center align-items-center text-center">

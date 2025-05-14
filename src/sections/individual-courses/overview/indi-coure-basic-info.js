@@ -23,55 +23,87 @@ const IndiCoureBasicInfo = () => {
               Certified Ethical Hacking Course in Chennai
             </h1>
             <div className="d-flex flex-md-row flex-column gap-3 mb-4">
-              <div className="best-seller-button">Best Seller</div>
+              <div className="best-seller-button">Very Famous</div>
               <div className="course-rating">
                 <div className="d-flex">
                   {[...Array(5)].map((_, index) => (
                     <FaStar key={index} className="stars" />
                   ))}
                 </div>
-                <div className="reviews d-flex">5789 Rating | Read Reviews</div>
+                <div className="reviews d-flex">Top Rating | Read Reviews</div>
               </div>
             </div>
             <p className="indi-course-description">
-              Are you looking for an affordable Certified Ethical Hacking course
-              or international certifications such as EC-Council or CompTIA to
-              secure a job, boost your salary, or advance your career in the
-              cybersecurity domain? Or are you simply seeking practical,
-              knowledge-based training to protect yourself in the digital world?
+              Are you looking for an{" "}
+              <strong style={{ fontSize: "18px" }}>
+                affordable Certified Ethical Hacking course
+              </strong>{" "}
+              or international certifications such as EC-Council or CompTIA to{" "}
+              <strong style={{ fontSize: "18px" }}>
+                secure a job, boost your salary, or advance your career in the
+                cybersecurity domain?
+              </strong>{" "}
+              Or are you simply seeking practical, knowledge-based training to
+              protect yourself in the digital world?
+            </p>
+            <p className="indi-course-description text-primary pointer">
+              <a
+                style={{ color: "#012356", cursor: "pointer" }}
+                href="https://drive.google.com/file/d/1XrmWRk7hLaWaKvorNmpChxPRMZ33XHfL/view?usp=sharing"
+              >
+                Click here to download the CEH brochure and syllabus
+              </a>
             </p>
             <p className="indi-course-description">
-              Zero2Infynite is here to help you achieve your goals. We evaluate
-              each student’s unique needs and provide personalized guidance.
-              Unlike typical institutes that stop at training, we offer
-              continuous support until you reach your objectives. We are an
-              authorized EC-Council Accredited Training Center (ATC) partner.
+              Zero2Infynite is here to{" "}
+              <strong style={{ fontSize: "18px" }}>
+                help you achieve your goals.
+              </strong>{" "}
+              We evaluate each student’s unique needs and provide personalized
+              guidance. Unlike typical institutes that stop at training,{" "}
+              <strong style={{ fontSize: "18px" }}>
+                we offer continuous support until you reach your goals.
+              </strong>{" "}
+              We are an{" "}
+              <strong style={{ fontSize: "18px" }}>
+                authorized EC-Council Accredited Training Center (ATC) partner.
+              </strong>
             </p>
             <p className="indi-course-description">
-              We take pride in our 100% pass rate for international
-              certifications - something you may not get if you purchase courses
-              directly or through other providers.{" "}
+              We take pride in our{" "}
+              <strong style={{ fontSize: "18px" }}>100% pass rate </strong>for
+              international certifications - something you may not get if you
+              purchase courses directly or through other providers.{" "}
             </p>
             <p className="indi-course-description">
-              Our trainers bring real - world industry experience and also
-              assist with job referrals. They have designed cybersecurity course
-              syllabi for prestigious institutions such as SRM Valliammai
-              Engineering College, St. Joseph’s College, and others. We also
-              hold MOUs with top colleges including VIT Chennai, St. Joseph’s,
-              SRM, and VELS University.{" "}
+              Our trainers bring{" "}
+              <strong style={{ fontSize: "18px" }}>
+                real-world industry experience and also assist with job
+                referrals.
+              </strong>{" "}
+              They have designed cybersecurity course syllabi for prestigious
+              institutions such as SRM Valliammai Engineering College, St.
+              Joseph’s College, and others. We also hold MOUs with top colleges
+              including VIT Chennai, St. Joseph’s, SRM, and VELS University.{" "}
             </p>{" "}
             <p className="indi-course-description">
-              We have successfully placed the majority of our students in the
-              cybersecurity field. Additionally, we’ve helped experienced
-              professionals transition into cybersecurity by carefully assessing
-              and building on their existing skills. We've also supported
-              working cybersecurity professionals in earning international
-              certifications to boost their skills, salaries, and career
-              positions.
+              We have successfully{" "}
+              <strong style={{ fontSize: "18px" }}>
+                placed the majority of our students in the cybersecurity field.{" "}
+              </strong>
+              Additionally, we’ve{" "}
+              <strong style={{ fontSize: "18px" }}>
+                {" "}
+                helped experienced professionals transition into cybersecurity
+              </strong>{" "}
+              by carefully assessing and building on their existing skills.
+              We've also supported working cybersecurity professionals in
+              earning international certifications to boost their skills,
+              salaries, and career positions.
             </p>
             <div className="course-details">
               <Row>
-                <Col sm={6}>
+                <Col sm={4}>
                   <ul
                     style={{ listStyle: "none", padding: 0 }}
                     className="indi-course-facts"
@@ -88,16 +120,26 @@ const IndiCoureBasicInfo = () => {
                       <img src={courseicon1} alt="Course curriculum" />
                       <p> Flexible Learning Modes</p>
                     </li>
+                  </ul>
+                </Col>
+                <Col sm={4}>
+                  <ul
+                    style={{ listStyle: "none", padding: 0 }}
+                    className="indi-course-facts"
+                  >
+                    <li>
+                      <p>100% Success Rate </p>
+                    </li>
                     <li>
                       <img src={courseicon2} alt="Trainer Profile" />
                       <p> Career Assistance & Job Referrals</p>
                     </li>
                     <li>
-                      <p>100% Success Rate in Certification Exams</p>
+                      <p>Hands-On Practical Training</p>
                     </li>
                   </ul>
                 </Col>
-                <Col sm={6}>
+                <Col sm={4}>
                   <ul
                     style={{ listStyle: "none", padding: 0 }}
                     className="indi-course-facts"
@@ -113,9 +155,6 @@ const IndiCoureBasicInfo = () => {
                     <li>
                       <img src={courseicon6} alt="FAQs" />
                       <p> International Certification Preparation</p>
-                    </li>
-                    <li>
-                      <p>Hands-On Practical Training</p>
                     </li>
                   </ul>
                 </Col>
@@ -185,9 +224,6 @@ const IndiCoureBasicInfo = () => {
                       <div>
                         <div className="indi-number text-start">
                           + 91 81110 00953
-                        </div>
-                        <div className="indi-course-description">
-                          Available 24x7 for your queries
                         </div>
                       </div>
                     </div>

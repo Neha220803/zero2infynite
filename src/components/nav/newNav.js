@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import "./nav.css";
 
 const SimpleNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -47,8 +48,8 @@ const SimpleNavbar = () => {
     <>
       {/* Top Bar */}
       <div
-        className="py-2"
-        style={{ backgroundColor: "#333333", color: "white" }}
+        className="py-2 top-bar"
+        // style={{ backgroundColor: "#333333", color: "white" }}
       >
         <Container className="d-flex justify-content-between align-items-center">
           <div className="d-none d-md-flex">
@@ -84,10 +85,12 @@ const SimpleNavbar = () => {
 
       {/* Main Navbar */}
       <Navbar
-        bg="dark"
-        variant="dark"
+        // bg="dark"
+        // variant="dark"
         expand="lg"
-        className={`py-2 ${scrolled ? "position-fixed w-100 top-0" : ""}`}
+        className={`main-navbar py-2 ${
+          scrolled ? "position-fixed w-100 top-0" : ""
+        }`}
         style={{ zIndex: 1030 }}
       >
         <Container>
@@ -98,7 +101,7 @@ const SimpleNavbar = () => {
             <img
               src={logo}
               alt="Zero2Infynite"
-              height="40"
+              height="60"
               className="d-inline-block align-top"
             />
           </Navbar.Brand>

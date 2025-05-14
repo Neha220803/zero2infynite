@@ -2,20 +2,22 @@
 
 /* Top bar styling */
 .top-bar {
-  background-color: #333333;
-  color: white;
+  background-color: #F1F1F1 !important;
+  color: #275EAE !important;
   position: relative;
   z-index: 1020;
 }
 
 .top-bar a {
-  color: white;
+  color: #275EAE !important;
   font-size: 14px;
+  font-weight: 500;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .top-bar a:hover {
-  color: #cccccc;
+  color: #275EAE !important;
 }
 
 .social-icons a {
@@ -38,10 +40,12 @@
 /* Main navbar styling */
 .main-navbar {
   padding: 0.5rem 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
   position: relative;
   z-index: 1030;
+  background-color: white !important;
   transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Styles for when the navbar is scrolled/fixed */
@@ -55,7 +59,8 @@
 
 /* Spacer to prevent content jump when navbar becomes fixed */
 .navbar-spacer {
-  height: 56px; /* Should match your navbar height */
+  height: 56px;
+  /* Should match your navbar height */
 }
 
 .nav-item {
@@ -63,16 +68,22 @@
   padding: 0.5rem 1rem;
   margin: 0 0.2rem;
   transition: color 0.3s ease;
+  color: #275EAE !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  text-decoration: none;
+
 }
 
 .nav-item:hover {
-  color: #ffffff !important;
+  color: #113d80 !important;
 }
 
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
   .top-bar {
-    display: none; /* Hide top bar on mobile */
+    display: none;
+    /* Hide top bar on mobile */
   }
 
   .navbar-nav {
@@ -102,7 +113,8 @@
 
   /* No need for spacer when top bar is hidden */
   body {
-    padding-top: 56px; /* Adjust based on your navbar height */
+    padding-top: 56px;
+    /* Adjust based on your navbar height */
   }
 }
 
