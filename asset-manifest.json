@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.d64b2120.css",
-    "main.js": "/zero2infynite/static/js/main.2a5b0e67.js",
+    "main.css": "/zero2infynite/static/css/main.410178dc.css",
+    "main.js": "/zero2infynite/static/js/main.af4a295f.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
     "static/media/headerbg1.mp4": "/zero2infynite/static/media/headerbg1.0bd47a2d6ffbabec2081.mp4",
     "static/media/logo.svg": "/zero2infynite/static/media/logo.6cf51c2ef528a9e1993fbf935dafe90b.svg",
     "static/media/who_are_we_1.jpg": "/zero2infynite/static/media/who_are_we_1.ab3af255019a3095b2fa.jpg",
     "static/media/avathar4.png": "/zero2infynite/static/media/avathar4.7f0be0cc77a6790c8d5c.png",
+    "static/media/stu_certi.png": "/zero2infynite/static/media/stu_certi.1ab2e608e7264d5eac9d.png",
     "static/media/avathar2.png": "/zero2infynite/static/media/avathar2.b8419dd3d823e75abc5b.png",
     "static/media/avathar.png": "/zero2infynite/static/media/avathar.c09775280cccc8a799e9.png",
     "static/media/employee-training.png": "/zero2infynite/static/media/employee-training.e1e53049620a00858f89.png",
@@ -36,11 +37,11 @@
     "static/media/material-symbols_lab-profile.svg": "/zero2infynite/static/media/material-symbols_lab-profile.6c2d52cf7c8ac0be49b96ce791be60ce.svg",
     "index.html": "/zero2infynite/index.html",
     "static/media/akar-icons_book.svg": "/zero2infynite/static/media/akar-icons_book.4ac1c9e4e2c02517ebae04948160d252.svg",
-    "main.d64b2120.css.map": "/zero2infynite/static/css/main.d64b2120.css.map",
-    "main.2a5b0e67.js.map": "/zero2infynite/static/js/main.2a5b0e67.js.map"
+    "main.410178dc.css.map": "/zero2infynite/static/css/main.410178dc.css.map",
+    "main.af4a295f.js.map": "/zero2infynite/static/js/main.af4a295f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d64b2120.css",
-    "static/js/main.2a5b0e67.js"
+    "static/css/main.410178dc.css",
+    "static/js/main.af4a295f.js"
   ]
 }
