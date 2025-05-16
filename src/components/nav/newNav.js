@@ -59,9 +59,9 @@ const SimpleNavbar = () => {
             <a href="#" className="me-3 text-white">
               <FaFacebookF />
             </a>
-            <a href="#" className="me-3 text-white">
+            {/* <a href="#" className="me-3 text-white">
               <FaXTwitter />
-            </a>
+            </a> */}
             <a href="#" className="me-3 text-white">
               <FaLinkedinIn />
             </a>

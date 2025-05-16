@@ -1,0 +1,24 @@
+.certification-image {
+    height: 500px !important;
+    width: 100% !important;
+    object-fit: contain !important;
+}
+
+.certification-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden !important;
+}
+
+.certification-paragraph {
+
+    /* font-family: 'Poppins';
+        font-style: normal; */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+
+    color: #666666;
+}

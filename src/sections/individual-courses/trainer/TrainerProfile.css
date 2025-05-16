@@ -1,0 +1,15 @@
+.trainere-profile-para {
+    /* font-family: 'Poppins';
+    font-style: normal; */
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 36px !important;
+    color: #666666 !important;
+}
+
+@media (max-width: 768px) {
+    .trainere-profile-para {
+        font-size: 18px !important;
+        line-height: 28px !important;
+    }
+}

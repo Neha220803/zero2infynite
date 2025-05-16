@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaCertificate, FaStar } from "react-icons/fa";
 import courseicon1 from "../../../assets/icons/certifications/akar-icons_book.svg";
 import courseicon2 from "../../../assets/icons/certifications/flowbite_profile-card-solid.svg";
 import courseicon3 from "../../../assets/icons/certifications/fluent_certificate-20-regular.svg";
@@ -12,6 +12,21 @@ import courseImg from "../../../assets/images/employee-training.png";
 import CertificationImg from "../../../assets/images/indi_course/certirfication.png";
 import { Container, Row, Col, Card, CardImg, CardBody } from "react-bootstrap";
 import "./indi-course-basic-info.css";
+import { GiTeacher } from "react-icons/gi";
+import {
+  Award,
+  BookHalf,
+  BriefcaseFill,
+  Calendar2Check,
+  ChatLeftText,
+  CurrencyDollar,
+  PersonLinesFill,
+  Tools,
+  Trophy,
+} from "react-bootstrap-icons";
+import { BiCertification } from "react-icons/bi";
+import { PiCertificate } from "react-icons/pi";
+import { SiGoogleclassroom } from "react-icons/si";
 
 const IndiCoureBasicInfo = () => {
   return (
@@ -101,97 +116,9 @@ const IndiCoureBasicInfo = () => {
               earning international certifications to boost their skills,
               salaries, and career positions.
             </p>
-            <div className="course-details">
-              <Row>
-                <Col sm={4}>
-                  <ul
-                    style={{ listStyle: "none", padding: 0 }}
-                    className="indi-course-facts"
-                  >
-                    <li>
-                      <img src={courseicon5} alt="Course Description" />
-                      <p>Real time industry oriented training</p>
-                    </li>
-                    <li>
-                      <img src={courseicon4} alt="Upcoming batches" />
-                      <p> Updated syllabus</p>
-                    </li>
-                    <li>
-                      <img src={courseicon1} alt="Course curriculum" />
-                      <p> Flexible Learning Modes</p>
-                    </li>
-                  </ul>
-                </Col>
-                <Col sm={4}>
-                  <ul
-                    style={{ listStyle: "none", padding: 0 }}
-                    className="indi-course-facts"
-                  >
-                    <li>
-                      <p>100% Success Rate </p>
-                    </li>
-                    <li>
-                      <img src={courseicon2} alt="Trainer Profile" />
-                      <p> Career Assistance & Job Referrals</p>
-                    </li>
-                    <li>
-                      <p>Hands-On Practical Training</p>
-                    </li>
-                  </ul>
-                </Col>
-                <Col sm={4}>
-                  <ul
-                    style={{ listStyle: "none", padding: 0 }}
-                    className="indi-course-facts"
-                  >
-                    <li>
-                      <img src={courseicon3} alt="Testimonials" />
-                      <p> Free Demo sessions</p>
-                    </li>
-                    <li>
-                      <img src={courseicon7} alt="Testimonials" />
-                      <p>Training that fits your budget</p>
-                    </li>
-                    <li>
-                      <img src={courseicon6} alt="FAQs" />
-                      <p> International Certification Preparation</p>
-                    </li>
-                  </ul>
-                </Col>
-              </Row>
-            </div>
-            <Row>
-              <p className="indi-course-description">
-                Certified Ethical Hacking (CEH) from Zero2infynite offers
-                Ec-Council and Comptia Certification which will help to enter
-                into the cyber security domain. We are an authorized training
-                centre of Ec-council. The total cost of Ec-council certification
-                with training is 34000. You can also attend training for 17000.
-                Later you can pay the remaining amount and get the International
-                certification. This Certified Ethical Hacking course will help
-                you to enter in to all the cyber security domain like
-              </p>
-              <p className="indi-course-description">
-                <ol>
-                  <li>Cyber Security</li>
-                  <li>Auditing Vulnerability and penetration Testing </li>
-                  <li>SOC analyst</li>
-                  <li>Cloud security</li>
-                  <li>Malware analyst </li>
-                  <li> Cyber forensic expert </li>
-                  <li> IARM expert</li>
-                </ol>
-              </p>
-              <p className="indi-course-description">
-                We will explain how each topic will help to gain knowledge in
-                specific domains along with realtime examples. Our Trainers
-                trained Cyber crime officers from various states, managers in IT
-                industry, College and school students.
-              </p>
-            </Row>
           </div>
         </Col>
-        <Col sm={12} xs={12} lg={4} className="p-0">
+        <Col sm={12} xs={12} lg={4} className="mb-4">
           <Card className="indi-course-right-card">
             <CardImg src={CertificationImg} alt="course img" />
             <CardBody className="py-0">
@@ -233,6 +160,128 @@ const IndiCoureBasicInfo = () => {
             </CardBody>
           </Card>
         </Col>
+      </Row>
+      <Row>
+        <div className="course-details">
+          <Row>
+            <Col sm={4}>
+              <ul
+                style={{ listStyle: "none", padding: 0 }}
+                className="indi-course-facts"
+              >
+                <li>
+                  <GiTeacher
+                    size={24}
+                    className="course-details-li-img"
+                    style={{ color: "#666666" }}
+                  />
+                  <p>Real time industry oriented training</p>
+                </li>
+                <li>
+                  <BookHalf
+                    size={24}
+                    className="course-details-li-img text-success"
+                  />
+                  <p>Updated syllabus</p>
+                </li>
+                <li>
+                  <Calendar2Check
+                    size={24}
+                    className="course-details-li-img "
+                    style={{ color: "#955EAE" }}
+                  />
+                  <p>Flexible Learning Modes</p>
+                </li>
+              </ul>
+            </Col>
+            <Col sm={4}>
+              <ul
+                style={{ listStyle: "none", padding: 0 }}
+                className="indi-course-facts"
+              >
+                <li>
+                  <Award
+                    size={24}
+                    className="course-details-li-img text-warning"
+                  />
+                  <p>100% Success Rate </p>
+                </li>
+                <li>
+                  <BriefcaseFill
+                    size={24}
+                    className="course-details-li-img "
+                    style={{ color: "#275EAE" }}
+                  />
+                  <p>Career Assistance & Job Referrals</p>
+                </li>
+                <li>
+                  <Tools
+                    size={24}
+                    className="course-details-li-img text-secondary"
+                  />
+                  <p>Hands-On Practical Training</p>
+                </li>
+              </ul>
+            </Col>
+            <Col sm={4}>
+              <ul
+                style={{ listStyle: "none", padding: 0 }}
+                className="indi-course-facts"
+              >
+                <li>
+                  <SiGoogleclassroom
+                    size={24}
+                    className="course-details-li-img text-danger"
+                  />
+                  <p>Free Demo sessions</p>
+                </li>
+                <li>
+                  <CurrencyDollar
+                    size={24}
+                    className="course-details-li-img text-success"
+                  />
+                  <p>Training that fits your budget</p>
+                </li>
+                <li>
+                  <PiCertificate
+                    size={24}
+                    className="course-details-li-img text-warning"
+                  />
+                  <p>International Certification Preparation</p>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+          <Row>
+            <p className="indi-course-description">
+              Certified Ethical Hacking (CEH) from Zero2infynite offers
+              Ec-Council and Comptia Certification which will help to enter into
+              the cyber security domain. We are an authorized training centre of
+              Ec-council. The total cost of Ec-council certification with
+              training is 34000. You can also attend training for 17000. Later
+              you can pay the remaining amount and get the International
+              certification. This Certified Ethical Hacking course will help you
+              to enter in to all the cyber security domain like
+            </p>
+            <p className="indi-course-description">
+              <ol>
+                <li>Cyber Security</li>
+                <li>Auditing Vulnerability and penetration Testing </li>
+                <li>SOC analyst</li>
+                <li>Cloud security</li>
+                <li>Malware analyst </li>
+                <li> Cyber forensic expert </li>
+                <li> IARM expert</li>
+              </ol>
+            </p>
+            <p className="indi-course-description">
+              We will explain how each topic will help to gain knowledge in
+              specific domains along with realtime examples. Our Trainers
+              trained Cyber crime officers from various states, managers in IT
+              industry, College and school students.
+            </p>
+          </Row>
+        </div>
       </Row>
     </Container>
   );

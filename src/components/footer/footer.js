@@ -7,7 +7,7 @@ import "./footer.css";
 const FooterComp = () => {
   return (
     <div
-      className=" text-white py-2 position-fixed bottom-0 w-100"
+      className=" text-white py-3 position-fixed bottom-0 w-100"
       style={{ zIndex: 1030, backgroundColor: "#275EAE" }}
     >
       <Container className="">
