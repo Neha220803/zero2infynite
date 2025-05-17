@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.9f8e4407.css",
-    "main.js": "/zero2infynite/static/js/main.59b188b8.js",
+    "main.css": "/zero2infynite/static/css/main.deb38d47.css",
+    "main.js": "/zero2infynite/static/js/main.b42dacef.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
     "static/media/headerbg1.mp4": "/zero2infynite/static/media/headerbg1.0bd47a2d6ffbabec2081.mp4",
-    "static/media/logo.svg": "/zero2infynite/static/media/logo.6cf51c2ef528a9e1993fbf935dafe90b.svg",
     "static/media/home-bg.png": "/zero2infynite/static/media/home-bg.b3edbe4a2a57d52c5e68.png",
     "static/media/who_are_we_1.jpg": "/zero2infynite/static/media/who_are_we_1.ab3af255019a3095b2fa.jpg",
     "static/media/avathar4.png": "/zero2infynite/static/media/avathar4.7f0be0cc77a6790c8d5c.png",
     "static/media/stu_certi.png": "/zero2infynite/static/media/stu_certi.1ab2e608e7264d5eac9d.png",
     "static/media/avathar2.png": "/zero2infynite/static/media/avathar2.b8419dd3d823e75abc5b.png",
     "static/media/avathar.png": "/zero2infynite/static/media/avathar.c09775280cccc8a799e9.png",
+    "static/media/eddited logo.png": "/zero2infynite/static/media/eddited logo.6081f1a669f0dfe2e431.png",
     "static/media/employee-training.png": "/zero2infynite/static/media/employee-training.e1e53049620a00858f89.png",
     "static/media/avathar3.png": "/zero2infynite/static/media/avathar3.7febcef7453339fffcf2.png",
     "static/media/whowe1.jpg": "/zero2infynite/static/media/whowe1.0bf644c7557f0404ebfa.jpg",
@@ -44,11 +44,11 @@
     "static/media/icon6.svg": "/zero2infynite/static/media/icon6.8c0d68db9b8d24f98bab0de4b38bb0ee.svg",
     "index.html": "/zero2infynite/index.html",
     "static/media/akar-icons_book.svg": "/zero2infynite/static/media/akar-icons_book.4ac1c9e4e2c02517ebae04948160d252.svg",
-    "main.9f8e4407.css.map": "/zero2infynite/static/css/main.9f8e4407.css.map",
-    "main.59b188b8.js.map": "/zero2infynite/static/js/main.59b188b8.js.map"
+    "main.deb38d47.css.map": "/zero2infynite/static/css/main.deb38d47.css.map",
+    "main.b42dacef.js.map": "/zero2infynite/static/js/main.b42dacef.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f8e4407.css",
-    "static/js/main.59b188b8.js"
+    "static/css/main.deb38d47.css",
+    "static/js/main.b42dacef.js"
   ]
 }
