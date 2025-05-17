@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.410178dc.css",
-    "main.js": "/zero2infynite/static/js/main.af4a295f.js",
+    "main.css": "/zero2infynite/static/css/main.9f8e4407.css",
+    "main.js": "/zero2infynite/static/js/main.59b188b8.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
     "static/media/headerbg1.mp4": "/zero2infynite/static/media/headerbg1.0bd47a2d6ffbabec2081.mp4",
     "static/media/logo.svg": "/zero2infynite/static/media/logo.6cf51c2ef528a9e1993fbf935dafe90b.svg",
+    "static/media/home-bg.png": "/zero2infynite/static/media/home-bg.b3edbe4a2a57d52c5e68.png",
     "static/media/who_are_we_1.jpg": "/zero2infynite/static/media/who_are_we_1.ab3af255019a3095b2fa.jpg",
     "static/media/avathar4.png": "/zero2infynite/static/media/avathar4.7f0be0cc77a6790c8d5c.png",
     "static/media/stu_certi.png": "/zero2infynite/static/media/stu_certi.1ab2e608e7264d5eac9d.png",
@@ -14,8 +15,11 @@
     "static/media/employee-training.png": "/zero2infynite/static/media/employee-training.e1e53049620a00858f89.png",
     "static/media/avathar3.png": "/zero2infynite/static/media/avathar3.7febcef7453339fffcf2.png",
     "static/media/whowe1.jpg": "/zero2infynite/static/media/whowe1.0bf644c7557f0404ebfa.jpg",
+    "static/media/cnd.png": "/zero2infynite/static/media/cnd.c1722f009078fb073627.png",
+    "static/media/ceh.png": "/zero2infynite/static/media/ceh.c01c09e8955b0fb1b529.png",
     "static/media/Mask groupabout-icons.svg": "/zero2infynite/static/media/Mask groupabout-icons.d1c9868fc3b26cb35a9b3af9949f9b50.svg",
     "static/media/healthicons_i-training-classabout-icons.svg": "/zero2infynite/static/media/healthicons_i-training-classabout-icons.59fcd069509da861bdfe47125d796fc0.svg",
+    "static/media/icon5.svg": "/zero2infynite/static/media/icon5.5767bebe03a326313802b82a9c3799a7.svg",
     "static/media/fluent_person-support-16-filledabout-icons.svg": "/zero2infynite/static/media/fluent_person-support-16-filledabout-icons.68363d83df2d2b4c2669ed324dfaca41.svg",
     "static/media/fluent_certificate-20-regular.svg": "/zero2infynite/static/media/fluent_certificate-20-regular.945e40ae876044f7b3c0c21ea33b4c53.svg",
     "static/media/flowbite_profile-card-solid.svg": "/zero2infynite/static/media/flowbite_profile-card-solid.4ac116cc9244bc5d8b13641280252ff8.svg",
@@ -23,6 +27,7 @@
     "static/media/course2.svg": "/zero2infynite/static/media/course2.adedfc3d2a6827afe92ba7bb37e62050.svg",
     "static/media/whyz2i.svg": "/zero2infynite/static/media/whyz2i.6acc1a0b2b70d99eac4b06923c012f0d.svg",
     "static/media/icon2.svg": "/zero2infynite/static/media/icon2.771adf963d3e0e37bc39886727195f33.svg",
+    "static/media/icon4.svg": "/zero2infynite/static/media/icon4.e3611d362e24993d7c9e9e0db636be99.svg",
     "static/media/course6.svg": "/zero2infynite/static/media/course6.3cd42de47205e8e79cfc599ec6301d85.svg",
     "static/media/course1.svg": "/zero2infynite/static/media/course1.da2466113a4cf844e7c68aa8bc2e0ac9.svg",
     "static/media/call.svg": "/zero2infynite/static/media/call.f57a45def4308b90e618d9db5490bf0f.svg",
@@ -31,17 +36,19 @@
     "static/media/icon1.svg": "/zero2infynite/static/media/icon1.b98619fd7fd937f0db59e3b326a03fc9.svg",
     "static/media/hugeicons_elearning-exchangeabout-icons.svg": "/zero2infynite/static/media/hugeicons_elearning-exchangeabout-icons.ac0db58fe0ba0a916e0ef153466256ca.svg",
     "static/media/mi_documentabout-icons.svg": "/zero2infynite/static/media/mi_documentabout-icons.e7bdb31cc0257a58001433f2beffc3e8.svg",
+    "static/media/icon3.svg": "/zero2infynite/static/media/icon3.f80d764d9cad74c0bd9606bf7ad581de.svg",
     "static/media/mdi_faq.svg": "/zero2infynite/static/media/mdi_faq.32aceba71a2fcc695991381f40df5850.svg",
     "static/media/course5.svg": "/zero2infynite/static/media/course5.8adb6ae7371f7e46247abfd9116f0adf.svg",
     "static/media/healthicons_i-training-class-24pxabout-icons.svg": "/zero2infynite/static/media/healthicons_i-training-class-24pxabout-icons.9ed3196a7f49d6153cb1a7426ece1d7c.svg",
     "static/media/material-symbols_lab-profile.svg": "/zero2infynite/static/media/material-symbols_lab-profile.6c2d52cf7c8ac0be49b96ce791be60ce.svg",
+    "static/media/icon6.svg": "/zero2infynite/static/media/icon6.8c0d68db9b8d24f98bab0de4b38bb0ee.svg",
     "index.html": "/zero2infynite/index.html",
     "static/media/akar-icons_book.svg": "/zero2infynite/static/media/akar-icons_book.4ac1c9e4e2c02517ebae04948160d252.svg",
-    "main.410178dc.css.map": "/zero2infynite/static/css/main.410178dc.css.map",
-    "main.af4a295f.js.map": "/zero2infynite/static/js/main.af4a295f.js.map"
+    "main.9f8e4407.css.map": "/zero2infynite/static/css/main.9f8e4407.css.map",
+    "main.59b188b8.js.map": "/zero2infynite/static/js/main.59b188b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.410178dc.css",
-    "static/js/main.af4a295f.js"
+    "static/css/main.9f8e4407.css",
+    "static/js/main.59b188b8.js"
   ]
 }
