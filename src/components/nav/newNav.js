@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/icons/logo.svg";
+import logo from "../../assets/images/logo/eddited logo.png";
 import {
   FaInstagram,
   FaFacebookF,
@@ -14,6 +14,7 @@ import "./nav.css";
 
 const SimpleNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -44,15 +45,20 @@ const SimpleNavbar = () => {
     };
   }, []);
 
+  const handleNavigation = (path) => {
+    setExpanded(false); // Close navbar when navigation happens
+    navigate(path);
+  };
+
   return (
     <>
       {/* Top Bar */}
       <div
-        className="py-2 top-bar"
+        className="py-2 top-bar d-none d-md-flex"
         // style={{ backgroundColor: "#333333", color: "white" }}
       >
         <Container className="d-flex justify-content-between align-items-center">
-          <div className="d-none d-md-flex">
+          <div className="">
             <a href="#" className="me-3 text-white">
               <FaInstagram />
             </a>
@@ -88,6 +94,8 @@ const SimpleNavbar = () => {
         // bg="dark"
         // variant="dark"
         expand="lg"
+        expanded={expanded}
+        onToggle={setExpanded}
         className={`main-navbar py-2 ${
           scrolled ? "position-fixed w-100 top-0" : ""
         }`}
@@ -95,7 +103,7 @@ const SimpleNavbar = () => {
       >
         <Container>
           <Navbar.Brand
-            onClick={() => navigate("/")}
+            onClick={() => handleNavigation("/")}
             style={{ cursor: "pointer" }}
           >
             <img
@@ -108,43 +116,52 @@ const SimpleNavbar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link onClick={() => navigate("/")} className="nav-item">
+              <Nav.Link
+                onClick={() => handleNavigation("/")}
+                className="nav-item"
+              >
                 Home
               </Nav.Link>
               <Nav.Link
-                onClick={() => navigate("/all-courses")}
+                onClick={() => handleNavigation("/all-courses")}
                 className="nav-item"
               >
                 All Course
               </Nav.Link>
               <Nav.Link
-                onClick={() => navigate("/internship")}
+                onClick={() => handleNavigation("/internship")}
                 className="nav-item"
               >
                 Internship
               </Nav.Link>
               <Nav.Link
-                onClick={() => navigate("/projects")}
+                onClick={() => handleNavigation("/projects")}
                 className="nav-item"
               >
                 Projects
               </Nav.Link>
               <Nav.Link
-                onClick={() => navigate("/services")}
+                onClick={() => handleNavigation("/services")}
                 className="nav-item"
               >
                 Services
               </Nav.Link>
               <Nav.Link
-                onClick={() => navigate("/testimonial")}
+                onClick={() => handleNavigation("/testimonial")}
                 className="nav-item"
               >
                 Testimonial
               </Nav.Link>
-              <Nav.Link onClick={() => navigate("/about")} className="nav-item">
+              <Nav.Link
+                onClick={() => handleNavigation("/about")}
+                className="nav-item"
+              >
                 About Us
               </Nav.Link>
-              <Nav.Link onClick={() => navigate("/blogs")} className="nav-item">
+              <Nav.Link
+                onClick={() => handleNavigation("/blogs")}
+                className="nav-item"
+              >
                 Blogs
               </Nav.Link>
             </Nav>

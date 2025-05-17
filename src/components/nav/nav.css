@@ -2,7 +2,7 @@
 
 /* Top bar styling */
 .top-bar {
-  background-color: #F1F1F1 !important;
+  background-color: #f7f7f7 !important;
   color: #275EAE !important;
   position: relative;
   z-index: 1020;
@@ -83,7 +83,6 @@
 @media (max-width: 991.98px) {
   .top-bar {
     display: none;
-    /* Hide top bar on mobile */
   }
 
   .navbar-nav {
@@ -113,7 +112,7 @@
 
   /* No need for spacer when top bar is hidden */
   body {
-    padding-top: 56px;
+    padding-top: 0px;
     /* Adjust based on your navbar height */
   }
 }
