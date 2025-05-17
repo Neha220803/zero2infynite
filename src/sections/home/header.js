@@ -28,11 +28,10 @@ const HomeHeader = () => {
 
   return (
     <div className="header-container position-relative d-flex align-items-center">
-      {/* Video Background using imported video */}
-      <video className="video-background" autoPlay loop muted>
+      {/* <video className="video-background" autoPlay loop muted>
         <source src={headerBg} type="video/mp4" />
         Your browser does not support the video.
-      </video>
+      </video> */}
 
       {/* Overlay for better text visibility */}
       <div className="overlay"></div>

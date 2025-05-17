@@ -3,14 +3,14 @@
   color: white !important;
   display: flex !important;
   flex-direction: row !important;
-  border-radius: 0px !important;
+  border-radius: 10px !important;
   min-height: 200px !important;
   justify-content: center !important;
   padding: 21px !important;
   align-items: center !important;
   border: 2px solid black !important;
   transition: all 0.3s ease-in-out !important;
-  transform-origin: top left !important;
+  transform-origin: center !important;
   cursor: pointer !important;
 }
 

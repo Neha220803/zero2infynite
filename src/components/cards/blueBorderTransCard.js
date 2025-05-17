@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
+import { Card, CardImg, CardText, CardTitle } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./customCards.css";
+import { RiArrowDropRightLine } from "react-icons/ri";
 
 // Simplified component that only receives image and path props
-const BlueBorderTransCard = ({ image, path }) => {
+const BlueBorderTransCard = ({ image, path, name }) => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
@@ -14,17 +15,27 @@ const BlueBorderTransCard = ({ image, path }) => {
 
   return (
     <Card
-      className="blue-border-trans-card h-100"
+      className="blue-border-trans-card h-100 "
       style={{ position: "relative" }}
     >
-      <div className="card-image-container" onClick={handleNavigate}>
-        <img
-          src={image}
-          alt="Card image"
-          className="card-img"
-          style={{ width: "100%", height: "auto" }}
-        />
-      </div>
+      <CardImg
+        src={image}
+        alt="Card image"
+        className=""
+        style={{
+          width: "100%",
+          height: "auto",
+          maxHeight: "200px",
+          minHeight: "200px",
+        }}
+        onClick={handleNavigate}
+      />
+      <CardTitle>
+        <h5 className="text-primary">{name}</h5>
+      </CardTitle>
+      {/* <CardText className="text-secondary">
+        Learn More <RiArrowDropRightLine size={30} />
+      </CardText> */}
     </Card>
   );
 };
@@ -34,7 +45,11 @@ const BlueBorderTransCards = ({ coursesData }) => {
     <>
       {coursesData.map((course) => (
         <div key={course.id} className="col-lg-4 col-md-6 mb-4">
-          <BlueBorderTransCard image={course.img} path={course.path} />
+          <BlueBorderTransCard
+            image={course.img}
+            path={course.path}
+            name={course.name}
+          />
         </div>
       ))}
     </>

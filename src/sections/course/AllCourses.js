@@ -28,7 +28,7 @@ const AllCourses = () => {
       description:
         "Software developers design, build, test, and maintain applications for various platforms and devices.",
       img: icon2,
-      path: "/comptia",
+      path: "/software-development",
     },
     {
       id: 3,
@@ -36,14 +36,14 @@ const AllCourses = () => {
       description:
         "Advanced cybersecurity certification for security professionals.",
       img: icon3,
-      path: "/cissp",
+      path: "/web-development",
     },
     {
       id: 4,
       title: "Finance & Accounting",
       description: "Cloud computing certifications for Amazon Web Services.",
       img: icon4,
-      path: "/aws",
+      path: "/finance",
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const AllCourses = () => {
   ];
 
   return (
-    <div>
+    <div className="mb-5">
       <div className="text-center  all-course-title">
         <h1>
           Choose Your <span className="text-primary">Courses</span> Now

@@ -4,10 +4,10 @@ import "../whyus/whyus.css";
 // Import icons from assets (adjust paths as needed)
 import trainerIcon from "../../../assets/icons/whyus/icon1.svg";
 import handsOnIcon from "../../../assets/icons/whyus/icon2.svg";
-import clockIcon from "../../../assets/icons/whyus/icon2.svg";
-import moneyIcon from "../../../assets/icons/whyus/icon1.svg";
-import labIcon from "../../../assets/icons/whyus/icon1.svg";
-import interviewIcon from "../../../assets/icons/whyus/icon1.svg";
+import clockIcon from "../../../assets/icons/whyus/icon3.svg";
+import moneyIcon from "../../../assets/icons/whyus/icon4.svg";
+import labIcon from "../../../assets/icons/whyus/icon5.svg";
+import interviewIcon from "../../../assets/icons/whyus/icon6.svg";
 
 const WhyUs = () => {
   // Add animation effect when component mounts

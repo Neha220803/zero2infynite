@@ -2,16 +2,22 @@
   /* background-color: #275eae !important; */
   color: white !important;
   display: flex !important;
-  flex-direction: row !important;
-  border-radius: 0px !important;
-  min-height: 200px !important;
-  justify-content: center !important;
-  padding: 21px !important;
+  flex-direction: column !important;
+  max-height: 300px !important;
+  /* border-radius: 0px !important; */
+  /* min-height: 200px !important; */
+  justify-content: space-around !important;
+  padding: 20px 40px !important;
   align-items: center !important;
   border: 2px solid black !important;
   transition: all 0.3s ease-in-out !important;
-  transform-origin: top left !important;
+  transform-origin: center !important;
   cursor: pointer !important;
+  overflow: hidden !important;
+
+
+  box-shadow: 0px 0px 7.5px 1px #EFEFEF !important;
+  border-radius: 12px !important;
 }
 
 .blue-border-trans-card:hover {

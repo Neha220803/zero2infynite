@@ -26,8 +26,11 @@ const FooterComp = () => {
               href="https://wa.me/918111000953"
               className="text-white text-decoration-none d-flex justify-content-center align-items-center"
             >
-              <FaPhone className="me-2 " />
-              <span className="d-md-block d-none">Call us at </span>8111000953
+              <div className="d-flex justify-content-center align-items-center">
+                <FaPhone className="me-2 " />
+                <span className="d-md-block d-none">Call us at </span>
+                +91 8111000953{" "}
+              </div>
             </a>
           </Col>
         </Row>
