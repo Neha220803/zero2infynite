@@ -9,6 +9,13 @@
     transition: all 0.3s ease;
     /* Initial state is not sticky */
     position: relative;
+    /* Hardware acceleration properties */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    will-change: transform;
+    /* Removed margin-top from desktop view */
 }
 
 /* Apply sticky positioning when needed */
@@ -19,6 +26,8 @@
     left: 0;
     right: 0;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transform: translateZ(0);
+    /* Force hardware acceleration when sticky */
 }
 
 /* Container for the navigation */
@@ -26,26 +35,33 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    /* These ensure the container doesn't constrain the nav */
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    /* Removed margin-top from desktop view */
 }
 
 .secondary-nav {
     display: flex;
     overflow-x: auto;
     height: 50px !important;
-    white-space: nowrap;
+    white-space: nowrap !important;
+    /* Ensure this is enforced */
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
     padding: 0;
-    flex-wrap: nowrap;
-    /* Prevent wrapping to next line */
+    flex-wrap: nowrap !important;
+    /* Force no wrapping */
     width: auto;
-    /* Changed from 100% to auto */
+    /* Auto width to allow centering */
     margin: 0 auto;
-    /* Add auto margins for centering */
     justify-content: center;
-    /* Center the items within the nav */
+    /* Center items on desktop */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -64,10 +80,12 @@
     /* Ensure no background */
     border-radius: 0 !important;
     /* No border radius */
-    flex: 0 0 auto;
-    /* Don't grow or shrink, use auto basis */
-    white-space: nowrap;
+    flex: 0 0 auto !important;
+    /* Prevent growing or shrinking */
+    white-space: nowrap !important;
     /* Prevent text wrapping */
+    display: inline-block;
+    /* Additional safeguard against wrapping */
 }
 
 .sec-nav-link:hover {
@@ -110,6 +128,19 @@
     background-color: #397ce8;
 }
 
+/* Body class when nav is sticky (prevents content jump) */
+body.has-sticky-nav {
+    /* This height should match your nav height */
+    padding-top: 50px;
+}
+
+/* Better transitions between sticky and non-sticky states */
+@media (prefers-reduced-motion: no-preference) {
+    .secondary-nav-container {
+        transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .secondary-nav-container.sticky-active {
@@ -127,11 +158,25 @@
         max-width: 100%;
         padding-left: 0;
         padding-right: 0;
+        width: 100%;
+        margin-top: 20px;
+        /* More space on mobile */
     }
 
-    /* On mobile, allow scrolling but keep centered when possible */
+    /* On mobile, ensure scrolling by prioritizing these properties */
     .secondary-nav {
-        justify-content: flex-start;
-        /* Start from left on mobile for better scrolling */
+        justify-content: center;
+        /* Center on mobile too */
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+        display: flex !important;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    /* Fix for mobile sticky behavior */
+    body.has-sticky-nav {
+        padding-top: 50px;
+        /* Match your mobile nav height */
     }
 }
