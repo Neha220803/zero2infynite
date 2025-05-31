@@ -134,12 +134,7 @@ const SimpleNavbar = () => {
               >
                 Internship
               </Nav.Link>
-              <Nav.Link
-                onClick={() => handleNavigation("/projects")}
-                className="nav-item"
-              >
-                Projects
-              </Nav.Link>
+
               <Nav.Link
                 onClick={() => handleNavigation("/services")}
                 className="nav-item"

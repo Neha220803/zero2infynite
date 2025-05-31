@@ -5,14 +5,12 @@ import Homepage from "./pages/homepage";
 import FooterComp from "./components/footer/footer";
 import EcCounsilPages from "./pages/EcCouncilPage";
 import SimpleNavbar from "./components/nav/newNav";
-import ProjectsPage from "./pages/projectsPage";
 import AboutUsPage from "./pages/aboutUsPage";
 import InternshipPage from "./pages/internshipPage";
 import ServicesPage from "./pages/servicesPage";
 import TestimonialPage from "./pages/testimonialPage";
 import BlogPage from "./pages/blogPage";
 import IndividualCourses from "./pages/individualCourses";
-import WhatsappButtonsComp from "./components/buttons/WhatsappButtons";
 
 function Layout() {
   return (
@@ -28,8 +26,6 @@ function Layout() {
           path="/ethical-hacking-training-in-chennai"
           element={<IndividualCourses />}
         />
-
-        <Route path="/projects" element={<ProjectsPage />} />
 
         <Route path="/about" element={<AboutUsPage />} />
 
