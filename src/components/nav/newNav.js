@@ -59,16 +59,25 @@ const SimpleNavbar = () => {
       >
         <Container className="d-flex justify-content-between align-items-center">
           <div className="">
-            <a href="#" className="me-3 text-white">
+            <a
+              href="https://www.instagram.com/zero2infynite/"
+              className="me-3 text-white"
+            >
               <FaInstagram />
             </a>
-            <a href="#" className="me-3 text-white">
+            <a
+              href="https://www.facebook.com/Zero2Infynite/"
+              className="me-3 text-white"
+            >
               <FaFacebookF />
             </a>
             {/* <a href="#" className="me-3 text-white">
               <FaXTwitter />
             </a> */}
-            <a href="#" className="me-3 text-white">
+            <a
+              href="https://www.linkedin.com/company/zero2infynite"
+              className="me-3 text-white"
+            >
               <FaLinkedinIn />
             </a>
           </div>
