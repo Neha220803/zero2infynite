@@ -47,9 +47,6 @@
 .feature-card:hover .feature-icon {
     transform: scale(1.15);
     opacity: 1;
-    /* Method 1: CSS Filter approach - works with any SVG */
-    filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(200deg) brightness(104%) contrast(97%);
-    /* This filter converts any color to #007bff */
 }
 
 .feature-card:hover .feature-title {
@@ -69,19 +66,6 @@
     height: 50px;
     opacity: 0.8;
     transition: all 0.3s ease;
-    /* Method 2: If your SVGs are single-color, you can also try this approach */
-    /* fill: currentColor; */
-}
-
-/* Alternative method if you want to use currentColor approach */
-.feature-card {
-    color: #666;
-    /* Default icon color */
-}
-
-.feature-card:hover {
-    color: #007bff;
-    /* Hover icon color */
 }
 
 .feature-title {
@@ -109,6 +93,7 @@
     margin-bottom: 15px;
     text-align: center;
     color: #000;
+    /* Ensure the default text is black */
 }
 
 .text-primary {

@@ -32,13 +32,13 @@ const ContactUsHomeComp = () => {
                 </div>
               </div>
 
-              <div className="contact-details">
+              {/* <div className="contact-details">
                 <div className="contact-item">
                   <h4>Call us</h4>
                   <p>+91 9445958426</p>
                   <p>+91 9790958426</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
