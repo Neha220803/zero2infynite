@@ -48,8 +48,8 @@ const TestimonialsSection = () => {
       <Container>
         {/* Header Section */}
         <Row className="mb-5">
-          <Col className="text-center">
-            <h2 className="section-title">What Our Students Say</h2>
+          <Col className="text-center w-100">
+            <h2 className="section-title w-100">What Our Students Say</h2>
             <p className="section-subtitle">
               Hear from cybersecurity professionals who transformed their
               careers through our comprehensive training programs
@@ -124,7 +124,7 @@ const TestimonialsSection = () => {
         <Row className="mt-5">
           <Col>
             <Card className="cta-card">
-              <Card.Body className="cta-body">
+              <Card.Body className="cta-body text-white">
                 <h3 className="cta-title">Ready to Transform Your Career?</h3>
                 <p className="cta-subtitle">
                   Join thousands of professionals who have successfully launched

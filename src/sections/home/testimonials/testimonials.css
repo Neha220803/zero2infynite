@@ -143,36 +143,36 @@
 
 /* CTA Section Styles */
 .cta-card {
-    border: none;
-    color: white;
-    text-align: center;
-    background: linear-gradient(135deg, rgb(0, 45, 167), #4169E1);
-    border-radius: 20px;
+    border: none !important;
+    color: white !important;
+    text-align: center !important;
+    background: linear-gradient(135deg, rgb(0, 45, 167), #4169E1) !important;
+    border-radius: 20px !important;
 }
 
 .cta-body {
-    padding: 3rem;
+    padding: 3rem !important;
 }
 
 .cta-title {
-    font-size: 2.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-size: 2.25rem !important;
+    font-weight: bold !important;
+    margin-bottom: 1rem !important;
 }
 
 .cta-subtitle {
-    font-size: 1.125rem;
-    opacity: 0.9;
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
+    font-size: 1.125rem !important;
+    opacity: 0.9 !important;
+    max-width: 600px !important;
+    margin: 0 auto 2rem auto !important;
 }
 
 .cta-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 @media (min-width: 576px) {
@@ -182,37 +182,37 @@
 }
 
 .cta-primary {
-    background-color: white;
-    color: rgb(0, 45, 167);
-    border: none;
-    border-radius: 50px;
-    padding: 0.75rem 2rem;
-    font-weight: bold;
-    font-size: 1.125rem;
-    transition: all 0.3s ease;
+    background-color: white !important;
+    color: rgb(0, 45, 167) !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 0.75rem 2rem !important;
+    font-weight: bold !important;
+    font-size: 1.125rem !important;
+    transition: all 0.3s ease !important;
 }
 
 .cta-primary:hover {
-    background-color: #f8f9fa;
-    color: rgb(0, 45, 167);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    background-color: #f8f9fa !important;
+    color: rgb(0, 45, 167) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3) !important;
 }
 
 .cta-secondary {
-    border: 2px solid white;
-    color: white;
-    border-radius: 50px;
-    padding: 0.75rem 2rem;
-    font-weight: bold;
-    font-size: 1.125rem;
-    transition: all 0.3s ease;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 50px !important;
+    padding: 0.75rem 2rem !important;
+    font-weight: bold !important;
+    font-size: 1.125rem !important;
+    transition: all 0.3s ease !important;
 }
 
 .cta-secondary:hover {
-    background-color: white;
-    color: rgb(0, 45, 167);
-    border-color: white;
+    background-color: white !important;
+    color: rgb(0, 45, 167) !important;
+    border-color: white !important;
 }
 
 /* Stats Section Styles */

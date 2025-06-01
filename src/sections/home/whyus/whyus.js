@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../whyus/whyus.css";
+import "./whyus.css";
 
 // Icons (adjust if you have specific ones)
 import trainerIcon from "../../../assets/icons/whyus/icon1.svg";
@@ -26,6 +26,7 @@ const WhyUs = () => {
       description:
         "Stay ahead with training based on real-time industry standards and use cases.",
       img: trainerIcon,
+      colorClass: "red-filter",
     },
     {
       id: 2,
@@ -33,6 +34,7 @@ const WhyUs = () => {
       description:
         "Focused lab sessions and live projects to build real-world skills.",
       img: handsOnIcon,
+      colorClass: "blue-filter",
     },
     {
       id: 3,
@@ -40,6 +42,7 @@ const WhyUs = () => {
       description:
         "Learn from certified professionals with years of domain experience.",
       img: clockIcon,
+      colorClass: "grey-filter",
     },
     {
       id: 4,
@@ -47,6 +50,7 @@ const WhyUs = () => {
       description:
         "100% assistance for clearing global certifications with mock tests & prep.",
       img: moneyIcon,
+      colorClass: "green-filter",
     },
     {
       id: 5,
@@ -54,6 +58,7 @@ const WhyUs = () => {
       description:
         "Weekend, weekday, and fast-track batches to suit your schedule.",
       img: labIcon,
+      colorClass: "yellow-filter",
     },
     {
       id: 6,
@@ -61,13 +66,14 @@ const WhyUs = () => {
       description:
         "Get career guidance, resume building, and job referrals after course completion.",
       img: interviewIcon,
+      colorClass: "orange-filter",
     },
   ];
 
   return (
     <div className="why-us-container">
-      <div className="text-center mb-5">
-        <h2 className="section-titl">
+      <div className="text-center  mb-5">
+        <h2 className="section-title w-100">
           Why to <span className="highlight">Choose Us</span> ?
         </h2>
         <p className="section-description">
@@ -94,7 +100,7 @@ const WhyUs = () => {
                   <img
                     src={feature.img}
                     alt={feature.title}
-                    className="feature-icon"
+                    className={`feature-icon ${feature.colorClass}`}
                   />
                 </div>
                 <h3 className="feature-title">{feature.title}</h3>

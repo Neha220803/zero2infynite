@@ -1,3 +1,5 @@
+/* Your existing CSS plus these filter classes */
+
 .why-us-container {
     padding: 60px 0;
     background-color: #fff;
@@ -8,6 +10,7 @@
     font-weight: 600;
     margin-bottom: 15px;
     text-align: center;
+    color: #000;
 }
 
 .section-description {
@@ -68,6 +71,31 @@
     transition: all 0.3s ease;
 }
 
+/* Color filter classes for SVG icons */
+.red-filter {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(99%) saturate(7404%) hue-rotate(4deg) brightness(95%) contrast(118%);
+}
+
+.blue-filter {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(92%) saturate(1746%) hue-rotate(201deg) brightness(93%) contrast(94%);
+}
+
+.grey-filter {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.green-filter {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(90%) contrast(150%);
+}
+
+.yellow-filter {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(86%) saturate(2529%) hue-rotate(3deg) brightness(85%) contrast(140%);
+}
+
+.orange-filter {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(96%) saturate(2175%) hue-rotate(5deg) brightness(101%) contrast(101%);
+}
+
 .feature-title {
     font-size: 18px;
     font-weight: 600;
@@ -85,15 +113,6 @@
 
 .feature-card:hover .feature-description {
     color: #444;
-}
-
-.section-title {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #000;
-    /* Ensure the default text is black */
 }
 
 .text-primary {
