@@ -68,7 +68,7 @@ const WhyUs = () => {
     <div className="why-us-container">
       <div className="text-center mb-5">
         <h2 className="section-titl">
-          Why to <span className="text-primary">Choose Us</span> ?
+          Why to <span className="highlight">Choose Us</span> ?
         </h2>
         <p className="section-description">
           A choice that makes a big difference in your career. Zero to Infinite

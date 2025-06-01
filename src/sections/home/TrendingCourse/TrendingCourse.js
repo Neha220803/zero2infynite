@@ -30,7 +30,7 @@ const courses = [
   },
   {
     title: "ECIH",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Security_icon.png",
+    logo: chfi,
     category: "EC-Council",
   },
   {
@@ -40,7 +40,7 @@ const courses = [
   },
   {
     title: "CASE Java",
-    logo: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+    logo: "https://www.afralti.org/wp-content/uploads/2020/08/CASE.png",
     category: "EC-Council",
   },
 
@@ -52,12 +52,12 @@ const courses = [
   },
   {
     title: "Pen Testing",
-    logo: "https://cdn-icons-png.flaticon.com/512/8115/8115616.png",
+    logo: "https://cdn-icons-png.freepik.com/256/16196/16196553.png?semt=ais_hybrid",
     category: "Custom",
   },
   {
     title: "Cyber Diploma",
-    logo: "https://cdn-icons-png.flaticon.com/512/3135/3135823.png",
+    logo: "https://cdn-icons-png.flaticon.com/512/10484/10484458.png",
     category: "Custom",
   },
   {
@@ -72,12 +72,12 @@ const courses = [
   },
   {
     title: "Networking",
-    logo: "https://cdn-icons-png.flaticon.com/512/1048/1048948.png",
+    logo: "https://cdn-icons-png.flaticon.com/512/3786/3786085.png",
     category: "Custom",
   },
   {
     title: "Cloud Computing",
-    logo: "https://cdn-icons-png.flaticon.com/512/4144/4144374.png",
+    logo: "https://cdn-icons-png.flaticon.com/512/4319/4319147.png",
     category: "Custom",
   },
   {
@@ -86,8 +86,8 @@ const courses = [
     category: "Custom",
   },
   {
-    title: "Full Stack Web Dev",
-    logo: "https://cdn-icons-png.flaticon.com/512/8090/8090406.png",
+    title: "Full Stack Web Development",
+    logo: "https://cdn-icons-png.flaticon.com/512/5433/5433706.png",
     category: "Custom",
   },
   {

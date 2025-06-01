@@ -8,6 +8,7 @@ import ContactUsHomeComp from "../sections/home/contact-us/ContactUs";
 import AboutCompanySection from "../sections/home/about-company/AboutCompany";
 import TrendingCourses from "../sections/home/TrendingCourse/TrendingCourse";
 import CyberDiploma from "../sections/home/diploma/cyber_diploma";
+import HorizonhtalTestimonial from "../sections/home/new-testimonial/HorizonhtalTestimonial";
 
 const Homepage = () => {
   return (
@@ -20,6 +21,7 @@ const Homepage = () => {
       <WhyUs />
 
       <TestimonialsSection />
+      {/* <HorizonhtalTestimonial /> */}
       <CyberDiploma />
       <ContactUsHomeComp />
     </div>
