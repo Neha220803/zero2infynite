@@ -27,6 +27,7 @@ const WhyUs = () => {
         "Stay ahead with training based on real-time industry standards and use cases.",
       img: trainerIcon,
       colorClass: "red-filter",
+      hoverColor: "#dc3545",
     },
     {
       id: 2,
@@ -35,6 +36,7 @@ const WhyUs = () => {
         "Focused lab sessions and live projects to build real-world skills.",
       img: handsOnIcon,
       colorClass: "blue-filter",
+      hoverColor: "#007bff",
     },
     {
       id: 3,
@@ -43,6 +45,7 @@ const WhyUs = () => {
         "Learn from certified professionals with years of domain experience.",
       img: clockIcon,
       colorClass: "grey-filter",
+      hoverColor: "#6c757d",
     },
     {
       id: 4,
@@ -51,6 +54,7 @@ const WhyUs = () => {
         "100% assistance for clearing global certifications with mock tests & prep.",
       img: moneyIcon,
       colorClass: "green-filter",
+      hoverColor: "#198754",
     },
     {
       id: 5,
@@ -59,6 +63,7 @@ const WhyUs = () => {
         "Weekend, weekday, and fast-track batches to suit your schedule.",
       img: labIcon,
       colorClass: "yellow-filter",
+      hoverColor: "#ffc107",
     },
     {
       id: 6,
@@ -67,13 +72,14 @@ const WhyUs = () => {
         "Get career guidance, resume building, and job referrals after course completion.",
       img: interviewIcon,
       colorClass: "orange-filter",
+      hoverColor: "#fd7e14",
     },
   ];
 
   return (
     <div className="why-us-container">
-      <div className="text-center  mb-5">
-        <h2 className="section-title w-100">
+      <div className="text-center mb-5">
+        <h2 className="section-title -100">
           Why to <span className="highlight">Choose Us</span> ?
         </h2>
         <p className="section-description">
@@ -88,7 +94,7 @@ const WhyUs = () => {
           {featuresData.map((feature) => (
             <div className="col-md-4 mb-4" key={feature.id}>
               <div
-                className="feature-card"
+                className={`feature-card ${feature.colorClass}-card`}
                 onMouseEnter={(e) =>
                   e.currentTarget.classList.add("hover-effect")
                 }

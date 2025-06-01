@@ -1,172 +1,158 @@
-import React from "react";
-import { Container, Card, Col, Row, Button } from "react-bootstrap";
-import { FaStar, FaArrowRight } from "react-icons/fa";
-import "./testimonials.css";
+import React, { useRef } from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import "./testimonials.css"; // Import the external CSS file
 
-const testimonials = [
-  {
-    id: 1,
-    text: "The cybersecurity program exceeded my expectations. The hands-on labs and real-world scenarios helped me develop practical skills that I use daily in my role as a Security Analyst.",
-    name: "Jocelyn Lubin",
-    role: "Security Analyst",
-  },
-  {
-    id: 2,
-    text: "The instructors were incredibly knowledgeable and supportive. The course material was comprehensive and up-to-date with current industry trends. I landed my dream job right after completion.",
-    name: "Sarah Johnson",
-    role: "Cybersecurity Engineer",
-  },
-  {
-    id: 3,
-    text: "Zero2Infynite's training program gave me a solid foundation in cybersecurity fundamentals. The mock CTF challenges were particularly helpful in developing my problem-solving skills.",
-    name: "Michael Chen",
-    role: "Penetration Tester",
-  },
-  {
-    id: 4,
-    text: "As someone transitioning into cybersecurity, this program provided the perfect balance of theory and practical experience. The mentorship support was invaluable.",
-    name: "Emily Rodriguez",
-    role: "Security Consultant",
-  },
-  {
-    id: 5,
-    text: "The certification preparation modules were excellent. I passed my Security+ exam on the first attempt thanks to the targeted study materials and practice tests.",
-    name: "David Thompson",
-    role: "IT Security Specialist",
-  },
-  {
-    id: 6,
-    text: "What sets this program apart is the focus on real-world scenarios and incident response. I now feel confident handling security incidents in my SOC role.",
-    name: "Jessica Williams",
-    role: "SOC Analyst",
-  },
-];
+const TestimonialSection = () => {
+  const testimonials = [
+    {
+      id: 1,
+      title: "Exceptional Service",
+      content:
+        "Experience the ultimate in luxury living with our premium services.",
+    },
+    {
+      id: 2,
+      title: "Modern Design",
+      content: "Modern design meets timeless elegance in every detail.",
+    },
+    {
+      id: 3,
+      title: "Luxury Redefined",
+      content: "Indulge in a home that redefines luxury and comfort.",
+    },
+    {
+      id: 4,
+      title: "Premium Quality",
+      content:
+        "Experience the ultimate in luxury living with unmatched quality.",
+    },
+    {
+      id: 5,
+      title: "Timeless Elegance",
+      content:
+        "Modern design meets timeless elegance in our exclusive collection.",
+    },
+    {
+      id: 6,
+      title: "Ultimate Comfort",
+      content: "Indulge in a home that redefines luxury and ultimate comfort.",
+    },
+    {
+      id: 7,
+      title: "Refined Living",
+      content:
+        "Experience the ultimate in luxury living with refined sophistication.",
+    },
+    {
+      id: 8,
+      title: "Sophisticated Design",
+      content:
+        "Modern design meets timeless elegance with sophisticated touches.",
+    },
+    {
+      id: 9,
+      title: "Luxury Experience",
+      content: "Indulge in a home that redefines luxury living experience.",
+    },
+    {
+      id: 10,
+      title: "Perfect Harmony",
+      content: "Experience the ultimate in luxury living with perfect harmony.",
+    },
+  ];
 
-const TestimonialsSection = () => {
+  const slideRefs = useRef([]);
+
+  // Custom hook to handle scroll-based animations
+  const useScrollAnimation = () => {
+    React.useEffect(() => {
+      const handleScroll = () => {
+        slideRefs.current.forEach((slide, index) => {
+          if (!slide) return;
+
+          const rect = slide.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          // Calculate progress based on scroll position
+          const progress = Math.max(
+            0,
+            Math.min(1, (windowHeight - rect.top) / windowHeight)
+          );
+
+          // Don't animate the last slide
+          if (index === testimonials.length - 1) {
+            slide.style.opacity = "1";
+            slide.style.transform = "scale(1)";
+            return;
+          }
+
+          // Apply fade and scale based on scroll progress
+          if (rect.top <= 0 && rect.bottom > 0) {
+            // Slide is sticky at top
+            const fadeProgress = Math.max(
+              0,
+              Math.min(1, Math.abs(rect.top) / windowHeight)
+            );
+            const opacity = 1 - fadeProgress;
+            const scale = 1 - fadeProgress * 0.4; // Scale from 1 to 0.6
+
+            slide.style.opacity = opacity;
+            slide.style.transform = `scale(${scale})`;
+          } else if (rect.top > 0) {
+            // Slide is coming into view
+            slide.style.opacity = "1";
+            slide.style.transform = "scale(1)";
+          }
+        });
+      };
+
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      handleScroll(); // Initial call
+
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+  };
+
+  useScrollAnimation();
+
+  React.useEffect(() => {
+    // Component initialization if needed
+  }, []);
+
   return (
-    <div className="testimonials-section">
-      <Container>
-        {/* Header Section */}
-        <Row className="mb-5">
-          <Col className="text-center w-100">
-            <h2 className="section-title w-100">What Our Students Say</h2>
-            <p className="section-subtitle">
-              Hear from cybersecurity professionals who transformed their
-              careers through our comprehensive training programs
-            </p>
-          </Col>
-        </Row>
-
-        {/* Main Content: Testimonials + Video */}
-        <Row className="main-content mb-5">
-          {/* Testimonials Column */}
-          <Col lg={7} md={6}>
-            <div className="testimonials-container">
-              <Row className="g-3">
-                {testimonials.map((testimonial) => (
-                  <Col md={6} key={testimonial.id}>
-                    <Card className="testimonial-card">
-                      <Card.Body className="testimonial-body">
-                        {/* Star Rating */}
-                        <div className="star-rating">
-                          {[...Array(5)].map((_, index) => (
-                            <FaStar key={index} className="star-icon" />
-                          ))}
-                        </div>
-
-                        {/* Testimonial Text */}
-                        <Card.Text className="testimonial-text">
-                          "{testimonial.text}"
-                        </Card.Text>
-
-                        {/* Author Info */}
-                        <div className="author-info">
-                          <div className="author-avatar">
-                            {testimonial.name.charAt(0)}
-                          </div>
-                          <div className="author-details">
-                            <h6 className="author-name">{testimonial.name}</h6>
-                            <small className="author-role">
-                              {testimonial.role}
-                            </small>
-                          </div>
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                ))}
-              </Row>
-            </div>
-          </Col>
-
-          {/* Video Column */}
-          <Col lg={5} md={6}>
-            <div className="video-section">
-              <h3 className="video-title py-2 ">See Our Success Stories</h3>
-              <p className="video-subtitle">
-                Watch how our students transformed their careers in
-                cybersecurity
-              </p>
-              <div className="video-container">
-                <iframe
-                  className="youtube-video"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="Zero2Infynite Success Stories"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+    <Container className="mt-5">
+      <Row className="text-center">
+        <h2>Hear it from our clients</h2>
+      </Row>
+      <Row>
+        <Col className="bg-primary">
+          <div className="testimonial-stack-viewport">
+            {testimonials.map((testimonial, index) => (
+              <div key={testimonial.id} className="testimonial-frame-holder">
+                <Card
+                  className="testimonial-slide-panel border-0"
+                  ref={(el) => (slideRefs.current[index] = el)}
+                >
+                  <Card.Body className="d-flex flex-column justify-content-end h-100 p-0">
+                    <Card.Title
+                      as="h2"
+                      className="display-5 fw-bold mb-3 text-dark"
+                    >
+                      {testimonial.title}
+                    </Card.Title>
+                    <Card.Text className="fs-5 text-muted lh-base">
+                      {testimonial.content}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
               </div>
-            </div>
-          </Col>
-        </Row>
-
-        {/* CTA Section */}
-        <Row className="mt-5">
-          <Col>
-            <Card className="cta-card">
-              <Card.Body className="cta-body text-white">
-                <h3 className="cta-title">Ready to Transform Your Career?</h3>
-                <p className="cta-subtitle">
-                  Join thousands of professionals who have successfully launched
-                  their cybersecurity careers with Zero2Infynite
-                </p>
-                <div className="cta-buttons">
-                  <Button className="cta-primary">
-                    Start Your Journey Today <FaArrowRight className="ms-2" />
-                  </Button>
-                  <Button variant="outline-light" className="cta-secondary">
-                    View Course Catalog
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-
-        {/* Stats Section */}
-        <Row className="stats-section">
-          <Col md={4}>
-            <div className="stat-item">
-              <h2 className="stat-number">95%</h2>
-              <p className="stat-label">Job Placement Rate</p>
-            </div>
-          </Col>
-          <Col md={4}>
-            <div className="stat-item">
-              <h2 className="stat-number">500+</h2>
-              <p className="stat-label">Graduates Placed</p>
-            </div>
-          </Col>
-          <Col md={4}>
-            <div className="stat-item">
-              <h2 className="stat-number">4.9/5</h2>
-              <p className="stat-label">Average Rating</p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+            ))}
+          </div>
+        </Col>
+        <Col>Hi</Col>
+      </Row>
+    </Container>
   );
 };
 
-export default TestimonialsSection;
+export default TestimonialSection;
