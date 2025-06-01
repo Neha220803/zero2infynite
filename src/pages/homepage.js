@@ -8,6 +8,7 @@ import ContactUsHomeComp from "../sections/home/contact-us/ContactUs";
 import AboutCompanySection from "../sections/home/about-company/AboutCompany";
 import TrendingCourses from "../sections/home/TrendingCourse/TrendingCourse";
 import CyberDiploma from "../sections/home/diploma/cyber_diploma";
+import TestimonialPage from "./testimonialPage";
 
 const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ const Homepage = () => {
       <TrendingCourses />
       <WhoWe />
       <WhyUs />
+
 
       <TestimonialsSection />
       <CyberDiploma />
