@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.620f7e14.css",
-    "main.js": "/zero2infynite/static/js/main.a2b4e6a2.js",
+    "main.css": "/zero2infynite/static/css/main.553a5331.css",
+    "main.js": "/zero2infynite/static/js/main.47c85df5.js",
+    "static/media/testibg.jpg": "/zero2infynite/static/media/testibg.0f0b364b1176a6244439.jpg",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
     "static/media/headerbg1.mp4": "/zero2infynite/static/media/headerbg1.0bd47a2d6ffbabec2081.mp4",
@@ -45,11 +46,11 @@
     "static/media/icon6.svg": "/zero2infynite/static/media/icon6.8c0d68db9b8d24f98bab0de4b38bb0ee.svg",
     "index.html": "/zero2infynite/index.html",
     "static/media/akar-icons_book.svg": "/zero2infynite/static/media/akar-icons_book.4ac1c9e4e2c02517ebae04948160d252.svg",
-    "main.620f7e14.css.map": "/zero2infynite/static/css/main.620f7e14.css.map",
-    "main.a2b4e6a2.js.map": "/zero2infynite/static/js/main.a2b4e6a2.js.map"
+    "main.553a5331.css.map": "/zero2infynite/static/css/main.553a5331.css.map",
+    "main.47c85df5.js.map": "/zero2infynite/static/js/main.47c85df5.js.map"
   },
   "entrypoints": [
-    "static/css/main.620f7e14.css",
-    "static/js/main.a2b4e6a2.js"
+    "static/css/main.553a5331.css",
+    "static/js/main.47c85df5.js"
   ]
 }
