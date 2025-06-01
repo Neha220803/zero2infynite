@@ -7,6 +7,7 @@ import TestimonialsSection from "../sections/home/testimonials/testimonials";
 import ContactUsHomeComp from "../sections/home/contact-us/ContactUs";
 import AboutCompanySection from "../sections/home/about-company/AboutCompany";
 import TrendingCourses from "../sections/home/TrendingCourse/TrendingCourse";
+import CyberDiploma from "../sections/home/diploma/cyber_diploma";
 
 const Homepage = () => {
   return (
@@ -19,6 +20,7 @@ const Homepage = () => {
       <WhyUs />
 
       <TestimonialsSection />
+      <CyberDiploma />
       <ContactUsHomeComp />
     </div>
   );
