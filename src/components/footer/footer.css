@@ -2,3 +2,15 @@
     width: 24px !important;
     height: auto !important;
 }
+
+#whatsapp-icon {
+    background-color: #25d366 !important;
+    color: #FFF !important;
+    border-radius: 50% !important;
+    text-align: center !important;
+    padding: 1px !important;
+}
+
+.right-margin {
+    border-right: 2px solid white !important;
+}

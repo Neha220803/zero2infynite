@@ -52,6 +52,7 @@ const ContactUsHomeComp = () => {
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
+            className="g-map w-100 h-100"
           ></iframe>
         </div>
       </div>

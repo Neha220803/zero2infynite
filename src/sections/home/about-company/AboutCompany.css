@@ -1,0 +1,99 @@
+/* AboutCompanySection.css */
+
+.about-company-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.company-title {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.company-description {
+    margin-top: 1rem;
+}
+
+.why-choose-title {
+    margin-top: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.success-stories-section {
+    height: 473px;
+    /* overflow: hidden !important;
+    width: 20px !important; */
+}
+
+.indi-succ-col {
+    border-radius: 98px !important;
+}
+
+.success-stories-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.success-story-col {
+    text-align: center;
+}
+
+.success-story-col.pink-bg {
+    background-color: #FFB6C1;
+}
+
+.success-story-col.gray-bg {
+    background-color: #D3D3D3;
+}
+
+.success-story-col.yellow-bg {
+    background-color: #FFD700;
+}
+
+.avatar-circle {
+    /* width: 80px; */
+    /* height: 80px; */
+    /* border-radius: 50%; */
+    margin: 0 auto 0.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+
+    /* height: 199px; */
+    /* left: 0%; */
+    /* right: 68.58%; */
+    /* top: 156px; */
+
+    border-radius: 76px 76px 0px 0px !important;
+}
+
+.avatar-image {
+    width: 100% !important;
+    /* height: 60px; */
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.student-name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.student-role {
+    color: #6c757d;
+}
+
+.view-stories-button {
+    background-color: #4285f4;
+    border-color: #4285f4;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-top: 1rem;
+}
+
+.button-container {
+    text-align: center;
+}

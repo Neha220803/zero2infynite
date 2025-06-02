@@ -7,6 +7,7 @@ import {
   FaFacebookF,
   FaXTwitter,
   FaLinkedinIn,
+  FaFacebook,
 } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -63,13 +64,13 @@ const SimpleNavbar = () => {
               href="https://www.instagram.com/zero2infynite/"
               className="me-3 text-white"
             >
-              <FaInstagram />
+              <FaInstagram size={25} id="insta-icon" />
             </a>
             <a
               href="https://www.facebook.com/Zero2Infynite/"
               className="me-3 text-white"
             >
-              <FaFacebookF />
+              <FaFacebook size={25} id="fb-icon" />
             </a>
             {/* <a href="#" className="me-3 text-white">
               <FaXTwitter />
@@ -78,21 +79,21 @@ const SimpleNavbar = () => {
               href="https://www.linkedin.com/company/zero2infynite"
               className="me-3 text-white"
             >
-              <FaLinkedinIn />
+              <FaLinkedinIn size={25} id="linkedin-icon" />
             </a>
           </div>
           <div className="d-flex">
             <a
-              href="tel:+919087924334"
-              className="me-4 text-decoration-none text-white d-none d-md-flex"
-            >
-              <FaPhoneAlt className="me-1" /> +91 81110 00953
-            </a>
-            <a
               href="mailto:pradhan@zero2infynite.com"
-              className="text-decoration-none text-white"
+              className="text-decoration-none  align-items-center justify-content-center me-4 "
             >
               <MdEmail className="me-1" /> pradhan@zero2infynite.com
+            </a>
+            <a
+              href="tel:+919087924334"
+              className="text-decoration-none d-none d-md-flex align-items-center justify-content-center"
+            >
+              <FaPhoneAlt className="me-1" /> +91 81110 00953
             </a>
           </div>
         </Container>

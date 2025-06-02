@@ -1,8 +1,36 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import student1 from "../../../assets/images/avathar2.png";
+import "./AboutCompany.css";
 
 const AboutCompanySection = () => {
+  const successStories = [
+    {
+      id: 1,
+      name: "Akash M",
+      role: "Security Analyst",
+      company: "TASPro Technologies",
+      bgColor: "#FFB6C1", // Light pink
+      image: student1,
+    },
+    {
+      id: 2,
+      name: "Akash M",
+      role: "Security Analyst",
+      company: "TASPro Technologies",
+      bgColor: "#D3D3D3", // Light gray
+      image: student1,
+    },
+    {
+      id: 3,
+      name: "Akash M",
+      role: "Security Analyst",
+      company: "TASPro Technologies",
+      bgColor: "#FFD700", // Gold/Yellow
+      image: student1,
+    },
+  ];
+
   return (
     <Container className="my-5">
       <Row>
@@ -23,10 +51,10 @@ const AboutCompanySection = () => {
             industry experts, tailored to meet real-world demands. Whether
             you're a beginner or an experienced professional, our curriculum
             ensures you gain the technical expertise, critical thinking, and
-            practical skills needed to thrive in today’s threat landscape.
+            practical skills needed to thrive in today's threat landscape.
           </p>
           <p>
-            But we don’t stop at training. Our robust placement assistance
+            But we don't stop at training. Our robust placement assistance
             connects you with top employers, helping you land roles in
             penetration testing, security operations, compliance, cloud
             security, and more. Additionally, we offer professional
@@ -59,19 +87,40 @@ const AboutCompanySection = () => {
         </Col>
 
         {/* Right Side: Student Success Stories */}
-        <Col md={4}>
-          <h3 className="text-center fw-bold mb-4">Student Success Stories</h3>
+        <Col md={4} className="bg-primar">
+          <div className="success-stories-section ">
+            <h3 className="success-stories-title">Student Success Stories</h3>
+            {/* Top Row - 3 circular avatars */}
+            <Row className="bg-dar h-100">
+              {successStories.map((story) => (
+                <Col xs={4} key={story.id} className="p-1">
+                  <div
+                    style={{ backgroundColor: `${story.bgColor}` }}
+                    className="h-100 w-100 bg-dar indi-succ-col d-flex flex-column justify-content-around align-items-center"
+                  >
+                    <div className="">
+                      <h6 className="student-name">{story.name}</h6>
+                      <small className="student-role">{story.role}</small>
+                    </div>
 
-          <Card className="mb-3 text-center shadow">
-            <Card.Img variant="top" src={student1} alt="Student Akash" />
-            <Card.Body>
-              <Card.Title>Akash M</Card.Title>
-              <Card.Text>Security Analyst at TASPro Technologies</Card.Text>
-            </Card.Body>
-          </Card>
+                    <div className="bg-primar p-0">
+                      <img
+                        src={story.image}
+                        alt={story.name}
+                        className="avatar-image w-100"
+                      />
+                    </div>
 
-          <div className="text-center mt-3">
-            <Button variant="danger">View All Success Stories →</Button>
+                    <div>Hii</div>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+            <div className="button-container">
+              <Button className="view-stories-button">
+                View all success stories →
+              </Button>
+            </div>
           </div>
         </Col>
       </Row>

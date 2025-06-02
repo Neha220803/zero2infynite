@@ -8,7 +8,6 @@ import SimpleNavbar from "./components/nav/newNav";
 import AboutUsPage from "./pages/aboutUsPage";
 import InternshipPage from "./pages/internshipPage";
 import ServicesPage from "./pages/servicesPage";
-import TestimonialPage from "./pages/testimonialPage";
 import BlogPage from "./pages/blogPage";
 import IndividualCourses from "./pages/individualCourses";
 
@@ -33,7 +32,7 @@ function Layout() {
 
         <Route path="/services" element={<ServicesPage />} />
 
-        <Route path="/testimonial" element={<TestimonialPage />} />
+        {/* <Route path="/testimonial" element={<TestimonialPage />} /> */}
 
         <Route path="/blogs" element={<BlogPage />} />
       </Routes>

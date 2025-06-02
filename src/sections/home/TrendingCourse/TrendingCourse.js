@@ -1,7 +1,8 @@
 import React from "react";
 import "./TrendingCourse.css"; // Import the custom styles
 import ceh from "../../../assets/images/ec-courses/ceh.png";
-import chfi from "../../../assets/images/ec-courses/ecih.png";
+import chfi from "../../../assets/images/ec-courses/chfi.png";
+import ecih from "../../../assets/images/ec-courses/ecih.png";
 import cpent from "../../../assets/images/ec-courses/cpent.png";
 import cnd from "../../../assets/images/ec-courses/cnd.png";
 import { Container } from "react-bootstrap";
@@ -30,7 +31,7 @@ const courses = [
   },
   {
     title: "ECIH",
-    logo: chfi,
+    logo: ecih,
     category: "EC-Council",
   },
   {

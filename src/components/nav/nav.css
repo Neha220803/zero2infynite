@@ -9,15 +9,25 @@
 }
 
 .top-bar a {
-  color: #275EAE !important;
-  font-size: 14px;
+  color: #193866 !important;
+  font-size: 19px;
   font-weight: 500;
   transition: color 0.3s ease;
   text-decoration: none;
 }
 
-.top-bar a:hover {
-  color: #275EAE !important;
+#insta-icon {
+  background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045) !important;
+  border-radius: 30% !important;
+  color: white !important;
+}
+
+#fb-icon {
+  color: #1877F2;
+}
+
+#linkedin-icon {
+  color: #0A66C2;
 }
 
 .social-icons a {
