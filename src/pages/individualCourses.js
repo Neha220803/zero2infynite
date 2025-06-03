@@ -6,19 +6,18 @@ import IndiCopurseFAQ from "../sections/individual-courses/faq/IndiCopurseFAQ";
 import IndiCorseSylabusComp from "../sections/individual-courses/syllabus/indiCorseSylabus";
 import TrainerProfileComp from "../sections/individual-courses/trainer/TrainerProfile";
 import CertificationsComp from "../sections/individual-courses/certifications/Certifications";
-import OpportunityComp from "../sections/individual-courses/opportunity/opportunity";
 
-const IndividualCourses = () => {
+const IndividualCourses = ({ courseType }) => {
   return (
     <div className="d-flex flex-column justify-content-start align-items-center py-2 gap-5">
-      <IndiCoureBasicInfo />
+      <IndiCoureBasicInfo courseType={courseType} />
       <NavSecondary />
-      <IndiCourseTableComp />
-      <IndiCorseSylabusComp />
-      <TrainerProfileComp />
-      <CertificationsComp />
-      <OpportunityComp />
-      <IndiCopurseFAQ />
+      <IndiCourseTableComp courseType={courseType} />
+      <IndiCorseSylabusComp courseType={courseType} />
+      <TrainerProfileComp courseType={courseType} />
+      <CertificationsComp courseType={courseType} />
+      {/* <OpportunityComp courseType={courseType} /> */}
+      <IndiCopurseFAQ courseType={courseType} />
     </div>
   );
 };

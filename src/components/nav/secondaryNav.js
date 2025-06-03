@@ -22,7 +22,7 @@ function NavSecondary() {
       "syllabus",
       "trainer",
       "certifications",
-      "opportunity",
+      // "opportunity",
       "faq",
     ];
 
@@ -116,9 +116,9 @@ function NavSecondary() {
 
               // When toggling sticky state, add a CSS class to body for spacing adjustments
               if (shouldBeSticky) {
-                document.body.classList.add('has-sticky-nav');
+                document.body.classList.add("has-sticky-nav");
               } else {
-                document.body.classList.remove('has-sticky-nav');
+                document.body.classList.remove("has-sticky-nav");
               }
             }
           }
@@ -137,7 +137,7 @@ function NavSecondary() {
     // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.body.classList.remove('has-sticky-nav');
+      document.body.classList.remove("has-sticky-nav");
     };
   }, [location, isSticky]);
 
@@ -194,58 +194,64 @@ function NavSecondary() {
       ref={navRef}
       className={`secondary-nav-container ${isSticky ? "sticky-active" : ""}`}
       style={{
-        willChange: 'transform',
-        transform: 'translateZ(0)', // Force hardware acceleration
-        backfaceVisibility: 'hidden' // Reduce flickering
+        willChange: "transform",
+        transform: "translateZ(0)", // Force hardware acceleration
+        backfaceVisibility: "hidden", // Reduce flickering
       }}
     >
       <Container>
         <Nav className="secondary-nav">
           <Nav.Link
-            className={`sec-nav-link ${activeTab === "overview" ? "sec-active" : ""
-              }`}
+            className={`sec-nav-link ${
+              activeTab === "overview" ? "sec-active" : ""
+            }`}
             onClick={() => handleTabClick("overview")}
           >
             Course Overview
           </Nav.Link>
           <Nav.Link
-            className={`sec-nav-link ${activeTab === "batches" ? "sec-active" : ""
-              }`}
+            className={`sec-nav-link ${
+              activeTab === "batches" ? "sec-active" : ""
+            }`}
             onClick={() => handleTabClick("batches")}
           >
             Upcoming Batches
           </Nav.Link>
           <Nav.Link
-            className={`sec-nav-link ${activeTab === "syllabus" ? "sec-active" : ""
-              }`}
+            className={`sec-nav-link ${
+              activeTab === "syllabus" ? "sec-active" : ""
+            }`}
             onClick={() => handleTabClick("syllabus")}
           >
             Syllabus
           </Nav.Link>
           <Nav.Link
-            className={`sec-nav-link ${activeTab === "trainer" ? "sec-active" : ""
-              }`}
+            className={`sec-nav-link ${
+              activeTab === "trainer" ? "sec-active" : ""
+            }`}
             onClick={() => handleTabClick("trainer")}
           >
             Trainer Profile
           </Nav.Link>
           <Nav.Link
-            className={`sec-nav-link ${activeTab === "certifications" ? "sec-active" : ""
-              }`}
+            className={`sec-nav-link ${
+              activeTab === "certifications" ? "sec-active" : ""
+            }`}
             onClick={() => handleTabClick("certifications")}
           >
             Certifications
           </Nav.Link>
-          <Nav.Link
+          {/* <Nav.Link
             className={`sec-nav-link ${activeTab === "opportunity" ? "sec-active" : ""
               }`}
             onClick={() => handleTabClick("opportunity")}
           >
             Opportunity
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link
-            className={`sec-nav-link ${activeTab === "faq" ? "sec-active" : ""
-              }`}
+            className={`sec-nav-link ${
+              activeTab === "faq" ? "sec-active" : ""
+            }`}
             onClick={() => handleTabClick("faq")}
           >
             FAQ

@@ -23,7 +23,17 @@ function Layout() {
         <Route path="/ec-council" element={<EcCounsilPages />} />
         <Route
           path="/ethical-hacking-training-in-chennai"
-          element={<IndividualCourses />}
+          element={<IndividualCourses courseType="CEH" />}
+        />
+
+        <Route
+          path="/ec-council/chfi"
+          element={<IndividualCourses courseType="CHFI" />}
+        />
+
+        <Route
+          path="/ec-council/cnd"
+          element={<IndividualCourses courseType="CND" />}
         />
 
         <Route path="/about" element={<AboutUsPage />} />

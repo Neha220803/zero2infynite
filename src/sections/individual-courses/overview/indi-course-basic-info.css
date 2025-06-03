@@ -9,6 +9,13 @@
     color: #275EAE !important;
 }
 
+.para-highlight {
+    font-size: 18px !important;
+    line-height: 27px !important;
+    font-weight: 700 !important;
+
+}
+
 .course-details-li-img {
     width: 25px !important;
     /* Adjust the size as needed */
@@ -23,7 +30,8 @@
     height: 43px; */
     border-radius: 10px;
     display: flex !important;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center !important;
     /* justify-content: space-between !important; */
     flex-direction: row;
     padding: 10px 16px;

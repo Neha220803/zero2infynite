@@ -2,26 +2,22 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Check2Circle } from "react-bootstrap-icons";
 import "./TrainerProfile.css";
+import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
 
-const TrainerProfileComp = () => {
-  const trainerQualities = [
-    "Our Trainers are real time trainers who completed certifications like CEH, OSCP+",
-    "Trainers with more than 3 years experience are handling sessions in Zero2infynite",
-    "Expert mentors deliver individualized coaching and career advice.",
-    "Patiently address and clarify students' critical doubts.",
-    "Provide individual attention to help each student work with cybersecurity tools and troubleshoots issues.",
-    "Trainers offer flexible scheduling to match students' availability.",
-  ];
+const TrainerProfileComp = ({ courseType = "CEH" }) => {
+  // Get course data based on courseType prop
+  const courseData = ecCouncilCourses[courseType];
+  const trainerData = courseData.trainerProfile;
 
   return (
     <section id="trainer" className="py-5">
       <Container>
         <Row className="justify-content-start mb-4">
-          <h2 className="indi-section-title mb-4">Trainer Profile</h2>
+          <h2 className="indi-section-title mb-4">{trainerData.title}</h2>
         </Row>
 
         <Row className="justify-content-start">
-          {trainerQualities.map((quality, index) => (
+          {trainerData.qualities.map((quality, index) => (
             <Row key={index} className="mb-3 text-start align-items-center">
               <Col xs="auto" className="pe-0">
                 <Check2Circle className="text-primary" size={20} />

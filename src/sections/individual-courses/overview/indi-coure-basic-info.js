@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
-import courseicon1 from "../../../assets/icons/certifications/akar-icons_book.svg";
-import courseicon2 from "../../../assets/icons/certifications/flowbite_profile-card-solid.svg";
-import courseicon3 from "../../../assets/icons/certifications/fluent_certificate-20-regular.svg";
-import courseicon4 from "../../../assets/icons/certifications/material-symbols_event-upcoming-outline-rounded.svg";
-import courseicon5 from "../../../assets/icons/certifications/material-symbols_lab-profile.svg";
-import courseicon6 from "../../../assets/icons/certifications/mdi_faq.svg";
-import courseicon7 from "../../../assets/icons/certifications/whyz2i.svg";
 import callerIcon from "../../../assets/icons/course/call.svg";
-import courseImg from "../../../assets/images/employee-training.png";
 import CertificationImg from "../../../assets/images/indi_course/certirfication.png";
 import { Container, Row, Col, Card, CardImg, CardBody } from "react-bootstrap";
 import "./indi-course-basic-info.css";
@@ -18,114 +10,106 @@ import {
   BookHalf,
   BriefcaseFill,
   Calendar2Check,
-  ChatLeftText,
   CurrencyDollar,
-  PersonLinesFill,
   Tools,
-  Trophy,
 } from "react-bootstrap-icons";
-import { BiCertification } from "react-icons/bi";
 import { PiCertificate } from "react-icons/pi";
 import { SiGoogleclassroom } from "react-icons/si";
 import IndiCoursePopUPFormComp from "../form/IndiCoursePopUPForm";
+import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
 
-const IndiCoureBasicInfo = () => {
+const IndiCourseBasicInfo = ({ courseType }) => {
   const [modalShow, setModalShow] = useState(false);
+
+  // Get course data based on courseType prop
+  const courseData = ecCouncilCourses[courseType];
+
+  // Icon mapping for dynamic rendering
+  const iconMap = {
+    GiTeacher,
+    BookHalf,
+    Calendar2Check,
+    Award,
+    BriefcaseFill,
+    Tools,
+    SiGoogleclassroom,
+    CurrencyDollar,
+    PiCertificate,
+  };
+
+  // Helper function to render text with highlights
+  const renderTextWithHighlights = (text, highlights = []) => {
+    let processedText = text;
+
+    highlights.forEach((highlight) => {
+      const regex = new RegExp(
+        `(${highlight.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`,
+        "gi"
+      );
+      processedText = processedText.replace(
+        regex,
+        '<span class="para-highlight">$1</span>'
+      );
+    });
+
+    return <span dangerouslySetInnerHTML={{ __html: processedText }} />;
+  };
+
+  // Helper function to chunk features into groups of 3
+  const chunkArray = (array, size) => {
+    const chunks = [];
+    for (let i = 0; i < array.length; i += size) {
+      chunks.push(array.slice(i, i + size));
+    }
+    return chunks;
+  };
+
+  const featureChunks = chunkArray(courseData.features, 3);
+
   return (
     <div>
       <Container id="overview" className="indi-course-basic-info-container">
         <Row>
           <Col sm={12} xs={12} lg={8}>
             <div className="indi-course-left-wrap">
-              <h1 className="indi-section-title">
-                Certified Ethical Hacking Course in Chennai
-              </h1>
+              <h1 className="indi-section-title">{courseData.title}</h1>
+
               <div className="d-flex flex-md-row flex-column gap-3 mb-4">
-                <div className="best-seller-button">Very Famous</div>
+                <div className="best-seller-button">{courseData.badge}</div>
                 <div className="course-rating">
-                  <div className="d-flex">
-                    {[...Array(5)].map((_, index) => (
+                  <div className="bg-primar d-flex align-items-center justify-content-center">
+                    {[...Array(courseData.rating.stars)].map((_, index) => (
                       <FaStar key={index} className="stars" />
                     ))}
                   </div>
-                  <div className="reviews d-flex">
-                    Top Rating | Read Reviews
-                  </div>
+                  <div className="reviews d-flex">{courseData.rating.text}</div>
                 </div>
               </div>
+
               <p className="indi-course-description">
-                Are you looking for an{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  affordable Certified Ethical Hacking course
-                </strong>{" "}
-                or international certifications such as EC-Council or CompTIA to{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  secure a job, boost your salary, or advance your career in the
-                  cybersecurity domain?
-                </strong>{" "}
-                Or are you simply seeking practical, knowledge-based training to
-                protect yourself in the digital world?
+                {renderTextWithHighlights(
+                  courseData.description.intro,
+                  courseData.highlights
+                )}
               </p>
+
               <p className="indi-course-description text-primary pointer">
                 <a
                   style={{ color: "#012356", cursor: "pointer" }}
-                  href="https://drive.google.com/file/d/1XrmWRk7hLaWaKvorNmpChxPRMZ33XHfL/view?usp=sharing"
+                  href={courseData.description.brochureLink.url}
                 >
-                  Click here to download the CEH brochure and syllabus
+                  {courseData.description.brochureLink.text}
                 </a>
               </p>
-              <p className="indi-course-description">
-                Zero2Infynite is here to{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  help you achieve your goals.
-                </strong>{" "}
-                We evaluate each student’s unique needs and provide personalized
-                guidance. Unlike typical institutes that stop at training,{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  we offer continuous support until you reach your goals.
-                </strong>{" "}
-                We are an{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  authorized EC-Council Accredited Training Center (ATC)
-                  partner.
-                </strong>
-              </p>
-              <p className="indi-course-description">
-                We take pride in our{" "}
-                <strong style={{ fontSize: "18px" }}>100% pass rate </strong>for
-                international certifications - something you may not get if you
-                purchase courses directly or through other providers.{" "}
-              </p>
-              <p className="indi-course-description">
-                Our trainers bring{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  real-world industry experience and also assist with job
-                  referrals.
-                </strong>{" "}
-                They have designed cybersecurity course syllabi for prestigious
-                institutions such as SRM Valliammai Engineering College, St.
-                Joseph’s College, and others. We also hold MOUs with top
-                colleges including VIT Chennai, St. Joseph’s, SRM, and VELS
-                University.{" "}
-              </p>{" "}
-              <p className="indi-course-description">
-                We have successfully{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  placed the majority of our students in the cybersecurity
-                  field.{" "}
-                </strong>
-                Additionally, we’ve{" "}
-                <strong style={{ fontSize: "18px" }}>
-                  {" "}
-                  helped experienced professionals transition into cybersecurity
-                </strong>{" "}
-                by carefully assessing and building on their existing skills.
-                We've also supported working cybersecurity professionals in
-                earning international certifications to boost their skills,
-                salaries, and career positions.
-              </p>
+
+              {courseData.description.aboutUs.map((paragraph, index) => (
+                <p key={index} className="indi-course-description">
+                  {renderTextWithHighlights(paragraph, courseData.highlights)}
+                </p>
+              ))}
             </div>
           </Col>
+
           <Col sm={12} xs={12} lg={4} className="mb-4">
             <Card className="indi-course-right-card">
               <CardImg src={CertificationImg} alt="course img" />
@@ -153,7 +137,7 @@ const IndiCoureBasicInfo = () => {
                       <div
                         className="d-flex justify-content-center mx-auto align-items-center call-us-bg-course mt-3"
                         onClick={() =>
-                          (window.location.href = "tel:+918111000953")
+                          (window.location.href = `tel:${courseData.contact.phone}`)
                         }
                       >
                         <div>
@@ -166,7 +150,7 @@ const IndiCoureBasicInfo = () => {
                         </div>
                         <div>
                           <div className="indi-number text-start">
-                            + 91 81110 00953
+                            {courseData.contact.phoneFormatted}
                           </div>
                         </div>
                       </div>
@@ -177,129 +161,64 @@ const IndiCoureBasicInfo = () => {
             </Card>
           </Col>
         </Row>
+
         <Row>
           <div className="course-details">
-            <Row>
-              <Col sm={4}>
-                <ul
-                  style={{ listStyle: "none", padding: 0 }}
-                  className="indi-course-facts"
-                >
-                  <li>
-                    <GiTeacher
-                      size={24}
-                      className="course-details-li-img"
-                      style={{ color: "#666666" }}
-                    />
-                    <p>Real time industry oriented training</p>
-                  </li>
-                  <li>
-                    <BookHalf
-                      size={24}
-                      className="course-details-li-img text-success"
-                    />
-                    <p>Updated syllabus</p>
-                  </li>
-                  <li>
-                    <Calendar2Check
-                      size={24}
-                      className="course-details-li-img "
-                      style={{ color: "#955EAE" }}
-                    />
-                    <p>Flexible Learning Modes</p>
-                  </li>
-                </ul>
-              </Col>
-              <Col sm={4}>
-                <ul
-                  style={{ listStyle: "none", padding: 0 }}
-                  className="indi-course-facts"
-                >
-                  <li>
-                    <Award
-                      size={24}
-                      className="course-details-li-img text-warning"
-                    />
-                    <p>100% Success Rate </p>
-                  </li>
-                  <li>
-                    <BriefcaseFill
-                      size={24}
-                      className="course-details-li-img "
-                      style={{ color: "#275EAE" }}
-                    />
-                    <p>Career Assistance & Job Referrals</p>
-                  </li>
-                  <li>
-                    <Tools
-                      size={24}
-                      className="course-details-li-img text-secondary"
-                    />
-                    <p>Hands-On Practical Training</p>
-                  </li>
-                </ul>
-              </Col>
-              <Col sm={4}>
-                <ul
-                  style={{ listStyle: "none", padding: 0 }}
-                  className="indi-course-facts"
-                >
-                  <li>
-                    <SiGoogleclassroom
-                      size={24}
-                      className="course-details-li-img text-danger"
-                    />
-                    <p>Free Demo sessions</p>
-                  </li>
-                  <li>
-                    <CurrencyDollar
-                      size={24}
-                      className="course-details-li-img text-success"
-                    />
-                    <p>Training that fits your budget</p>
-                  </li>
-                  <li>
-                    <PiCertificate
-                      size={24}
-                      className="course-details-li-img text-warning"
-                    />
-                    <p>International Certification Preparation</p>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
+            {featureChunks.map((chunk, chunkIndex) => (
+              <Row key={chunkIndex}>
+                {chunk.map((feature, featureIndex) => {
+                  const IconComponent = iconMap[feature.icon];
+                  return (
+                    <Col sm={4} key={featureIndex}>
+                      <ul
+                        style={{ listStyle: "none", padding: 0 }}
+                        className="indi-course-facts"
+                      >
+                        <li>
+                          <IconComponent
+                            size={24}
+                            className={`course-details-li-img ${
+                              feature.color.startsWith("text-")
+                                ? feature.color
+                                : ""
+                            }`}
+                            style={
+                              !feature.color.startsWith("text-")
+                                ? { color: feature.color }
+                                : {}
+                            }
+                          />
+                          <p>{feature.text}</p>
+                        </li>
+                      </ul>
+                    </Col>
+                  );
+                })}
+              </Row>
+            ))}
+
             <Row>
               <p className="indi-course-description">
-                Certified Ethical Hacking (CEH) from Zero2infynite offers
-                Ec-Council and Comptia Certification which will help to enter
-                into the cyber security domain. We are an authorized training
-                centre of Ec-council. The total cost of Ec-council certification
-                with training is 34000. You can also attend training for 17000.
-                Later you can pay the remaining amount and get the International
-                certification. This Certified Ethical Hacking course will help
-                you to enter in to all the cyber security domain like
+                {courseData.pricing.description}
               </p>
               <p className="indi-course-description">
                 <ol>
-                  <li>Cyber Security</li>
-                  <li>Auditing Vulnerability and penetration Testing </li>
-                  <li>SOC analyst</li>
-                  <li>Cloud security</li>
-                  <li>Malware analyst </li>
-                  <li> Cyber forensic expert </li>
-                  <li> IARM expert</li>
+                  {courseData.careerPaths.map((path, index) => (
+                    <li key={index}>{path}</li>
+                  ))}
                 </ol>
               </p>
+              <h3 className="text-secondary">
+                {courseData.additionalInfoHeading}
+              </h3>
               <p className="indi-course-description">
-                We will explain how each topic will help to gain knowledge in
-                specific domains along with realtime examples. Our Trainers
-                trained Cyber crime officers from various states, managers in IT
-                industry, College and school students.
+                {courseData.additionalInfo}
               </p>
             </Row>
           </div>
         </Row>
       </Container>
+
       <IndiCoursePopUPFormComp
         show={modalShow}
         onHide={() => setModalShow(false)}
@@ -308,4 +227,4 @@ const IndiCoureBasicInfo = () => {
   );
 };
 
-export default IndiCoureBasicInfo;
+export default IndiCourseBasicInfo;

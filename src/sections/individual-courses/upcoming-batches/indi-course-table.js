@@ -1,59 +1,78 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Table, Button, Col } from "react-bootstrap";
 import "./indi-course-table.css";
+import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
 
-const IndiCourseTableComp = () => {
-  const initialBatchSchedules = [
-    { type: "Weekend", days: "Saturday(Saturday - Sunday )", id: 1 },
-    { type: "Weekdays", days: "Monday (Monday - Friday)", id: 2 },
-    { type: "Weekdays", days: "Thursday (Monday - Friday)", id: 3 },
-    { type: "Weekend", days: "Saturday (Saturday - Sunday)", id: 4 },
-  ];
-
+const IndiCourseTableComp = ({ courseType = "CEH" }) => {
   const [batchSchedules, setBatchSchedules] = useState([]);
+
+  // Get course data based on courseType prop
+  const courseData = ecCouncilCourses[courseType];
+  const batchData = courseData.batchSchedule;
 
   useEffect(() => {
     const updateBatchDates = () => {
       const today = new Date();
-      const updatedSchedules = initialBatchSchedules.map((batch, index) => {
+      const updatedSchedules = batchData.batchTemplates.map((batch) => {
         const newDate = new Date(today);
-        newDate.setDate(today.getDate() + index * 2);
-        return { ...batch, date: newDate.toLocaleDateString("en-GB") };
+        newDate.setDate(today.getDate() + batch.dayOffset);
+        return {
+          ...batch,
+          date: newDate.toLocaleDateString("en-GB"),
+        };
       });
       setBatchSchedules(updatedSchedules);
     };
 
     updateBatchDates();
-    const interval = setInterval(updateBatchDates, 2 * 24 * 60 * 60 * 1000); // Update every 2 days
+
+    // Set up interval for automatic updates
+    const interval = setInterval(updateBatchDates, batchData.updateInterval);
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
+  }, [batchData]);
+
+  // Handler functions for button clicks
+  const handleCourseFees = (batchId) => {
+    console.log(`Course fees clicked for batch ${batchId}`);
+    // Add your course fees logic here
+  };
+
+  const handleCheckAvailability = (batchId) => {
+    console.log(`Check availability clicked for batch ${batchId}`);
+    // Add your availability check logic here
+  };
+
+  const handleCustomBatch = () => {
+    console.log("Custom batch request clicked");
+    // Add your custom batch logic here
+  };
+
+  const handleRequestBatch = () => {
+    console.log("Request batch clicked");
+    // Add your request batch logic here
+  };
 
   return (
     <Container id="batches" className="indi-course-table-container">
       <Row>
-        <h2 className="indi-section-title">
-          Upcoming Batches Schedule for Certified Ethical Hacking Training in
-          Chennai
-        </h2>
+        <h2 className="indi-section-title">{batchData.title}</h2>
       </Row>
+
       <Row>
-        <p className="indi-course-description">
-          Zero2infinite provides flexible timings to all our students. Here are
-          the Cyber Security training classes in Chennai schedule in our
-          branches. If this schedule doesn't match please let us know. We will
-          try to arrange appropriate timing based on your flexible timings.
-        </p>
+        <p className="indi-course-description">{batchData.description}</p>
       </Row>
+
       <Row>
         <div className="batch-schedule-table">
           <Table hover responsive className="batch-table">
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Mode</th>
-                <th>Days</th>
-                <th colSpan={2}>Actions</th>
+                {batchData.tableHeaders.map((header, index) => (
+                  <th key={index} colSpan={header === "Actions" ? 2 : 1}>
+                    {header}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
@@ -64,20 +83,26 @@ const IndiCourseTableComp = () => {
                   <td>{batch.days}</td>
                   <td>
                     <Button
-                      variant="outline-primary"
+                      variant={batchData.actionButtons.courseFees.variant}
                       size="sm"
-                      className="course-fees-btn"
+                      className={batchData.actionButtons.courseFees.className}
+                      onClick={() => handleCourseFees(batch.id)}
                     >
-                      Course Fees
+                      {batchData.actionButtons.courseFees.text}
                     </Button>
                   </td>
                   <td>
                     <Button
-                      variant="primary"
+                      variant={
+                        batchData.actionButtons.checkAvailability.variant
+                      }
                       size="sm"
-                      className="check-availability-btn"
+                      className={
+                        batchData.actionButtons.checkAvailability.className
+                      }
+                      onClick={() => handleCheckAvailability(batch.id)}
                     >
-                      Check Availability
+                      {batchData.actionButtons.checkAvailability.text}
                     </Button>
                   </td>
                 </tr>
@@ -86,13 +111,22 @@ const IndiCourseTableComp = () => {
           </Table>
         </div>
       </Row>
+
       <Row className="mt-4 mb-3">
         <Col className="d-flex justify-content-center gap-3">
-          <Button variant="outline-primary" className="batch-action-btn">
-            Can't find a batch you were looking for?
+          <Button
+            variant={batchData.bottomActions.customBatch.variant}
+            className={batchData.bottomActions.customBatch.className}
+            onClick={handleCustomBatch}
+          >
+            {batchData.bottomActions.customBatch.text}
           </Button>
-          <Button variant="primary" className="batch-action-btn">
-            Request Custom Batch
+          <Button
+            variant={batchData.bottomActions.requestBatch.variant}
+            className={batchData.bottomActions.requestBatch.className}
+            onClick={handleRequestBatch}
+          >
+            {batchData.bottomActions.requestBatch.text}
           </Button>
         </Col>
       </Row>
