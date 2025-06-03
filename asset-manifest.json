@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.d59b944b.css",
-    "main.js": "/zero2infynite/static/js/main.34efe131.js",
+    "main.css": "/zero2infynite/static/css/main.f2cdcf7e.css",
+    "main.js": "/zero2infynite/static/js/main.fa801925.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/zero2infynite/static/media/cnd.c1722f009078fb073627.png",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
@@ -17,6 +17,7 @@
     "static/media/ecih.png": "/zero2infynite/static/media/ecih.28e48125669e3a44f475.png",
     "static/media/avathar3.png": "/zero2infynite/static/media/avathar3.7febcef7453339fffcf2.png",
     "static/media/whowe1.jpg": "/zero2infynite/static/media/whowe1.0bf644c7557f0404ebfa.jpg",
+    "static/media/company-eg.png": "/zero2infynite/static/media/company-eg.802f121440afa369654c.png",
     "static/media/ceh.png": "/zero2infynite/static/media/ceh.c01c09e8955b0fb1b529.png",
     "static/media/Mask groupabout-icons.svg": "/zero2infynite/static/media/Mask groupabout-icons.d1c9868fc3b26cb35a9b3af9949f9b50.svg",
     "static/media/healthicons_i-training-classabout-icons.svg": "/zero2infynite/static/media/healthicons_i-training-classabout-icons.59fcd069509da861bdfe47125d796fc0.svg",
@@ -65,11 +66,11 @@
     "static/media/icon6.svg": "/zero2infynite/static/media/icon6.8c0d68db9b8d24f98bab0de4b38bb0ee.svg",
     "index.html": "/zero2infynite/index.html",
     "static/media/EHE.webp": "/zero2infynite/static/media/EHE.274be65a43a55447433d.webp",
-    "main.d59b944b.css.map": "/zero2infynite/static/css/main.d59b944b.css.map",
-    "main.34efe131.js.map": "/zero2infynite/static/js/main.34efe131.js.map"
+    "main.f2cdcf7e.css.map": "/zero2infynite/static/css/main.f2cdcf7e.css.map",
+    "main.fa801925.js.map": "/zero2infynite/static/js/main.fa801925.js.map"
   },
   "entrypoints": [
-    "static/css/main.d59b944b.css",
-    "static/js/main.34efe131.js"
+    "static/css/main.f2cdcf7e.css",
+    "static/js/main.fa801925.js"
   ]
 }
