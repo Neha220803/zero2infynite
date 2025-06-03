@@ -26,18 +26,28 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    cursor: pointer;
+    /* Add cursor pointer for clickable cards */
+    user-select: none;
+    /* Prevent text selection when clicking */
+    outline: none;
+    /* Remove default focus outline */
 }
 
 .course-card img {
     height: 50px;
     margin-bottom: 10px;
     object-fit: contain;
+    pointer-events: none;
+    /* Prevent image drag */
 }
 
 .course-card p {
     font-size: 14px;
     font-weight: 600;
     margin: 0;
+    pointer-events: none;
+    /* Prevent text selection issues */
 }
 
 /* ✨ Custom Hover Theme */
@@ -46,6 +56,18 @@
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #0052cc;
     border-right: 5px solid #0052cc;
+}
+
+/* Active state for click feedback */
+.course-card:active {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Focus state for keyboard navigation */
+.course-card:focus {
+    outline: 2px solid #0052cc;
+    outline-offset: 2px;
 }
 
 /* Category Highlighting */
@@ -57,8 +79,33 @@
     border-top: 3px solid #4bc0c8;
 }
 
+/* Enhanced hover effects for categories */
+.course-card.ec-council:hover {
+    border-left: 5px solid #ff4b5c;
+    border-right: 5px solid #ff4b5c;
+}
+
+.course-card.custom:hover {
+    border-left: 5px solid #4bc0c8;
+    border-right: 5px solid #4bc0c8;
+}
+
 .course-category-heading {
     margin-top: 2rem;
     font-weight: 600;
     color: #333;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .course-card:hover {
+        transform: none;
+        /* Disable hover transform on mobile */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .course-card:active {
+        transform: scale(0.98);
+        /* Subtle press effect on mobile */
+    }
 }

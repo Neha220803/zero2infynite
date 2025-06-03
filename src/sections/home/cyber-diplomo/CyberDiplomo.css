@@ -67,10 +67,6 @@
     background: #cccccc;
 }
 
-.stars {
-    display: flex;
-    margin-bottom: 10px;
-}
 
 .star-icon {
     color: #ffc107;
@@ -110,6 +106,7 @@
 .stars {
     display: flex;
     align-items: center;
+    flex-direction: row !important;
     justify-content: center;
     gap: 0.25rem;
     margin-bottom: 1rem;
@@ -201,7 +198,7 @@
     }
 
     .stars {
-        flex-direction: column;
+        flex-direction: row !important;
         gap: 0.5rem;
     }
 

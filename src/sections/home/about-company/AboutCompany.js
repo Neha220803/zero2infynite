@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import student1 from "../../../assets/images/avathar2.png";
 import "./AboutCompany.css";
+import company from "../../../assets/images/company-eg.png";
 
 const AboutCompanySection = () => {
   const successStories = [
@@ -96,9 +97,9 @@ const AboutCompanySection = () => {
                 <Col xs={4} key={story.id} className="p-1">
                   <div
                     style={{ backgroundColor: `${story.bgColor}` }}
-                    className="h-100 w-100 bg-dar indi-succ-col d-flex flex-column justify-content-around align-items-center"
+                    className="h-100 w-100 bg-dar indi-succ-col d-flex flex-column justify-content-between align-items-center"
                   >
-                    <div className="">
+                    <div className="mt-5">
                       <h6 className="student-name">{story.name}</h6>
                       <small className="student-role">{story.role}</small>
                     </div>
@@ -111,7 +112,13 @@ const AboutCompanySection = () => {
                       />
                     </div>
 
-                    <div>Hii</div>
+                    <div className="bg-light">
+                      <img
+                        src={company}
+                        alt={story.name}
+                        className="avatar-image w-100"
+                      />
+                    </div>
                   </div>
                 </Col>
               ))}

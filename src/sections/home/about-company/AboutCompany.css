@@ -28,6 +28,8 @@
 
 .indi-succ-col {
     border-radius: 98px !important;
+    border: #575c61 2px solid;
+    overflow: hidden !important;
 }
 
 .success-stories-title {

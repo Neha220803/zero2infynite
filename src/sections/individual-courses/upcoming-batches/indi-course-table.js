@@ -3,12 +3,15 @@ import { Container, Row, Table, Button, Col } from "react-bootstrap";
 import "./indi-course-table.css";
 import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
 
-const IndiCourseTableComp = ({ courseType = "CEH" }) => {
+const IndiCourseTableComp = ({ courseType }) => {
   const [batchSchedules, setBatchSchedules] = useState([]);
 
   // Get course data based on courseType prop
   const courseData = ecCouncilCourses[courseType];
   const batchData = courseData.batchSchedule;
+
+  // Check if Actions column should be displayed
+  const showActionsColumn = courseType === "CEH";
 
   useEffect(() => {
     const updateBatchDates = () => {
@@ -68,11 +71,17 @@ const IndiCourseTableComp = ({ courseType = "CEH" }) => {
           <Table hover responsive className="batch-table">
             <thead>
               <tr>
-                {batchData.tableHeaders.map((header, index) => (
-                  <th key={index} colSpan={header === "Actions" ? 2 : 1}>
-                    {header}
-                  </th>
-                ))}
+                {batchData.tableHeaders.map((header, index) => {
+                  // Skip rendering Actions column if courseType is not CEH
+                  if (header === "Actions" && !showActionsColumn) {
+                    return null;
+                  }
+                  return (
+                    <th key={index} colSpan={header === "Actions" ? 2 : 1}>
+                      {header}
+                    </th>
+                  );
+                })}
               </tr>
             </thead>
             <tbody>
@@ -81,30 +90,36 @@ const IndiCourseTableComp = ({ courseType = "CEH" }) => {
                   <td>{batch.date}</td>
                   <td>{batch.type}</td>
                   <td>{batch.days}</td>
-                  <td>
-                    <Button
-                      variant={batchData.actionButtons.courseFees.variant}
-                      size="sm"
-                      className={batchData.actionButtons.courseFees.className}
-                      onClick={() => handleCourseFees(batch.id)}
-                    >
-                      {batchData.actionButtons.courseFees.text}
-                    </Button>
-                  </td>
-                  <td>
-                    <Button
-                      variant={
-                        batchData.actionButtons.checkAvailability.variant
-                      }
-                      size="sm"
-                      className={
-                        batchData.actionButtons.checkAvailability.className
-                      }
-                      onClick={() => handleCheckAvailability(batch.id)}
-                    >
-                      {batchData.actionButtons.checkAvailability.text}
-                    </Button>
-                  </td>
+                  {showActionsColumn && (
+                    <>
+                      <td>
+                        <Button
+                          variant={batchData.actionButtons.courseFees.variant}
+                          size="sm"
+                          className={
+                            batchData.actionButtons.courseFees.className
+                          }
+                          onClick={() => handleCourseFees(batch.id)}
+                        >
+                          {batchData.actionButtons.courseFees.text}
+                        </Button>
+                      </td>
+                      <td>
+                        <Button
+                          variant={
+                            batchData.actionButtons.checkAvailability.variant
+                          }
+                          size="sm"
+                          className={
+                            batchData.actionButtons.checkAvailability.className
+                          }
+                          onClick={() => handleCheckAvailability(batch.id)}
+                        >
+                          {batchData.actionButtons.checkAvailability.text}
+                        </Button>
+                      </td>
+                    </>
+                  )}
                 </tr>
               ))}
             </tbody>
