@@ -22,14 +22,7 @@
 
 .success-stories-section {
     height: 473px;
-    /* overflow: hidden !important;
-    width: 20px !important; */
-}
-
-.indi-succ-col {
-    border-radius: 98px !important;
-    border: #575c61 2px solid;
-    overflow: hidden !important;
+    position: relative;
 }
 
 .success-stories-title {
@@ -38,54 +31,80 @@
     margin-bottom: 1.5rem;
 }
 
-.success-story-col {
-    text-align: center;
+/* Staggered Cards Container */
+.staggered-cards-container {
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-.success-story-col.pink-bg {
-    background-color: #FFB6C1;
-}
-
-.success-story-col.gray-bg {
-    background-color: #D3D3D3;
-}
-
-.success-story-col.yellow-bg {
-    background-color: #FFD700;
-}
-
-.avatar-circle {
-    /* width: 80px; */
-    /* height: 80px; */
-    /* border-radius: 50%; */
-    margin: 0 auto 0.5rem auto;
+/* Individual Success Card */
+.success-card {
+    width: 100%;
+    height: 120px;
+    border-radius: 60px !important;
+    border: #575c61 2px solid;
+    overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px !important;
-
-    /* height: 199px; */
-    /* left: 0%; */
-    /* right: 68.58%; */
-    /* top: 156px; */
-
-    border-radius: 76px 76px 0px 0px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 15px;
+    color: white !important;
+    background: linear-gradient(270deg, #CDDFFF 0%, #007bff 100%);
+    margin-bottom: 15px;
 }
 
-.avatar-image {
-    width: 100% !important;
-    /* height: 60px; */
-    /* border-radius: 50%; */
-    object-fit: cover;
+.card-offset-2 {
+    margin-left: 0 !important;
+    /* Group 106 */
+    /* Rectangle 13697 */
+    background: linear-gradient(270deg, #699BF7 0%, #CDDFFF 100%);
+    border-radius: 98px 98px 0px 0px;
+    color: #575c61 !important;
+
+}
+
+.student-info {
+    text-align: left;
+    padding-right: 10px;
 }
 
 .student-name {
     font-weight: bold;
     margin-bottom: 0;
+    font-size: 0.9rem;
+    color: white !important;
 }
 
 .student-role {
-    color: #6c757d;
+    color: #ededed;
+    font-size: 0.75rem;
+    font-weight: 700 !important;
+}
+
+.student-image-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+
+}
+
+.avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-logo-container {
+    width: 40px;
+    height: 30px;
+}
+
+.company-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .view-stories-button {
@@ -98,4 +117,19 @@
 
 .button-container {
     text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .success-card {
+        width: 180px;
+        height: 100px;
+    }
+
+    .card-offset-1,
+    .card-offset-2,
+    .card-offset-3 {
+        margin-left: 0 !important;
+    }
 }

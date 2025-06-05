@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import student1 from "../../../assets/images/avathar2.png";
 import "./AboutCompany.css";
 import company from "../../../assets/images/company-eg.png";
@@ -13,6 +13,7 @@ const AboutCompanySection = () => {
       company: "TASPro Technologies",
       bgColor: "#FFB6C1", // Light pink
       image: student1,
+      offset: "card-offset-1", // First card - highest position
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ const AboutCompanySection = () => {
       company: "TASPro Technologies",
       bgColor: "#D3D3D3", // Light gray
       image: student1,
+      offset: "card-offset-2", // Second card - middle position
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ const AboutCompanySection = () => {
       company: "TASPro Technologies",
       bgColor: "#FFD700", // Gold/Yellow
       image: student1,
+      offset: "card-offset-3", // Third card - lowest position
     },
   ];
 
@@ -38,13 +41,13 @@ const AboutCompanySection = () => {
         {/* Left Side: About Zero2Infynite */}
         <Col md={8}>
           <h2 className="text-primary fw-bold">
-            Welcome to Zero2Infynite – Empowering the Future of Cybersecurity
+            Welcome to Zero2Infynite - Empowering the Future of Cybersecurity
           </h2>
           <p className="mt-3">
-            At Zero2Infynite, we are more than just a cybersecurity training
-            company — we are your gateway to a secure digital future. Our
-            mission is to transform passionate learners into skilled
-            professionals, guiding them from zero knowledge to infinite
+            At <strong>Zero2Infynite</strong>, we are more than just a
+            cybersecurity training company — we are your gateway to a secure
+            digital future. Our mission is to transform passionate learners into
+            skilled professionals, guiding them from zero knowledge to infinite
             potential in the ever-evolving world of cybersecurity.
           </p>
           <p>
@@ -78,7 +81,7 @@ const AboutCompanySection = () => {
             </li>
             <li>
               Personalized learning with batch sizes of just{" "}
-              <strong>5–6 students</strong>.
+              <strong>5-6 students</strong>.
             </li>
             <li>
               Strong placement network with connections to{" "}
@@ -89,40 +92,39 @@ const AboutCompanySection = () => {
 
         {/* Right Side: Student Success Stories */}
         <Col md={4} className="bg-primar">
-          <div className="success-stories-section ">
+          <div className="success-stories-section">
             <h3 className="success-stories-title">Student Success Stories</h3>
-            {/* Top Row - 3 circular avatars */}
-            <Row className="bg-dar h-100">
+            {/* Staggered Cards Container */}
+            <div className="staggered-cards-container">
               {successStories.map((story) => (
-                <Col xs={4} key={story.id} className="p-1">
-                  <div
-                    style={{ backgroundColor: `${story.bgColor}` }}
-                    className="h-100 w-100 bg-dar indi-succ-col d-flex flex-column justify-content-between align-items-center"
-                  >
-                    <div className="mt-5">
-                      <h6 className="student-name">{story.name}</h6>
-                      <small className="student-role">{story.role}</small>
-                    </div>
-
-                    <div className="bg-primar p-0">
-                      <img
-                        src={story.image}
-                        alt={story.name}
-                        className="avatar-image w-100"
-                      />
-                    </div>
-
-                    <div className="bg-light">
-                      <img
-                        src={company}
-                        alt={story.name}
-                        className="avatar-image w-100"
-                      />
-                    </div>
+                <div
+                  key={story.id}
+                  className={`success-card ${story.offset}`}
+                  style={{ backgroundColor: `${story.bgColor}` }}
+                >
+                  <div className="student-info">
+                    <h6 className="student-name">{story.name}</h6>
+                    <small className="student-role">{story.role}</small>
                   </div>
-                </Col>
+
+                  <div className="student-image-container">
+                    <img
+                      src={story.image}
+                      alt={story.name}
+                      className="avatar-image"
+                    />
+                  </div>
+
+                  <div className="company-logo-container">
+                    <img
+                      src={company}
+                      alt={story.company}
+                      className="company-logo"
+                    />
+                  </div>
+                </div>
               ))}
-            </Row>
+            </div>
             <div className="button-container">
               <Button className="view-stories-button">
                 View all success stories →

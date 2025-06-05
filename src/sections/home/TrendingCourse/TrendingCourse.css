@@ -20,7 +20,7 @@
 }
 
 .course-card {
-    background: white;
+    background: rgb(240, 240, 240);
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -35,7 +35,8 @@
 }
 
 .course-card img {
-    height: 50px;
+    height: 80px;
+    width: 100% !important;
     margin-bottom: 10px;
     object-fit: contain;
     pointer-events: none;
@@ -47,7 +48,6 @@
     font-weight: 600;
     margin: 0;
     pointer-events: none;
-    /* Prevent text selection issues */
 }
 
 /* ✨ Custom Hover Theme */
@@ -91,8 +91,8 @@
 }
 
 .course-category-heading {
-    margin-top: 2rem;
-    font-weight: 600;
+    /* margin-top: 2rem; */
+    font-weight: 700;
     color: #333;
 }
 

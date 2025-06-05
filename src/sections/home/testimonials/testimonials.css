@@ -1,3 +1,11 @@
+.testi-bg {
+    background-image: url('../../../assets/images/who_are_we_1.jpg');
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    /* background-position: cover !important; */
+    background-size: cover !important;
+}
+
 .testimonial-stack-viewport {
     position: relative;
     display: block;
@@ -15,11 +23,11 @@
     flex-direction: column;
     padding: 30px;
     gap: 10px;
-    background: linear-gradient(180deg, rgba(26, 26, 26, 0.4) 0%, rgba(128, 128, 128, 0.4) 100%);
+    background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgba(91, 89, 89, 0.4) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(26.3px);
-    border-radius: 27px;
-    color: white;
+    border-radius: 27px !important;
+    /* color: white; */
     max-width: 600px;
     margin: auto;
 }

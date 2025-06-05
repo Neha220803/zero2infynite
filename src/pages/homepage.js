@@ -15,7 +15,7 @@ const Homepage = () => {
       {/* <PlacedStuScroll /> */}
       <AboutCompanySection />
       <TrendingCourses />
-      <WhoWe />
+      {/* <WhoWe /> */}
       <WhyUs />
       <DiplomaSection />
       {/* <HorizonhtalTestimonial /> */}

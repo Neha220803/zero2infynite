@@ -1,11 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook
 import "./TrendingCourse.css"; // Import the custom styles
-import ceh from "../../../assets/images/ec-courses/ceh.png";
-import chfi from "../../../assets/images/ec-courses/chfi.png";
-import ecih from "../../../assets/images/ec-courses/ecih.png";
-import cpent from "../../../assets/images/ec-courses/cpent.png";
-import cnd from "../../../assets/images/ec-courses/cnd.png";
+import ceh from "../../../assets/images/ec-counsil/CEH.webp";
+import chfi from "../../../assets/images/ec-counsil/CHFI.webp";
+import ecih from "../../../assets/images/ec-counsil/ECIH.webp";
+import cpent from "../../../assets/images/ec-counsil/CPENT.webp";
+import cnd from "../../../assets/images/ec-counsil/CND.webp";
+import wahs from "../../../assets/images/ec-counsil/WAHS.webp";
+import casej from "../../../assets/images/ec-counsil/CASE-Java.webp";
+import ethicalHackinglogo from "../../../assets/images/top-courses/ethical-hacking.png";
+import pentestLogo from "../../../assets/images/top-courses/pen-test.png";
 import { Container } from "react-bootstrap";
 
 const courses = [
@@ -42,13 +46,13 @@ const courses = [
   },
   {
     title: "Web Pentesting",
-    logo: "https://cdn-icons-png.flaticon.com/512/10701/10701191.png",
+    logo: wahs,
     category: "EC-Council",
     path: "/ec-council/web-pentesting",
   },
   {
     title: "CASE Java",
-    logo: "https://www.afralti.org/wp-content/uploads/2020/08/CASE.png",
+    logo: casej,
     category: "EC-Council",
     path: "/ec-council/case-java",
   },
@@ -56,13 +60,13 @@ const courses = [
   // Zero2Infynite Custom
   {
     title: "Ethical Hacking",
-    logo: "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+    logo: ethicalHackinglogo,
     category: "Custom",
     path: "/courses/ethical-hacking",
   },
   {
     title: "Pen Testing",
-    logo: "https://cdn-icons-png.freepik.com/256/16196/16196553.png?semt=ais_hybrid",
+    logo: pentestLogo,
     category: "Custom",
     path: "/courses/pen-testing",
   },
@@ -158,8 +162,10 @@ const TrendingCourses = () => {
         ))}
       </div>
 
-      <h4 className="course-category-heading">Custom Courses at Z2I</h4>
-      <div className="course-grid">
+      <h4 className="course-category-heading mt-5 mb-3">
+        Custom Courses at Z2I
+      </h4>
+      <div className="course-grid ">
         {customCourses.map((course, index) => (
           <div
             key={index}

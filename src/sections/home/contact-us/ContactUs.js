@@ -13,32 +13,26 @@ const ContactUsHomeComp = () => {
           </div>
 
           <div className="connecting-section">
-            <h1>Connecting Near & Far</h1>
+            <h1>Find us Here</h1>
 
             <div className="headquarters-section">
               <h3>Headquarters</h3>
 
-              <div className="headquarters-list">
+              <div className="headquarters-list mb-4">
                 <div className="headquarters-item">
                   <h4>Chennai Office</h4>
-                  <p>Executive Zone, Shakti Tower 1, 766, Anna Salai,</p>
-                  <p>Thousand Lights, Chennai, Tamil Nadu 600002</p>
-                </div>
-
-                <div className="headquarters-item">
-                  <h4>Nungambakkam Office</h4>
-                  <p>No 4, Nungambakkam High Road,</p>
-                  <p>Chennai, Tamil Nadu 600034</p>
+                  <p>7b, Rajavelu St, Kamaraj Nagar,</p>
+                  <p>Royapuram, Chennai, Tamil Nadu 600013</p>
                 </div>
               </div>
 
-              {/* <div className="contact-details">
-                <div className="contact-item">
-                  <h4>Call us</h4>
-                  <p>+91 9445958426</p>
-                  <p>+91 9790958426</p>
+              <div className="headquarters-list">
+                <div className="headquarters-item">
+                  <h4>Connect with us</h4>
+                  <p>Phone: +91 9445958426</p>
+                  <p>Email: pradhan@zero2infynite.com</p>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
