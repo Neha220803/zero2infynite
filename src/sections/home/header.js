@@ -47,7 +47,7 @@ const HomeHeader = () => {
                 Join the only company which focused on career oriented training
                 {/* with full flexible date and timings. */}
               </h1>
-              <p>
+              <p className="header-sub-title">
                 We track the process till you get placed or switch top domain
                 and ensure to get updated with the latest skills.
               </p>
