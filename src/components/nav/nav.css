@@ -2,20 +2,22 @@
 
 /* Top bar styling */
 .top-bar {
-  background-color: #e2e2e2 !important;
-  color: #275EAE !important;
+  background-color: #275EAE !important;
+  /* background-color: #193866 !important; */
+  color: white !important;
   position: relative;
   z-index: 1020;
 }
 
 .top-bar a {
-  color: #193866 !important;
-  font-size: 19px;
+  color: white !important;
+  font-size: 16px;
   font-weight: 500;
   transition: color 0.3s ease;
   text-decoration: none;
 }
 
+/* 
 #insta-icon {
   background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045) !important;
   border-radius: 30% !important;
@@ -28,10 +30,10 @@
 
 #linkedin-icon {
   color: #0A66C2;
-}
+} */
 
 .social-icons a {
-  font-size: 18px;
+  font-size: 16px !important;
   display: flex;
   align-items: center;
   justify-content: center;

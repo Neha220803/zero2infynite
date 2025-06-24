@@ -59,29 +59,6 @@ const SimpleNavbar = () => {
         // style={{ backgroundColor: "#333333", color: "white" }}
       >
         <Container className="d-flex justify-content-between align-items-center">
-          <div className="">
-            <a
-              href="https://www.instagram.com/zero2infynite/"
-              className="me-3 text-white"
-            >
-              <FaInstagram size={25} id="insta-icon" />
-            </a>
-            <a
-              href="https://www.facebook.com/Zero2Infynite/"
-              className="me-3 text-white"
-            >
-              <FaFacebook size={25} id="fb-icon" />
-            </a>
-            {/* <a href="#" className="me-3 text-white">
-              <FaXTwitter />
-            </a> */}
-            <a
-              href="https://www.linkedin.com/company/zero2infynite"
-              className="me-3 text-white"
-            >
-              <FaLinkedinIn size={25} id="linkedin-icon" />
-            </a>
-          </div>
           <div className="d-flex">
             <a
               href="mailto:pradhan@zero2infynite.com"
@@ -94,6 +71,29 @@ const SimpleNavbar = () => {
               className="text-decoration-none d-none d-md-flex align-items-center justify-content-center"
             >
               <FaPhoneAlt className="me-1" /> +91 81110 00953
+            </a>
+          </div>
+          <div className="social-icons d-flex">
+            <a
+              href="https://www.instagram.com/zero2infynite/"
+              className="me-3 text-white"
+            >
+              <FaInstagram id="insta-icon" />
+            </a>
+            <a
+              href="https://www.facebook.com/Zero2Infynite/"
+              className="me-3 text-white"
+            >
+              <FaFacebook id="fb-icon" />
+            </a>
+            {/* <a href="#" className="me-3 text-white">
+              <FaXTwitter />
+            </a> */}
+            <a
+              href="https://www.linkedin.com/company/zero2infynite"
+              className="me-3 text-white"
+            >
+              <FaLinkedinIn id="linkedin-icon" />
             </a>
           </div>
         </Container>

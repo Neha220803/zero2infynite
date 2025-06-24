@@ -8,11 +8,15 @@ const FooterComp = () => {
   return (
     <div
       className=" text-white  position-fixed bottom-0 w-100"
-      style={{ zIndex: 1030, backgroundColor: "#275EAE" }}
+      style={{
+        zIndex: 1030,
+        backgroundColor: "#275EAE",
+        borderTop: "1px solid #fff",
+      }}
     >
       <Container className="">
         <Row className="justify-content-center align-items-center text-center">
-          <Col xs={6} className="right-margin py-3">
+          <Col xs={6} className="right-margin py-2">
             <a
               href="https://wa.me/918111000953"
               className="text-white text-decoration-none d-flex justify-content-center align-items-center"

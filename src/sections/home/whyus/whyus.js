@@ -80,13 +80,14 @@ const WhyUs = () => {
     <div className="why-us-container">
       <div className="text-center mb-5">
         <h2 className=" w-100">
-          Why to <span className="text-primary">Choose Us</span> ?
+          Why to do Intern in{" "}
+          <span className="text-primary">Zero2infynite</span> ?
         </h2>
-        <p className="section-description">
+        {/* <p className="section-description">
           A choice that makes a big difference in your career. Zero to Infinite
           Security and Research is committed to helping students reach their
           goals through practical training and expert guidance.
-        </p>
+        </p> */}
       </div>
 
       <div className="container">

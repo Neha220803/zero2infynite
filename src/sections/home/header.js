@@ -41,15 +41,16 @@ const HomeHeader = () => {
             <div className="header-content text-white">
               <Button variant="primary" className="px-md-4 py-md-2 mb-4">
                 {/* Learn the best tactics to ensure Cybersecurity */}
-                Learn Cybersecurity with full flexible date & timings
+                Join Internship with full flexibility
               </Button>
               <h1 className="mb-4">
-                Join the only company which focused on career oriented training
+                Grow with the company built around your career goals
                 {/* with full flexible date and timings. */}
               </h1>
               <p className="header-sub-title">
-                We track the process till you get placed or switch top domain
-                and ensure to get updated with the latest skills.
+                Get a deep knowledge about cyber security and get a chance to
+                select as intern till you get a job role or employee in
+                Zero2infynite
               </p>
             </div>
           </Col>

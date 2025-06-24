@@ -24,42 +24,67 @@ const AllCourses = () => {
     },
     {
       id: 2,
-      title: "Software Development",
+      title: "CompTIA Courses",
       description:
-        "Software developers design, build, test, and maintain applications for various platforms and devices.",
-      img: icon2,
-      path: "/software-development",
+        "CompTIA offers a range of IT certifications, including A+, Network+, and Security+.",
+      img: icon6,
+      path: "/comptia",
     },
     {
       id: 3,
-      title: "Web Development",
+      title: "ISACA Certifications",
       description:
-        "Advanced cybersecurity certification for security professionals.",
+        "ISACA offers certifications like CISM, CISA, and CRISC for IT governance.",
+      img: icon2,
+      path: "/isaca",
+    },
+
+    {
+      id: 4,
+      title: "Fullstack Web Development",
+      description:
+        "Comprehensive training covering both frontend and backend technologies in javascript, java or dot net frameworks.",
       img: icon3,
       path: "/web-development",
     },
     {
-      id: 4,
-      title: "Finance & Accounting",
+      id: 5,
+      title: "Cloud Computing",
       description: "Cloud computing certifications for Amazon Web Services.",
       img: icon4,
       path: "/finance",
     },
     {
-      id: 5,
-      title: "Digital Marketing",
+      id: 6,
+      title: "Cyber Diploma course",
       description:
-        "Learn digital marketing strategies and techniques for business growth.",
+        "A comprehensive diploma course covering various aspects of cybersecurity.",
       img: icon5,
-      path: "/digital-marketing",
+      path: "/z2i-cyber-diploma",
     },
     {
-      id: 6,
-      title: "Mobile Development",
+      id: 7,
+      title: "Artificial Intelligence",
       description:
-        "Learn to build native and cross-platform mobile applications.",
-      img: icon6,
-      path: "/mobile-development",
+        "Learn the fundamentals of AI, including machine learning and neural networks.",
+      img: icon5,
+      path: "/artificial-intelligence",
+    },
+    {
+      id: 8,
+      title: "Programming & Development",
+      description:
+        "Learn the fundamentals of programming, including popular languages like python, java, .net frameworks.",
+      img: icon5,
+      path: "/programming-development",
+    },
+    {
+      id: 9,
+      title: "Networking & Cybersecurity",
+      description:
+        "Learn the fundamentals of networking and cybersecurity (pentesting), including key concepts and best practices.",
+      img: icon5,
+      path: "/networking-cybersecurity",
     },
   ];
 
