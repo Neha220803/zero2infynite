@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.457742bf.css",
-    "main.js": "/zero2infynite/static/js/main.e8aec758.js",
+    "main.css": "/zero2infynite/static/css/main.15bf483a.css",
+    "main.js": "/zero2infynite/static/js/main.4ba0af40.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/zero2infynite/static/media/cnd.e4a7309d99dc156082a0.png",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
+    "static/media/placeholder.png": "/zero2infynite/static/media/placeholder.bc5345e1308f7df61c89.png",
     "static/media/chfi.png": "/zero2infynite/static/media/chfi.0804e978561a4326fe09.png",
-    "static/media/headerbg1.mp4": "/zero2infynite/static/media/headerbg1.0bd47a2d6ffbabec2081.mp4",
     "static/media/home-bg.png": "/zero2infynite/static/media/home-bg.b3edbe4a2a57d52c5e68.png",
     "static/media/who_are_we_1.jpg": "/zero2infynite/static/media/who_are_we_1.ab3af255019a3095b2fa.jpg",
     "static/media/avathar4.png": "/zero2infynite/static/media/avathar4.7f0be0cc77a6790c8d5c.png",
@@ -17,9 +17,11 @@
     "static/media/eddited logo.png": "/zero2infynite/static/media/eddited logo.6081f1a669f0dfe2e431.png",
     "static/media/ethical-hacking.png": "/zero2infynite/static/media/ethical-hacking.55e955de43ab73d6e178.png",
     "static/media/avathar3.png": "/zero2infynite/static/media/avathar3.7febcef7453339fffcf2.png",
+    "static/media/cropped-logo.png": "/zero2infynite/static/media/cropped-logo.7f653f59ff0de58e3c55.png",
     "static/media/whowe1.jpg": "/zero2infynite/static/media/whowe1.0bf644c7557f0404ebfa.jpg",
     "static/media/company-eg.png": "/zero2infynite/static/media/company-eg.802f121440afa369654c.png",
     "static/media/Mask groupabout-icons.svg": "/zero2infynite/static/media/Mask groupabout-icons.d1c9868fc3b26cb35a9b3af9949f9b50.svg",
+    "static/media/trainerIcon.svg": "/zero2infynite/static/media/trainerIcon.2e40817523ede0b527f3da7e5f37d401.svg",
     "static/media/healthicons_i-training-classabout-icons.svg": "/zero2infynite/static/media/healthicons_i-training-classabout-icons.59fcd069509da861bdfe47125d796fc0.svg",
     "static/media/icon5.svg": "/zero2infynite/static/media/icon5.5767bebe03a326313802b82a9c3799a7.svg",
     "static/media/WAHS.webp": "/zero2infynite/static/media/WAHS.97f92158b0e8df42c259.webp",
@@ -36,8 +38,10 @@
     "static/media/CASE-Net.webp": "/zero2infynite/static/media/CASE-Net.4a25d616f6899c1f3adb.webp",
     "static/media/call.svg": "/zero2infynite/static/media/call.f57a45def4308b90e618d9db5490bf0f.svg",
     "static/media/ECSS.webp": "/zero2infynite/static/media/ECSS.6e64bdf48498eeb618d3.webp",
+    "static/media/theoryPracticeIcon.svg": "/zero2infynite/static/media/theoryPracticeIcon.eb3fc2c9591b29ca159d7053b6231c07.svg",
     "static/media/course3.svg": "/zero2infynite/static/media/course3.87b0cf3d0eae0dbe0647e0e77d2de8db.svg",
     "static/media/BFC.webp": "/zero2infynite/static/media/BFC.d5336db7169e46f6c6a7.webp",
+    "static/media/carrerBoostIcon.svg": "/zero2infynite/static/media/carrerBoostIcon.b84d63b6e16f7536c01bad293151dd6c.svg",
     "static/media/CCISO.webp": "/zero2infynite/static/media/CCISO.c50787be44840d21c7e0.webp",
     "static/media/CND.webp": "/zero2infynite/static/media/CND.73973b54c1510af6d9c5.webp",
     "static/media/CCT.webp": "/zero2infynite/static/media/CCT.1da8ad27318d7fe67d5c.webp",
@@ -62,15 +66,21 @@
     "static/media/CPENT.webp": "/zero2infynite/static/media/CPENT.60e4acc455d9122e3037.webp",
     "static/media/ECIH.webp": "/zero2infynite/static/media/ECIH.b43565ae9e29e1c993f3.webp",
     "static/media/CEH.webp": "/zero2infynite/static/media/CEH.4661c8a330866bcd2377.webp",
+    "static/media/bx_support.svg": "/zero2infynite/static/media/bx_support.3d0f6ba8638642646bbc6e11d7bef5ad.svg",
     "static/media/DFE.webp": "/zero2infynite/static/media/DFE.7a37ee9a6989e57cde6e.webp",
     "static/media/icon6.svg": "/zero2infynite/static/media/icon6.8c0d68db9b8d24f98bab0de4b38bb0ee.svg",
     "index.html": "/zero2infynite/index.html",
+    "static/media/exporuseIcon.svg": "/zero2infynite/static/media/exporuseIcon.f1881795280d8c344bfbcb433825807d.svg",
     "static/media/EHE.webp": "/zero2infynite/static/media/EHE.274be65a43a55447433d.webp",
-    "main.457742bf.css.map": "/zero2infynite/static/css/main.457742bf.css.map",
-    "main.e8aec758.js.map": "/zero2infynite/static/js/main.e8aec758.js.map"
+    "static/media/discover icon.svg": "/zero2infynite/static/media/discover icon.257dffe124ac52d47a273104208f8046.svg",
+    "static/media/certificateIcon.svg": "/zero2infynite/static/media/certificateIcon.88b45c35a1e1cd3aeb160f5f9e1448df.svg",
+    "static/media/tdesign_task-1-filled.svg": "/zero2infynite/static/media/tdesign_task-1-filled.d3ba710db1ddfa6519157bf3b876e07b.svg",
+    "static/media/carbon_skill-level-advanced.svg": "/zero2infynite/static/media/carbon_skill-level-advanced.23a8161d80819c8b1160f1ad15fbf766.svg",
+    "main.15bf483a.css.map": "/zero2infynite/static/css/main.15bf483a.css.map",
+    "main.4ba0af40.js.map": "/zero2infynite/static/js/main.4ba0af40.js.map"
   },
   "entrypoints": [
-    "static/css/main.457742bf.css",
-    "static/js/main.e8aec758.js"
+    "static/css/main.15bf483a.css",
+    "static/js/main.4ba0af40.js"
   ]
 }
