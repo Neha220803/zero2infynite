@@ -1,13 +1,16 @@
 import React from "react";
 import AboutUsPerks from "../sections/aboutUs/AboutUsPerks";
+import AboutUsHeaderComp from "../sections/aboutUs/header/AboutUsHeader";
+import AboutUSParaContentComp from "../sections/aboutUs/AboutUSParaContent/AboutUSParaContent";
+import AboutUsBuildingComp from "../sections/aboutUs/AboutUsBuildingComp/AboutUsBuildingComp";
 
 const AboutUsPage = () => {
   return (
     <div>
-      <section>
-        <h1>About us header section</h1>
-      </section>
-      <AboutUsPerks />
+      <AboutUsHeaderComp />
+      {/* <AboutUsPerks /> */}
+      <AboutUSParaContentComp />
+      <AboutUsBuildingComp />
     </div>
   );
 };

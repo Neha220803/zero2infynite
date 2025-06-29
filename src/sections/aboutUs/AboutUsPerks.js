@@ -57,7 +57,7 @@ const AboutUsPerks = () => {
   ];
 
   return (
-    <section>
+    <section className="">
       <Container>
         <Row>
           {perksData.map((perk, index) => (

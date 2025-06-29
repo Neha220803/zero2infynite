@@ -1,0 +1,112 @@
+.about-us-header {
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    /* padding: 100px 0; */
+    background-attachment: fixed !important;
+}
+
+/* Main Title Styling */
+.main-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: 2px;
+    margin-bottom: 3rem !important;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+/* Typing Animation Container */
+.typing-container {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+}
+
+.typing-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #ecf0f1;
+    font-weight: 300;
+    margin: 0;
+    min-height: 120px;
+    /* Prevents layout shift */
+}
+
+/* Cursor Animation */
+.cursor {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.8rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.show {
+    opacity: 1;
+}
+
+.cursor.hide {
+    opacity: 0;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+    }
+
+    .typing-text {
+        font-size: 1.3rem;
+        min-height: 80px;
+    }
+
+    .cursor {
+        font-size: 1.3rem;
+    }
+
+    .about-us-header {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .typing-text {
+        font-size: 1.1rem;
+        min-height: 70px;
+    }
+
+    .cursor {
+        font-size: 1.1rem;
+    }
+}

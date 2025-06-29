@@ -1,0 +1,368 @@
+/* Building Animation Container */
+.building-animation-container {
+    height: 200vh;
+    /* Reduced height since we're using pinning */
+    position: relative;
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #2c5282;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.building-header {
+    position: absolute;
+    /* Changed from fixed to absolute */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.plant-icon {
+    animation: gentle-sway 3s ease-in-out infinite;
+}
+
+.plant-image {
+    width: 60px;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(44, 82, 130, 0.2));
+}
+
+/* Progress Section */
+.building-progress-container {
+    position: absolute;
+    /* Changed from fixed to absolute */
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.building-progress-bar {
+    width: 300px;
+    height: 8px;
+    background: rgba(44, 82, 130, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #2c5282;
+}
+
+.building-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2c5282, #3182ce);
+    width: 0%;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+}
+
+.building-progress-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c5282;
+    text-align: center;
+}
+
+/* Building Container */
+.building-container {
+    position: absolute;
+    /* Changed from fixed to absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80%;
+    z-index: 10;
+}
+
+.building {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 3px solid #2c5282;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(44, 82, 130, 0.15);
+}
+
+/* Floor Styles - Each floor takes 1/7 of total building height */
+.floor {
+    width: 100%;
+    height: calc(100% / 7);
+    /* Each floor is 1/7 of total building height */
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 4px solid #2c5282;
+    /* Clear separation between floors */
+}
+
+.floor:last-child {
+    border-bottom: none;
+    /* No border on bottom floor */
+}
+
+.floor-content {
+    flex: 1;
+    padding: 0 60px;
+    /* Large padding for big text */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.floor-text {
+    font-size: 36px;
+    /* Very large text to fill the space */
+    font-weight: 700;
+    color: #2c5282;
+    line-height: 1.3;
+    text-align: left;
+    width: 100%;
+}
+
+.floor-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #2c5282;
+}
+
+/* Side Grid */
+.side-grid {
+    position: absolute;
+    right: 60px;
+    /* Increased from 40px */
+    top: 0;
+    width: 120px;
+    /* Increased for better visibility */
+    height: 100%;
+    /* Full height of building content */
+    display: flex;
+    gap: 6px;
+    /* Increased gap */
+}
+
+.grid-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    /* Increased gap */
+    position: relative;
+}
+
+.elevator-column {
+    position: relative;
+}
+
+.grid-cell {
+    flex: 1;
+    border: 3px solid #2c5282;
+    /* Thicker border */
+    background: rgba(44, 82, 130, 0.05);
+    min-height: calc((70vh * 7 / 3) / 7 / 2 - 3px);
+    /* Height based on new dimensions */
+}
+
+/* Elevator - positioned within the grid */
+.elevator {
+    position: absolute;
+    width: 50px;
+    /* Larger elevator */
+    height: calc((70vh * 7 / 3) / 7 / 2 - 12px);
+    /* Height based on floor size */
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+    border: 4px solid #2c5282;
+    /* Thicker border */
+    border-radius: 8px;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    /* Increased gap */
+    box-shadow: 0 8px 25px rgba(44, 82, 130, 0.3);
+    z-index: 100;
+}
+
+/* Elevator Person */
+.elevator-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    /* Increased gap */
+}
+
+.person-head {
+    width: 16px;
+    /* Larger for bigger elevator */
+    height: 16px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #2c5282;
+    /* Thicker border */
+}
+
+.person-body {
+    width: 12px;
+    /* Larger for bigger elevator */
+    height: 24px;
+    /* Taller */
+    background: #ffffff;
+    border-radius: 4px;
+    border: 3px solid #2c5282;
+    /* Thicker border */
+}
+
+.elevator-floor-indicator {
+    font-size: 16px;
+    /* Larger text */
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(44, 82, 130, 0.9);
+    padding: 3px 8px;
+    /* Increased padding */
+    border-radius: 4px;
+    min-width: 28px;
+    /* Larger minimum width */
+    text-align: center;
+}
+
+/* Animations */
+@keyframes gentle-sway {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+/* Hover Effects */
+.floor:hover .floor-text {
+    color: #3182ce;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.elevator:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .building-container {
+        width: 85%;
+        /* Slightly smaller on tablets */
+        height: calc(100vh * 0.7);
+    }
+
+    .building-progress-bar {
+        width: 320px;
+        /* Adjusted for new size */
+    }
+
+    .building-progress-text {
+        font-size: 18px;
+    }
+
+    .plant-image {
+        width: 60px;
+        max-height: 80px;
+    }
+
+    .floor-text {
+        font-size: 18px;
+        /* Reduced for smaller screens */
+        padding: 0 20px;
+    }
+
+    .side-grid {
+        width: 80px;
+        /* Smaller grid on tablets */
+        right: 30px;
+    }
+
+    .elevator {
+        width: 36px;
+        /* Smaller elevator */
+    }
+
+    .elevator-floor-indicator {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .building-container {
+        width: 95%;
+        height: calc(100vh * 0.6);
+    }
+
+    .building-progress-bar {
+        width: 250px;
+    }
+
+    .building-progress-text {
+        font-size: 16px;
+    }
+
+    .plant-image {
+        width: 50px;
+        max-height: 60px;
+    }
+
+    .side-grid {
+        width: 60px;
+        right: 20px;
+    }
+
+    .elevator {
+        width: 28px;
+    }
+
+    .floor-text {
+        font-size: 14px;
+    }
+
+    .person-head {
+        width: 10px;
+        height: 10px;
+    }
+
+    .person-body {
+        width: 8px;
+        height: 16px;
+    }
+
+    .elevator-floor-indicator {
+        font-size: 10px;
+        padding: 1px 4px;
+        min-width: 18px;
+    }
+}
