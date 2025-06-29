@@ -14,3 +14,8 @@
 .right-margin {
     border-right: 2px solid white !important;
 }
+
+.hover-link:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}

@@ -1,8 +1,7 @@
 // HomeHeader.jsx
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import "./header.css"; // Ensure you have the correct path to your CSS file
-import headerBg from "../../assets/videos/headerbg1.mp4"; // Update with your actual file path and name
+import "./header.css";
 
 const HomeHeader = () => {
   const [formData, setFormData] = useState({
@@ -40,17 +39,15 @@ const HomeHeader = () => {
           <Col lg={7} xs={12} sm={12}>
             <div className="header-content text-white">
               <Button variant="primary" className="px-md-4 py-md-2 mb-4">
-                {/* Learn the best tactics to ensure Cybersecurity */}
-                Join Internship with full flexibility
+                Learn the best tactics to ensure Cybersecurity
               </Button>
               <h1 className="mb-4">
-                Grow with the company built around your career goals
+                Join the only company which focused on career oriented training
                 {/* with full flexible date and timings. */}
               </h1>
               <p className="header-sub-title">
-                Get a deep knowledge about cyber security and get a chance to
-                select as intern till you get a job role or employee in
-                Zero2infynite
+                We track the process till you get placed or switch top domain
+                and ensure to get updated with the latest skills.
               </p>
             </div>
           </Col>
