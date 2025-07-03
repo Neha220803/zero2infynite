@@ -1,9 +1,10 @@
 .elevator-wrapper {
     min-height: 200vh;
     background: linear-gradient(to bottom, #f0f4f8, #cbd5e1);
+    /* No position: fixed here */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 100px 0;
 }
 
@@ -17,13 +18,16 @@
     width: 700px;
     height: 700px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    position: relative;
+    margin: 40px auto;
+    /* centers it horizontally, adjust as needed */
+    /* REMOVE position, top, left, transform, z-index */
 }
 
 .floors {
     flex: 3;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .floor {
@@ -34,6 +38,7 @@
     font-weight: bold;
     color: #1e3a8a;
     border-bottom: 1px solid #e5e7eb;
+    background: transparent;
 }
 
 .floor:last-child {
@@ -45,6 +50,7 @@
     position: relative;
     background: #e0f2fe;
     border-left: 2px solid #1e40af;
+    height: 100%;
 }
 
 .elevator {
@@ -55,8 +61,8 @@
     border: 3px solid #1e40af;
     border-radius: 10px;
     left: 50%;
-    transform: translateX(-50%);
-    transition: transform 0.2s ease;
+    transform: translateX(-50%) translateY(0);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,4 +94,5 @@
     background: #1e40af;
     padding: 2px 6px;
     border-radius: 4px;
+    margin-right: 10px;
 }
