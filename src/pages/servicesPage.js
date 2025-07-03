@@ -1,9 +1,11 @@
 import React from "react";
+import AboutUsBuildingComp from "../sections/aboutUs/AboutUsBuildingComp/AboutUsBuildingComp";
+
 
 const ServicesPage = () => {
   return (
     <div>
-      <h1>ServicesPage</h1>
+      <AboutUsBuildingComp />
     </div>
   );
 };
