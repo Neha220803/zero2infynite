@@ -10,6 +10,7 @@ import InternshipPage from "./pages/internshipPage";
 import ServicesPage from "./pages/servicesPage";
 import BlogPage from "./pages/blogPage";
 import IndividualCourses from "./pages/individualCourses";
+import TestimonialPage from "./pages/testimonialPage";
 
 function Layout() {
   return (
@@ -42,7 +43,7 @@ function Layout() {
 
         <Route path="/services" element={<ServicesPage />} />
 
-        {/* <Route path="/testimonial" element={<TestimonialPage />} /> */}
+        <Route path="/testimonial" element={<TestimonialPage />} />
 
         <Route path="/blogs" element={<BlogPage />} />
       </Routes>

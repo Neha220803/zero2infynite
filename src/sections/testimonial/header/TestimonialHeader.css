@@ -1,0 +1,7 @@
+.testimonial-header {
+    background-image: url("../../../assets/images/Testimonial/testi-header-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 80vh !important;
+    color: white !important;
+}
