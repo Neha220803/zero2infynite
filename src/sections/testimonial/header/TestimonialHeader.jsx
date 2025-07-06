@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 
 const TestimonialHeaderComp = () => {
   return (
-    <header className="testimonial-header d-flex flex-column align-items-center justify-content-center text-center">
+    <header className="testimonial-header-bg-img  d-flex flex-column align-items-center justify-content-center text-center">
       <h1>Most trusted promising training platform</h1>
       <p>
         Besant Technologies is rated as the No.1 Online Training Instuitite with

@@ -1,13 +1,7 @@
 import React from "react";
-import AboutUsBuildingComp from "../sections/aboutUs/AboutUsBuildingComp/AboutUsBuildingComp";
-
 
 const ServicesPage = () => {
-  return (
-    <div>
-      <AboutUsBuildingComp />
-    </div>
-  );
+  return <h1 className="text-center">Services Page content yet to be given</h1>;
 };
 
 export default ServicesPage;
