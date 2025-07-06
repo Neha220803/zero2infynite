@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.aae907f9.css",
-    "main.js": "/zero2infynite/static/js/main.4bb636bc.js",
+    "main.css": "/zero2infynite/static/css/main.97f3e21d.css",
+    "main.js": "/zero2infynite/static/js/main.5399fc81.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/zero2infynite/static/media/cnd.e4a7309d99dc156082a0.png",
     "static/media/whowe.jpg": "/zero2infynite/static/media/whowe.1cb7bcd6f9c589270d2a.jpg",
@@ -77,11 +77,11 @@
     "static/media/certificateIcon.svg": "/zero2infynite/static/media/certificateIcon.88b45c35a1e1cd3aeb160f5f9e1448df.svg",
     "static/media/tdesign_task-1-filled.svg": "/zero2infynite/static/media/tdesign_task-1-filled.d3ba710db1ddfa6519157bf3b876e07b.svg",
     "static/media/carbon_skill-level-advanced.svg": "/zero2infynite/static/media/carbon_skill-level-advanced.23a8161d80819c8b1160f1ad15fbf766.svg",
-    "main.aae907f9.css.map": "/zero2infynite/static/css/main.aae907f9.css.map",
-    "main.4bb636bc.js.map": "/zero2infynite/static/js/main.4bb636bc.js.map"
+    "main.97f3e21d.css.map": "/zero2infynite/static/css/main.97f3e21d.css.map",
+    "main.5399fc81.js.map": "/zero2infynite/static/js/main.5399fc81.js.map"
   },
   "entrypoints": [
-    "static/css/main.aae907f9.css",
-    "static/js/main.4bb636bc.js"
+    "static/css/main.97f3e21d.css",
+    "static/js/main.5399fc81.js"
   ]
 }
