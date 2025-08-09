@@ -1,6 +1,5 @@
 import React from "react";
 import "./TextReviews.css";
-import { Card, Container, Row } from "react-bootstrap";
 
 // Sample data array
 const reviews = [
@@ -125,20 +124,51 @@ const reviews = [
   },
 ];
 
+// Function to render star rating
+const renderStars = (rating) => {
+  return Array.from({ length: 5 }, (_, index) => (
+    <span key={index} className={index < rating ? "star-filled" : "star-empty"}>
+      ★
+    </span>
+  ));
+};
+
+// Function to get user initials for avatar
+const getUserInitials = (name) => {
+  return name
+    .split(" ")
+    .map((word) => word.charAt(0))
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
+};
+
 const TextReviewsCardsSectionComp = () => {
   return (
-    <Container>
+    <div className="reviews-containe container">
       {reviews.map((review, index) => (
-        <Row className="mb-4" key={index}>
-          <Card className="text-reviews-card">
-            <p>
-              <strong>Name:</strong> {review.name}
-            </p>
-            <p>{review.review}</p>
-          </Card>
-        </Row>
+        <div key={index} className="review-item">
+          <div className="review-card">
+            <div className="review-content">
+              {/* User Avatar */}
+              <div className="user-avatar">{getUserInitials(review.name)}</div>
+
+              {/* Review Content */}
+              <div className="review-details">
+                {/* User Name */}
+                <div className="user-name">{review.name}</div>
+
+                {/* Stars */}
+                <div className="star-rating">{renderStars(review.stars)}</div>
+
+                {/* Review Text */}
+                <div className="review-text">{review.review}</div>
+              </div>
+            </div>
+          </div>
+        </div>
       ))}
-    </Container>
+    </div>
   );
 };
 

@@ -11,31 +11,29 @@ const HearFromStudentsComp = () => {
 
   const testimonials = [
     {
-      name: "Alex",
+      name: "Nithish",
       video: "How I Built My First App in 30 Days",
       description:
         "Join me as I document my journey building a full-stack web application from scratch. I'll show you the challenges I faced, the mistakes I made, and how I overcame them to create something amazing.",
-      tags: ["coding", "javascript", "react", "tutorial"],
+
       bgColor: "testimonial-card-red",
       youtubeId: "1K_UtWDyNTE",
       embedParams: "si=SOWmrskAfaB2BYab",
     },
     {
-      name: "Sarah",
+      name: "Nithya",
       video: "My Morning Routine That Changed Everything",
       description:
         "After struggling with productivity for years, I discovered this simple morning routine that completely transformed my life. In this video, I share the exact steps and science behind why it works.",
-      tags: ["lifestyle", "productivity", "morning", "habits"],
       bgColor: "testimonial-card-blue",
       youtubeId: "dQw4w9WgXcQ",
       embedParams: "si=ABC123XYZ789",
     },
     {
-      name: "Mike",
+      name: "Sathya",
       video: "Testing Viral TikTok Life Hacks",
       description:
         "I spent 24 hours testing the most popular life hacks from TikTok to see which ones actually work. Some of these results will shock you! Make sure to watch till the end for the biggest surprise.",
-      tags: ["experiment", "viral", "lifehacks", "funny"],
       bgColor: "testimonial-card-brown",
       youtubeId: "9bZkp7q19f0",
       embedParams: "si=DEF456UVW012",
@@ -96,13 +94,6 @@ const HearFromStudentsComp = () => {
                         </div>
                       </div>
                       <div className="video-overlay">
-                        <div className="video-tags">
-                          {testimonial.tags.map((tag, tagIndex) => (
-                            <span key={tagIndex} className="tag">
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
                         <h3 className="video-title">{testimonial.video}</h3>
                       </div>
                     </>

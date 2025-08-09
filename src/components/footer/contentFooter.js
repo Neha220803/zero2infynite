@@ -34,7 +34,7 @@ const ContentFooterComp = () => {
       </div>
 
       {/* Main Footer */}
-      <div className="bg-dark text-white py-5">
+      <div className=" py-5">
         <Container>
           <Row>
             {/* Company Description */}

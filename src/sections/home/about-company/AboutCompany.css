@@ -21,7 +21,7 @@
 }
 
 .success-stories-section {
-    height: 473px;
+    /* height: 473px; */
     position: relative;
 }
 
@@ -34,7 +34,7 @@
 /* Staggered Cards Container */
 .staggered-cards-container {
     width: 100%;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 /* Individual Success Card */

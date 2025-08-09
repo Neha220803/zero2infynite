@@ -263,6 +263,49 @@ export const ecCouncilCourses = {
       ],
     },
 
+    syllabusModules: [
+      {
+        title: "Module 1: Introduction to Ethical Hacking",
+        topics: [
+          "Information Security Overview",
+          "Hacking Concepts and Methodology",
+          "Ethical Hacking Scope and Limitations",
+        ],
+      },
+      {
+        title: "Module 2: Footprinting and Reconnaissance",
+        topics: [
+          "Network Scanning Techniques",
+          "Information Gathering Methods",
+          "Social Engineering Tactics",
+        ],
+      },
+      {
+        title: "Module 3: System Hacking",
+        topics: [
+          "Password Cracking Techniques",
+          "Privilege Escalation",
+          "Maintaining Access",
+        ],
+      },
+      {
+        title: "Module 4: Network Security",
+        topics: [
+          "Wireless Network Vulnerabilities",
+          "Web Application Security",
+          "Network Defense Mechanisms",
+        ],
+      },
+      {
+        title: "Module 5: Tools and Practical Applications",
+        topics: [
+          "Security Tools and Software",
+          "Penetration Testing",
+          "Real-world Attack Scenarios",
+        ],
+      },
+    ],
+
     // Highlighted Keywords (for styling)
     highlights: [
       "affordable Certified Ethical Hacking course",

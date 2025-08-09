@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 import student1 from "../../../assets/images/Testimonial/Nithish.png";
 import student2 from "../../../assets/images/Testimonial/Nithya.png";
 import student3 from "../../../assets/images/Testimonial/Sathya.png";
@@ -8,33 +8,66 @@ import company from "../../../assets/images/company-eg.png";
 
 const AboutCompanySection = () => {
   const successStories = [
-    {
-      id: 1,
-      name: "Nithish",
-      role: "SOC Analyst",
-      company: "EY",
-      bgColor: "#FFB6C1", // Light pink
-      image: student1,
-      offset: "card-offset-1", // First card - highest position
-    },
-    {
-      id: 2,
-      name: "Nithya",
-      role: "SOC Analyst",
-      company: "EY",
-      bgColor: "#D3D3D3", // Light gray
-      image: student2,
-      offset: "card-offset-2", // Second card - middle position
-    },
-    {
-      id: 3,
-      name: "Sathya",
-      role: "SOC Analyst",
-      company: "EY",
-      bgColor: "#FFD700", // Gold/Yellow
-      image: student3,
-      offset: "card-offset-3", // Third card - lowest position
-    },
+    // First slide - original 3 cards
+    [
+      {
+        id: 1,
+        name: "Nithish",
+        role: "SOC Analyst",
+        company: "EY",
+        bgColor: "#FFB6C1", // Light pink
+        image: student1,
+        offset: "card-offset-1",
+      },
+      {
+        id: 2,
+        name: "Nithya",
+        role: "SOC Analyst",
+        company: "EY",
+        bgColor: "#D3D3D3", // Light gray
+        image: student2,
+        offset: "card-offset-2",
+      },
+      {
+        id: 3,
+        name: "Sathya",
+        role: "SOC Analyst",
+        company: "EY",
+        bgColor: "#FFD700", // Gold/Yellow
+        image: student3,
+        offset: "card-offset-3",
+      },
+    ],
+    // Second slide - 3 new dummy cards
+    [
+      {
+        id: 4,
+        name: "Arjun 2",
+        role: "Cyber Security Analyst",
+        company: "TCS",
+        bgColor: "#98FB98", // Light green
+        image: student1, // Using dummy image for now
+        offset: "card-offset-1",
+      },
+      {
+        id: 5,
+        name: "Priya 2",
+        role: "Information Security Officer",
+        company: "Infosys",
+        bgColor: "#FFE4B5", // Light orange
+        image: student2, // Using dummy image for now
+        offset: "card-offset-2",
+      },
+      {
+        id: 6,
+        name: "Vikram 2",
+        role: "Penetration Tester",
+        company: "Wipro",
+        bgColor: "#E6E6FA", // Light lavender
+        image: student3, // Using dummy image for now
+        offset: "card-offset-3",
+      },
+    ],
   ];
 
   return (
@@ -92,41 +125,57 @@ const AboutCompanySection = () => {
           </ul>
         </Col>
 
-        {/* Right Side: Student Success Stories */}
+        {/* Right Side: Student Success Stories with Carousel */}
         <Col md={4} className="bg-primar">
           <div className="success-stories-section">
-            <h3 className="success-stories-title">Student Success Stories</h3>
-            {/* Staggered Cards Container */}
-            <div className="staggered-cards-container">
-              {successStories.map((story) => (
-                <div
-                  key={story.id}
-                  className={`success-card ps-4 ${story.offset}`}
-                  style={{ backgroundColor: `${story.bgColor}` }}
-                >
-                  <div className="student-info">
-                    <h6 className="student-name">{story.name}</h6>
-                    <small className="student-role">{story.role}</small>
-                  </div>
+            <h3 className="success-stories-title mb-5">
+              Student Success Stories
+            </h3>
 
-                  <div className="student-image-container">
-                    <img
-                      src={story.image}
-                      alt={story.name}
-                      className="avatar-image"
-                    />
-                  </div>
+            {/* Carousel Container */}
+            <Carousel
+              indicators={false}
+              controls={false}
+              interval={4000}
+              className="success-stories-carousel"
+            >
+              {successStories.map((slideStories, slideIndex) => (
+                <Carousel.Item key={slideIndex}>
+                  {/* Staggered Cards Container for each slide */}
+                  <div className="staggered-cards-container">
+                    {slideStories.map((story) => (
+                      <div
+                        key={story.id}
+                        className={`success-card ps-4 ${story.offset}`}
+                        style={{ backgroundColor: `${story.bgColor}` }}
+                      >
+                        <div className="student-info">
+                          <h6 className="student-name">{story.name}</h6>
+                          <small className="student-role">{story.role}</small>
+                        </div>
 
-                  {/* <div className="company-logo-container">
-                    <img
-                      src={company}
-                      alt={story.company}
-                      className="company-logo"
-                    />
-                  </div> */}
-                </div>
+                        <div className="student-image-container">
+                          <img
+                            src={story.image}
+                            alt={story.name}
+                            className="avatar-image"
+                          />
+                        </div>
+
+                        {/* <div className="company-logo-container">
+                          <img
+                            src={company}
+                            alt={story.company}
+                            className="company-logo"
+                          />
+                        </div> */}
+                      </div>
+                    ))}
+                  </div>
+                </Carousel.Item>
               ))}
-            </div>
+            </Carousel>
+
             <div className="button-container">
               <Button className="view-stories-button">
                 View all success stories →
