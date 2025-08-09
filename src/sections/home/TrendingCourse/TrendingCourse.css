@@ -15,23 +15,18 @@
 
 .course-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
+    justify-content: center !important;
 }
 
 .course-card {
-    background: rgb(240, 240, 240);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    cursor: pointer;
-    /* Add cursor pointer for clickable cards */
-    user-select: none;
-    /* Prevent text selection when clicking */
-    outline: none;
-    /* Remove default focus outline */
+    transition: all 0.5s ease-in-out;
+    padding: 20px 26px;
+    gap: 10px;
+    background: #FFFFFF;
+    box-shadow: -3px -1px 8px rgba(151, 151, 151, 0.14), 0px 4px 8.4px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
 }
 
 .course-card img {
@@ -50,17 +45,47 @@
     pointer-events: none;
 }
 
-/* ✨ Custom Hover Theme */
+/* ✨ Default alternating states for EC-Council cards */
+.course-card.ec-council.alternate {
+    background: linear-gradient(180deg, #F44F4F 0%, #F6D4D4 100%);
+    box-shadow: -3px -1px 23.1px rgba(151, 151, 151, 0.14), 0px 4px 16.4px rgba(0, 0, 0, 0.13);
+}
+
+/* ✨ Default alternating states for Custom cards */
+.course-card.custom.alternate {
+    background: linear-gradient(180deg, #0B81FC 0%, #B3D8FF 100%);
+    box-shadow: -3px -1px 23.1px rgba(151, 151, 151, 0.14), 0px 4px 16.4px rgba(0, 0, 0, 0.13);
+}
+
+/* ✨ Normal hover effects - non-alternate cards get colored background */
 .course-card:hover {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #0052cc;
-    border-right: 5px solid #0052cc;
+}
+
+.course-card.ec-council:hover {
+    background: linear-gradient(180deg, #F44F4F 0%, #F6D4D4 100%);
+    box-shadow: -3px -1px 23.1px rgba(151, 151, 151, 0.14), 0px 4px 16.4px rgba(0, 0, 0, 0.13);
+}
+
+.course-card.custom:hover {
+    background: linear-gradient(180deg, #0B81FC 0%, #B3D8FF 100%);
+    box-shadow: -3px -1px 23.1px rgba(151, 151, 151, 0.14), 0px 4px 16.4px rgba(0, 0, 0, 0.13);
+}
+
+/* ✨ Alternate cards hover back to white/normal state */
+.course-card.ec-council.alternate:hover {
+    background: #FFFFFF;
+    box-shadow: -3px -1px 8px rgba(151, 151, 151, 0.14), 0px 4px 8.4px rgba(0, 0, 0, 0.13);
+}
+
+.course-card.custom.alternate:hover {
+    background: #FFFFFF;
+    box-shadow: -3px -1px 8px rgba(151, 151, 151, 0.14), 0px 4px 8.4px rgba(0, 0, 0, 0.13);
 }
 
 /* Active state for click feedback */
 .course-card:active {
-    transform: translateY(-4px) scale(1.01);
+    transform: translateY(-1px) scale(1.01);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
@@ -68,26 +93,6 @@
 .course-card:focus {
     outline: 2px solid #0052cc;
     outline-offset: 2px;
-}
-
-/* Category Highlighting */
-.course-card.ec-council {
-    border-top: 3px solid #ff4b5c;
-}
-
-.course-card.custom {
-    border-top: 3px solid #4bc0c8;
-}
-
-/* Enhanced hover effects for categories */
-.course-card.ec-council:hover {
-    border-left: 5px solid #ff4b5c;
-    border-right: 5px solid #ff4b5c;
-}
-
-.course-card.custom:hover {
-    border-left: 5px solid #4bc0c8;
-    border-right: 5px solid #4bc0c8;
 }
 
 .course-category-heading {
@@ -107,5 +112,26 @@
     .course-card:active {
         transform: scale(0.98);
         /* Subtle press effect on mobile */
+    }
+
+    /* Maintain alternating colors on mobile but without transform */
+    .course-card.ec-council:hover {
+        background: linear-gradient(180deg, #F44F4F 0%, #F6D4D4 100%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .course-card.custom:hover {
+        background: linear-gradient(180deg, #0B81FC 0%, #B3D8FF 100%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .course-card.ec-council.alternate:hover {
+        background: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .course-card.custom.alternate:hover {
+        background: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     }
 }

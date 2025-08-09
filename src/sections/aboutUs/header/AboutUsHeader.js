@@ -37,14 +37,14 @@ const AboutUsHeaderComp = () => {
       <Container className="h-100">
         <Row className="h-100 align-items-center justify-content-center">
           <Col lg={10} xl={8} className="text-center">
-            <h1 className="main-title mb-5">Our story, so far...</h1>
+            <h1 className="main-title mb-5">
+              Our story, so far...{" "}
+              <span className={`cursor ${showCursor ? "show" : "hide"}`}>
+                |
+              </span>
+            </h1>
             <div className="typing-container">
-              <p className="typing-text">
-                {displayedText}
-                <span className={`cursor ${showCursor ? "show" : "hide"}`}>
-                  |
-                </span>
-              </p>
+              <p className="typing-text">{displayedText}</p>
             </div>
           </Col>
         </Row>

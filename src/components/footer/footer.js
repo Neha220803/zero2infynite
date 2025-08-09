@@ -26,13 +26,13 @@ const FooterComp = () => {
           </Col>
           <Col xs={6} className="mb-2 mb-md-0">
             <a
-              href="https://wa.me/918111000953"
+              href="https://wa.me/919600046662"
               className="text-white text-decoration-none d-flex justify-content-center align-items-center"
             >
               <div className="d-flex justify-content-center align-items-center">
                 <FaPhone className="me-2 " />
                 <span className="d-md-block d-none me-2">Call us </span> +91
-                8111000953{" "}
+                9600046662{" "}
               </div>
             </a>
           </Col>

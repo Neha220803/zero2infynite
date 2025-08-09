@@ -59,20 +59,6 @@ const SimpleNavbar = () => {
         // style={{ backgroundColor: "#333333", color: "white" }}
       >
         <Container className="d-flex justify-content-between align-items-center">
-          <div className="d-flex">
-            <a
-              href="mailto:pradhan@zero2infynite.com"
-              className="text-decoration-none  align-items-center justify-content-center me-4 "
-            >
-              <MdEmail className="me-1" /> pradhan@zero2infynite.com
-            </a>
-            <a
-              href="tel:+919087924334"
-              className="text-decoration-none d-none d-md-flex align-items-center justify-content-center"
-            >
-              <FaPhoneAlt className="me-1" /> +91 81110 00953
-            </a>
-          </div>
           <div className="social-icons d-flex">
             <a
               href="https://www.instagram.com/zero2infynite/"
@@ -94,6 +80,20 @@ const SimpleNavbar = () => {
               className="me-3 text-white"
             >
               <FaLinkedinIn id="linkedin-icon" />
+            </a>
+          </div>
+          <div className="d-flex">
+            <a
+              href="mailto:pradhan@zero2infynite.com"
+              className="text-decoration-none  align-items-center justify-content-center me-4 "
+            >
+              <MdEmail className="me-1" /> pradhan@zero2infynite.com
+            </a>
+            <a
+              href="tel:+919087924334"
+              className="text-decoration-none d-none d-md-flex align-items-center justify-content-center"
+            >
+              <FaPhoneAlt className="me-1" /> +91 96000 46662
             </a>
           </div>
         </Container>

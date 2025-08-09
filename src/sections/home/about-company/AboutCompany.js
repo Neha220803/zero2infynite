@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import student1 from "../../../assets/images/avathar2.png";
+import student1 from "../../../assets/images/Testimonial/Nithish.png";
+import student2 from "../../../assets/images/Testimonial/Nithya.png";
+import student3 from "../../../assets/images/Testimonial/Sathya.png";
 import "./AboutCompany.css";
 import company from "../../../assets/images/company-eg.png";
 
@@ -8,29 +10,29 @@ const AboutCompanySection = () => {
   const successStories = [
     {
       id: 1,
-      name: "Akash M",
-      role: "Security Analyst",
-      company: "TASPro Technologies",
+      name: "Nithish",
+      role: "SOC Analyst",
+      company: "EY",
       bgColor: "#FFB6C1", // Light pink
       image: student1,
       offset: "card-offset-1", // First card - highest position
     },
     {
       id: 2,
-      name: "Akash M",
-      role: "Security Analyst",
-      company: "TASPro Technologies",
+      name: "Nithya",
+      role: "SOC Analyst",
+      company: "EY",
       bgColor: "#D3D3D3", // Light gray
-      image: student1,
+      image: student2,
       offset: "card-offset-2", // Second card - middle position
     },
     {
       id: 3,
-      name: "Akash M",
-      role: "Security Analyst",
-      company: "TASPro Technologies",
+      name: "Sathya",
+      role: "SOC Analyst",
+      company: "EY",
       bgColor: "#FFD700", // Gold/Yellow
-      image: student1,
+      image: student3,
       offset: "card-offset-3", // Third card - lowest position
     },
   ];
@@ -99,7 +101,7 @@ const AboutCompanySection = () => {
               {successStories.map((story) => (
                 <div
                   key={story.id}
-                  className={`success-card ${story.offset}`}
+                  className={`success-card ps-4 ${story.offset}`}
                   style={{ backgroundColor: `${story.bgColor}` }}
                 >
                   <div className="student-info">
@@ -115,13 +117,13 @@ const AboutCompanySection = () => {
                     />
                   </div>
 
-                  <div className="company-logo-container">
+                  {/* <div className="company-logo-container">
                     <img
                       src={company}
                       alt={story.company}
                       className="company-logo"
                     />
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>

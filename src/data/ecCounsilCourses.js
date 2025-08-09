@@ -814,6 +814,275 @@ export const ecCouncilCourses = {
     ],
   },
 
+  ECIH: {
+    // Basic Course Information
+    title: "EC-Council's Certified Incident Handler (E|CIH)",
+    badge: "Most Popular",
+    rating: {
+      stars: 5,
+      text: "Top Rating | Read Reviews",
+    },
+
+    // Course Description
+    description: {
+      intro:
+        "Are you looking for an affordable EC-Council's Certified Incident Handler (E|CIH) course with EC-Council International certification to improve your  Penetration Testing skills..?",
+
+      brochureLink: {
+        text: "Click here to download the EC-Council's Certified Incident Handler (E|CIH) brochure and syllabus",
+        url: "https://drive.google.com/file/d/1fKZ2ncRXY2OMyC0zAY6lUKvzXEmQXHuu/view?usp=sharing",
+      },
+
+      aboutUs: [
+        "Zero2Infynite is here to help you achieve your goals. We are an authorized EC-Council Accredited Training Center (ATC) partner.",
+        "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
+        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph’s College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
+      ],
+    },
+
+    // Contact Information
+    contact: {
+      phone: "+91 81110 00953",
+      phoneFormatted: "+ 91 81110 00953",
+    },
+
+    // Course Features
+    features: [
+      {
+        icon: "GiTeacher",
+        text: "Real-time network security training",
+        color: "#666666",
+      },
+      {
+        icon: "BookHalf",
+        text: "Updated CND syllabus",
+        color: "text-success",
+      },
+      {
+        icon: "Calendar2Check",
+        text: "Flexible Learning Modes",
+        color: "#955EAE",
+      },
+      {
+        icon: "Award",
+        text: "100% Success Rate",
+        color: "text-warning",
+      },
+      {
+        icon: "BriefcaseFill",
+        text: "Network Security Career Assistance",
+        color: "#275EAE",
+      },
+      {
+        icon: "Tools",
+        text: "Hands-On Network Defense Lab",
+        color: "text-secondary",
+      },
+      {
+        icon: "SiGoogleclassroom",
+        text: "Free Demo sessions",
+        color: "text-danger",
+      },
+      {
+        icon: "CurrencyDollar",
+        text: "Training that fits your budget",
+        color: "text-success",
+      },
+      {
+        icon: "PiCertificate",
+        text: "International CND Certification Preparation",
+        color: "text-warning",
+      },
+    ],
+
+    // Pricing Information
+    pricing: {
+      fullCourse: 32000,
+      trainingOnly: 16000,
+      description:
+        "Certified Network Defender (CND) from Zero2infynite offers EC-Council CND certification which will help you enter into the network security domain. We are an authorized training centre of EC-Council. The total cost of EC-Council CND certification with training is 32000. You can also attend training for 16000. Later you can pay the remaining amount and get the International certification.",
+    },
+
+    // Career Opportunities
+    careerPaths: [
+      "Network Security Administrator",
+      "Security Operations Center (SOC) Analyst",
+      "Network Defense Specialist",
+      "Cybersecurity Analyst",
+      "Information Security Analyst",
+      "Network Security Engineer",
+      "IT Security Specialist",
+      "Incident Response Analyst",
+      "Security Monitoring Analyst",
+    ],
+
+    additionalInfoHeading:
+      "Why Certified Network Defender (C|ND) course in Zero2infynite is best among others ?",
+    // Additional Information
+    additionalInfo:
+      "Certified Network Defender (C|ND) from Zero2infynite offers EC-Council International certification to upskill your Network defending knowledge. We are an authorized training centre of EC-Council. This C|ND course will help you to enter into Networking and SOC analyst job roles. Also bring strong understanding about how network works. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
+
+    // Batch Schedule Information
+    batchSchedule: {
+      title:
+        "Upcoming Batches Schedule for Certified Network Defender Training in Chennai",
+      description:
+        "Zero2infinite provides flexible timings to all our students. Here are the Network Security training classes in Chennai schedule in our branches. If this schedule doesn't match please let us know. We will try to arrange appropriate timing based on your flexible timings.",
+
+      batchTemplates: [
+        {
+          type: "Weekend",
+          days: "Saturday(Saturday - Sunday )",
+          id: 1,
+          dayOffset: 0,
+        },
+        {
+          type: "Weekdays",
+          days: "Tuesday (Monday - Friday)",
+          id: 2,
+          dayOffset: 2,
+        },
+        {
+          type: "Weekdays",
+          days: "Thursday (Monday - Friday)",
+          id: 3,
+          dayOffset: 4,
+        },
+        {
+          type: "Weekend",
+          days: "Saturday (Saturday - Sunday)",
+          id: 4,
+          dayOffset: 6,
+        },
+      ],
+
+      tableHeaders: ["Date", "Mode", "Days", "Actions"],
+
+      actionButtons: {
+        courseFees: {
+          text: "Course Fees",
+          variant: "outline-primary",
+          className: "course-fees-btn",
+        },
+        checkAvailability: {
+          text: "Check Availability",
+          variant: "primary",
+          className: "check-availability-btn",
+        },
+      },
+
+      bottomActions: {
+        customBatch: {
+          text: "Can't find a batch you were looking for?",
+          variant: "outline-primary",
+          className: "batch-action-btn",
+        },
+        requestBatch: {
+          text: "Request Custom Batch",
+          variant: "primary",
+          className: "batch-action-btn",
+        },
+      },
+
+      updateInterval: 2 * 24 * 60 * 60 * 1000,
+    },
+
+    // Trainer Profile Information
+    trainerProfile: {
+      title: "Trainer Profile",
+      qualities: [
+        "Our Trainers are real time trainers who completed certifications like CEH, OSCP+",
+        "Trainers with more than 3 years experience are handling sessions in Zero2infynite",
+        "Expert mentors deliver individualized coaching and career advice.",
+        "Patiently address and clarify students' critical doubts.",
+        "Provide individual attention to help each student work with cybersecurity tools and troubleshoot issues.",
+        "Trainers offer flexible scheduling to match students' availability.",
+      ],
+    },
+
+    // Certifications Information
+    certifications: {
+      title: "Certifications",
+      sections: [
+        {
+          title: "EC-Council CND certification and Exams",
+          content: [
+            "We are the only institute offering low-cost EC-Council Certified Network Defender (C|ND) certification with career shift guidance, hands-on training, and industry-standard curriculum. All our students have successfully cleared their exams. We’ve updated the EC-Council license image and a sample EC-Council certificate on this page for your reference. Students who opt for training only will receive customized sessions along with a Zero2infynite certification.",
+            "Our CND certification prepares you for real-world network defense scenarios with practical threat detection and incident response procedures.",
+          ],
+          image: {
+            src: cndStuCerti,
+            alt: "CND Certification Image",
+            className: "certification-image",
+          },
+        },
+      ],
+    },
+
+    // FAQ Information
+    faq: {
+      title: "Frequently Asked Questions",
+      defaultActiveKey: "1",
+      questions: [
+        {
+          eventKey: "0",
+          question: "What is the CND course about?",
+          answer:
+            "This Certified Network Defender (CND) course covers comprehensive training in network security fundamentals, threat detection, incident response, and network defense techniques. It's designed to help you build expertise in protecting network infrastructure and prepare you for the EC-Council CND certification.",
+        },
+        {
+          eventKey: "1",
+          question: "How long is the CND course?",
+          answer:
+            "The course duration is flexible with both weekday and weekend batches available. Weekday batches run Monday to Friday, and weekend batches run Saturday to Sunday. The complete CND course typically takes 6-8 weeks depending on the batch schedule you choose.",
+        },
+        {
+          eventKey: "2",
+          question: "What are the prerequisites for CND?",
+          answer:
+            "Basic understanding of networking concepts, TCP/IP, and operating systems (Windows/Linux) is recommended. Some experience with network administration or basic cybersecurity concepts is beneficial but not mandatory. Eagerness to learn network defense is the most important requirement.",
+        },
+        {
+          eventKey: "3",
+          question: "Is there a certificate?",
+          answer:
+            "Yes, upon successful completion of the course, you will receive a verified certificate of completion from Zero2infynite. Additionally, you can opt for the international EC-Council CND certification exam to become a certified network defender.",
+        },
+        {
+          eventKey: "4",
+          question: "What support is available during the CND course?",
+          answer:
+            "You'll have access to experienced network security trainer support, hands-on lab sessions with security tools, career guidance for network defense roles, job referrals, and continuous support until you achieve your goals. Our trainers provide individual attention and real threat scenario discussions.",
+        },
+        {
+          eventKey: "5",
+          question: "Is the CND course content downloadable?",
+          answer:
+            "Yes, all course materials including network security study guides, practical lab exercises, threat detection scenarios, and security tool configurations can be accessed and downloaded. You'll also receive the CND brochure and detailed syllabus for reference.",
+        },
+        {
+          eventKey: "6",
+          question: "What is the CND course fee structure?",
+          answer:
+            "We offer flexible payment options - you can pay ₹16,000 for training only and later pay the remaining amount for international CND certification (total ₹32,000). Contact us to discuss our refund and payment policies in detail.",
+        },
+      ],
+    },
+
+    // Highlighted Keywords (for styling)
+    highlights: [
+      "affordable Certified Network Defender course",
+      "secure a job, boost your salary, or advance your career in the network security domain",
+      "help you achieve your goals in network security and defense",
+      "we offer continuous support until you reach your goals",
+      "authorized EC-Council Accredited Training Center (ATC) partner",
+      "100% pass rate",
+      "real-world network security experience and also assist with job referrals",
+      "placed the majority of our students in the network security and cybersecurity field",
+      "helped experienced professionals transition into network defense",
+    ],
+  },
+
   // You can add more EC-Council courses here like:
   // ECSA: { ... },
   // etc.

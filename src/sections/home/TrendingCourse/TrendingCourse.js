@@ -146,7 +146,9 @@ const TrendingCourses = () => {
         {ecCouncilCourses.map((course, index) => (
           <div
             key={index}
-            className="course-card ec-council"
+            className={`course-card ec-council ${
+              index % 2 === 1 ? "alternate" : ""
+            }`}
             onClick={() => handleCourseClick(course.path)}
             role="button"
             tabIndex={0}
@@ -169,7 +171,9 @@ const TrendingCourses = () => {
         {customCourses.map((course, index) => (
           <div
             key={index}
-            className="course-card custom"
+            className={`course-card custom ${
+              index % 2 === 0 ? "alternate" : ""
+            }`}
             onClick={() => handleCourseClick(course.path)}
             role="button"
             tabIndex={0}

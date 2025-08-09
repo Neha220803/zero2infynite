@@ -49,7 +49,7 @@
     align-items: center !important;
     padding: 0 15px;
     color: white !important;
-    background: linear-gradient(270deg, #CDDFFF 0%, #007bff 100%);
+    background: linear-gradient(90deg, #067EFE 0%, #154C84 100%);
     margin-bottom: 15px;
 }
 
@@ -57,7 +57,8 @@
     margin-left: 0 !important;
     /* Group 106 */
     /* Rectangle 13697 */
-    background: linear-gradient(270deg, #699BF7 0%, #CDDFFF 100%);
+    background: linear-gradient(-90deg, #067EFE 0%, #154C84 100%);
+    border: 2px solid #5B6272;
     border-radius: 98px 98px 0px 0px;
     color: #575c61 !important;
 
@@ -82,10 +83,13 @@
 }
 
 .student-image-container {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: auto;
     border-radius: 50%;
     overflow: hidden;
+    padding: 0 !important;
+    border: 2px solid white;
+    background-color: rgb(241, 241, 241);
     margin-right: 10px;
 
 }
