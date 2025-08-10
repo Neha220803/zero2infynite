@@ -3,6 +3,7 @@
 import cehStuCerti from "../assets/images/indi_course/stu_certi.png";
 import cfhiStuCerti from "../assets/images/indi_course/chfi.png";
 import cndStuCerti from "../assets/images/indi_course/cnd.png";
+
 export const ecCouncilCourses = {
   CEH: {
     // Basic Course Information
@@ -576,6 +577,41 @@ export const ecCouncilCourses = {
       ],
     },
 
+    syllabusModules: [
+      {
+        title: "Module 1: Computer Forensics in Today's World",
+        topics: [
+          "Overview of digital forensics",
+          "Types of cybercrimes",
+          "Laws and regulations impacting digital investigations",
+        ],
+      },
+      {
+        title: "Module 2: Computer Forensics Investigation Process",
+        topics: [
+          "Investigation phases",
+          "Legal considerations",
+          "Incident triage and response",
+        ],
+      },
+      {
+        title: "Module 3: Understanding Hard Disks and File Systems",
+        topics: [
+          "Disk architecture",
+          "File systems structures (FAT, NTFS, ext3/4, HFS+, APFS)",
+          "RAID, NAS, SAN, file format analysis",
+        ],
+      },
+      {
+        title: "Module 4: Data Acquisition and Duplication",
+        topics: [
+          "Imaging techniques",
+          "eDiscovery concepts",
+          "Tools and methods for volatile and non-volatile acquisition",
+        ],
+      },
+    ],
+
     // Highlighted Keywords (for styling)
     highlights: [
       "affordable Computer Hacking Forensic Investigator course",
@@ -1125,6 +1161,22 @@ export const ecCouncilCourses = {
       "helped experienced professionals transition into network defense",
     ],
   },
+
+  CPENT: {},
+
+  WAHS: {},
+
+  CJAVA: {},
+
+  CNET: {},
+
+  CTIA: {},
+
+  CSA: {},
+
+  CCSE: {},
+
+  ECDE: {},
 
   // You can add more EC-Council courses here like:
   // ECSA: { ... },
