@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUsPerks from "../sections/aboutUs/AboutUsPerks";
+// import AboutUsPerks from "../sections/aboutUs/AboutUsPerks";
 import AboutUsHeaderComp from "../sections/aboutUs/header/AboutUsHeader";
 import AboutUSParaContentComp from "../sections/aboutUs/AboutUSParaContent/AboutUSParaContent";
 import AboutUsBuildingComp from "../sections/aboutUs/AboutUsBuildingComp/AboutUsBuildingComp";

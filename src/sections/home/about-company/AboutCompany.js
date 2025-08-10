@@ -4,7 +4,7 @@ import student1 from "../../../assets/images/Testimonial/Nithish.png";
 import student2 from "../../../assets/images/Testimonial/Nithya.png";
 import student3 from "../../../assets/images/Testimonial/Sathya.png";
 import "./AboutCompany.css";
-import company from "../../../assets/images/company-eg.png";
+// import company from "../../../assets/images/company-eg.png";
 
 const AboutCompanySection = () => {
   const successStories = [

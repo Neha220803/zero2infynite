@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import "./footer.css";
 import logo from ".././../assets/images/logo/cropped-logo.png";
 import { BsFillTelephoneFill, BsWhatsapp } from "react-icons/bs";
-import { Envelope, Whatsapp } from "react-bootstrap-icons";
+import { Envelope } from "react-bootstrap-icons";
 
 const ContentFooterComp = () => {
   return (

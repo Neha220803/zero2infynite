@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import AllCoursesPage from "./pages/courses";
 import Homepage from "./pages/homepage";
 import FooterComp from "./components/footer/footer";

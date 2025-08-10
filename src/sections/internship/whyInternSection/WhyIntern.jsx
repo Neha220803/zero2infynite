@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import labIcon from "../../../assets/icons/whyus/icon5.svg";
-import interviewIcon from "../../../assets/icons/whyus/icon6.svg";
+// import labIcon from "../../../assets/icons/whyus/icon5.svg";
+// import interviewIcon from "../../../assets/icons/whyus/icon6.svg";
 import supportIcon from "../../../assets/images/internship/bx_support.svg";
 import clipboardIcon from "../../../assets/images/internship/tdesign_task-1-filled.svg";
 import StonksIcon from "../../../assets/images/internship/carbon_skill-level-advanced.svg";

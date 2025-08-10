@@ -2,13 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo/eddited logo.png";
-import {
-  FaInstagram,
-  FaFacebookF,
-  FaXTwitter,
-  FaLinkedinIn,
-  FaFacebook,
-} from "react-icons/fa6";
+import { FaInstagram, FaLinkedinIn, FaFacebook } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./nav.css";

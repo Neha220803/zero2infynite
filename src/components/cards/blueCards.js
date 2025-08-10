@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, CardBody, CardText, CardTitle, Col } from "react-bootstrap";
+import { Card, CardText, CardTitle, Col } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 

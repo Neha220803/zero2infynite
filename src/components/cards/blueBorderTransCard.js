@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, CardImg, CardText, CardTitle } from "react-bootstrap";
-import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./customCards.css";
-import { RiArrowDropRightLine } from "react-icons/ri";
 
 // Simplified component that only receives image and path props
 const BlueBorderTransCard = ({ image, path, name }) => {
