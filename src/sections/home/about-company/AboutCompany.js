@@ -74,7 +74,7 @@ const AboutCompanySection = () => {
     <Container className="my-5">
       <Row>
         {/* Left Side: About Zero2Infynite */}
-        <Col md={8}>
+        <Col sm={12} xs={12} md={8}>
           <h2 className="text-primary fw-bold">
             Welcome to Zero2Infynite - Empowering the Future of Cybersecurity
           </h2>
@@ -126,7 +126,7 @@ const AboutCompanySection = () => {
         </Col>
 
         {/* Right Side: Student Success Stories with Carousel */}
-        <Col md={4} className="bg-primar">
+        <Col sm={12} xs={12} md={4} className="bg-primar">
           <div className="success-stories-section">
             <h3 className="success-stories-title mb-5">
               Student Success Stories
@@ -136,7 +136,7 @@ const AboutCompanySection = () => {
             <Carousel
               indicators={false}
               controls={false}
-              interval={4000}
+              interval={1500}
               className="success-stories-carousel"
             >
               {successStories.map((slideStories, slideIndex) => (

@@ -1,98 +1,159 @@
-.elevator-wrapper {
-    min-height: 200vh;
-    background: linear-gradient(to bottom, #f0f4f8, #cbd5e1);
-    /* No position: fixed here */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 100px 0;
+.about-us-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
 }
 
-.building-container {
-    display: flex;
-    flex-direction: row;
-    border: 3px solid #1e40af;
-    border-radius: 8px;
-    overflow: hidden;
-    background: white;
-    width: 700px;
-    height: 700px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin: 40px auto;
-    /* centers it horizontally, adjust as needed */
-    /* REMOVE position, top, left, transform, z-index */
+.book-stack-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.floors {
-    flex: 3;
+.books-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-
-.floor {
-    flex: 1;
-    display: flex;
     align-items: center;
-    padding-left: 20px;
-    font-weight: bold;
-    color: #1e3a8a;
-    border-bottom: 1px solid #e5e7eb;
-    background: transparent;
+    gap: 15px;
+    width: 100%;
 }
 
-.floor:last-child {
-    border-bottom: none;
-}
-
-.elevator-shaft {
-    flex: 1;
+.book-item {
     position: relative;
-    background: #e0f2fe;
-    border-left: 2px solid #1e40af;
-    height: 100%;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px;
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.elevator {
+.book-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+/* Individual book styling with rotation */
+.book-1 {
+    transform: rotate(-2deg);
+}
+
+.book-2 {
+    transform: rotate(1deg);
+}
+
+.book-3 {
+    transform: rotate(-1deg);
+}
+
+.book-4 {
+    transform: rotate(2deg);
+}
+
+.book-5 {
+    transform: rotate(-1deg);
+}
+
+.book-6 {
+    transform: rotate(1deg);
+}
+
+.book-7 {
+    transform: rotate(-2deg);
+}
+
+/* Hover Effects */
+.book-item:hover {
+    transform: scale(1.05) rotate(0deg);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.book-item:hover .book-image {
+    filter: brightness(1.1) saturate(1.2);
+}
+
+/* Color overlay effect on hover */
+.book-item::after {
+    content: '';
     position: absolute;
-    width: 60px;
-    height: 60px;
-    background: #3b82f6;
-    border: 3px solid #1e40af;
-    border-radius: 10px;
-    left: 50%;
-    transform: translateX(-50%) translateY(0);
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--hover-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
 }
 
-.person .head {
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
-    border: 2px solid #1e40af;
+.book-item:hover::after {
+    opacity: 0.3;
 }
 
-.person .body {
-    width: 8px;
-    height: 16px;
-    background: white;
-    border-radius: 4px;
-    border: 2px solid #1e40af;
+/* Modal Styling */
+.book-modal .modal-dialog {
+    max-width: 800px;
 }
 
-.floor-label {
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-    background: #1e40af;
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-right: 10px;
+.book-modal .modal-header {
+    border: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.book-modal .modal-body {
+    background-color: #f8f9fa;
+}
+
+.book-modal .modal-footer {
+    border: none;
+    background-color: #f8f9fa;
+}
+
+.modal-book-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    .book-modal .modal-body .d-flex {
+        flex-direction: column !important;
+    }
+
+    .modal-book-image {
+        max-width: 150px !important;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .books-wrapper {
+        gap: 10px;
+    }
+
+    .book-item {
+        max-width: 400px;
+    }
+
+    /* Reduce rotation on smaller screens */
+    .book-1,
+    .book-2,
+    .book-3,
+    .book-4,
+    .book-5,
+    .book-6,
+    .book-7 {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .books-wrapper {
+        gap: 8px;
+    }
+
+    .book-item {
+        max-width: 300px;
+    }
 }

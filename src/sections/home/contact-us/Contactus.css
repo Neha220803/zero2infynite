@@ -96,6 +96,7 @@
     min-height: 450px !important;
     border-radius: 24px !important;
     overflow: hidden !important;
+    background: #dadada !important;
 }
 
 .g-map {

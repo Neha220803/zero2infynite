@@ -1,12 +1,12 @@
 import React from "react";
 import "./placedStuScroll.css";
 // Import student images
-import amitImg from "../../../assets/images/avathar.png"; // Update paths to match your actual file structure
-import azamImg from "../../../assets/images/avathar2.png";
-import joyalImg from "../../../assets/images/avathar3.png";
-import abhishekImg from "../../../assets/images/avathar4.png";
-import amaanImg from "../../../assets/images/avathar2.png";
-import sahilImg from "../../../assets/images/avathar3.png";
+import amitImg from "../../../assets/images/Testimonial/Nithish.png"; // Update paths to match your actual file structure
+import azamImg from "../../../assets/images/Testimonial/Nithya.png";
+import joyalImg from "../../../assets/images/Testimonial/Sathya.png";
+import abhishekImg from "../../../assets/images/Testimonial/Nithish.png";
+import amaanImg from "../../../assets/images/Testimonial/Nithya.png";
+import sahilImg from "../../../assets/images/Testimonial/Sathya.png";
 import { Container } from "react-bootstrap";
 // Add more imports as needed
 

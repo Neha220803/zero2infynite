@@ -99,25 +99,14 @@
     line-height: 1.5;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .testimonial-frame-holder {
-        width: 90vw;
-    }
-
-    .testimonial-slide-panel {
-        padding: 25px;
-    }
-}
-
 @media (max-width: 576px) {
-    .testimonial-frame-holder {
+    /* .testimonial-frame-holder {
         width: 95vw;
-    }
+    } */
 
-    .testimonial-slide-panel {
+    /* .testimonial-slide-panel {
         padding: 20px;
-    }
+    } */
 
     .testimonial-name {
         font-size: 1rem;

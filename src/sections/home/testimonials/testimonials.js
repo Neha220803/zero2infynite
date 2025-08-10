@@ -95,7 +95,7 @@ export default function TestimonialSection() {
               md={6}
               sm={12}
               xs={12}
-              className="mb-4"
+              className="mb-md-4 p-0"
             >
               <div className="testimonial-stack-viewport h-100">
                 <div className="testimonial-frame-holder h-100">
