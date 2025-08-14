@@ -45,7 +45,7 @@
     border: #575c61 2px solid;
     overflow: hidden;
     display: flex;
-    justify-content: center !important;
+    justify-content: space-around !important;
     align-items: center !important;
     padding: 0 15px;
     color: white !important;

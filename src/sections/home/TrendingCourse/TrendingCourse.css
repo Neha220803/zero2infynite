@@ -1,5 +1,5 @@
 .trending-courses-section {
-    padding: 50px 20px;
+    padding: 50px 0px;
     background: #f9fafc;
     text-align: center;
 }
@@ -13,13 +13,6 @@
     color: #0052cc;
 }
 
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    justify-content: center !important;
-}
-
 .course-card {
     transition: all 0.5s ease-in-out;
     padding: 20px 26px;
@@ -27,6 +20,9 @@
     background: #FFFFFF;
     box-shadow: -3px -1px 8px rgba(151, 151, 151, 0.14), 0px 4px 8.4px rgba(0, 0, 0, 0.13);
     border-radius: 8px;
+    width: 100% !important;
+    /* max-width: 150px; */
+    cursor: pointer;
 }
 
 .course-card img {

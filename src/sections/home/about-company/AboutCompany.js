@@ -146,7 +146,7 @@ const AboutCompanySection = () => {
                     {slideStories.map((story) => (
                       <div
                         key={story.id}
-                        className={`success-card ps-4 ${story.offset}`}
+                        className={`success-card  ${story.offset}`}
                         style={{ backgroundColor: `${story.bgColor}` }}
                       >
                         <div className="student-info">
