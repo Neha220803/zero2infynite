@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
     width: 100%;
 }
 
@@ -33,7 +33,7 @@
 }
 
 /* Individual book styling with rotation */
-.book-1 {
+/* .book-1 {
     transform: rotate(-2deg);
 }
 
@@ -59,11 +59,11 @@
 
 .book-7 {
     transform: rotate(-2deg);
-}
+} */
 
 /* Hover Effects */
 .book-item:hover {
-    transform: scale(1.05) rotate(0deg);
+    transform: scale(1.01) rotate(0deg);
     z-index: 10;
     cursor: pointer;
 }
@@ -128,23 +128,9 @@
 }
 
 @media (max-width: 768px) {
-    .books-wrapper {
-        gap: 10px;
-    }
 
     .book-item {
         max-width: 400px;
-    }
-
-    /* Reduce rotation on smaller screens */
-    .book-1,
-    .book-2,
-    .book-3,
-    .book-4,
-    .book-5,
-    .book-6,
-    .book-7 {
-        transform: rotate(0deg);
     }
 }
 

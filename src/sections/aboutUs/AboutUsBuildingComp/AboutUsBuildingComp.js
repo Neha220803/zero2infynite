@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./AboutUsBuildingComp.css";
 import { Container, Row, Modal, Button } from "react-bootstrap";
+import book1 from "../../../assets/images/about-us/book1.png";
+import book2 from "../../../assets/images/about-us/book2.png";
 
 const AboutUsBuildingComp = () => {
   // Modal state
@@ -18,7 +20,7 @@ const AboutUsBuildingComp = () => {
   const books = [
     {
       id: 1,
-      image: "/path/to/book1.png", // Replace with your image paths
+      image: book1, // Replace with your image paths
       alt: "Hands-On Practical Training",
       title: "Hands-On Practical Training",
       description:
@@ -27,7 +29,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 2,
-      image: "/path/to/book2.png",
+      image: book2,
       alt: "Job-Oriented Training",
       title: "Job-Oriented Training",
       description:
@@ -36,7 +38,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 3,
-      image: "/path/to/book3.png",
+      image: book1,
       alt: "Training cost that fits your budget",
       title: "Affordable Training Programs",
       description:
@@ -45,7 +47,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 4,
-      image: "/path/to/book4.png",
+      image: book2,
       alt: "Career Assistance & Job Referrals",
       title: "Career Support & Job Placement",
       description:
@@ -54,7 +56,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 5,
-      image: "/path/to/book5.png",
+      image: book1,
       alt: "Flexible Learning Modes",
       title: "Flexible Learning Options",
       description:
@@ -63,7 +65,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 6,
-      image: "/path/to/book6.png",
+      image: book2,
       alt: "Updated syllabus",
       title: "Current & Updated Curriculum",
       description:
@@ -72,7 +74,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 7,
-      image: "/path/to/book7.png",
+      image: book1,
       alt: "Real time industry oriented training",
       title: "Industry-Focused Real-Time Training",
       description:

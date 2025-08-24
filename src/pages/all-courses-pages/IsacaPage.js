@@ -10,19 +10,19 @@ const IsacaPage = () => {
     {
       id: 1,
       img: cisaLogo,
-      path: "/isaca/security-plus",
+      path: "/isaca/cisa",
       name: "CISA",
     },
     {
       id: 2,
       img: cismLogo,
-      path: "/isaca/cysa-plus",
+      path: "/isaca/cism",
       name: "CISM",
     },
     {
       id: 3,
       img: criscLogo,
-      path: "/isaca/pentest-plus",
+      path: "/isaca/crisc",
       name: "CRISC",
     },
   ];
