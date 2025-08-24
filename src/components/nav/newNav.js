@@ -138,13 +138,12 @@ const SimpleNavbar = () => {
               >
                 Internship
               </Nav.Link>
-
-              <Nav.Link
+              {/* <Nav.Link
                 onClick={() => handleNavigation("/services")}
                 className="nav-item"
               >
                 Services
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 onClick={() => handleNavigation("/testimonial")}
                 className="nav-item"

@@ -4,6 +4,7 @@ import student1 from "../../../assets/images/Testimonial/Nithish.png";
 import student2 from "../../../assets/images/Testimonial/Nithya.png";
 import student3 from "../../../assets/images/Testimonial/Sathya.png";
 import "./AboutCompany.css";
+import successStud1 from "../../../assets/images/Testimonial/Nayeem.png";
 // import company from "../../../assets/images/company-eg.png";
 
 const AboutCompanySection = () => {
@@ -71,42 +72,50 @@ const AboutCompanySection = () => {
   ];
 
   return (
-    <Container className="my-5">
+    <Container className="my-5 bg-succe">
       <Row>
         {/* Left Side: About Zero2Infynite */}
         <Col sm={12} xs={12} md={8}>
-          <h2 className="text-primary fw-bold">
-            Welcome to Zero2Infynite - Empowering the Future of Cybersecurity
+          <h2 className="text-primary fw-bold text-md-center">
+            Welcome to Zero2Infynite
           </h2>
-          <p className="mt-3">
-            At <strong>Zero2Infynite</strong>, we are more than just a
-            cybersecurity training company — we are your gateway to a secure
-            digital future. Our mission is to transform passionate learners into
-            skilled professionals, guiding them from zero knowledge to infinite
-            potential in the ever-evolving world of cybersecurity.
-          </p>
-          <p>
-            We offer comprehensive, hands-on training programs designed by
-            industry experts, tailored to meet real-world demands. Whether
-            you're a beginner or an experienced professional, our curriculum
-            ensures you gain the technical expertise, critical thinking, and
-            practical skills needed to thrive in today's threat landscape.
-          </p>
-          <p>
-            But we don't stop at training. Our robust placement assistance
-            connects you with top employers, helping you land roles in
-            penetration testing, security operations, compliance, cloud
-            security, and more. Additionally, we offer professional
-            cybersecurity services to businesses, securing digital
-            infrastructures with advanced threat detection, incident response,
-            and risk management solutions.
-          </p>
-          <p>
-            <strong>Join Zero2Infynite</strong> — where your journey from
-            learning to leading in cybersecurity begins.
-          </p>
+          <h5 className="text-secondary mt-1  text-md-center ">
+            Empowering the Future of Cybersecurity
+          </h5>
+          <div className="mt-4 about-company-para-font">
+            <p className="mt-3 about-company-para-font ">
+              At <strong>Zero2Infynite</strong>, we are more than just a
+              cybersecurity training company - we are your gateway to a secure
+              digital future. Our mission is to transform passionate learners
+              into skilled professionals, guiding them from{" "}
+              <strong>zero knowledge to infinite potential</strong> in the
+              ever-evolving world of cybersecurity
+            </p>
+            <p>
+              We offer{" "}
+              <strong>comprehensive, hands-on training programs</strong>{" "}
+              designed by industry experts, tailored to meet real-world demands.
+              Whether you're a beginner or an experienced professional, our
+              curriculum ensures you gain the technical expertise, critical
+              thinking, and practical skills needed to thrive in today's threat
+              landscape.
+            </p>
+            <p>
+              But we don't stop at training. Our robust{" "}
+              <strong>placement assistance</strong> connects you with top
+              employers, helping you land roles in penetration testing, security
+              operations, compliance, cloud security, and more. Additionally, we
+              offer <strong>professional cybersecurity services</strong> to
+              businesses, securing digital infrastructures with advanced threat
+              detection, incident response, and risk management solutions.
+            </p>
+            <p>
+              Join <strong>Zero2Infynite</strong> - where your journey from
+              learning to leading in cybersecurity begins.
+            </p>
+          </div>
 
-          <h4 className="mt-4 text-primary fw-bold">
+          {/* <h4 className="mt-4 text-primary fw-bold">
             Why Choose Zero2Infynite?
           </h4>
           <ul>
@@ -122,55 +131,26 @@ const AboutCompanySection = () => {
               Strong placement network with connections to{" "}
               <strong>2,000+</strong> hiring partners.
             </li>
-          </ul>
+          </ul> */}
         </Col>
 
         {/* Right Side: Student Success Stories with Carousel */}
         <Col sm={12} xs={12} md={4} className="bg-primar">
           <div className="success-stories-section">
-            <h3 className="success-stories-title mb-5">
-              Student Success Stories
-            </h3>
+            <h3 className="success-stories-title ">Student Success Stories</h3>
 
             {/* Carousel Container */}
             <Carousel
               indicators={false}
               controls={false}
-              interval={1500}
+              interval={1800}
               className="success-stories-carousel"
             >
               {successStories.map((slideStories, slideIndex) => (
                 <Carousel.Item key={slideIndex}>
                   {/* Staggered Cards Container for each slide */}
-                  <div className="staggered-cards-container">
-                    {slideStories.map((story) => (
-                      <div
-                        key={story.id}
-                        className={`success-card  ${story.offset}`}
-                        style={{ backgroundColor: `${story.bgColor}` }}
-                      >
-                        <div className="student-info">
-                          <h6 className="student-name">{story.name}</h6>
-                          <small className="student-role">{story.role}</small>
-                        </div>
-
-                        <div className="student-image-container">
-                          <img
-                            src={story.image}
-                            alt={story.name}
-                            className="avatar-image"
-                          />
-                        </div>
-
-                        {/* <div className="company-logo-container">
-                          <img
-                            src={company}
-                            alt={story.company}
-                            className="company-logo"
-                          />
-                        </div> */}
-                      </div>
-                    ))}
+                  <div className="success-students-carousel-container">
+                    <img src={successStud1} alt="success students" />
                   </div>
                 </Carousel.Item>
               ))}

@@ -5,6 +5,16 @@
     margin-bottom: 3rem;
 }
 
+.about-company-para-font {
+    font-size: 18px !important;
+}
+
+@media (max-width: 768px) {
+    .about-company-para-font {
+        font-size: 14px !important;
+    }
+}
+
 .company-title {
     color: #007bff;
     font-weight: bold;
@@ -20,95 +30,9 @@
     font-weight: bold;
 }
 
-.success-stories-section {
-    /* height: 473px; */
-    position: relative;
-}
-
 .success-stories-title {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
-/* Staggered Cards Container */
-.staggered-cards-container {
-    width: 100%;
-    /* margin-bottom: 2rem; */
-}
-
-/* Individual Success Card */
-.success-card {
-    width: 100%;
-    height: 120px;
-    border-radius: 60px !important;
-    border: #575c61 2px solid;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around !important;
-    align-items: center !important;
-    padding: 0 15px;
-    color: white !important;
-    background: linear-gradient(90deg, #067EFE 0%, #154C84 100%);
-    margin-bottom: 15px;
-}
-
-.card-offset-2 {
-    margin-left: 0 !important;
-    /* Group 106 */
-    /* Rectangle 13697 */
-    background: linear-gradient(-90deg, #067EFE 0%, #154C84 100%);
-    border: 2px solid #5B6272;
-    border-radius: 98px 98px 0px 0px;
-    color: #575c61 !important;
-
-}
-
-.student-info {
-    text-align: left;
-    padding-right: 10px;
-}
-
-.student-name {
-    font-weight: bold;
-    margin-bottom: 0;
-    font-size: 0.9rem;
-    color: white !important;
-}
-
-.student-role {
-    color: #ededed;
-    font-size: 0.75rem;
-    font-weight: 700 !important;
-}
-
-.student-image-container {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 0 !important;
-    border: 2px solid white;
-    background-color: rgb(241, 241, 241);
-    margin-right: 10px;
-
-}
-
-.avatar-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.company-logo-container {
-    width: 40px;
-    height: 30px;
-}
-
-.company-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .view-stories-button {
@@ -121,19 +45,9 @@
 
 .button-container {
     text-align: center;
-    margin-top: 2rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .success-card {
-        width: 100%;
-        /* height: 100px; */
-    }
-
-    .card-offset-1,
-    .card-offset-2,
-    .card-offset-3 {
-        margin-left: 0 !important;
-    }
+.success-students-carousel-container {
+    width: 100% !important;
+    height: 100% !important;
 }

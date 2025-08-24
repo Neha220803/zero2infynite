@@ -11,6 +11,11 @@ import ServicesPage from "./pages/servicesPage";
 import BlogPage from "./pages/blogPage";
 import IndividualCourses from "./pages/individualCourses";
 import TestimonialPage from "./pages/testimonialPage";
+import CompTIAPage from "./pages/all-courses-pages/CompTIAPage";
+import IsacaPage from "./pages/all-courses-pages/IsacaPage";
+import CustomCourse from "./pages/all-courses-pages/CustomCourse";
+import CyberDiplomaPage from "./pages/all-courses-pages/CyberDiplomaPage";
+import CloudPage from "./pages/all-courses-pages/CloudPage";
 
 function Layout() {
   return (
@@ -22,6 +27,12 @@ function Layout() {
         <Route path="/all-courses" element={<AllCoursesPage />} />
 
         <Route path="/ec-council" element={<EcCounsilPages />} />
+        <Route path="/comptia" element={<CompTIAPage />} />
+        <Route path="/isaca" element={<IsacaPage />} />
+        <Route path="/cloud-computing" element={<CloudPage />} />
+        <Route path="/z2i-cyber-diploma" element={<CyberDiplomaPage />} />
+        <Route path="/z2i-custom-courses" element={<CustomCourse />} />
+
         <Route
           path="/ethical-hacking-training-in-chennai"
           element={<IndividualCourses courseType="CEH" />}
@@ -41,7 +52,7 @@ function Layout() {
 
         <Route path="/internship" element={<InternshipPage />} />
 
-        <Route path="/services" element={<ServicesPage />} />
+        {/* <Route path="/services" element={<ServicesPage />} /> */}
 
         <Route path="/testimonial" element={<TestimonialPage />} />
 

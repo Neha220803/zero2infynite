@@ -19,7 +19,7 @@ const BlueCard = ({ title, description, icon, path }) => {
       onMouseLeave={() => setIsHovered(false)}
       style={{ position: "relative" }}
     >
-      <div className="d-flex align-items-start p-3">
+      <div className="d-flex align-items-start p-md-3">
         <div className="me-3" style={{ width: "90px" }}>
           {icon}
         </div>
@@ -38,9 +38,9 @@ const BlueCard = ({ title, description, icon, path }) => {
             transition: "opacity 0.3s",
             opacity: isHovered ? 1 : 0,
             color: "white",
-            cursor: "pointer", // Add cursor pointer to indicate it's clickable
+            cursor: "pointer",
           }}
-          onClick={handleNavigate} // Add onClick handler to navigate
+          onClick={handleNavigate}
         >
           <span className="me-2">Click to Continue</span>
           <FaArrowRight />
@@ -55,16 +55,19 @@ const BlueCards = ({ coursesData }) => {
   return (
     <>
       {coursesData.map((course) => (
-        <Col key={course.id} lg={4} md={6} className="mb-4">
+        <Col key={course.id} lg={4} md={6} className="mb-3 mb-md-4">
           <BlueCard
             title={course.title}
             description={course.description}
-            path={course.path} // Pass the path from coursesData
+            path={course.path}
             icon={
-              <img
-                src={course.img}
-                alt={course.title}
-                style={{ width: "100%", height: "auto" }}
+              <course.icon
+                size={60}
+                color="white"
+                style={{
+                  width: "60px",
+                  height: "60px",
+                }}
               />
             }
           />

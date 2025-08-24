@@ -29,7 +29,7 @@ const ContactUsHomeComp = () => {
               <div className="headquarters-list">
                 <div className="headquarters-item">
                   <h4>Connect with us</h4>
-                  <p>Phone: +91 9445958426</p>
+                  <p>Phone: +91 9600046662</p>
                   <p>Email: pradhan@zero2infynite.com</p>
                 </div>
               </div>

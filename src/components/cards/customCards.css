@@ -14,8 +14,6 @@
   transform-origin: center !important;
   cursor: pointer !important;
   overflow: hidden !important;
-
-
   box-shadow: 0px 0px 7.5px 1px #EFEFEF !important;
   border-radius: 12px !important;
 }
@@ -23,4 +21,32 @@
 .blue-border-trans-card:hover {
   transform: scale(1.02) !important;
   border: 2px solid #275eae !important;
+}
+
+.all-courses-cards {
+  background-color: #275eae !important;
+  color: white !important;
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 10px !important;
+  min-height: 200px !important;
+  justify-content: center !important;
+  padding: 21px !important;
+  align-items: center !important;
+  border: 2px solid black !important;
+  transition: all 0.3s ease-in-out !important;
+  transform-origin: center !important;
+  cursor: pointer !important;
+}
+
+.all-courses-cards:hover {
+  transform: scale(1.02) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .all-courses-cards {
+    padding: 18px !important;
+    min-height: 170px !important;
+  }
+
 }

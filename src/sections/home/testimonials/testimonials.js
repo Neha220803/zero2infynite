@@ -8,7 +8,7 @@ import { Star } from "lucide-react";
 const allTestimonials = [
   {
     id: 3,
-    name: "Abishey Ajith",
+    name: "Abishek Ajith",
     stars: 5,
     reviewCount: 3,
     yearsAgo: "2 years ago",

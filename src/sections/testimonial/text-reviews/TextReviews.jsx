@@ -4,7 +4,7 @@ import "./TextReviews.css";
 // Sample data array
 const reviews = [
   {
-    name: "Abishey Ajith",
+    name: "Abishek Ajith",
     stars: 5,
     review:
       "I had experience in cyber field. Had a nice session and all doubts explained clearly.",
