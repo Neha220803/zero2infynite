@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.9cf86e2c.css",
-    "main.js": "/zero2infynite/static/js/main.a7c291a8.js",
+    "main.css": "/zero2infynite/static/css/main.7842003b.css",
+    "main.js": "/zero2infynite/static/js/main.91bcd34a.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/zero2infynite/static/media/cnd.e4a7309d99dc156082a0.png",
     "static/media/placeholder.png": "/zero2infynite/static/media/placeholder.bc5345e1308f7df61c89.png",
@@ -10,6 +10,7 @@
     "static/media/home-bg.png": "/zero2infynite/static/media/home-bg.b3edbe4a2a57d52c5e68.png",
     "static/media/who_are_we_1.jpg": "/zero2infynite/static/media/who_are_we_1.ab3af255019a3095b2fa.jpg",
     "static/media/stu_certi.png": "/zero2infynite/static/media/stu_certi.1ab2e608e7264d5eac9d.png",
+    "static/media/Nayeem.png": "/zero2infynite/static/media/Nayeem.068671526b4b668ae2e7.png",
     "static/media/Sathya.png": "/zero2infynite/static/media/Sathya.40906b5e8802bc68227c.png",
     "static/media/pen-test.png": "/zero2infynite/static/media/pen-test.c344e0b6f2f99b568969.png",
     "static/media/eddited logo.png": "/zero2infynite/static/media/eddited logo.6081f1a669f0dfe2e431.png",
@@ -18,13 +19,10 @@
     "static/media/cropped-logo.png": "/zero2infynite/static/media/cropped-logo.7f653f59ff0de58e3c55.png",
     "static/media/Nithish.png": "/zero2infynite/static/media/Nithish.d5c14dc705c59b42c7cf.png",
     "static/media/trainerIcon.svg": "/zero2infynite/static/media/trainerIcon.2e40817523ede0b527f3da7e5f37d401.svg",
-    "static/media/icon5.svg": "/zero2infynite/static/media/icon5.5767bebe03a326313802b82a9c3799a7.svg",
     "static/media/WAHS.webp": "/zero2infynite/static/media/WAHS.97f92158b0e8df42c259.webp",
     "static/media/course4.svg": "/zero2infynite/static/media/course4.309ac9dfbf702f2915242c230387b5f1.svg",
     "static/media/course2.svg": "/zero2infynite/static/media/course2.adedfc3d2a6827afe92ba7bb37e62050.svg",
     "static/media/CASE-Java.webp": "/zero2infynite/static/media/CASE-Java.02db1d3b5457ed4958fc.webp",
-    "static/media/icon2.svg": "/zero2infynite/static/media/icon2.771adf963d3e0e37bc39886727195f33.svg",
-    "static/media/icon4.svg": "/zero2infynite/static/media/icon4.e3611d362e24993d7c9e9e0db636be99.svg",
     "static/media/course6.svg": "/zero2infynite/static/media/course6.3cd42de47205e8e79cfc599ec6301d85.svg",
     "static/media/CSA.webp": "/zero2infynite/static/media/CSA.f8ac7d819fc519e4c8a2.webp",
     "static/media/course1.svg": "/zero2infynite/static/media/course1.da2466113a4cf844e7c68aa8bc2e0ac9.svg",
@@ -34,10 +32,8 @@
     "static/media/course3.svg": "/zero2infynite/static/media/course3.87b0cf3d0eae0dbe0647e0e77d2de8db.svg",
     "static/media/carrerBoostIcon.svg": "/zero2infynite/static/media/carrerBoostIcon.b84d63b6e16f7536c01bad293151dd6c.svg",
     "static/media/CND.webp": "/zero2infynite/static/media/CND.73973b54c1510af6d9c5.webp",
-    "static/media/icon1.svg": "/zero2infynite/static/media/icon1.b98619fd7fd937f0db59e3b326a03fc9.svg",
     "static/media/CCSE.webp": "/zero2infynite/static/media/CCSE.7d750320c4314b7b695b.webp",
     "static/media/CTIA.webp": "/zero2infynite/static/media/CTIA.3ba7d799c3652addb68e.webp",
-    "static/media/icon3.svg": "/zero2infynite/static/media/icon3.f80d764d9cad74c0bd9606bf7ad581de.svg",
     "static/media/ECDE.webp": "/zero2infynite/static/media/ECDE.8dab985ad14682a52573.webp",
     "static/media/CHFI.webp": "/zero2infynite/static/media/CHFI.b8aef47eb3dc9ff78390.webp",
     "static/media/course5.svg": "/zero2infynite/static/media/course5.8adb6ae7371f7e46247abfd9116f0adf.svg",
@@ -45,18 +41,17 @@
     "static/media/ECIH.webp": "/zero2infynite/static/media/ECIH.b43565ae9e29e1c993f3.webp",
     "static/media/CEH.webp": "/zero2infynite/static/media/CEH.4661c8a330866bcd2377.webp",
     "static/media/bx_support.svg": "/zero2infynite/static/media/bx_support.3d0f6ba8638642646bbc6e11d7bef5ad.svg",
-    "static/media/icon6.svg": "/zero2infynite/static/media/icon6.8c0d68db9b8d24f98bab0de4b38bb0ee.svg",
     "index.html": "/zero2infynite/index.html",
     "static/media/exporuseIcon.svg": "/zero2infynite/static/media/exporuseIcon.f1881795280d8c344bfbcb433825807d.svg",
     "static/media/discover icon.svg": "/zero2infynite/static/media/discover icon.257dffe124ac52d47a273104208f8046.svg",
     "static/media/certificateIcon.svg": "/zero2infynite/static/media/certificateIcon.88b45c35a1e1cd3aeb160f5f9e1448df.svg",
     "static/media/tdesign_task-1-filled.svg": "/zero2infynite/static/media/tdesign_task-1-filled.d3ba710db1ddfa6519157bf3b876e07b.svg",
     "static/media/carbon_skill-level-advanced.svg": "/zero2infynite/static/media/carbon_skill-level-advanced.23a8161d80819c8b1160f1ad15fbf766.svg",
-    "main.9cf86e2c.css.map": "/zero2infynite/static/css/main.9cf86e2c.css.map",
-    "main.a7c291a8.js.map": "/zero2infynite/static/js/main.a7c291a8.js.map"
+    "main.7842003b.css.map": "/zero2infynite/static/css/main.7842003b.css.map",
+    "main.91bcd34a.js.map": "/zero2infynite/static/js/main.91bcd34a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cf86e2c.css",
-    "static/js/main.a7c291a8.js"
+    "static/css/main.7842003b.css",
+    "static/js/main.91bcd34a.js"
   ]
 }
