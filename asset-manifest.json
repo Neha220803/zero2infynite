@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/zero2infynite/static/css/main.a04b9671.css",
-    "main.js": "/zero2infynite/static/js/main.d5ce6ebe.js",
+    "main.css": "/zero2infynite/static/css/main.fd44febf.css",
+    "main.js": "/zero2infynite/static/js/main.4b3f0ac6.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/zero2infynite/static/media/cnd.e4a7309d99dc156082a0.png",
     "static/media/placeholder.png": "/zero2infynite/static/media/placeholder.bc5345e1308f7df61c89.png",
     "static/media/chfi.png": "/zero2infynite/static/media/chfi.0804e978561a4326fe09.png",
     "static/media/cybersecurityanalyst-logo.jpg": "/zero2infynite/static/media/cybersecurityanalyst-logo.b84aa786777c1ecbb763.jpg",
+    "static/media/ccse.png": "/zero2infynite/static/media/ccse.94907cc9b75efcaf98f7.png",
+    "static/media/cnet.png": "/zero2infynite/static/media/cnet.f03378295e8bc39602f7.png",
+    "static/media/cjava.png": "/zero2infynite/static/media/cjava.16e262fb4cc930457244.png",
     "static/media/testi-header-bg.png": "/zero2infynite/static/media/testi-header-bg.b83713b5bc4c581bf952.png",
+    "static/media/security-plus.png": "/zero2infynite/static/media/security-plus.06783e43cfcb70af341f.png",
+    "static/media/wahs.png": "/zero2infynite/static/media/wahs.79418b89c6cc22de0367.png",
+    "static/media/cisa.png": "/zero2infynite/static/media/cisa.63c7986094251fc66661.png",
     "static/media/home-bg.png": "/zero2infynite/static/media/home-bg.b3edbe4a2a57d52c5e68.png",
     "static/media/who_are_we_1.jpg": "/zero2infynite/static/media/who_are_we_1.ab3af255019a3095b2fa.jpg",
     "static/media/stu_certi.png": "/zero2infynite/static/media/stu_certi.1ab2e608e7264d5eac9d.png",
@@ -50,11 +56,11 @@
     "static/media/certificateIcon.svg": "/zero2infynite/static/media/certificateIcon.88b45c35a1e1cd3aeb160f5f9e1448df.svg",
     "static/media/tdesign_task-1-filled.svg": "/zero2infynite/static/media/tdesign_task-1-filled.d3ba710db1ddfa6519157bf3b876e07b.svg",
     "static/media/carbon_skill-level-advanced.svg": "/zero2infynite/static/media/carbon_skill-level-advanced.23a8161d80819c8b1160f1ad15fbf766.svg",
-    "main.a04b9671.css.map": "/zero2infynite/static/css/main.a04b9671.css.map",
-    "main.d5ce6ebe.js.map": "/zero2infynite/static/js/main.d5ce6ebe.js.map"
+    "main.fd44febf.css.map": "/zero2infynite/static/css/main.fd44febf.css.map",
+    "main.4b3f0ac6.js.map": "/zero2infynite/static/js/main.4b3f0ac6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a04b9671.css",
-    "static/js/main.d5ce6ebe.js"
+    "static/css/main.fd44febf.css",
+    "static/js/main.4b3f0ac6.js"
   ]
 }
