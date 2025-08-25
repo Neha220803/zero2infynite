@@ -2,12 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Table, Button, Col } from "react-bootstrap";
 import "./indi-course-table.css";
 import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
+import { compTIACourses } from "../../../data/compTIACourses";
+import { isacaCourses } from "../../../data/isacaCourses";
 
 const IndiCourseTableComp = ({ courseType }) => {
   const [batchSchedules, setBatchSchedules] = useState([]);
 
   // Get course data based on courseType prop
-  const courseData = ecCouncilCourses[courseType];
+  const courseData =
+    ecCouncilCourses[courseType] ||
+    compTIACourses[courseType] ||
+    isacaCourses[courseType];
   const batchData = courseData.batchSchedule;
 
   // Check if Actions column should be displayed

@@ -48,6 +48,43 @@ function Layout() {
           element={<IndividualCourses courseType="CND" />}
         />
 
+        <Route
+          path="/ec-council/ecih"
+          element={<IndividualCourses courseType="ECIH" />}
+        />
+
+        <Route
+          path="/ec-council/wahs"
+          element={<IndividualCourses courseType="WAHS" />}
+        />
+
+        <Route
+          path="/ec-council/case-java"
+          element={<IndividualCourses courseType="CJAVA" />}
+        />
+        <Route
+          path="/ec-council/case-net"
+          element={<IndividualCourses courseType="CNET" />}
+        />
+        <Route
+          path="/ec-council/ccse"
+          element={<IndividualCourses courseType="CCSE" />}
+        />
+        <Route
+          path="/ec-council/ecde"
+          element={<IndividualCourses courseType="ECDE" />}
+        />
+
+        <Route
+          path="/comptia/security-plus"
+          element={<IndividualCourses courseType="Security" />}
+        />
+
+        <Route
+          path="/isaca/cisa"
+          element={<IndividualCourses courseType="CISA" />}
+        />
+
         <Route path="/about" element={<AboutUsPage />} />
 
         <Route path="/internship" element={<InternshipPage />} />

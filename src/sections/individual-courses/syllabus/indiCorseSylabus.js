@@ -2,10 +2,15 @@ import React from "react";
 import { Container, Accordion, ListGroup } from "react-bootstrap";
 import "./indiCourseSyllabus.css";
 import { ecCouncilCourses } from "../../../data/ecCounsilCourses"; // Import the data
+import { compTIACourses } from "../../../data/compTIACourses";
+import { isacaCourses } from "../../../data/isacaCourses";
 
 const IndiCorseSylabusComp = ({ courseType }) => {
   // Get course data based on courseType prop
-  const courseData = ecCouncilCourses[courseType];
+  const courseData =
+    ecCouncilCourses[courseType] ||
+    compTIACourses[courseType] ||
+    isacaCourses[courseType];
   const syllabusModules = courseData?.syllabusModules;
 
   // If no syllabusModules exist, don't render anything

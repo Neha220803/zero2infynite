@@ -17,12 +17,17 @@ import { PiCertificate } from "react-icons/pi";
 import { SiGoogleclassroom } from "react-icons/si";
 import IndiCoursePopUPFormComp from "../form/IndiCoursePopUPForm";
 import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
+import { compTIACourses } from "../../../data/compTIACourses";
+import { isacaCourses } from "../../../data/isacaCourses";
 
 const IndiCourseBasicInfo = ({ courseType }) => {
   const [modalShow, setModalShow] = useState(false);
 
   // Get course data based on courseType prop
-  const courseData = ecCouncilCourses[courseType];
+  const courseData =
+    ecCouncilCourses[courseType] ||
+    compTIACourses[courseType] ||
+    isacaCourses[courseType];
 
   // Icon mapping for dynamic rendering
   const iconMap = {
@@ -196,24 +201,32 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                 })}
               </Row>
             ))}
-
             <Row>
-              <p className="indi-course-description">
-                {courseData.pricing.description}
-              </p>
-              <p className="indi-course-description">
-                <ol>
-                  {courseData.careerPaths.map((path, index) => (
-                    <li key={index}>{path}</li>
-                  ))}
-                </ol>
-              </p>
-              <h3 className="text-secondary">
+              <h3 className="text-secondary fw-bolder mt-md-4 mt-2">
                 {courseData.additionalInfoHeading}
               </h3>
+              {courseData.additionalInfoSubHeading && (
+                <h5 className="text-primary mt-2 fw-bold">
+                  {courseData.additionalInfoSubHeading}
+                </h5>
+              )}
               <p className="indi-course-description">
                 {courseData.additionalInfo}
               </p>
+              {courseData.pricing && (
+                <p className="indi-course-description">
+                  {courseData.pricing.description}
+                </p>
+              )}
+              {courseData.careerPaths && (
+                <p className="indi-course-description">
+                  <ol>
+                    {courseData.careerPaths.map((path, index) => (
+                      <li key={index}>{path}</li>
+                    ))}
+                  </ol>
+                </p>
+              )}
             </Row>
           </div>
         </Row>

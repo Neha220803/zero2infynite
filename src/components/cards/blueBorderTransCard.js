@@ -21,7 +21,7 @@ const BlueBorderTransCard = ({ image, path, name }) => {
         alt="Card image"
         className=""
         style={{
-          width: "100%",
+          width: "auto",
           height: "auto",
           maxHeight: "200px",
           minHeight: "200px",

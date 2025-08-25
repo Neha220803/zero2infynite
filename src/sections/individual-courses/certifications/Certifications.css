@@ -1,13 +1,13 @@
 .certification-image {
-    height: 500px !important;
+    height: 100% !important;
     width: 100% !important;
     object-fit: contain !important;
 }
 
 .certification-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 500px !important;
+    max-height: 500px !important;
+    /* width: 100% !important; */
     margin-bottom: 20px;
     overflow: hidden !important;
 }

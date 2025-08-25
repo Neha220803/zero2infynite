@@ -3,10 +3,15 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import stuCerti from "../../../assets/images/indi_course/stu_certi.png";
 import "./Certifications.css";
 import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
+import { compTIACourses } from "../../../data/compTIACourses";
+import { isacaCourses } from "../../../data/isacaCourses";
 
 const CertificationsComp = ({ courseType = "CEH" }) => {
   // Get course data based on courseType prop
-  const courseData = ecCouncilCourses[courseType];
+  const courseData =
+    ecCouncilCourses[courseType] ||
+    compTIACourses[courseType] ||
+    isacaCourses[courseType];
   const certificationsData = courseData.certifications;
 
   // Image mapping for dynamic imports
@@ -16,17 +21,14 @@ const CertificationsComp = ({ courseType = "CEH" }) => {
   };
 
   return (
-    <section id="certifications">
+    <div id="certifications">
       <Container>
-        <Row className="justify-content-start mb-4">
-          <h2 className="indi-section-title mb-4">
-            {certificationsData.title}
-          </h2>
-        </Row>
-
         {certificationsData.sections.map((section, sectionIndex) => (
           <Row key={sectionIndex} className="mb-4">
             <Col xs={12} md={6}>
+              <h2 className="indi-section-title mb-4">
+                {certificationsData.title}
+              </h2>
               <h3>{section.title}</h3>
               {section.content.map((paragraph, paragraphIndex) => (
                 <p key={paragraphIndex} className="certification-paragraph">
@@ -34,7 +36,6 @@ const CertificationsComp = ({ courseType = "CEH" }) => {
                 </p>
               ))}
             </Col>
-
             {section.image && (
               <Col xs={12} md={6} className="certification-image-container">
                 <Image
@@ -47,7 +48,7 @@ const CertificationsComp = ({ courseType = "CEH" }) => {
           </Row>
         ))}
       </Container>
-    </section>
+    </div>
   );
 };
 

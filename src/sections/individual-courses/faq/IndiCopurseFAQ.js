@@ -1,14 +1,19 @@
 import React from "react";
 import { Accordion, Container, Row, Col } from "react-bootstrap";
 import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
+import { compTIACourses } from "../../../data/compTIACourses";
+import { isacaCourses } from "../../../data/isacaCourses";
 
 const IndiCourseFAQ = ({ courseType = "CEH" }) => {
   // Get course data based on courseType prop
-  const courseData = ecCouncilCourses[courseType];
+  const courseData =
+    ecCouncilCourses[courseType] ||
+    compTIACourses[courseType] ||
+    isacaCourses[courseType];
   const faqData = courseData.faq;
 
   return (
-    <Container className="indi-course-faq-container" id="faq">
+    <Container className="indi-course-faq-container pb-5" id="faq">
       <Row className="mb-4">
         <Col>
           <h2 className="indi-section-title">{faqData.title}</h2>

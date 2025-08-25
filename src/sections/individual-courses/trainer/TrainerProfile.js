@@ -3,14 +3,19 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Check2Circle } from "react-bootstrap-icons";
 import "./TrainerProfile.css";
 import { ecCouncilCourses } from "../../../data/ecCounsilCourses";
+import { compTIACourses } from "../../../data/compTIACourses";
+import { isacaCourses } from "../../../data/isacaCourses";
 
 const TrainerProfileComp = ({ courseType = "CEH" }) => {
   // Get course data based on courseType prop
-  const courseData = ecCouncilCourses[courseType];
+  const courseData =
+    ecCouncilCourses[courseType] ||
+    compTIACourses[courseType] ||
+    isacaCourses[courseType];
   const trainerData = courseData.trainerProfile;
 
   return (
-    <section id="trainer" className="py-5">
+    <div id="trainer" className="py-5">
       <Container>
         <Row className="justify-content-start mb-4">
           <h2 className="indi-section-title mb-4">{trainerData.title}</h2>
@@ -29,7 +34,7 @@ const TrainerProfileComp = ({ courseType = "CEH" }) => {
           ))}
         </Row>
       </Container>
-    </section>
+    </div>
   );
 };
 
