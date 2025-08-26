@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/zero2infynite/static/css/main.30888093.css",
-    "main.js": "/zero2infynite/static/js/main.068986de.js",
+    "main.js": "/zero2infynite/static/js/main.e6e04227.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/zero2infynite/static/media/cnd.e4a7309d99dc156082a0.png",
     "static/media/placeholder.png": "/zero2infynite/static/media/placeholder.bc5345e1308f7df61c89.png",
     "static/media/chfi.png": "/zero2infynite/static/media/chfi.0804e978561a4326fe09.png",
     "static/media/cybersecurityanalyst-logo.jpg": "/zero2infynite/static/media/cybersecurityanalyst-logo.b84aa786777c1ecbb763.jpg",
+    "static/media/cpent.png": "/zero2infynite/static/media/cpent.f99df2d43d227df088b4.png",
     "static/media/ccse.png": "/zero2infynite/static/media/ccse.94907cc9b75efcaf98f7.png",
     "static/media/cnet.png": "/zero2infynite/static/media/cnet.f03378295e8bc39602f7.png",
     "static/media/cjava.png": "/zero2infynite/static/media/cjava.16e262fb4cc930457244.png",
+    "static/media/ecde.png": "/zero2infynite/static/media/ecde.7843aa4a75cc31a19155.png",
     "static/media/testi-header-bg.png": "/zero2infynite/static/media/testi-header-bg.b83713b5bc4c581bf952.png",
+    "static/media/ecih.png": "/zero2infynite/static/media/ecih.b350af1e159933cb5284.png",
     "static/media/security-plus.png": "/zero2infynite/static/media/security-plus.06783e43cfcb70af341f.png",
     "static/media/wahs.png": "/zero2infynite/static/media/wahs.79418b89c6cc22de0367.png",
     "static/media/cisa.png": "/zero2infynite/static/media/cisa.63c7986094251fc66661.png",
@@ -57,10 +60,10 @@
     "static/media/tdesign_task-1-filled.svg": "/zero2infynite/static/media/tdesign_task-1-filled.d3ba710db1ddfa6519157bf3b876e07b.svg",
     "static/media/carbon_skill-level-advanced.svg": "/zero2infynite/static/media/carbon_skill-level-advanced.23a8161d80819c8b1160f1ad15fbf766.svg",
     "main.30888093.css.map": "/zero2infynite/static/css/main.30888093.css.map",
-    "main.068986de.js.map": "/zero2infynite/static/js/main.068986de.js.map"
+    "main.e6e04227.js.map": "/zero2infynite/static/js/main.e6e04227.js.map"
   },
   "entrypoints": [
     "static/css/main.30888093.css",
-    "static/js/main.068986de.js"
+    "static/js/main.e6e04227.js"
   ]
 }
