@@ -40,7 +40,7 @@ const EcCouncilPages = () => {
   return (
     <section className="mb-5">
       <Row className="">
-        <div className="text-center all-course-title">
+        <div className="text-center all-course-title my-3">
           <h1>
             Choose Your <span className="text-primary">EC Council Course</span>{" "}
             Now

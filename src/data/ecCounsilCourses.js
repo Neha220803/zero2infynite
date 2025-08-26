@@ -3,10 +3,13 @@
 import cehStuCerti from "../assets/images/indi_course/stu_certi.png";
 import cfhiStuCerti from "../assets/images/indi_course/chfi.png";
 import cndStuCerti from "../assets/images/indi_course/cnd.png";
+import ecihStuCerti from "../assets/images/indi_course/ecih";
+import cpentStuCerti from "../assets/images/indi_course/cpent.png";
 import wahsStuCerti from "../assets/images/indi_course/wahs.png";
 import cjavaStuCertfi from "../assets/images/indi_course/cjava.png";
 import cnetCerti from "../assets/images/indi_course/cnet.png";
 import ccseStuCerti from "../assets/images/indi_course/ccse.png";
+import ecdeStuCerti from "../assets/images/indi_course/ecde.png";
 
 export const ecCouncilCourses = {
   CEH: {
@@ -406,18 +409,6 @@ export const ecCouncilCourses = {
         text: "International CHFI Certification Preparation",
         color: "text-warning",
       },
-    ],
-
-    // Career Opportunities
-    careerPaths: [
-      "Digital Forensics Investigator",
-      "Cyber Forensics Expert",
-      "Incident Response Analyst",
-      "Computer Crime Investigator",
-      "Security Consultant",
-      "Forensic Analyst",
-      "Law Enforcement Cyber Crime Units",
-      "Corporate Security Investigator",
     ],
 
     additionalInfoHeading:
@@ -1119,6 +1110,8 @@ export const ecCouncilCourses = {
 
     additionalInfoHeading:
       "Why Certified Network Defender (E|CIH) course in Zero2infynite is best among others ?",
+    additionalInfoSubHeading:
+      "Learn E(E|CIH) Anytime, Anywhere through online and offline",
     // Additional Information
     additionalInfo:
       "Certified Network Defender (E|CIH) from Zero2infynite offers EC-Council International certification to upskill your Network defending knowledge. We are an authorized training centre of EC-Council. This E|CIH course will help you to enter into Networking and SOC analyst job roles. Also bring strong understanding about how network works. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
@@ -1212,7 +1205,7 @@ export const ecCouncilCourses = {
             "Our CND certification prepares you for real-world network defense scenarios with practical threat detection and incident response procedures.",
           ],
           image: {
-            src: cndStuCerti,
+            src: ecihStuCerti,
             alt: "CND Certification Image",
             className: "certification-image",
           },
@@ -1399,7 +1392,7 @@ export const ecCouncilCourses = {
   CPENT: {
     // Basic Course Information
     title:
-      "The Certified Penetration Testing Professional(C|PENT AI) Course in Chennai",
+      "The Certified Penetration Testing Professional (C|PENT AI) Course in Chennai",
     badge: "Most Popular",
     rating: {
       stars: 5,
@@ -1409,10 +1402,10 @@ export const ecCouncilCourses = {
     // Course Description
     description: {
       intro:
-        "Are you looking for an affordable The Certified Penetration Testing Professional(C|PENT AI) course with EC-Council International certification to improve your  Penetration Testing skills..?",
+        "Are you looking for an affordable The Certified Penetration Testing Professional (C|PENT AI) course with EC-Council International certification to improve your  Penetration Testing skills..?",
 
       brochureLink: {
-        text: "Click here to download the Web Application Hacking and Security (W|AHS) brochure and syllabus",
+        text: "Click here to download the CPENT brochure and syllabus",
         url: "https://drive.google.com/file/d/1-nIfIr-W8VZINv_JD_bprPvHnYyUqQGE/view",
       },
 
@@ -1478,39 +1471,20 @@ export const ecCouncilCourses = {
       },
     ],
 
-    // Pricing Information
-    pricing: {
-      fullCourse: 32000,
-      trainingOnly: 16000,
-      description:
-        "Certified Network Defender (CND) from Zero2infynite offers EC-Council CND certification which will help you enter into the network security domain. We are an authorized training centre of EC-Council. The total cost of EC-Council CND certification with training is 32000. You can also attend training for 16000. Later you can pay the remaining amount and get the International certification.",
-    },
-
-    // Career Opportunities
-    careerPaths: [
-      "Network Security Administrator",
-      "Security Operations Center (SOC) Analyst",
-      "Network Defense Specialist",
-      "Cybersecurity Analyst",
-      "Information Security Analyst",
-      "Network Security Engineer",
-      "IT Security Specialist",
-      "Incident Response Analyst",
-      "Security Monitoring Analyst",
-    ],
-
     additionalInfoHeading:
-      "Why CHFI v11 (Computer Hacking Forensic Investigator) course in Zero2infynite is best among others.",
+      "Why Certified Penetration Testing Professional (C|PENT AI) course in Zero2infynite is best among others.",
+    additionalInfoSubHeading:
+      "Learn (C|PENT AI) Anytime, Anywhere through online and offline",
     // Additional Information
     additionalInfo:
-      "Certified Network Defender (C|ND) from Zero2infynite offers EC-Council International certification to upskill your Network defending knowledge. We are an authorized training centre of EC-Council. This C|ND course will help you to enter into Networking and SOC analyst job roles. Also bring strong understanding about how network works. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
+      "Certified Penetration Testing Professional (C|PENT AI) from Zero2infynite offers EC-Council International certification to upskill your Network defending knowledge. We are an authorized training centre of EC-Council. This C|ND course will help you to enter into Networking and SOC analyst job roles. Also bring strong understanding about how network works. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
 
     // Batch Schedule Information
     batchSchedule: {
       title:
         "Upcoming Batches Schedule for Certified Network Defender Training in Chennai",
       description:
-        "Zero2infinite provides flexible timings to all our students. Here are the Network Security training classes in Chennai schedule in our branches. If this schedule doesn't match please let us know. We will try to arrange appropriate timing based on your flexible timings.",
+        "Certified Penetration Testing Professional(C|PENT AI) from Zero2infynite offers Ec-Council International certification to upskill your Penetration Testing knowledge. We are an authorized training centre of Ec-council. The total cost of C|PENT AI certification with training is 49000. You can also attend training for 18000. Later you can pay the remaining amount and get the International certification. This C|PENT AI course will help you to enter in to Penetration Testing domain. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students. ",
 
       batchTemplates: [
         {
@@ -1588,14 +1562,14 @@ export const ecCouncilCourses = {
       title: "Certifications",
       sections: [
         {
-          title: "EC-Council CND certification and Exams",
+          title: "EC-Council C|PENT AI certification and Exams",
           content: [
-            "We are the only institute offering low-cost EC-Council Certified Network Defender (C|ND) certification with career shift guidance, hands-on training, and industry-standard curriculum. All our students have successfully cleared their exams. We’ve updated the EC-Council license image and a sample EC-Council certificate on this page for your reference. Students who opt for training only will receive customized sessions along with a Zero2infynite certification.",
-            "Our CND certification prepares you for real-world network defense scenarios with practical threat detection and incident response procedures.",
+            "We are the only institute offering low-cost EC-Council Certified Network Defender C|PENT AI certification with career shift guidance, hands-on training, and industry-standard curriculum. All our students have successfully cleared their exams. We’ve updated the EC-Council license image and a sample EC-Council certificate on this page for your reference. Students who opt for training only will receive customized sessions along with a Zero2infynite certification.",
+            "Our C|PENT AI certification prepares you for real-world network defense scenarios with practical threat detection and incident response procedures.",
           ],
           image: {
-            src: cndStuCerti,
-            alt: "CND Certification Image",
+            src: cpentStuCerti,
+            alt: "CPENT Certification Image",
             className: "certification-image",
           },
         },
@@ -3246,7 +3220,7 @@ export const ecCouncilCourses = {
             "Our (E|CDE) certification prepares you for real-world network defense scenarios with practical threat detection and incident response procedures.",
           ],
           image: {
-            src: ccseStuCerti,
+            src: ecdeStuCerti,
             alt: "Case JAVA Certification Image",
             className: "certification-image",
           },

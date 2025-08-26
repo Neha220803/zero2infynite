@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardImg, CardText, CardTitle } from "react-bootstrap";
+import { Card, CardImg, CardTitle } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./customCards.css";
 
@@ -13,23 +13,17 @@ const BlueBorderTransCard = ({ image, path, name }) => {
 
   return (
     <Card
-      className="blue-border-trans-card h-100 "
+      className="blue-border-trans-card gap-2 h-100 "
       style={{ position: "relative" }}
     >
       <CardImg
         src={image}
         alt="Card image"
-        className=""
-        style={{
-          width: "auto",
-          height: "auto",
-          maxHeight: "200px",
-          minHeight: "200px",
-        }}
+        className="blue-border-transcard-img"
         onClick={handleNavigate}
       />
       <CardTitle>
-        <h5 className="text-primary">{name}</h5>
+        <h5 className="text-primary mb-0">{name}</h5>
       </CardTitle>
       {/* <CardText className="text-secondary">
         Learn More <RiArrowDropRightLine size={30} />

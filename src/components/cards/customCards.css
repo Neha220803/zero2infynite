@@ -7,7 +7,7 @@
   /* border-radius: 0px !important; */
   /* min-height: 200px !important; */
   justify-content: space-around !important;
-  padding: 20px 40px !important;
+  padding: 18px 34px !important;
   align-items: center !important;
   border: 2px solid black !important;
   transition: all 0.3s ease-in-out !important;
@@ -21,6 +21,12 @@
 .blue-border-trans-card:hover {
   transform: scale(1.02) !important;
   border: 2px solid #275eae !important;
+}
+
+.blue-border-transcard-img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 200px !important;
 }
 
 .all-courses-cards {
@@ -49,4 +55,18 @@
     min-height: 170px !important;
   }
 
+  .all-courses-cards:hover {
+    transform: scale(1.01) !important;
+  }
+
+  .blue-border-trans-card {
+    max-height: 200px !important;
+    padding: 15px 20px !important;
+  }
+
+  .blue-border-transcard-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 150px !important;
+  }
 }
