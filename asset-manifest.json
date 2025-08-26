@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zero2infynite/static/css/main.30888093.css",
-    "main.js": "/zero2infynite/static/js/main.e6e04227.js",
+    "main.js": "/zero2infynite/static/js/main.65207ecc.js",
     "static/media/certirfication.png": "/zero2infynite/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/zero2infynite/static/media/cnd.e4a7309d99dc156082a0.png",
     "static/media/placeholder.png": "/zero2infynite/static/media/placeholder.bc5345e1308f7df61c89.png",
@@ -60,10 +60,10 @@
     "static/media/tdesign_task-1-filled.svg": "/zero2infynite/static/media/tdesign_task-1-filled.d3ba710db1ddfa6519157bf3b876e07b.svg",
     "static/media/carbon_skill-level-advanced.svg": "/zero2infynite/static/media/carbon_skill-level-advanced.23a8161d80819c8b1160f1ad15fbf766.svg",
     "main.30888093.css.map": "/zero2infynite/static/css/main.30888093.css.map",
-    "main.e6e04227.js.map": "/zero2infynite/static/js/main.e6e04227.js.map"
+    "main.65207ecc.js.map": "/zero2infynite/static/js/main.65207ecc.js.map"
   },
   "entrypoints": [
     "static/css/main.30888093.css",
-    "static/js/main.e6e04227.js"
+    "static/js/main.65207ecc.js"
   ]
 }
