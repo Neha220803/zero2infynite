@@ -16,7 +16,7 @@ export const compTIACourses = {
         "Are you looking for an affordable CompTIA Security+ with CompTIA certification to improve your  Cyber Auditing skills..?",
       brochureLink: {
         text: "Click here to download the CompTIA Security+ brochure and syllabus",
-        url: "https://drive.google.com/file/d/1XrmWRk7hLaWaKvorNmpChxPRMZ33XHfL/view?usp=sharing",
+        url: "https://docs.google.com/document/d/19x6YEuUkneHeKmZgX9kjqQ4412bjYFZ7moFbhljiVhs/edit?usp=sharing",
       },
 
       aboutUs: [

@@ -15,7 +15,7 @@ export const isacaCourses = {
         "Are you looking for an affordable Certified Information Systems Auditor(CISA) course with ISACA certification to improve your  Cyber Auditing skills..?",
       brochureLink: {
         text: "Click here to download the CISA brochure and syllabus  ",
-        url: "https://drive.google.com/file/d/1XrmWRk7hLaWaKvorNmpChxPRMZ33XHfL/view?usp=sharing",
+        url: "https://docs.google.com/document/d/1Fb2U30PT7-25WC4VPDN1JNivPee6dDU-XMn_ZTE4vhg/edit?usp=sharing",
       },
 
       aboutUs: [
