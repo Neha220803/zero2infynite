@@ -56,7 +56,7 @@ const courses = [
     title: "Web Pentesting",
     logo: wahs,
     category: "EC-Council",
-    path: "/ec-council/web-pentesting",
+    path: "/ec-council/wahs",
     colSize: 2,
   },
   {

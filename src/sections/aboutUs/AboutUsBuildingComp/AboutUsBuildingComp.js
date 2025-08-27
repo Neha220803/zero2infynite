@@ -3,6 +3,11 @@ import "./AboutUsBuildingComp.css";
 import { Container, Row, Modal, Button } from "react-bootstrap";
 import book1 from "../../../assets/images/about-us/book1.png";
 import book2 from "../../../assets/images/about-us/book2.png";
+import book3 from "../../../assets/images/about-us/book3.png";
+import book4 from "../../../assets/images/about-us/book4.png";
+import book5 from "../../../assets/images/about-us/book5.png";
+import book6 from "../../../assets/images/about-us/book6.png";
+import book7 from "../../../assets/images/about-us/book7.png";
 
 const AboutUsBuildingComp = () => {
   // Modal state
@@ -38,7 +43,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 3,
-      image: book1,
+      image: book3,
       alt: "Training cost that fits your budget",
       title: "Affordable Training Programs",
       description:
@@ -47,7 +52,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 4,
-      image: book2,
+      image: book4,
       alt: "Career Assistance & Job Referrals",
       title: "Career Support & Job Placement",
       description:
@@ -56,7 +61,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 5,
-      image: book1,
+      image: book5,
       alt: "Flexible Learning Modes",
       title: "Flexible Learning Options",
       description:
@@ -65,7 +70,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 6,
-      image: book2,
+      image: book6,
       alt: "Updated syllabus",
       title: "Current & Updated Curriculum",
       description:
@@ -74,7 +79,7 @@ const AboutUsBuildingComp = () => {
     },
     {
       id: 7,
-      image: book1,
+      image: book7,
       alt: "Real time industry oriented training",
       title: "Industry-Focused Real-Time Training",
       description:

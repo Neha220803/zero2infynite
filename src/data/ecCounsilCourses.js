@@ -3,7 +3,7 @@
 import cehStuCerti from "../assets/images/indi_course/stu_certi.png";
 import cfhiStuCerti from "../assets/images/indi_course/chfi.png";
 import cndStuCerti from "../assets/images/indi_course/cnd.png";
-import ecihStuCerti from "../assets/images/indi_course/ecih";
+import ecihStuCerti from "../assets/images/indi_course/ecih.png";
 import cpentStuCerti from "../assets/images/indi_course/cpent.png";
 import wahsStuCerti from "../assets/images/indi_course/wahs.png";
 import cjavaStuCertfi from "../assets/images/indi_course/cjava.png";
@@ -1477,14 +1477,14 @@ export const ecCouncilCourses = {
       "Learn (C|PENT AI) Anytime, Anywhere through online and offline",
     // Additional Information
     additionalInfo:
-      "Certified Penetration Testing Professional (C|PENT AI) from Zero2infynite offers EC-Council International certification to upskill your Network defending knowledge. We are an authorized training centre of EC-Council. This C|ND course will help you to enter into Networking and SOC analyst job roles. Also bring strong understanding about how network works. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
+      "Certified Penetration Testing Professional(C|PENT AI) from Zero2infynite offers Ec-Council International certification to upskill your Penetration Testing knowledge. We are an authorized training centre of Ec-council. The total cost of C|PENT AI certification with training is 49000. You can also attend training for 18000. Later you can pay the remaining amount and get the International certification. This C|PENT AI course will help you to enter in to Penetration Testing domain. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
 
     // Batch Schedule Information
     batchSchedule: {
       title:
         "Upcoming Batches Schedule for Certified Network Defender Training in Chennai",
       description:
-        "Certified Penetration Testing Professional(C|PENT AI) from Zero2infynite offers Ec-Council International certification to upskill your Penetration Testing knowledge. We are an authorized training centre of Ec-council. The total cost of C|PENT AI certification with training is 49000. You can also attend training for 18000. Later you can pay the remaining amount and get the International certification. This C|PENT AI course will help you to enter in to Penetration Testing domain. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students. ",
+        "Zero2infinite provides flexible timings to all our students. Here are the Network Security training classes in Chennai schedule in our branches. If this schedule doesn't match please let us know. We will try to arrange appropriate timing based on your flexible timings.",
 
       batchTemplates: [
         {
@@ -1630,41 +1630,157 @@ export const ecCouncilCourses = {
         title:
           "Module 1: Introduction to Penetration Testing and Methodologies",
         topics: [
-          "Information Security Overview",
-          "Hacking Concepts and Methodology",
-          "Ethical Hacking Scope and Limitations",
+          "Penetration Testing Fundamentals and Ethics",
+          "PTES (Penetration Testing Execution Standard) Framework",
+          "OWASP Testing Guide and NIST Guidelines",
+          "Legal and Regulatory Considerations",
+          "Penetration Testing Types and Approaches",
+          "Risk Assessment and Threat Modeling",
         ],
       },
       {
-        title: "Module 2: Footprinting and Reconnaissance",
+        title: "Module 2: Penetration Testing Scoping and Engagement",
         topics: [
-          "Network Scanning Techniques",
-          "Information Gathering Methods",
-          "Social Engineering Tactics",
+          "Rules of Engagement (ROE) Development",
+          "Scoping and Project Planning",
+          "Client Communication and Documentation",
+          "Testing Windows and Limitations",
+          "Emergency Contact Procedures",
+          "Legal Documentation and Contracts",
         ],
       },
       {
-        title: "Module 3: System Hacking",
+        title:
+          "Module 3: Open-Source Intelligence (OSINT) and Attack Surface Mapping",
         topics: [
-          "Password Cracking Techniques",
-          "Privilege Escalation",
-          "Maintaining Access",
+          "Passive Information Gathering Techniques",
+          "Domain and DNS Reconnaissance",
+          "Social Media and Public Records Intelligence",
+          "Search Engine Exploitation",
+          "Metadata Analysis and Document Intelligence",
+          "Attack Surface Enumeration and Mapping",
         ],
       },
       {
-        title: "Module 4: Network Security",
+        title: "Module 4: Social Engineering Penetration Testing",
         topics: [
-          "Wireless Network Vulnerabilities",
-          "Web Application Security",
-          "Network Defense Mechanisms",
+          "Social Engineering Psychology and Techniques",
+          "Phishing and Spear-Phishing Campaigns",
+          "Vishing and Smishing Attacks",
+          "Physical Social Engineering",
+          "Pretexting and Baiting Techniques",
+          "Social Engineering Testing Frameworks",
         ],
       },
       {
-        title: "Module 5: Tools and Practical Applications",
+        title: "Module 5: Web Application Penetration Testing",
         topics: [
-          "Security Tools and Software",
-          "Penetration Testing",
-          "Real-world Attack Scenarios",
+          "OWASP Top 10 Vulnerabilities",
+          "SQL Injection and NoSQL Injection",
+          "Cross-Site Scripting (XSS) and CSRF",
+          "Authentication and Session Management Flaws",
+          "Business Logic Vulnerabilities",
+          "Web Application Security Testing Tools",
+        ],
+      },
+      {
+        title: "Module 6: API and Java Web Token Penetration Testing",
+        topics: [
+          "REST and SOAP API Security Testing",
+          "JSON Web Token (JWT) Vulnerabilities",
+          "API Authentication and Authorization Flaws",
+          "Rate Limiting and DoS Testing",
+          "API Fuzzing and Input Validation",
+          "GraphQL Security Assessment",
+        ],
+      },
+      {
+        title: "Module 7: Perimeter Defense Evasion Techniques",
+        topics: [
+          "Firewall Evasion Techniques",
+          "IDS/IPS Bypass Methods",
+          "Traffic Obfuscation and Tunneling",
+          "Anti-Virus Evasion",
+          "Network Segmentation Bypass",
+          "Covert Channel Communication",
+        ],
+      },
+      {
+        title: "Module 8: Windows Exploitation and Privilege Escalation",
+        topics: [
+          "Windows Architecture and Security Model",
+          "Local Privilege Escalation Techniques",
+          "Windows Service Exploitation",
+          "Registry and File System Attacks",
+          "Token Manipulation and Impersonation",
+          "PowerShell and WMI Exploitation",
+        ],
+      },
+      {
+        title: "Module 9: Active Directory Penetration Testing",
+        topics: [
+          "Active Directory Architecture and Components",
+          "Kerberoasting and ASREPRoasting",
+          "Pass-the-Hash and Pass-the-Ticket Attacks",
+          "Golden and Silver Ticket Attacks",
+          "Domain Controller Compromise",
+          "Active Directory Forest and Trust Exploitation",
+        ],
+      },
+      {
+        title: "Module 10: Linux Exploitation and Privilege Escalation",
+        topics: [
+          "Linux System Architecture and Security",
+          "SUID/SGID and Capability Exploitation",
+          "Kernel Exploitation Techniques",
+          "Container Escape Methods",
+          "Cron Job and Service Exploitation",
+          "Linux Post-Exploitation Techniques",
+        ],
+      },
+      {
+        title:
+          "Module 11: Reverse Engineering, Fuzzing, and Binary Exploitation",
+        topics: [
+          "Static and Dynamic Analysis Techniques",
+          "Assembly Language and Debugger Usage",
+          "Buffer Overflow and Stack-based Exploits",
+          "Heap Exploitation and ROP Techniques",
+          "Fuzzing Methodologies and Tools",
+          "Exploit Development and Shellcode",
+        ],
+      },
+      {
+        title: "Module 12: Lateral Movement and Pivoting",
+        topics: [
+          "Network Reconnaissance and Enumeration",
+          "Credential Harvesting and Reuse",
+          "Remote Code Execution Techniques",
+          "Tunneling and Proxy Techniques",
+          "Living off the Land (LoL) Techniques",
+          "Persistence and Backdoor Installation",
+        ],
+      },
+      {
+        title: "Module 13: IoT Penetration Testing",
+        topics: [
+          "IoT Architecture and Communication Protocols",
+          "Hardware Hacking and UART/JTAG Analysis",
+          "Firmware Analysis and Reverse Engineering",
+          "Radio Frequency (RF) and Wireless Attacks",
+          "IoT Network Protocol Exploitation",
+          "Cloud IoT Platform Security Testing",
+        ],
+      },
+      {
+        title: "Module 14: Report Writing and Post-Testing Actions",
+        topics: [
+          "Executive Summary and Technical Report Writing",
+          "Risk Rating and CVSS Scoring",
+          "Proof of Concept Development",
+          "Remediation Recommendations",
+          "Client Presentation and Communication",
+          "Post-Engagement Activities and Follow-up",
         ],
       },
     ],

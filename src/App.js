@@ -16,10 +16,12 @@ import IsacaPage from "./pages/all-courses-pages/IsacaPage";
 import CustomCourse from "./pages/all-courses-pages/CustomCourse";
 import CyberDiplomaPage from "./pages/all-courses-pages/CyberDiplomaPage";
 import CloudPage from "./pages/all-courses-pages/CloudPage";
+import ScrollToTop from "./components/scroll/ScrollToTop";
 
 function Layout() {
   return (
     <>
+      <ScrollToTop />
       <SimpleNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -46,6 +48,11 @@ function Layout() {
         <Route
           path="/ec-council/cnd"
           element={<IndividualCourses courseType="CND" />}
+        />
+
+        <Route
+          path="/ec-council/cpent"
+          element={<IndividualCourses courseType="CPENT" />}
         />
 
         <Route
