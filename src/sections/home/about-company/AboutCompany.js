@@ -4,10 +4,12 @@ import student1 from "../../../assets/images/Testimonial/Nithish.png";
 import student2 from "../../../assets/images/Testimonial/Nithya.png";
 import student3 from "../../../assets/images/Testimonial/Sathya.png";
 import "./AboutCompany.css";
+import { useNavigate } from "react-router-dom";
 import successStud1 from "../../../assets/images/Testimonial/Nayeem.png";
 // import company from "../../../assets/images/company-eg.png";
 
 const AboutCompanySection = () => {
+  const navigate = useNavigate();
   const successStories = [
     // First slide - original 3 cards
     [
@@ -70,7 +72,9 @@ const AboutCompanySection = () => {
       },
     ],
   ];
-
+  const handleViewStoriesClick = () => {
+    navigate("/testimonial");
+  };
   return (
     <Container className="my-5 bg-succe">
       <Row>
@@ -150,14 +154,21 @@ const AboutCompanySection = () => {
                 <Carousel.Item key={slideIndex}>
                   {/* Staggered Cards Container for each slide */}
                   <div className="success-students-carousel-container">
-                    <img src={successStud1} alt="success students" />
+                    <img
+                      src={successStud1}
+                      alt="success students"
+                      className="w-100"
+                    />
                   </div>
                 </Carousel.Item>
               ))}
             </Carousel>
 
             <div className="button-container">
-              <Button className="view-stories-button">
+              <Button
+                className="view-stories-button"
+                onClick={handleViewStoriesClick}
+              >
                 View all success stories →
               </Button>
             </div>

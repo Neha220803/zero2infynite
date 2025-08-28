@@ -1392,7 +1392,7 @@ export const ecCouncilCourses = {
   CPENT: {
     // Basic Course Information
     title:
-      "The Certified Penetration Testing Professional (C|PENT AI) Course in Chennai",
+      "Certified Penetration Testing Professional (C|PENT AI) Course in Chennai",
     badge: "Most Popular",
     rating: {
       stars: 5,
@@ -1402,7 +1402,7 @@ export const ecCouncilCourses = {
     // Course Description
     description: {
       intro:
-        "Are you looking for an affordable The Certified Penetration Testing Professional (C|PENT AI) course with EC-Council International certification to improve your  Penetration Testing skills..?",
+        "Are you looking for an affordable Certified Penetration Testing Professional (C|PENT AI) course with EC-Council International certification to improve your  Penetration Testing skills..?",
 
       brochureLink: {
         text: "Click here to download the CPENT brochure and syllabus",
@@ -1584,7 +1584,7 @@ export const ecCouncilCourses = {
           eventKey: "0",
           question: "What is the course about?",
           answer:
-            "The Certified Penetration Testing Professional (CPENT) course by EC-Council is an advanced program that trains you to perform penetration testing in enterprise environments. It covers network, web, cloud, IoT, and OT systems while preparing you for real-world challenges with hands-on labs and a 24-hour practical exam.",
+            "Certified Penetration Testing Professional (CPENT) course by EC-Council is an advanced program that trains you to perform penetration testing in enterprise environments. It covers network, web, cloud, IoT, and OT systems while preparing you for real-world challenges with hands-on labs and a 24-hour practical exam.",
         },
         {
           eventKey: "1",

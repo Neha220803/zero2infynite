@@ -110,7 +110,7 @@ function Layout() {
 
 function App() {
   return (
-    <BrowserRouter basename="/zero2infynite">
+    <BrowserRouter>
       <Layout />
     </BrowserRouter>
   );

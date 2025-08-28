@@ -73,7 +73,10 @@ const IndiCourseBasicInfo = ({ courseType }) => {
 
   return (
     <div>
-      <Container id="overview" className="indi-course-basic-info-container">
+      <Container
+        id="overview"
+        className="indi-course-basic-info-container mt-md-3"
+      >
         <Row>
           <Col sm={12} xs={12} lg={8}>
             <div className="indi-course-left-wrap">

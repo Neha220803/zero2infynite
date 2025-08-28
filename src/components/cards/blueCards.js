@@ -17,7 +17,11 @@ const BlueCard = ({ title, description, icon, path }) => {
       className="all-courses-cards h-100"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ position: "relative" }}
+      onClick={handleNavigate}
+      style={{
+        position: "relative",
+        cursor: "pointer",
+      }}
     >
       <div className="d-flex align-items-start p-md-3">
         <div className="me-3" style={{ width: "90px" }}>
@@ -28,7 +32,6 @@ const BlueCard = ({ title, description, icon, path }) => {
           <CardText className="text-white">{description}</CardText>
         </div>
       </div>
-
       {isHovered && (
         <div
           className="position-absolute d-flex align-items-center"
@@ -38,9 +41,8 @@ const BlueCard = ({ title, description, icon, path }) => {
             transition: "opacity 0.3s",
             opacity: isHovered ? 1 : 0,
             color: "white",
-            cursor: "pointer",
+            pointerEvents: "none",
           }}
-          onClick={handleNavigate}
         >
           <span className="me-2">Click to Continue</span>
           <FaArrowRight />
