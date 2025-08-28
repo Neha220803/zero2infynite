@@ -350,7 +350,7 @@ export const ecCouncilCourses = {
       },
 
       aboutUs: [
-        "Zero2Infynite is here to help you achieve your goals. We are an authorized EC-Council Accredited Training Center (ATC) partner. Click here to download the CHFI brochure and syllabus",
+        "Zero2Infynite is here to help you achieve your goals. We are an authorized EC-Council Accredited Training Center (ATC) partner.",
         "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
         "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph’s College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
       ],
@@ -634,7 +634,7 @@ export const ecCouncilCourses = {
       },
 
       aboutUs: [
-        "Zero2Infynite is here to help you achieve your goals. We are an authorized EC-Council Accredited Training Center (ATC) partner. Click here to download the C|ND brochure and syllabus ",
+        "Zero2Infynite is here to help you achieve your goals. We are an authorized EC-Council Accredited Training Center (ATC) partner.",
         "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
         "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph's College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
       ],
