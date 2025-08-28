@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo/eddited logo.png";
 import {
   FaInstagram,
   FaLinkedinIn,
   FaFacebook,
+  FaChevronDown,
   FaChevronRight,
 } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./nav.css";
+import { ChevronDown } from "react-bootstrap-icons";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const SimpleNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  const [openDropdowns, setOpenDropdowns] = useState({});
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -30,8 +35,17 @@ const SimpleNavbar = () => {
       }
     };
 
-    // Add event listener
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 992);
+      // Reset dropdowns when switching between mobile/desktop
+      if (window.innerWidth >= 992) {
+        setOpenDropdowns({});
+      }
+    };
+
+    // Add event listeners
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
     // Add a small delay for initial check to ensure DOM is fully rendered
     const timer = setTimeout(() => {
@@ -41,34 +55,442 @@ const SimpleNavbar = () => {
     // Clean up
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
       clearTimeout(timer);
     };
   }, []);
 
   const handleNavigation = (path) => {
     setExpanded(false); // Close navbar when navigation happens
+    setOpenDropdowns({}); // Reset dropdowns
     navigate(path);
   };
 
-  const handleMainCourseNavigation = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    handleNavigation("/all-courses");
+  const toggleDropdown = (dropdownKey) => {
+    setOpenDropdowns((prev) => ({
+      ...prev,
+      [dropdownKey]: !prev[dropdownKey],
+    }));
   };
 
-  const handleSubmenuHeaderClick = (path, e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    handleNavigation(path);
+  const handleDropdownClick = (path, dropdownKey, hasChildren = true) => {
+    if (isMobile && hasChildren) {
+      // On mobile: toggle dropdown first, navigate on second click if already open
+      if (openDropdowns[dropdownKey]) {
+        handleNavigation(path);
+      } else {
+        toggleDropdown(dropdownKey);
+      }
+    } else {
+      // On desktop or items without children: navigate immediately
+      handleNavigation(path);
+    }
   };
+
+  const renderDesktopDropdown = () => (
+    <div className="nav-dropdown-wrapper">
+      <div className="desktop-dropdown">
+        <button
+          className="dropdown-toggle-btn"
+          onClick={() => handleNavigation("/all-courses")}
+        >
+          All Courses <IoMdArrowDropdown />
+        </button>
+        <div className="desktop-dropdown-menu">
+          {/* EC-Council Courses */}
+          <div className="dropdown-category">
+            <div
+              className="dropdown-category-item"
+              onClick={() => handleNavigation("/ec-council")}
+            >
+              <span>EC-Council Courses</span>
+              <FaChevronRight className="submenu-indicator" />
+            </div>
+            <div className="category-submenu">
+              <a
+                onClick={() =>
+                  handleNavigation("/ethical-hacking-training-in-chennai")
+                }
+              >
+                CEH - Certified Ethical Hacker
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/cpent")}>
+                CPENT - Certified Penetration Tester
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/chfi")}>
+                CHFI - Computer Hacking Forensic Investigator
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/cnd")}>
+                CND - Computer Network Defender
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/ccse")}>
+                CCSE - Certified Cloud Security Engineer
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/ecde")}>
+                ECDE - Certified DevSecOps Engineer
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/case-net")}>
+                CASE NET - Certified Application Security Engineer
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/case-java")}>
+                CASE Java - Certified Application Security Engineer
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/ecih")}>
+                ECIH - EC-Council Certified Incident Handler
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/csa")}>
+                CSA - Certified SOC Analyst
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/ctia")}>
+                CTIA - Certified Threat Intelligence Analyst
+              </a>
+              <a onClick={() => handleNavigation("/ec-council/wahs")}>
+                WAHS - Web Application Hacking & Security
+              </a>
+            </div>
+          </div>
+
+          {/* CompTIA Courses */}
+          <div className="dropdown-category">
+            <div
+              className="dropdown-category-item"
+              onClick={() => handleNavigation("/comptia")}
+            >
+              <span>CompTIA Courses</span>
+              <FaChevronRight className="submenu-indicator" />
+            </div>
+            <div className="category-submenu">
+              <a onClick={() => handleNavigation("/comptia/security-plus")}>
+                Security Plus
+              </a>
+              <a onClick={() => handleNavigation("/comptia/pentest-plus")}>
+                Pentest Plus
+              </a>
+              <a onClick={() => handleNavigation("/comptia/cysa-plus")}>
+                CYSA Plus
+              </a>
+              <a onClick={() => handleNavigation("/comptia/network-plus")}>
+                Network Plus
+              </a>
+            </div>
+          </div>
+
+          {/* ISACA Certifications */}
+          <div className="dropdown-category">
+            <div
+              className="dropdown-category-item"
+              onClick={() => handleNavigation("/isaca")}
+            >
+              <span>ISACA Certifications</span>
+              <FaChevronRight className="submenu-indicator" />
+            </div>
+            <div className="category-submenu">
+              <a onClick={() => handleNavigation("/isaca/cisa")}>
+                CISA - Certified Information Systems Auditor
+              </a>
+              <a onClick={() => handleNavigation("/isaca/cism")}>
+                CISM - Certified Information Security Manager
+              </a>
+              <a onClick={() => handleNavigation("/isaca/crisc")}>
+                CRISC - Certified in Risk & Info Systems Control
+              </a>
+            </div>
+          </div>
+
+          {/* Cloud Computing */}
+          <div className="dropdown-category">
+            <div
+              className="dropdown-category-item"
+              onClick={() => handleNavigation("/cloud-computing")}
+            >
+              <span>Cloud Computing</span>
+              <FaChevronRight className="submenu-indicator" />
+            </div>
+            <div className="category-submenu">
+              <a
+                onClick={() =>
+                  handleNavigation("/courses/aws-cloud-practitioner")
+                }
+              >
+                AWS Cloud Practitioner
+              </a>
+              <a
+                onClick={() => handleNavigation("/courses/solution-architect")}
+              >
+                Solution Architect
+              </a>
+              <a onClick={() => handleNavigation("/courses/sysops-admin")}>
+                SysOps Admin
+              </a>
+            </div>
+          </div>
+
+          {/* Cyber Diploma Course */}
+          <div className="dropdown-category">
+            <div
+              className="dropdown-category-item"
+              onClick={() => handleNavigation("/cyber-diploma")}
+            >
+              <span>Cyber Diploma Course</span>
+              <FaChevronRight className="submenu-indicator" />
+            </div>
+            <div className="category-submenu">
+              <a onClick={() => handleNavigation("/courses/cyber-diploma")}>
+                Advanced Diploma in Cyber Security
+              </a>
+            </div>
+          </div>
+
+          {/* Z2I Custom Courses */}
+          <div className="dropdown-category">
+            <div
+              className="dropdown-category-item"
+              onClick={() => handleNavigation("/z2i-custom-courses")}
+            >
+              <span>Z2I Custom Courses</span>
+              <FaChevronRight className="submenu-indicator" />
+            </div>
+            <div className="category-submenu">
+              <a onClick={() => handleNavigation("/courses/python")}>
+                Python Programming
+              </a>
+              <a onClick={() => handleNavigation("/courses/java")}>
+                Java Development
+              </a>
+              <a onClick={() => handleNavigation("/courses/dot-net")}>
+                Dot Net Development
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderMobileDropdown = () => (
+    <div className="mobile-dropdown-list">
+      {/* All Courses */}
+      <div className="mobile-dropdown-item">
+        <div
+          className="mobile-dropdown-header"
+          onClick={() => handleDropdownClick("/all-courses", "allCourses")}
+        >
+          <span>All Courses</span>
+          {openDropdowns.allCourses ? <FaChevronDown /> : <FaChevronRight />}
+        </div>
+        {openDropdowns.allCourses && (
+          <div className="mobile-dropdown-content">
+            {/* EC-Council Courses */}
+            <div className="mobile-submenu-item">
+              <div
+                className="mobile-submenu-header"
+                onClick={() => handleDropdownClick("/ec-council", "ecCouncil")}
+              >
+                <span>EC-Council Courses</span>
+                {openDropdowns.ecCouncil ? (
+                  <FaChevronDown />
+                ) : (
+                  <FaChevronRight />
+                )}
+              </div>
+              {openDropdowns.ecCouncil && (
+                <div className="mobile-submenu-content">
+                  <a
+                    onClick={() =>
+                      handleNavigation("/ethical-hacking-training-in-chennai")
+                    }
+                  >
+                    CEH - Certified Ethical Hacker
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/cpent")}>
+                    CPENT - Certified Penetration Tester
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/chfi")}>
+                    CHFI - Computer Hacking Forensic Investigator
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/cnd")}>
+                    CND - Computer Network Defender
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/ccse")}>
+                    CCSE - Certified Cloud Security Engineer
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/ecde")}>
+                    ECDE - Certified DevSecOps Engineer
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/case-net")}>
+                    CASE NET - Certified Application Security Engineer
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/case-java")}>
+                    CASE Java - Certified Application Security Engineer
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/ecih")}>
+                    ECIH - EC-Council Certified Incident Handler
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/csa")}>
+                    CSA - Certified SOC Analyst
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/ctia")}>
+                    CTIA - Certified Threat Intelligence Analyst
+                  </a>
+                  <a onClick={() => handleNavigation("/ec-council/wahs")}>
+                    WAHS - Web Application Hacking & Security
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* CompTIA Courses */}
+            <div className="mobile-submenu-item">
+              <div
+                className="mobile-submenu-header"
+                onClick={() => handleDropdownClick("/comptia", "comptia")}
+              >
+                <span>CompTIA Courses</span>
+                {openDropdowns.comptia ? <FaChevronDown /> : <FaChevronRight />}
+              </div>
+              {openDropdowns.comptia && (
+                <div className="mobile-submenu-content">
+                  <a onClick={() => handleNavigation("/comptia/security-plus")}>
+                    Security Plus
+                  </a>
+                  <a onClick={() => handleNavigation("/comptia/pentest-plus")}>
+                    Pentest Plus
+                  </a>
+                  <a onClick={() => handleNavigation("/comptia/cysa-plus")}>
+                    CYSA Plus
+                  </a>
+                  <a onClick={() => handleNavigation("/comptia/network-plus")}>
+                    Network Plus
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* ISACA Certifications */}
+            <div className="mobile-submenu-item">
+              <div
+                className="mobile-submenu-header"
+                onClick={() => handleDropdownClick("/isaca", "isaca")}
+              >
+                <span>ISACA Certifications</span>
+                {openDropdowns.isaca ? <FaChevronDown /> : <FaChevronRight />}
+              </div>
+              {openDropdowns.isaca && (
+                <div className="mobile-submenu-content">
+                  <a onClick={() => handleNavigation("/isaca/cisa")}>
+                    CISA - Certified Information Systems Auditor
+                  </a>
+                  <a onClick={() => handleNavigation("/isaca/cism")}>
+                    CISM - Certified Information Security Manager
+                  </a>
+                  <a onClick={() => handleNavigation("/isaca/crisc")}>
+                    CRISC - Certified in Risk & Info Systems Control
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Cloud Computing */}
+            <div className="mobile-submenu-item">
+              <div
+                className="mobile-submenu-header"
+                onClick={() =>
+                  handleDropdownClick("/cloud-computing", "cloudComputing")
+                }
+              >
+                <span>Cloud Computing</span>
+                {openDropdowns.cloudComputing ? (
+                  <FaChevronDown />
+                ) : (
+                  <FaChevronRight />
+                )}
+              </div>
+              {openDropdowns.cloudComputing && (
+                <div className="mobile-submenu-content">
+                  <a
+                    onClick={() =>
+                      handleNavigation("/courses/aws-cloud-practitioner")
+                    }
+                  >
+                    AWS Cloud Practitioner
+                  </a>
+                  <a
+                    onClick={() =>
+                      handleNavigation("/courses/solution-architect")
+                    }
+                  >
+                    Solution Architect
+                  </a>
+                  <a onClick={() => handleNavigation("/courses/sysops-admin")}>
+                    SysOps Admin
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Cyber Diploma Course */}
+            <div className="mobile-submenu-item">
+              <div
+                className="mobile-submenu-header"
+                onClick={() =>
+                  handleDropdownClick("/cyber-diploma", "cyberDiploma")
+                }
+              >
+                <span>Cyber Diploma Course</span>
+                {openDropdowns.cyberDiploma ? (
+                  <FaChevronDown />
+                ) : (
+                  <FaChevronRight />
+                )}
+              </div>
+              {openDropdowns.cyberDiploma && (
+                <div className="mobile-submenu-content">
+                  <a onClick={() => handleNavigation("/courses/cyber-diploma")}>
+                    Advanced Diploma in Cyber Security
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Z2I Custom Courses */}
+            <div className="mobile-submenu-item">
+              <div
+                className="mobile-submenu-header"
+                onClick={() =>
+                  handleDropdownClick("/z2i-custom-courses", "z2iCustom")
+                }
+              >
+                <span>Z2I Custom Courses</span>
+                {openDropdowns.z2iCustom ? (
+                  <FaChevronDown />
+                ) : (
+                  <FaChevronRight />
+                )}
+              </div>
+              {openDropdowns.z2iCustom && (
+                <div className="mobile-submenu-content">
+                  <a onClick={() => handleNavigation("/courses/python")}>
+                    Python Programming
+                  </a>
+                  <a onClick={() => handleNavigation("/courses/java")}>
+                    Java Development
+                  </a>
+                  <a onClick={() => handleNavigation("/courses/dot-net")}>
+                    Dot Net Development
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <>
       {/* Top Bar */}
-      <div
-        className="py-2 top-bar d-none d-md-flex"
-        // style={{ backgroundColor: "#333333", color: "white" }}
-      >
+      <div className="py-2 top-bar d-none d-md-flex">
         <Container className="d-flex justify-content-between align-items-center">
           <div className="social-icons d-flex">
             <a
@@ -83,9 +505,6 @@ const SimpleNavbar = () => {
             >
               <FaFacebook id="fb-icon" />
             </a>
-            {/* <a href="#" className="me-3 text-white">
-              <FaXTwitter />
-            </a> */}
             <a
               href="https://www.linkedin.com/company/zero2infynite"
               className="me-3 text-white"
@@ -112,8 +531,6 @@ const SimpleNavbar = () => {
 
       {/* Main Navbar */}
       <Navbar
-        // bg="dark"
-        // variant="dark"
         expand="lg"
         expanded={expanded}
         onToggle={setExpanded}
@@ -144,349 +561,8 @@ const SimpleNavbar = () => {
                 Home
               </Nav.Link>
 
-              {/* Multi-level Dropdown for All Courses */}
-              <div className="nav-dropdown-wrapper">
-                <NavDropdown
-                  title="All Courses"
-                  id="courses-dropdown"
-                  className="nav-dropdown multi-level-dropdown"
-                  onClick={handleMainCourseNavigation}
-                >
-                  {/* EC-Council Courses */}
-                  <div className="dropdown-item-wrapper">
-                    <div className="dropdown-item dropdown-submenu">
-                      <span
-                        onClick={(e) =>
-                          handleSubmenuHeaderClick("/ec-council", e)
-                        }
-                        style={{ cursor: "pointer" }}
-                      >
-                        EC-Council Courses
-                      </span>
-                      <FaChevronRight className="submenu-arrow" />
-                      <div className="submenu">
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation(
-                              "/ethical-hacking-training-in-chennai"
-                            );
-                          }}
-                        >
-                          CEH - Certified Ethical Hacker
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/cpent");
-                          }}
-                        >
-                          CPENT - Certified Penetration Tester
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/chfi");
-                          }}
-                        >
-                          CHFI - Computer Hacking Forensic Investigator
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/cnd");
-                          }}
-                        >
-                          CND - Computer Network Defender
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("//ec-council/ccse");
-                          }}
-                        >
-                          CCSE - Certified Cloud Security Engineer
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/ecde");
-                          }}
-                        >
-                          ECDE - Certified DevSecOps Engineer
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/case-net");
-                          }}
-                        >
-                          CASE NET - Certified Application Security Engineer
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/case-java");
-                          }}
-                        >
-                          CASE Java - Certified Application Security Engineer
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/ecih");
-                          }}
-                        >
-                          ECIH - EC-Council Certified Incident Handler
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/csa");
-                          }}
-                        >
-                          CSA - Certified SOC Analyst
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/ctia");
-                          }}
-                        >
-                          CTIA - Certified Threat Intelligence Analyst
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/ec-council/wahs");
-                          }}
-                        >
-                          WAHS - Web Application Hacking & Security
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* CompTIA Courses */}
-                  <div className="dropdown-item-wrapper">
-                    <div className="dropdown-item dropdown-submenu">
-                      <span
-                        onClick={(e) => handleSubmenuHeaderClick("/comptia", e)}
-                        style={{ cursor: "pointer" }}
-                      >
-                        CompTIA Courses
-                      </span>
-                      <FaChevronRight className="submenu-arrow" />
-                      <div className="submenu">
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/comptia/security-plus");
-                          }}
-                        >
-                          Security Plus
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/comptia/pentest-plus");
-                          }}
-                        >
-                          Pentest Plus
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/comptia/cysa-plus");
-                          }}
-                        >
-                          CYSA Plus
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/comptia/network-plus");
-                          }}
-                        >
-                          Network Plus
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* ISACA Certifications */}
-                  <div className="dropdown-item-wrapper">
-                    <div className="dropdown-item dropdown-submenu">
-                      <span
-                        onClick={(e) => handleSubmenuHeaderClick("/isaca", e)}
-                        style={{ cursor: "pointer" }}
-                      >
-                        ISACA Certifications
-                      </span>
-                      <FaChevronRight className="submenu-arrow" />
-                      <div className="submenu">
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/isaca/cisa");
-                          }}
-                        >
-                          CISA - Certified Information Systems Auditor
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/isaca/cism");
-                          }}
-                        >
-                          CISM - Certified Information Security Manager
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/isaca/crisc");
-                          }}
-                        >
-                          CRISC - Certified in Risk & Info Systems Control
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Cloud Computing */}
-                  <div className="dropdown-item-wrapper">
-                    <div className="dropdown-item dropdown-submenu">
-                      <span
-                        onClick={(e) =>
-                          handleSubmenuHeaderClick("/cloud-computing", e)
-                        }
-                        style={{ cursor: "pointer" }}
-                      >
-                        Cloud Computing
-                      </span>
-                      <FaChevronRight className="submenu-arrow" />
-                      <div className="submenu">
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/courses/aws-cloud-practitioner");
-                          }}
-                        >
-                          AWS Cloud Practitioner
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/courses/solution-architect");
-                          }}
-                        >
-                          Solution Architect
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/courses/sysops-admin");
-                          }}
-                        >
-                          SysOps Admin
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Cyber Diploma Course */}
-                  <div className="dropdown-item-wrapper">
-                    <div className="dropdown-item dropdown-submenu">
-                      <span
-                        onClick={(e) =>
-                          handleSubmenuHeaderClick("/cyber-diploma", e)
-                        }
-                        style={{ cursor: "pointer" }}
-                      >
-                        Cyber Diploma Course
-                      </span>
-                      <FaChevronRight className="submenu-arrow" />
-                      <div className="submenu">
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/courses/cyber-diploma");
-                          }}
-                        >
-                          Advanced Diploma in Cyber Security
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Z2I Custom Courses */}
-                  <div className="dropdown-item-wrapper">
-                    <div className="dropdown-item dropdown-submenu">
-                      <span
-                        onClick={(e) =>
-                          handleSubmenuHeaderClick("/z2i-custom-courses", e)
-                        }
-                        style={{ cursor: "pointer" }}
-                      >
-                        Z2I Custom Courses
-                      </span>
-                      <FaChevronRight className="submenu-arrow" />
-                      <div className="submenu">
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/courses/python");
-                          }}
-                        >
-                          Python Programming
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/courses/java");
-                          }}
-                        >
-                          Java Development
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            handleNavigation("/courses/dot-net");
-                          }}
-                        >
-                          Dot Net Development
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </NavDropdown>
-              </div>
+              {/* Conditional rendering based on screen size */}
+              {isMobile ? renderMobileDropdown() : renderDesktopDropdown()}
 
               <Nav.Link
                 onClick={() => handleNavigation("/internship")}
@@ -494,12 +570,6 @@ const SimpleNavbar = () => {
               >
                 Internship
               </Nav.Link>
-              {/* <Nav.Link
-                onClick={() => handleNavigation("/services")}
-                className="nav-item"
-              >
-                Services
-              </Nav.Link> */}
               <Nav.Link
                 onClick={() => handleNavigation("/testimonial")}
                 className="nav-item"
