@@ -3,15 +3,19 @@ import React from "react";
 import AboutUsHeaderComp from "../sections/aboutUs/header/AboutUsHeader";
 import AboutUSParaContentComp from "../sections/aboutUs/AboutUSParaContent/AboutUSParaContent";
 import AboutUsBuildingComp from "../sections/aboutUs/AboutUsBuildingComp/AboutUsBuildingComp";
+import AboutUsCTAPage from "../sections/aboutUs/CTAPage/AboutUsCTAPage";
+import AboutUsFooterComp from "../sections/aboutUs/AboutUsFooter/AboutUsFooter";
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <>
       <AboutUsHeaderComp />
       {/* <AboutUsPerks /> */}
       <AboutUSParaContentComp />
       <AboutUsBuildingComp />
-    </div>
+      <AboutUsCTAPage />
+      <AboutUsFooterComp />
+    </>
   );
 };
 
