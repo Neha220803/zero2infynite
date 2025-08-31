@@ -82,10 +82,10 @@ const AboutUsFooterComp = () => {
           >
             <div>
               <h1>
-                A hacker may trick, a system may burn — but the best defense is
-                when people learn
+                Zero trust is a security principle — Zero2Infynite is your
+                transformation principle.
               </h1>
-              <h3 className="mt-4 text-secondary">- Kevin Mitnick</h3>
+              {/* <h3 className="mt-4 text-secondary">- Kevin Mitnick</h3> */}
             </div>
             <div className="d-flex justify-content-start gap-5">
               <a
