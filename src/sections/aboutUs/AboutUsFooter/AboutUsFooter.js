@@ -1,8 +1,6 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import logo from "../../../assets/images/logo/cropped-logo.png";
-import { BsFillTelephoneFill, BsWhatsapp } from "react-icons/bs";
-import { Envelope } from "react-bootstrap-icons";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 const AboutUsFooterComp = () => {

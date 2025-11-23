@@ -131,14 +131,14 @@ const AboutUsBuildingComp = () => {
           </Modal.Header>
           <Modal.Body className="p-4">
             <div className="d-flex flex-column flex-md-row align-items-center">
-              <div className="mb-3 mb-md-0 me-md-4">
+              {/* <div className="mb-3 mb-md-0 me-md-4">
                 <img
                   src={selectedBook?.image}
                   alt={selectedBook?.alt}
                   className="modal-book-image"
                   style={{ maxWidth: "200px", height: "auto" }}
-                />
-              </div>
+                />  
+              </div> */}
               <div className="flex-grow-1">
                 <p className="lead">{selectedBook?.description}</p>
               </div>

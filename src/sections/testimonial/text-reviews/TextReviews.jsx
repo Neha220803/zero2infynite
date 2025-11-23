@@ -145,7 +145,7 @@ const getUserInitials = (name) => {
 
 const TextReviewsCardsSectionComp = () => {
   return (
-    <div className="reviews-containe container">
+    <div className="reviews-containe pb-5 container">
       {reviews.map((review, index) => (
         <div key={index} className="review-item">
           <div className="review-card">

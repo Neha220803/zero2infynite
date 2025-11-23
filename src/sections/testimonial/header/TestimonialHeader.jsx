@@ -10,7 +10,11 @@ const TestimonialHeaderComp = () => {
         Besant Technologies is rated as the No.1 Online Training Instuitite with
         100% placement support.
       </p>
-      <Button variant="primary" className="rounded-4">
+      <Button
+        variant="primary"
+        className="rounded-4"
+        href="https://share.google/mQlmA46asO2QR487M"
+      >
         Create Your Own Review
       </Button>
     </header>

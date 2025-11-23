@@ -7,6 +7,13 @@
 
 .about-company-para-font {
     font-size: 18px !important;
+    text-align: justify;
+}
+
+.acc-badge {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

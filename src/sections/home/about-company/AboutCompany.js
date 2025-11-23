@@ -6,7 +6,7 @@ import student3 from "../../../assets/images/Testimonial/Sathya.png";
 import "./AboutCompany.css";
 import { useNavigate } from "react-router-dom";
 import successStud1 from "../../../assets/images/Testimonial/Nayeem.png";
-// import company from "../../../assets/images/company-eg.png";
+import company from "../../../assets/images/logo/EC-Council-ACC-Badge.png";
 
 const AboutCompanySection = () => {
   const navigate = useNavigate();
@@ -76,16 +76,22 @@ const AboutCompanySection = () => {
     navigate("/testimonial");
   };
   return (
-    <Container className="my-5 bg-succe">
+    <Container className="my-5 bg-succes">
       <Row>
         {/* Left Side: About Zero2Infynite */}
         <Col sm={12} xs={12} md={8}>
-          <h2 className="text-primary fw-bold text-md-center">
-            Welcome to Zero2Infynite
-          </h2>
-          <h5 className="text-secondary mt-1  text-md-center ">
-            Empowering the Future of Cybersecurity
-          </h5>
+          <div className="d-flex flex-md-row flex-column align-items-center gap-3 bg-prim">
+            <img src={company} alt="company building" className="acc-badge" />
+            <div>
+              <h2 className="text-primary fw-bold text-md-">
+                Welcome to Zero2Infynite
+              </h2>
+              <h5 className="text-secondary mt-1  text-md- ">
+                Empowering the Future of Cybersecurity
+              </h5>
+            </div>
+          </div>
+
           <div className="mt-4 about-company-para-font">
             <p className="mt-3 about-company-para-font ">
               At <strong>Zero2Infynite</strong>, we are more than just a
@@ -139,30 +145,34 @@ const AboutCompanySection = () => {
         </Col>
 
         {/* Right Side: Student Success Stories with Carousel */}
-        <Col sm={12} xs={12} md={4} className="bg-primar">
-          <div className="success-stories-section">
-            <h3 className="success-stories-title ">Student Success Stories</h3>
+        <Col sm={12} xs={12} md={4} className="bg-primar ">
+          <div className="success-stories-section justify-content-between d-flex flex-column h-100">
+            <div>
+              <h3 className="success-stories-title ">
+                Student Success Stories
+              </h3>
 
-            {/* Carousel Container */}
-            <Carousel
-              indicators={false}
-              controls={false}
-              interval={1800}
-              className="success-stories-carousel"
-            >
-              {successStories.map((slideStories, slideIndex) => (
-                <Carousel.Item key={slideIndex}>
-                  {/* Staggered Cards Container for each slide */}
-                  <div className="success-students-carousel-container">
-                    <img
-                      src={successStud1}
-                      alt="success students"
-                      className="w-100"
-                    />
-                  </div>
-                </Carousel.Item>
-              ))}
-            </Carousel>
+              {/* Carousel Container */}
+              <Carousel
+                indicators={false}
+                controls={false}
+                interval={1800}
+                className="success-stories-carousel"
+              >
+                {successStories.map((slideStories, slideIndex) => (
+                  <Carousel.Item key={slideIndex}>
+                    {/* Staggered Cards Container for each slide */}
+                    <div className="success-students-carousel-container">
+                      <img
+                        src={successStud1}
+                        alt="success students"
+                        className="w-100"
+                      />
+                    </div>
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </div>
 
             <div className="button-container">
               <Button
