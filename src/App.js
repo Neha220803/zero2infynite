@@ -7,7 +7,6 @@ import EcCounsilPages from "./pages/EcCouncilPage";
 import SimpleNavbar from "./components/nav/newNav";
 import AboutUsPage from "./pages/aboutUsPage";
 import InternshipPage from "./pages/internshipPage";
-import ServicesPage from "./pages/servicesPage";
 import BlogPage from "./pages/blogPage";
 import IndividualCourses from "./pages/individualCourses";
 import TestimonialPage from "./pages/testimonialPage";
@@ -81,6 +80,10 @@ function Layout() {
           path="/ec-council/ecde"
           element={<IndividualCourses courseType="ECDE" />}
         />
+        <Route
+          path="/ec-council/ctia"
+          element={<IndividualCourses courseType="CTIA" />}
+        />
 
         <Route
           path="/comptia/security-plus"
@@ -88,8 +91,33 @@ function Layout() {
         />
 
         <Route
+          path="/comptia/pentest-plus"
+          element={<IndividualCourses courseType="Pentest" />}
+        />
+
+        <Route
+          path="/comptia/cysa-plus"
+          element={<IndividualCourses courseType="CYSA" />}
+        />
+
+        <Route
+          path="/comptia/network-plus"
+          element={<IndividualCourses courseType="Network" />}
+        />
+
+        <Route
           path="/isaca/cisa"
           element={<IndividualCourses courseType="CISA" />}
+        />
+
+        <Route
+          path="/isaca/cism"
+          element={<IndividualCourses courseType="CISM" />}
+        />
+
+        <Route
+          path="/isaca/crisc"
+          element={<IndividualCourses courseType="CRISC" />}
         />
 
         <Route path="/about" element={<AboutUsPage />} />

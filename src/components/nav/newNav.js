@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo/eddited logo.png";
 import {
@@ -12,7 +12,6 @@ import {
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./nav.css";
-import { ChevronDown } from "react-bootstrap-icons";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 const SimpleNavbar = () => {
@@ -540,9 +539,20 @@ const SimpleNavbar = () => {
         style={{ zIndex: 1030 }}
       >
         <Container>
+          <Navbar.Brand
+            onClick={() => handleNavigation("/")}
+            style={{ cursor: "pointer" }}
+          >
+            <img
+              src={logo}
+              alt="Zero2Infynite"
+              height="60"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="mx-auto">
               <Nav.Link
                 onClick={() => handleNavigation("/")}
                 className="nav-item"
@@ -579,17 +589,12 @@ const SimpleNavbar = () => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand
-            onClick={() => handleNavigation("/")}
-            style={{ cursor: "pointer" }}
+          <Button
+            variant="primary"
+            // onClick={() => handleNavigation("/contact-us")}
           >
-            <img
-              src={logo}
-              alt="Zero2Infynite"
-              height="60"
-              className="d-inline-block align-top"
-            />
-          </Navbar.Brand>
+            Enroll Now
+          </Button>
         </Container>
       </Navbar>
       {scrolled && <div style={{ height: "56px" }}></div>}

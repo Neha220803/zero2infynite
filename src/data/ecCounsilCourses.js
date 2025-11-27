@@ -8,6 +8,7 @@ import cpentStuCerti from "../assets/images/indi_course/cpent.png";
 import wahsStuCerti from "../assets/images/indi_course/wahs.png";
 import cjavaStuCertfi from "../assets/images/indi_course/cjava.png";
 import cnetCerti from "../assets/images/indi_course/cnet.png";
+import ctiaCerti from "../assets/images/indi_course/ctia.png";
 import ccseStuCerti from "../assets/images/indi_course/ccse.png";
 import ecdeStuCerti from "../assets/images/indi_course/ecde.png";
 
@@ -1783,23 +1784,6 @@ export const ecCouncilCourses = {
           "Post-Engagement Activities and Follow-up",
         ],
       },
-      {
-        title: "Self-Study Modules",
-        topics: [
-          "Penetration Testing Essential Concepts",
-          "Mastering Metasploit Framework",
-          "PowerShell Scripting",
-          "Bash Environment and Scripting",
-          "Python Environment and Scripting",
-          "Perl Environment and Scripting",
-          "Ruby Environment and Scripting",
-          "Wireless Penetration Testing",
-          "OT and SCADA Penetration Testing",
-          "Cloud Penetration Testing",
-          "Database Penetration Testing",
-          "Mobile Device Penetration Testing",
-        ],
-      },
     ],
 
     // Highlighted Keywords (for styling)
@@ -2831,7 +2815,327 @@ export const ecCouncilCourses = {
     ],
   },
 
-  CTIA: {},
+  CTIA: {
+    // Basic Course Information
+    title: "Certified Threat Intelligence Analyst (C|TIA)",
+    badge: "Most Popular",
+    rating: {
+      stars: 5,
+      text: "Top Rating | Read Reviews",
+    },
+
+    // Course Description
+    description: {
+      intro:
+        "Are you looking for an affordable Certified Threat Intelligence Analyst (C|TIA) course with EC-Council International certification to improve your  Penetration Testing skills..?",
+
+      brochureLink: {
+        text: "Click here to download the Certified Threat Intelligence Analyst (C|TIA) brochure and syllabus",
+        url: "https://drive.google.com/file/d/17FOHb1V5QutMz6UknHCnVHgOflcKiVts/view?usp=drive_link",
+      },
+
+      aboutUs: [
+        "Zero2Infynite is here to help you achieve your goals. We are an authorized EC-Council Accredited Training Center (ATC) partner.",
+        "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
+        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph’s College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
+      ],
+    },
+
+    // Contact Information
+    contact: {
+      phone: "+91 81110 00953",
+      phoneFormatted: "+ 91 81110 00953",
+    },
+
+    // Course Features
+    features: [
+      {
+        icon: "GiTeacher",
+        text: "Real-time network security training",
+        color: "#666666",
+      },
+      {
+        icon: "BookHalf",
+        text: "Updated CND syllabus",
+        color: "text-success",
+      },
+      {
+        icon: "Calendar2Check",
+        text: "Flexible Learning Modes",
+        color: "#955EAE",
+      },
+      {
+        icon: "Award",
+        text: "100% Success Rate",
+        color: "text-warning",
+      },
+      {
+        icon: "BriefcaseFill",
+        text: "Network Security Career Assistance",
+        color: "#275EAE",
+      },
+      {
+        icon: "Tools",
+        text: "Hands-On Network Defense Lab",
+        color: "text-secondary",
+      },
+      {
+        icon: "SiGoogleclassroom",
+        text: "Free Demo sessions",
+        color: "text-danger",
+      },
+      {
+        icon: "CurrencyDollar",
+        text: "Training that fits your budget",
+        color: "text-success",
+      },
+      {
+        icon: "PiCertificate",
+        text: "International CND Certification Preparation",
+        color: "text-warning",
+      },
+    ],
+
+    additionalInfoHeading:
+      "Why Certified Threat Intelligence Analyst (C|TIA) course in Zero2infynite is best among others ?",
+    additionalInfoSubHeading:
+      "Learn (C|TIA) Anytime, Anywhere through online and offline",
+    // Additional Information
+    additionalInfo:
+      "Certified Threat Intelligence Analyst (C|TIA) from Zero2infynite offers EC-Council International certification to upskill your Network defending knowledge. We are an authorized training centre of EC-Council. This (C|TIA) course will help you to enter into Networking and SOC analyst job roles. Also bring strong understanding about how network works. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
+
+    // Batch Schedule Information
+    batchSchedule: {
+      title:
+        "Upcoming Batches Schedule for Certified Network Defender Training in Chennai",
+      description:
+        "Zero2infinite provides flexible timings to all our students. Here are the Network Security training classes in Chennai schedule in our branches. If this schedule doesn't match please let us know. We will try to arrange appropriate timing based on your flexible timings.",
+
+      batchTemplates: [
+        {
+          type: "Weekend",
+          days: "Saturday(Saturday - Sunday )",
+          id: 1,
+          dayOffset: 0,
+        },
+        {
+          type: "Weekdays",
+          days: "Tuesday (Monday - Friday)",
+          id: 2,
+          dayOffset: 2,
+        },
+        {
+          type: "Weekdays",
+          days: "Thursday (Monday - Friday)",
+          id: 3,
+          dayOffset: 4,
+        },
+        {
+          type: "Weekend",
+          days: "Saturday (Saturday - Sunday)",
+          id: 4,
+          dayOffset: 6,
+        },
+      ],
+
+      tableHeaders: ["Date", "Mode", "Days", "Actions"],
+
+      actionButtons: {
+        courseFees: {
+          text: "Course Fees",
+          variant: "outline-primary",
+          className: "course-fees-btn",
+        },
+        checkAvailability: {
+          text: "Check Availability",
+          variant: "primary",
+          className: "check-availability-btn",
+        },
+      },
+
+      bottomActions: {
+        customBatch: {
+          text: "Can't find a batch you were looking for?",
+          variant: "outline-primary",
+          className: "batch-action-btn",
+        },
+        requestBatch: {
+          text: "Request Custom Batch",
+          variant: "primary",
+          className: "batch-action-btn",
+        },
+      },
+
+      updateInterval: 2 * 24 * 60 * 60 * 1000,
+    },
+
+    // Trainer Profile Information
+    trainerProfile: {
+      title: "Trainer Profile",
+      qualities: [
+        "Our Trainers are real time trainers who completed certifications like CEH, OSCP+",
+        "Trainers with more than 3 years experience are handling sessions in Zero2infynite",
+        "Expert mentors deliver individualized coaching and career advice.",
+        "Patiently address and clarify students' critical doubts.",
+        "Provide individual attention to help each student work with cybersecurity tools and troubleshoot issues.",
+        "Trainers offer flexible scheduling to match students' availability.",
+      ],
+    },
+
+    // Certifications Information
+    certifications: {
+      title: "Certifications",
+      sections: [
+        {
+          title: "EC-Council (C|TIA) certification and Exams",
+          content: [
+            "We are the only institute offering low-cost EC-Council Certified Network Defender (C|TIA) certification with career shift guidance, hands-on training, and industry-standard curriculum. All our students have successfully cleared their exams. We’ve updated the EC-Council license image and a sample EC-Council certificate on this page for your reference. Students who opt for training only will receive customized sessions along with a Zero2infynite certification.",
+            "Our (C|TIA) certification prepares you for real-world network defense scenarios with practical threat detection and incident response procedures.",
+          ],
+          image: {
+            src: ctiaCerti,
+            alt: "CTIA Certification Image",
+            className: "certification-image",
+          },
+        },
+      ],
+    },
+
+    // FAQ Information
+    faq: {
+      title: "Frequently Asked Questions",
+      defaultActiveKey: "1",
+      questions: [
+        {
+          eventKey: "0",
+          question: "What is the CTIA course about?",
+          answer:
+            "The Certified Threat Intelligence Analyst (CTIA) course by EC-Council is designed to train security professionals in advanced cyber threat intelligence practices. It focuses on collecting, analyzing, and disseminating threat intelligence to help organizations proactively defend against cyber threats using frameworks like MITRE ATT&CK, Cyber Kill Chain, and the Diamond Model.",
+        },
+        {
+          eventKey: "1",
+          question: "How long is the course?",
+          answer:
+            "The CTIA course typically runs for 3 to 5 days in an instructor-led bootcamp format. Self-paced online training options are also available, allowing learners to complete the course at their own speed.",
+        },
+        {
+          eventKey: "2",
+          question: "What are the prerequisites?",
+          answer:
+            "Participants should have a foundational understanding of cybersecurity concepts, network security, and incident response. Prior certifications like CEH (Certified Ethical Hacker) or experience in SOC operations is recommended but not mandatory. Basic Python scripting knowledge is beneficial for automation tasks.",
+        },
+        {
+          eventKey: "3",
+          question: "Is there a certificate?",
+          answer:
+            "Yes, after successfully completing the course, you will receive a certificate of completion. To earn the official EC-Council CTIA certification, you must pass the certification exam conducted by EC-Council.",
+        },
+        {
+          eventKey: "4",
+          question: "What support is available during the course?",
+          answer:
+            "The course provides access to expert trainers, digital courseware, practical labs, and hands-on threat intelligence exercises. You'll also receive guidance on threat hunting, OSINT collection, intelligence analysis frameworks, and integrating threat intelligence into SOC operations and incident response.",
+        },
+        {
+          eventKey: "5",
+          question: "Is the course content downloadable?",
+          answer:
+            "Yes, EC-Council provides official e-courseware, lab manuals, threat intelligence tools documentation, and reference materials in downloadable format. Some training providers may also provide recorded sessions for revision.",
+        },
+        {
+          eventKey: "6",
+          question: "What is the refund policy?",
+          answer:
+            "Refund and payment policies vary depending on the training provider. Most offer flexible installment plans, and refunds are subject to their terms and conditions. Please confirm with the provider before enrollment.",
+        },
+      ],
+    },
+
+    syllabusModules: [
+      {
+        title: "Module 1: Introduction to Threat Intelligence",
+        topics: [
+          "Types of threat intelligence: Strategic, Tactical, Operational, Technical",
+          "Intelligence lifecycle and maturity models",
+          "Threat intelligence platforms and capabilities",
+        ],
+      },
+      {
+        title: "Module 2: Cyber Threats and Attack Frameworks",
+        topics: [
+          "Advanced Persistent Threats (APT)",
+          "Cyber Kill Chain methodology",
+          "MITRE ATT&CK Framework",
+          "Diamond Model of Intrusion Analysis",
+        ],
+      },
+      {
+        title: "Module 3: Requirements, Planning, Direction, and Review",
+        topics: [
+          "Planning a threat intelligence program",
+          "Identifying business and intelligence needs",
+          "Establishing objectives and stakeholder alignment",
+        ],
+      },
+      {
+        title: "Module 4: Data Collection and Processing",
+        topics: [
+          "Intelligence feeds and data sources",
+          "Open Source Intelligence (OSINT)",
+          "Human Intelligence (HUMINT)",
+          "Indicators of Compromise (IoCs)",
+          "Malware analysis and basic Python scripting for collection",
+        ],
+      },
+      {
+        title: "Module 5: Data Analysis",
+        topics: [
+          "Statistical data analysis techniques",
+          "Analysis of Competing Hypotheses (ACH)",
+          "Structured Analysis of Competing Hypotheses (SACH)",
+          "Threat modeling and evaluation",
+        ],
+      },
+      {
+        title: "Module 6: Intelligence Reporting and Dissemination",
+        topics: [
+          "Creating threat reports and knowledge bases",
+          "Sharing intelligence using frameworks, acts, and standards",
+          "Collaboration using automation and scripting",
+        ],
+      },
+      {
+        title: "Module 7: Threat Hunting and Detection",
+        topics: [
+          "Threat hunting types, process, and methodologies",
+          "Automation using Python",
+          "Identifying patterns and anomalies",
+        ],
+      },
+      {
+        title:
+          "Module 8: Threat Intelligence in SOC Operations, Incident Response, and Risk Management",
+        topics: [
+          "Integrating threat intelligence into SOC workflows",
+          "Enhancing incident response with CTI",
+          "Using threat intelligence for enterprise risk assessment",
+        ],
+      },
+    ],
+
+    // Highlighted Keywords (for styling)
+    highlights: [
+      "affordable Certified Network Defender course",
+      "secure a job, boost your salary, or advance your career in the network security domain",
+      "help you achieve your goals in network security and defense",
+      "we offer continuous support until you reach your goals",
+      "authorized EC-Council Accredited Training Center (ATC) partner",
+      "100% pass rate",
+      "real-world network security experience and also assist with job referrals",
+      "placed the majority of our students in the network security and cybersecurity field",
+      "helped experienced professionals transition into network defense",
+    ],
+  },
 
   CSA: {},
 

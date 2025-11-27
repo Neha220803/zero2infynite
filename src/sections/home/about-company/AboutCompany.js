@@ -1,8 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
-import student1 from "../../../assets/images/Testimonial/Nithish.png";
-import student2 from "../../../assets/images/Testimonial/Nithya.png";
-import student3 from "../../../assets/images/Testimonial/Sathya.png";
 import "./AboutCompany.css";
 import { useNavigate } from "react-router-dom";
 import successStud1 from "../../../assets/images/Testimonial/Nayeem.png";
