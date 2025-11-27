@@ -540,20 +540,9 @@ const SimpleNavbar = () => {
         style={{ zIndex: 1030 }}
       >
         <Container>
-          <Navbar.Brand
-            onClick={() => handleNavigation("/")}
-            style={{ cursor: "pointer" }}
-          >
-            <img
-              src={logo}
-              alt="Zero2Infynite"
-              height="60"
-              className="d-inline-block align-top"
-            />
-          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="me-auto">
               <Nav.Link
                 onClick={() => handleNavigation("/")}
                 className="nav-item"
@@ -590,6 +579,17 @@ const SimpleNavbar = () => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          <Navbar.Brand
+            onClick={() => handleNavigation("/")}
+            style={{ cursor: "pointer" }}
+          >
+            <img
+              src={logo}
+              alt="Zero2Infynite"
+              height="60"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
         </Container>
       </Navbar>
       {scrolled && <div style={{ height: "56px" }}></div>}

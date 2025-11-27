@@ -203,10 +203,10 @@
 }
 
 /* Handle submenu positioning for items that might go off-screen */
-.dropdown-category:nth-last-child(-n+2) .category-submenu {
+/* .dropdown-category:nth-last-child(-n+2) .category-submenu {
   left: -350px;
   right: 100%;
-}
+} */
 
 /* Mobile Dropdown Styling */
 .mobile-dropdown-list {

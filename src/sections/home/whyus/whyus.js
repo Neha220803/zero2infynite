@@ -112,7 +112,7 @@ const WhyUs = () => {
 
   return (
     <div className="why-us-container">
-      <div className="text-center mb-md-5 mb-3">
+      <div className="text-center mb-3">
         <h2 className=" w-100">
           Why
           <span className="text-primary"> Zero2infynite</span> ?
