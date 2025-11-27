@@ -1783,6 +1783,23 @@ export const ecCouncilCourses = {
           "Post-Engagement Activities and Follow-up",
         ],
       },
+      {
+        title: "Self-Study Modules",
+        topics: [
+          "Penetration Testing Essential Concepts",
+          "Mastering Metasploit Framework",
+          "PowerShell Scripting",
+          "Bash Environment and Scripting",
+          "Python Environment and Scripting",
+          "Perl Environment and Scripting",
+          "Ruby Environment and Scripting",
+          "Wireless Penetration Testing",
+          "OT and SCADA Penetration Testing",
+          "Cloud Penetration Testing",
+          "Database Penetration Testing",
+          "Mobile Device Penetration Testing",
+        ],
+      },
     ],
 
     // Highlighted Keywords (for styling)

@@ -6,71 +6,41 @@ import student3 from "../../../assets/images/Testimonial/Sathya.png";
 import "./AboutCompany.css";
 import { useNavigate } from "react-router-dom";
 import successStud1 from "../../../assets/images/Testimonial/Nayeem.png";
+import successStud2 from "../../../assets/images/Testimonial/testo-carousel.png";
+import successStud3 from "../../../assets/images/Testimonial/testi-carousel-3.jpeg";
 import company from "../../../assets/images/logo/EC-Council-ACC-Badge.png";
 
 const AboutCompanySection = () => {
   const navigate = useNavigate();
+
   const successStories = [
-    // First slide - original 3 cards
-    [
-      {
-        id: 1,
-        name: "Nithish",
-        role: "SOC Analyst",
-        company: "EY",
-        bgColor: "#FFB6C1", // Light pink
-        image: student1,
-        offset: "card-offset-1",
-      },
-      {
-        id: 2,
-        name: "Nithya",
-        role: "SOC Analyst",
-        company: "EY",
-        bgColor: "#D3D3D3", // Light gray
-        image: student2,
-        offset: "card-offset-2",
-      },
-      {
-        id: 3,
-        name: "Sathya",
-        role: "SOC Analyst",
-        company: "EY",
-        bgColor: "#FFD700", // Gold/Yellow
-        image: student3,
-        offset: "card-offset-3",
-      },
-    ],
-    // Second slide - 3 new dummy cards
-    [
-      {
-        id: 4,
-        name: "Arjun 2",
-        role: "Cyber Security Analyst",
-        company: "TCS",
-        bgColor: "#98FB98", // Light green
-        image: student1, // Using dummy image for now
-        offset: "card-offset-1",
-      },
-      {
-        id: 5,
-        name: "Priya 2",
-        role: "Information Security Officer",
-        company: "Infosys",
-        bgColor: "#FFE4B5", // Light orange
-        image: student2, // Using dummy image for now
-        offset: "card-offset-2",
-      },
-      {
-        id: 6,
-        name: "Vikram 2",
-        role: "Penetration Tester",
-        company: "Wipro",
-        bgColor: "#E6E6FA", // Light lavender
-        image: student3, // Using dummy image for now
-        offset: "card-offset-3",
-      },
-    ],
+    {
+      id: 1,
+      name: "Nithish",
+      role: "SOC Analyst",
+      company: "EY",
+      bgColor: "#FFB6C1", // Light pink
+      image: successStud1,
+      offset: "card-offset-1",
+    },
+    {
+      id: 2,
+      name: "Nithya",
+      role: "SOC Analyst",
+      company: "EY",
+      bgColor: "#D3D3D3", // Light gray
+      image: successStud2,
+      offset: "card-offset-2",
+    },
+    {
+      id: 3,
+      name: "Sathya",
+      role: "SOC Analyst",
+      company: "EY",
+      bgColor: "#FFD700", // Gold/Yellow
+      image: successStud3,
+      offset: "card-offset-3",
+    },
   ];
   const handleViewStoriesClick = () => {
     navigate("/testimonial");
@@ -164,7 +134,7 @@ const AboutCompanySection = () => {
                     {/* Staggered Cards Container for each slide */}
                     <div className="success-students-carousel-container">
                       <img
-                        src={successStud1}
+                        src={slideStories.image}
                         alt="success students"
                         className="w-100"
                       />
