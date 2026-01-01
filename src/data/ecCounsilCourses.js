@@ -100,19 +100,23 @@ export const ecCouncilCourses = {
       fullCourse: 34000,
       trainingOnly: 17000,
       description:
-        "Certified Ethical Hacking (CEH) from Zero2infynite offers Ec-Council and Comptia Certification which will help to enter into the cyber security domain. We are an authorized training centre of Ec-council. The total cost of Ec-council certification with training is 34000. You can also attend training for 17000. Later you can pay the remaining amount and get the International certification.",
+        "Certified Ethical Hacking (CEH) from Zero2infynite offers Ec-Council and Comptia Certification which will help to enter into the cyber security domain. We are an authorized training centre of Ec-council. The total cost of Ec-council certification with training is 34000. You can also attend training for 17000. Later you can pay the remaining amount and get the International certification. ",
     },
 
     // Career Opportunities
     careerPaths: [
       "Cyber Security",
-      "Auditing Vulnerability and penetration Testing",
+      "Vulnerability and penetration Testing",
+      "Red teaming",
       "SOC analyst",
+      "Threat analyst",
       "Cloud security",
       "Malware analyst",
       "Cyber forensic expert",
       "IARM expert",
     ],
+    bellowcareerPaths:
+      "We will explain how each topic will help to gain knowledge in specific domains along with realtime examples. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students. ",
     additionalInfoHeading:
       "Why Cyber Security course in Zero2infynite is best among others ?",
     additionalInfoSubHeading:
@@ -213,7 +217,7 @@ export const ecCouncilCourses = {
           title: "Ec-Council CEH certification and Exams",
           content: [
             "We are the only institute offering low-cost EC-Council CEH certification with placement assistance, career shift guidance, hands-on training, and industry-standard curriculum. All our students have successfully cleared their exams. We've updated the EC-Council license image and a sample EC-Council certificate on this page for your reference. Students who opt for training only will receive customized sessions along with a Zero2infynite certification.",
-            "On right side of the above text update the following image. Then blur the name, renewable on and its date, certificate number la mattum partial aah number aah.",
+            // "On right side of the above text update the following image. Then blur the name, renewable on and its date, certificate number la mattum partial aah number aah.",
           ],
           image: {
             src: cehStuCerti, // Will be imported in component

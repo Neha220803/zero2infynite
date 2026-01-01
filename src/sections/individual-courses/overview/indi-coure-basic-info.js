@@ -230,6 +230,11 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                   </ol>
                 </p>
               )}
+              {courseData.bellowcareerPaths && (
+                <p className="indi-course-description">
+                  {courseData.bellowcareerPaths}
+                </p>
+              )}
             </Row>
           </div>
         </Row>

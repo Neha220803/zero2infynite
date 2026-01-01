@@ -11,7 +11,7 @@ const courses = [
     rating: 4.9,
     reviews: 2847,
     description:
-      "Master the art of ethical hacking with comprehensive penetration testing techniques and vulnerability assessment methodologies...",
+      "Master the art of ethical hacking with comprehensive penetration testing techniques and VA methodologies...",
     color: "from-pink-500 to-rose-600",
     icon: "🛡️",
   },
@@ -29,7 +29,7 @@ const courses = [
   {
     id: 3,
     title: "SIEM Masters Program",
-    subtitle: "Security Information & Event Management",
+    subtitle: "Security Information Management",
     rating: 4.9,
     reviews: 1654,
     description:

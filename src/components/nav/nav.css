@@ -345,15 +345,15 @@
     font-size: 13px;
   }
 
-  .desktop-dropdown-menu {
+  /* .desktop-dropdown-menu {
     min-width: 700px;
-  }
+  } */
 }
 
 /* Small desktop screens */
 @media (max-width: 1299.98px) and (min-width: 992px) {
   .desktop-dropdown-menu {
     grid-template-columns: repeat(2, 1fr);
-    min-width: 600px;
+    /* min-width: 600px; */
   }
 }
