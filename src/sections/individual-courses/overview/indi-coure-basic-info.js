@@ -170,7 +170,7 @@ const IndiCourseBasicInfo = ({ courseType }) => {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="py-5">
           <div className="course-details">
             {featureChunks.map((chunk, chunkIndex) => (
               <Row key={chunkIndex}>
@@ -182,7 +182,7 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                         style={{ listStyle: "none", padding: 0 }}
                         className="indi-course-facts"
                       >
-                        <li>
+                        <li className="">
                           <IconComponent
                             size={24}
                             className={`course-details-li-img ${
@@ -196,7 +196,7 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                                 : {}
                             }
                           />
-                          <p>{feature.text}</p>
+                          <p className="mb-0 feature-text">{feature.text}</p>
                         </li>
                       </ul>
                     </Col>

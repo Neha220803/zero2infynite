@@ -13,12 +13,14 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./nav.css";
 import { IoMdArrowDropdown } from "react-icons/io";
+import IndiCoursePopUPFormComp from "../../sections/individual-courses/form/IndiCoursePopUPForm";
 
 const SimpleNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   const [openDropdowns, setOpenDropdowns] = useState({});
+  const [modalShow, setModalShow] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -62,7 +64,13 @@ const SimpleNavbar = () => {
   const handleNavigation = (path) => {
     setExpanded(false); // Close navbar when navigation happens
     setOpenDropdowns({}); // Reset dropdowns
-    navigate(path);
+
+    // If clicking logo on home page, scroll to top instead of navigating
+    if (path === "/" && window.location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate(path);
+    }
   };
 
   const toggleDropdown = (dropdownKey) => {
@@ -589,15 +597,16 @@ const SimpleNavbar = () => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <Button
-            variant="primary"
-            // onClick={() => handleNavigation("/contact-us")}
-          >
+          <Button variant="primary" onClick={() => setModalShow(true)}>
             Enroll Now
           </Button>
         </Container>
       </Navbar>
       {scrolled && <div style={{ height: "56px" }}></div>}
+      <IndiCoursePopUPFormComp
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </>
   );
 };

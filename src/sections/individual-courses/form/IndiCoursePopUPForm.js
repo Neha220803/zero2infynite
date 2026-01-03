@@ -3,6 +3,7 @@ import { Modal, Form, Button } from "react-bootstrap";
 
 const IndiCoursePopUPFormComp = (props) => {
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
     phone: "",
     query: "",
@@ -52,6 +53,17 @@ const IndiCoursePopUPFormComp = (props) => {
       </Modal.Header>
       <Modal.Body>
         <Form>
+          <Form.Group className="mb-3" controlId="email">
+            <Form.Label>Email Name</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter your name Here"
+              value={formData.name}
+              onChange={handleChange}
+              autoFocus
+            />
+          </Form.Group>
+
           <Form.Group className="mb-3" controlId="email">
             <Form.Label>Email address</Form.Label>
             <Form.Control

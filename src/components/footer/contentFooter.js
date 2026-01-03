@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import "./footer.css";
 import logo from ".././../assets/images/logo/cropped-logo.png";
 import { BsFillTelephoneFill, BsWhatsapp } from "react-icons/bs";
 import { Envelope } from "react-bootstrap-icons";
+import IndiCoursePopUPFormComp from "../../sections/individual-courses/form/IndiCoursePopUPForm";
 
 const ContentFooterComp = () => {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <footer>
       {/* Hero Section */}
@@ -25,6 +27,7 @@ const ContentFooterComp = () => {
                 size="lg"
                 className="px-4 py-2 fw-semibold"
                 style={{ borderWidth: "2px" }}
+                onClick={() => setModalShow(true)}
               >
                 Join Us Today
               </Button>
@@ -40,7 +43,7 @@ const ContentFooterComp = () => {
             {/* Company Description */}
             <Col lg={5} md={12} className="mb-4">
               <div className="pe-lg-4">
-                <Image src={logo} alt="" className="w-75 mb-3" />
+                <Image src={logo} alt="" className="w-50 mb-3" />
                 <p className=" lh-base">
                   Zero2Infynite's career-focused, implementation-based learning
                   programs pave the road to a success-assured career in Ethical
@@ -61,48 +64,47 @@ const ContentFooterComp = () => {
               <h5 className="text-primary fw-bold mb-3">Our Links</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a href="#" className=" text-decoration-none hover-link">
+                  <a href="/home" className=" text-decoration-none hover-link">
                     Home
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className=" text-decoration-none hover-link">
+                  <a
+                    href="/all-courses"
+                    className=" text-decoration-none hover-link"
+                  >
                     Courses
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className=" text-decoration-none hover-link">
+                  <a href="/about" className=" text-decoration-none hover-link">
                     About Us
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className=" text-decoration-none hover-link">
-                    Corporate Training
+                  <a
+                    href="/internship"
+                    className=" text-decoration-none hover-link"
+                  >
+                    Internship
                   </a>
                 </li>
-                <li className="mb-2">
+                {/* <li className="mb-2">
                   <a href="#" className=" text-decoration-none hover-link">
                     Events
                   </a>
-                </li>
+                </li> */}
                 <li className="mb-2">
                   <a href="#" className=" text-decoration-none hover-link">
                     Blog
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className=" text-decoration-none hover-link">
-                    News
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className=" text-decoration-none hover-link">
-                    Internship
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className=" text-decoration-none hover-link">
-                    Contact Us
+                  <a
+                    href="/testimonial"
+                    className=" text-decoration-none hover-link"
+                  >
+                    Testimonial
                   </a>
                 </li>
               </ul>
@@ -128,9 +130,9 @@ const ContentFooterComp = () => {
                 <li className="mb-2">
                   <span className="">Chennai</span>
                 </li>
-                <li className="mb-2">
+                {/* <li className="mb-2">
                   <span className="">Kottakkal</span>
-                </li>
+                </li> */}
               </ul>
             </Col>
           </Row>
@@ -149,6 +151,11 @@ const ContentFooterComp = () => {
           </Row>
         </Container>
       </div>
+
+      <IndiCoursePopUPFormComp
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </footer>
   );
 };

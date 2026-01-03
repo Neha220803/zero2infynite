@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./CyberDiplomo.css";
 import { Container, Card, Col, Row } from "react-bootstrap";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
+import IndiCoursePopUPFormComp from "../../individual-courses/form/IndiCoursePopUPForm";
 
 const courses = [
   {
@@ -62,6 +63,7 @@ const courses = [
 ];
 
 const DiplomaSection = () => {
+  const [modalShow, setModalShow] = useState(false);
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
@@ -125,13 +127,22 @@ const DiplomaSection = () => {
                   <Card.Text className="course-description">
                     {course.description}
                   </Card.Text>
-                  <button className="enroll-btn">Enroll Now</button>
+                  <button
+                    className="enroll-btn"
+                    onClick={() => setModalShow(true)}
+                  >
+                    Enroll Now
+                  </button>
                 </Card.Body>
               </Card>
             ))}
           </div>
         </div>
       </Container>
+      <IndiCoursePopUPFormComp
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </div>
   );
 };

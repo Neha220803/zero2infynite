@@ -26,7 +26,7 @@ const FooterComp = () => {
           </Col>
           <Col xs={6} className="mb-2 mb-md-0">
             <a
-              href="https://wa.me/919600046662"
+              href="tel:9600046662"
               className="text-white text-decoration-none d-flex justify-content-center align-items-center"
             >
               <div className="d-flex justify-content-center align-items-center">

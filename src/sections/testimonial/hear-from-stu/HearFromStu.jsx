@@ -53,7 +53,7 @@ const HearFromStudentsComp = () => {
         <Row>
           <h1 className="hear-from-stu-heading">Hear it From Our Students</h1>
         </Row>
-        <Row>
+        {/* <Row>
           {testimonials.map((testimonial, index) => (
             <Col xs={12} md={6} lg={4} className="mb-4" key={index}>
               <Card className={`testimonial-card ${testimonial.bgColor}`}>
@@ -108,7 +108,7 @@ const HearFromStudentsComp = () => {
               </Card>
             </Col>
           ))}
-        </Row>
+        </Row> */}
       </Container>
     </>
   );

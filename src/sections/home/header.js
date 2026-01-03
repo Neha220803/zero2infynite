@@ -38,9 +38,9 @@ const HomeHeader = () => {
         <Row className="d-flex justify-content-center align-items-center">
           <Col lg={7} xs={12} sm={12}>
             <div className="header-content text-white">
-              <Button variant="primary" className="px-md-4 py-md-2 mb-4">
+              <div className="px-md-3 py-md-2 mb-4 bg-primary d-inline-block rounded-3 header-tagline">
                 Learn the best tactics to ensure Cybersecurity
-              </Button>
+              </div>
               <h1 className="mb-4">
                 Join the only company which focused on career oriented training
                 {/* with full flexible date and timings. */}
