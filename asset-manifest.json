@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fda2145.css",
-    "main.js": "/static/js/main.276d3e1e.js",
+    "main.css": "/static/css/main.4fd5c392.css",
+    "main.js": "/static/js/main.22ed3e2d.js",
     "static/media/certirfication.png": "/static/media/certirfication.028655c4a516ec4a2c2a.png",
     "static/media/cnd.png": "/static/media/cnd.e4a7309d99dc156082a0.png",
     "static/media/placeholder.png": "/static/media/placeholder.bc5345e1308f7df61c89.png",
@@ -69,11 +69,11 @@
     "static/media/certificateIcon.svg": "/static/media/certificateIcon.88b45c35a1e1cd3aeb160f5f9e1448df.svg",
     "static/media/tdesign_task-1-filled.svg": "/static/media/tdesign_task-1-filled.d3ba710db1ddfa6519157bf3b876e07b.svg",
     "static/media/carbon_skill-level-advanced.svg": "/static/media/carbon_skill-level-advanced.23a8161d80819c8b1160f1ad15fbf766.svg",
-    "main.9fda2145.css.map": "/static/css/main.9fda2145.css.map",
-    "main.276d3e1e.js.map": "/static/js/main.276d3e1e.js.map"
+    "main.4fd5c392.css.map": "/static/css/main.4fd5c392.css.map",
+    "main.22ed3e2d.js.map": "/static/js/main.22ed3e2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fda2145.css",
-    "static/js/main.276d3e1e.js"
+    "static/css/main.4fd5c392.css",
+    "static/js/main.22ed3e2d.js"
   ]
 }
