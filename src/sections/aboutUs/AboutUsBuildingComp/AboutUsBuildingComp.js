@@ -44,7 +44,7 @@ const AboutUsBuildingComp = () => {
     {
       id: 3,
       image: book3,
-      alt: "Training cost that fits your budget",
+      alt: "Training that fits your budget",
       title: "Affordable Training Programs",
       description:
         "Quality education shouldn't break the bank. We offer flexible payment options and competitive pricing to make professional training accessible to everyone, regardless of their financial situation.",
@@ -145,10 +145,10 @@ const AboutUsBuildingComp = () => {
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="primary" onClick={handleClose}>
               Close
             </Button>
-            <Button
+            {/* <Button
               variant="primary"
               style={{
                 backgroundColor: selectedBook?.hoverColor,
@@ -156,7 +156,7 @@ const AboutUsBuildingComp = () => {
               }}
             >
               Learn More
-            </Button>
+            </Button> */}
           </Modal.Footer>
         </Modal>
       </Container>

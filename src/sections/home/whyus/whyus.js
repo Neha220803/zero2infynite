@@ -73,7 +73,7 @@ const WhyUs = () => {
     },
     {
       id: 6,
-      title: "Training Cost That Fits Your Budget",
+      title: "Training That Fits Your Budget",
       description:
         "Access quality training at affordable fees without compromising on standards.",
       icon: CurrencyDollar,

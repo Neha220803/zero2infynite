@@ -52,31 +52,12 @@
     line-height: 24px !important;
 }
 
-.indi-course-facts li p {
-    font-style: normal !important;
-    font-weight: 500 !important;
-    max-width: 300px !important;
-    text-align: center !important;
-    font-size: 20px !important;
-    line-height: 24px !important;
-    color: #000000 !important;
-}
-
 .indi-course-description {
     font-style: normal !important;
     font-weight: 500 !important;
     font-size: 16px !important;
     line-height: 24px !important;
     color: #000000 !important;
-}
-
-.indi-course-facts li {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between;
-    align-items: center !important;
-    padding: 0px;
-    gap: 11px;
 }
 
 
@@ -87,6 +68,60 @@
     align-items: center !important;
     padding: 0px;
     gap: 12px;
+}
+
+.indi-course-facts li {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 20px 15px;
+    height: 100% !important;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center !important;
+    gap: 11px;
+    list-style: none;
+}
+
+.indi-course-facts li:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    border-color: #275EAE;
+}
+
+.indi-course-facts li:hover .course-details-li-img {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.indi-course-facts li:hover .feature-text {
+    color: #275EAE !important;
+}
+
+.indi-course-facts .course-details-li-img {
+    width: 45px !important;
+    height: 45px !important;
+    margin-right: 0px !important;
+    vertical-align: middle !important;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.indi-course-facts li p {
+    font-style: normal !important;
+    font-weight: 500 !important;
+    /* max-width: 300px !important; */
+    text-align: center !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #000000 !important;
+    margin-bottom: 0 !important;
+    transition: color 0.3s ease;
 }
 
 .best-seller-button {
@@ -139,13 +174,8 @@
     display: flex !important;
     flex-direction: column !important;
     /* align-items: center !important; */
-    padding: 4px 3px !important;
+    padding: 16px 8px !important;
     gap: 18px !important;
-    /* position: absolute;
-        width: 400px;
-        height: 400px;
-        left: 829px;
-        top: 219px; */
     background: #FFFFFF !important;
     box-shadow: 0px 0px 5.1px 1px rgba(0, 0, 0, 0.18) !important;
     border-radius: 14px;

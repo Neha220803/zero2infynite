@@ -120,7 +120,10 @@ const IndiCourseBasicInfo = ({ courseType }) => {
 
           <Col sm={12} xs={12} lg={4} className="mb-4">
             <Card className="indi-course-right-card">
-              <CardImg src={CertificationImg} alt="course img" />
+              {ecCouncilCourses[courseType] && (
+                <CardImg src={CertificationImg} alt="course img" />
+              )}
+
               <CardBody className="py-0">
                 <div>
                   <div className="d-flex gap-3 ">
