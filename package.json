@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "cra-template": "1.2.0",
     "framer-motion": "^12.15.0",
     "gsap": "^3.13.0",
     "lucide-react": "^0.511.0",
@@ -16,6 +15,9 @@
     "react-router-dom": "^7.4.1",
     "react-scripts": "5.0.1",
     "sass": "^1.89.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,8 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
