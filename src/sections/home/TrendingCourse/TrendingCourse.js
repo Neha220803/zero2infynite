@@ -145,10 +145,10 @@ const TrendingCourses = () => {
   const navigate = useNavigate();
 
   const ecCouncilCourses = courses.filter(
-    (course) => course.category === "EC-Council"
+    (course) => course.category === "EC-Council",
   );
   const customCourses = courses.filter(
-    (course) => course.category === "Custom"
+    (course) => course.category === "Custom",
   );
 
   const handleCourseClick = (path) => {
