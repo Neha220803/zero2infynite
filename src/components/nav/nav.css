@@ -91,10 +91,13 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .dropdown-toggle-btn:hover {
   color: #113d80 !important;
+  text-decoration: none;
 }
 
 .desktop-dropdown {
@@ -171,8 +174,6 @@
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   z-index: 1050;
-  /* max-height: 400px;
-  overflow-y: auto; */
 }
 
 .dropdown-category:hover .category-submenu {
@@ -183,7 +184,7 @@
 
 .category-submenu a {
   display: block;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9) !important;
   text-decoration: none;
   padding: 0.70rem 1rem;
   font-size: 14px;
@@ -194,19 +195,14 @@
 
 .category-submenu a:hover {
   background-color: rgba(39, 94, 174, 0.6);
-  color: white;
+  color: white !important;
   padding-left: 1.1rem;
+  text-decoration: none;
 }
 
 .category-submenu a:last-child {
   border-bottom: none;
 }
-
-/* Handle submenu positioning for items that might go off-screen */
-/* .dropdown-category:nth-last-child(-n+2) .category-submenu {
-  left: -350px;
-  right: 100%;
-} */
 
 /* Mobile Dropdown Styling */
 .mobile-dropdown-list {
@@ -268,7 +264,7 @@
 .mobile-submenu-content a {
   display: block;
   padding: 0.5rem 2rem;
-  color: #888888;
+  color: #888888 !important;
   text-decoration: none;
   font-size: 14px;
   cursor: pointer;
@@ -278,14 +274,39 @@
 
 .mobile-submenu-content a:hover {
   background-color: rgba(39, 94, 174, 0.1);
-  color: #275EAE;
+  color: #275EAE !important;
   border-left-color: #275EAE;
+  text-decoration: none;
 }
 
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
   .top-bar {
     display: none;
+  }
+
+  /* Reorder navbar elements for mobile */
+  .main-navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Hamburger icon on the left */
+  .main-navbar .navbar-toggler {
+    order: 1;
+    margin-right: auto;
+  }
+
+  /* Button on the right */
+  .main-navbar .btn {
+    order: 3;
+    margin-left: auto;
+  }
+
+  /* Navbar collapse takes full width below */
+  .main-navbar .navbar-collapse {
+    order: 4;
+    width: 100%;
   }
 
   .navbar-nav {
@@ -343,17 +364,5 @@
 @media (max-width: 1199.98px) and (min-width: 992px) {
   .contact-info a {
     font-size: 13px;
-  }
-
-  /* .desktop-dropdown-menu {
-    min-width: 700px;
-  } */
-}
-
-/* Small desktop screens */
-@media (max-width: 1299.98px) and (min-width: 992px) {
-  .desktop-dropdown-menu {
-    grid-template-columns: repeat(2, 1fr);
-    /* min-width: 600px; */
   }
 }
