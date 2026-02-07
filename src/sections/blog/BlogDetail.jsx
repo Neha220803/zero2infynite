@@ -1,6 +1,6 @@
 import React from "react";
-import CodeBlock from "../../components/blog/CodeBlock";
 import "./BlogDetail.css";
+import CodeBlock from "./CodeBlock";
 
 const BlogDetail = ({ blog }) => {
   // Render content based on type

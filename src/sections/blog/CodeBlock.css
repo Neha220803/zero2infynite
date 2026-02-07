@@ -1,0 +1,153 @@
+/* Code Block Wrapper */
+.code-block-wrapper {
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header with language and copy button */
+.code-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.code-language {
+    font-size: 0.813rem;
+    font-weight: 600;
+    color: #275eae;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Copy Button */
+.copy-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #4d4d4d;
+    color: #b0b0b0;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.813rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+    background-color: #3d3d3d;
+    border-color: #275eae;
+    color: #275eae;
+}
+
+.copy-button:active {
+    transform: scale(0.95);
+}
+
+.copy-text {
+    font-weight: 500;
+}
+
+/* Code Pre and Code Elements */
+.code-block-pre {
+    margin: 0;
+    padding: 1.25rem;
+    overflow-x: auto;
+    background-color: #1e1e1e;
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    font-size: 0.938rem;
+    line-height: 1.6;
+    color: #d4d4d4;
+}
+
+.code-block-pre code {
+    display: block;
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    padding: 0;
+}
+
+/* Scrollbar Styling */
+.code-block-pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.code-block-pre::-webkit-scrollbar-track {
+    background: #2d2d2d;
+    border-radius: 4px;
+}
+
+.code-block-pre::-webkit-scrollbar-thumb {
+    background: #4d4d4d;
+    border-radius: 4px;
+}
+
+.code-block-pre::-webkit-scrollbar-thumb:hover {
+    background: #5d5d5d;
+}
+
+/* Basic Syntax Highlighting Colors (optional - can be enhanced) */
+.language-bash .keyword,
+.language-python .keyword {
+    color: #c586c0;
+}
+
+.language-bash .string,
+.language-python .string {
+    color: #ce9178;
+}
+
+.language-bash .comment,
+.language-python .comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.language-spl .keyword {
+    color: #569cd6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .code-block-header {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .code-block-pre {
+        padding: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .code-language {
+        font-size: 0.75rem;
+    }
+
+    .copy-button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+    .copy-text {
+        display: none;
+        /* Hide "Copy" text on mobile, show only icon */
+    }
+}
+
+@media (max-width: 576px) {
+    .code-block-wrapper {
+        margin: 1.5rem -1rem;
+        /* Extend to edges on small screens */
+        border-radius: 0;
+    }
+
+    .code-block-pre {
+        font-size: 0.813rem;
+    }
+}

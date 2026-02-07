@@ -16,6 +16,7 @@ import CustomCourse from "./pages/all-courses-pages/CustomCourse";
 import CyberDiplomaPage from "./pages/all-courses-pages/CyberDiplomaPage";
 import CloudPage from "./pages/all-courses-pages/CloudPage";
 import ScrollToTop from "./components/scroll/ScrollToTop";
+import BlogDetailPage from "./pages/BlogDetailPage";
 
 function Layout() {
   return (
@@ -129,6 +130,8 @@ function Layout() {
         <Route path="/testimonial" element={<TestimonialPage />} />
 
         <Route path="/blogs" element={<BlogPage />} />
+
+        <Route path="/blogs/:slug" element={<BlogDetailPage />} />
       </Routes>
       {/* <WhatsappButtonsComp /> */}
       <FooterComp />
