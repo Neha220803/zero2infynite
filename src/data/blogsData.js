@@ -2476,5 +2476,865 @@ john --wordlist=/usr/share/wordlists/rockyou.txt ziphash.txt`,
         },
       ],
     },
+    {
+      id: "16",
+      slug: "advent-of-cyber-2025-day-12-phishing-phishmas-greetings",
+      title: "Advent of Cyber 2025 Day 12: Phishing — Phishmas Greetings",
+      author: "Mr.MELVIN",
+      publishDate: "Dec 14, 2025",
+      readTime: "2 min read",
+      excerpt:
+        "Learn to identify and classify phishing emails by analyzing suspicious links, deceptive content, impersonation attempts, and spam messages through hands-on email triage.",
+      featuredImage:
+        "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*vu5pVvKm5ZokYwx573c0EQ.png",
+      category: "Cybersecurity",
+      content: [
+        {
+          type: "heading",
+          level: 2,
+          text: "What is Phishing?",
+        },
+        {
+          type: "paragraph",
+          text: "Phishing is a social engineering attack where attackers send deceptive emails to trick recipients into:",
+        },
+        {
+          type: "list",
+          items: [
+            "Clicking malicious links",
+            "Downloading infected attachments",
+            "Revealing sensitive information",
+            "Transferring money",
+            "Installing malware",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "QUESTIONS",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "1. Classify the 1st email, what's the flag?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: THM{yougotnumber1-keep-it-going}",
+        },
+        {
+          type: "image",
+          src: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*vu5pVvKm5ZokYwx573c0EQ.png",
+          alt: "Email 1 Classification",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "2. Classify the 2nd email. What's the flag?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: THM{nmumber2-was-not-tha-thard!}",
+        },
+        {
+          type: "image",
+          src: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*yTbz7JJXPajSomDVzWXUjg.png",
+          alt: "Email 2 Classification",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "3. Classify the 3rd email. What's the flag?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: THM{Impersonation-is-areal-thing-keepIt}",
+        },
+        {
+          type: "image",
+          src: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*YNs_IkldiEb4HH5ihGw0rA.png",
+          alt: "Email 3 Classification",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "4. Classify the 4th email. What's the flag?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: THM{Get-back-SOC-mas!!}",
+        },
+        {
+          type: "image",
+          src: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*UCYBNK-aPsfLzt-cuE51VQ.png",
+          alt: "Email 4 Classification",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "5. Classify the 5th email. What's the flag?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: THM{It-was-just-a-sp4m!!}",
+        },
+        {
+          type: "image",
+          src: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ZIpQbSq5aP10d0CqCpKprA.png",
+          alt: "Email 5 Classification",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "6. Classify the 6th email. What's the flag?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: THM{number6-is-the-last-one!-DX!}",
+        },
+        {
+          type: "image",
+          src: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*HspP--nXhOgJ5tj4DI9B6Q.png",
+          alt: "Email 6 Classification",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Phishing Email Classification Categories",
+        },
+        {
+          type: "paragraph",
+          text: "When analyzing phishing emails, SOC analysts typically classify them into these categories:",
+        },
+        {
+          type: "list",
+          items: [
+            "Malicious Links: Emails containing URLs to phishing sites or malware downloads",
+            "Suspicious Attachments: Messages with executable files or macro-enabled documents",
+            "Impersonation: Emails pretending to be from legitimate organizations or individuals",
+            "Urgent Requests: Messages creating false urgency to bypass critical thinking",
+            "Spam: Bulk unsolicited commercial emails",
+            "Legitimate: Genuine business communications",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Key Phishing Indicators",
+        },
+        {
+          type: "list",
+          items: [
+            "Sender email doesn't match the claimed organization",
+            "Generic greetings instead of personalized names",
+            "Grammar and spelling errors",
+            "Urgent or threatening language",
+            "Suspicious links (hover to preview before clicking)",
+            "Unexpected attachments",
+            "Requests for sensitive information",
+            "Too-good-to-be-true offers",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Best Practices for Email Security",
+        },
+        {
+          type: "list",
+          items: [
+            "Always verify sender addresses carefully",
+            "Never click links in unexpected emails",
+            "Scan all attachments before opening",
+            "Report suspicious emails to your security team",
+            "Enable multi-factor authentication",
+            "Keep email security training current",
+            "Use email filtering and anti-phishing tools",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Phishmas greetings detected and blocked! 🎄📧",
+        },
+        {
+          type: "paragraph",
+          text: "LinkedIn: https://www.linkedin.com/in/melvin-cyberops/",
+        },
+        {
+          type: "paragraph",
+          text: "Portfolio: https://melvin-cyberops-portfolio.vercel.app/",
+        },
+      ],
+    },
+    {
+      id: "17",
+      slug: "advent-of-cyber-2025-day-13-yara-rules-yara-mean-one",
+      title: "Advent of Cyber 2025 Day 13: YARA Rules — YARA mean one!",
+      author: "Mr.MELVIN",
+      publishDate: "Dec 14, 2025",
+      readTime: "2 min read",
+      excerpt:
+        "Master YARA pattern matching to detect malware and suspicious files using string patterns, regex expressions, and metadata analysis for threat hunting.",
+      featuredImage:
+        "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lOzv5qT7AH4_nM3arof7oQ.png",
+      category: "Cybersecurity",
+      content: [
+        {
+          type: "heading",
+          level: 2,
+          text: "What are YARA Rules?",
+        },
+        {
+          type: "paragraph",
+          text: "YARA (Yet Another Recursive/Reasonless Acronym) is a pattern matching engine created by Virustotal. It allows you to create rules to identify and classify malware, suspicious files, and files of interest based on textual or binary patterns.",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "YARA Rules Structure",
+        },
+        {
+          type: "code",
+          language: "yara",
+          text: `rule RuleName {
+    meta:
+        description = "What this rule detects"
+        author = "Your Name"
+    
+    strings:
+        $string1 = "pattern"
+        $string2 = { hex bytes }
+    
+    condition:
+        any of them
+}`,
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Challenge Questions and Answers",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "Question 1: How many images contain the string TBFC?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: 5",
+        },
+        {
+          type: "paragraph",
+          text: "YARA Rule Used:",
+        },
+        {
+          type: "code",
+          language: "yara",
+          text: `rule TBFC_Detection
+{
+    meta:
+        description = "Detects TBFC string in images"
+        author = "SOC Analyst"
+        date = "2025-12-14"
+    
+    strings:
+        $tbfc = "TBFC"
+    
+    condition:
+        $tbfc
+}`,
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "Question 2: What regex would you use to match a string that begins with TBFC: followed by one or more alphanumeric ASCII characters?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: TBFC:[a-zA-Z0-9]+",
+        },
+        {
+          type: "paragraph",
+          text: "This regular expression breaks down as:",
+        },
+        {
+          type: "list",
+          items: [
+            "TBFC: - Literal string match",
+            "[a-zA-Z0-9] - Character class matching any alphanumeric character",
+            "+ - One or more of the preceding pattern",
+          ],
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "Question 3: What is the message sent by McSkidy?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: Find me in HopSec Island",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Understanding YARA Components",
+        },
+        {
+          type: "paragraph",
+          text: "Meta Section:",
+        },
+        {
+          type: "list",
+          items: [
+            "Contains descriptive information about the rule",
+            "Includes author, description, date, and reference information",
+            "Helps with rule management and documentation",
+            "Not used in pattern matching logic",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Strings Section:",
+        },
+        {
+          type: "list",
+          items: [
+            "Defines patterns to search for in files",
+            "Supports text strings, hex patterns, and regular expressions",
+            "Each string is assigned a variable name (e.g., $tbfc)",
+            "Can include modifiers like nocase, wide, or fullword",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Condition Section:",
+        },
+        {
+          type: "list",
+          items: [
+            "Defines the logic for when a rule matches",
+            "Can use boolean operators (and, or, not)",
+            "Supports counting (e.g., 2 of them, all of them)",
+            "Can reference file size, entry point, and other attributes",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Common YARA Use Cases",
+        },
+        {
+          type: "list",
+          items: [
+            "Malware Detection: Identify known malware families by signature patterns",
+            "Threat Hunting: Search for indicators of compromise across systems",
+            "Incident Response: Find affected files during breach investigations",
+            "File Classification: Categorize files by type or content",
+            "Data Loss Prevention: Detect sensitive information in files",
+            "Forensic Analysis: Locate specific artifacts in memory dumps or disk images",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Advanced YARA Techniques",
+        },
+        {
+          type: "code",
+          language: "yara",
+          text: `rule Advanced_Detection
+{
+    meta:
+        description = "Advanced YARA pattern matching"
+    
+    strings:
+        $hex_pattern = { 4D 5A 90 00 }  // PE header
+        $text_pattern = "malicious" nocase
+        $regex_pattern = /IP: \\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}/
+    
+    condition:
+        $hex_pattern at 0 and 
+        ($text_pattern or $regex_pattern) and
+        filesize < 1MB
+}`,
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Conclusion",
+        },
+        {
+          type: "paragraph",
+          text: "Day 13 demonstrates the power of YARA rules as a fundamental security tool. By combining simple string matching with advanced regex patterns and metadata analysis, you can uncover hidden threats, malicious content, and suspicious artifacts within files at scale.",
+        },
+        {
+          type: "paragraph",
+          text: "Key takeaways:",
+        },
+        {
+          type: "list",
+          items: [
+            "YARA rules are essential for modern threat detection",
+            "Regular expressions provide powerful pattern matching capabilities",
+            "Image metadata can hide sensitive information",
+            "Automated scanning improves security posture",
+            "Documentation and testing are critical for rule quality",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "You're now a YARA mean one! 🎄",
+        },
+        {
+          type: "paragraph",
+          text: "Challenge Complete!",
+        },
+        {
+          type: "paragraph",
+          text: "LinkedIn: https://www.linkedin.com/in/melvin-cyberops/",
+        },
+        {
+          type: "paragraph",
+          text: "Portfolio: https://melvin-cyberops-portfolio.vercel.app/",
+        },
+      ],
+    },
+    {
+      id: "18",
+      slug: "advent-of-cyber-2025-day-14-containers-doordashers-demise",
+      title: "Advent of Cyber 2025 Day 14: Containers — DoorDasher's Demise",
+      author: "Mr.MELVIN",
+      publishDate: "Dec 15, 2025",
+      readTime: "2 min read",
+      excerpt:
+        "Explore Docker container security by learning container commands, Dockerfile structure, and discovering vulnerabilities in container configurations and exposed credentials.",
+      featuredImage:
+        "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lOzv5qT7AH4_nM3arof7oQ.png",
+      category: "Cybersecurity",
+      content: [
+        {
+          type: "heading",
+          level: 2,
+          text: "Challenge Overview",
+        },
+        {
+          type: "paragraph",
+          text: "Day 14 focuses on Docker containers and container security. You'll learn how to interact with Docker containers, understand Dockerfiles, execute commands within containers, and discover security vulnerabilities related to container management and web application security. This challenge demonstrates how poor container practices and exposed credentials can lead to system compromise.",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "What are Docker Containers?",
+        },
+        {
+          type: "paragraph",
+          text: "Docker is a containerization platform that packages applications and their dependencies into isolated, portable units called containers. Containers are lightweight, reproducible, and can run consistently across different environments.",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Challenge Questions and Answers",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "Question 1: What exact command lists running Docker containers?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: docker ps",
+        },
+        {
+          type: "paragraph",
+          text: "This command displays all currently running containers along with their container IDs, images, commands, creation times, status, ports, and names.",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "Question 2: What file is used to define the instructions for building a Docker image?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: Dockerfile",
+        },
+        {
+          type: "paragraph",
+          text: "A Dockerfile contains step-by-step instructions to build a Docker image, including base image selection, file copying, dependency installation, and startup commands.",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "Question 3: What's the flag?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: THM{DOCKER_ESCAPE_SUCCESS}",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "Bonus Question: There is a secret code contained within the news site running on port 5002; this code also happens to be the password for the deployer user! Can you find it?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: deploymaster2025!",
+        },
+        {
+          type: "paragraph",
+          text: "This demonstrates a critical security flaw where credentials are hardcoded or exposed in web applications running in containers.",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Essential Docker Commands",
+        },
+        {
+          type: "code",
+          language: "bash",
+          text: `# List running containers
+docker ps
+
+# List all containers (including stopped)
+docker ps -a
+
+# Execute command in running container
+docker exec -it <container_id> /bin/bash
+
+# View container logs
+docker logs <container_id>
+
+# Inspect container details
+docker inspect <container_id>
+
+# Stop a container
+docker stop <container_id>
+
+# Remove a container
+docker rm <container_id>
+
+# Build image from Dockerfile
+docker build -t <image_name> .
+
+# Run a container from an image
+docker run -d -p 8080:80 <image_name>`,
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Dockerfile Example",
+        },
+        {
+          type: "code",
+          language: "dockerfile",
+          text: `# Use base image
+FROM ubuntu:20.04
+
+# Set working directory
+WORKDIR /app
+
+# Copy application files
+COPY . /app
+
+# Install dependencies
+RUN apt-get update && apt-get install -y python3
+
+# Expose port
+EXPOSE 5000
+
+# Start command
+CMD ["python3", "app.py"]`,
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Container Security Vulnerabilities",
+        },
+        {
+          type: "paragraph",
+          text: "This challenge exposed several common container security issues:",
+        },
+        {
+          type: "list",
+          items: [
+            "Exposed Credentials: Passwords hardcoded in web applications",
+            "Privilege Escalation: Containers running with excessive permissions",
+            "Insecure Configurations: Default or weak security settings",
+            "Exposed Ports: Unnecessary services accessible from outside",
+            "Lack of Secrets Management: Credentials not properly secured",
+            "Container Escape: Ability to break out of container isolation",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Container Security Best Practices",
+        },
+        {
+          type: "list",
+          items: [
+            "Use official, verified base images from trusted sources",
+            "Run containers as non-root users whenever possible",
+            "Implement proper secrets management (Docker secrets, vault)",
+            "Keep images updated and scan for vulnerabilities",
+            "Limit container capabilities and permissions",
+            "Use network segmentation and firewalls",
+            "Enable logging and monitoring",
+            "Never hardcode credentials in images or code",
+            "Use multi-stage builds to minimize attack surface",
+            "Implement resource limits (CPU, memory)",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Security Scanning Example",
+        },
+        {
+          type: "code",
+          language: "bash",
+          text: `# Scan image for vulnerabilities
+docker scan <image_name>
+
+# Use Trivy for comprehensive scanning
+trivy image <image_name>
+
+# Check for secrets in image
+docker history --no-trunc <image_name> | grep -i password`,
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Conclusion",
+        },
+        {
+          type: "paragraph",
+          text: "Containers are powerful but require careful security practices. DoorDasher's demise serves as a reminder that even small oversights (exposed credentials, unsafe container access) can lead to complete system compromise.",
+        },
+        {
+          type: "paragraph",
+          text: "Container security is not optional — it's essential! 🐳🔒",
+        },
+        {
+          type: "paragraph",
+          text: "LinkedIn: https://www.linkedin.com/in/melvin-cyberops/",
+        },
+        {
+          type: "paragraph",
+          text: "Portfolio: https://melvin-cyberops-portfolio.vercel.app/",
+        },
+      ],
+    },
+    {
+      id: "19",
+      slug: "advent-of-cyber-2025-day-15-web-attack-forensics-drone-alone",
+      title:
+        "Advent of Cyber 2025 — Day 15 — Web Attack Forensics — Drone Alone",
+      author: "Mr.MELVIN",
+      publishDate: "Dec 16, 2025",
+      readTime: "2 min read",
+      excerpt:
+        "Investigate web application attacks through log analysis to detect command injection attempts, identify reconnaissance activities, and reconstruct attacker behavior.",
+      featuredImage:
+        "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*lOzv5qT7AH4_nM3arof7oQ.png",
+      category: "Cybersecurity",
+      content: [
+        {
+          type: "heading",
+          level: 2,
+          text: "Challenge Overview",
+        },
+        {
+          type: "paragraph",
+          text: "Day 15 focuses on web application attack forensics and incident investigation. You'll analyze web server logs, detect command injection attacks, and reconstruct the attacker's actions. This challenge demonstrates how attackers perform reconnaissance and attempt code execution through web vulnerabilities, and how security analysts can identify these attacks through log analysis and digital forensics.",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "What is Web Attack Forensics?",
+        },
+        {
+          type: "paragraph",
+          text: "Web attack forensics is the process of investigating compromised web applications by analyzing logs, network traffic, and system artifacts to identify attack vectors, attacker actions, and the extent of compromise.",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Questions",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "1. What is the reconnaissance executable file name?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: whoami.exe",
+        },
+        {
+          type: "paragraph",
+          text: "The whoami.exe executable is commonly used by attackers during the reconnaissance phase to identify the current user context and privileges of the compromised system. This information helps them determine their level of access and plan subsequent attack steps.",
+        },
+        {
+          type: "heading",
+          level: 3,
+          text: "2. What executable did the attacker attempt to run through the command injection?",
+        },
+        {
+          type: "paragraph",
+          text: "Answer: PowerShell.exe",
+        },
+        {
+          type: "paragraph",
+          text: "PowerShell is a powerful command-line shell and scripting language. Attackers frequently attempt to execute PowerShell through command injection vulnerabilities because it provides extensive capabilities for system enumeration, lateral movement, and payload execution.",
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Understanding Command Injection",
+        },
+        {
+          type: "paragraph",
+          text: "Command injection is a web application vulnerability that allows an attacker to execute arbitrary commands on the host operating system. Common injection techniques include:",
+        },
+        {
+          type: "list",
+          items: [
+            "Using shell metacharacters (; | & && ||)",
+            "Injecting commands in URL parameters",
+            "Exploiting unsanitized user input",
+            "Bypassing input validation with encoding",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Attack Reconstruction Timeline",
+        },
+        {
+          type: "list",
+          items: [
+            "Initial Access: Attacker identifies vulnerable web application",
+            "Reconnaissance: Executes whoami.exe to gather system information",
+            "Privilege Escalation Attempt: Tries to run PowerShell.exe",
+            "Command Execution: Attempts to establish persistence or exfiltrate data",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Log Analysis Techniques",
+        },
+        {
+          type: "paragraph",
+          text: "Web server logs contain valuable forensic evidence:",
+        },
+        {
+          type: "list",
+          items: [
+            "Access Logs: Record all HTTP requests including malicious ones",
+            "Error Logs: Show failed attempts and system errors",
+            "Application Logs: Track application-specific events",
+            "Authentication Logs: Record login attempts and access patterns",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Indicators of Command Injection",
+        },
+        {
+          type: "paragraph",
+          text: "Look for these patterns in web logs:",
+        },
+        {
+          type: "code",
+          language: "text",
+          text: `# Shell metacharacters in URL parameters
+/?cmd=whoami
+/?input=test; ls -la
+/?file=../../etc/passwd
+
+# Encoded payloads
+/?cmd=%77%68%6F%61%6D%69  (URL encoded 'whoami')
+/?cmd=d2hvYW1p  (Base64 encoded)
+
+# PowerShell execution attempts
+/?cmd=powershell.exe -enc <base64>
+/?cmd=powershell IEX(New-Object Net.WebClient)`,
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Forensic Investigation Steps",
+        },
+        {
+          type: "list",
+          items: [
+            "Collect and preserve web server access logs",
+            "Identify unusual or suspicious requests",
+            "Decode obfuscated or encoded commands",
+            "Trace the attack timeline from initial access to exploitation",
+            "Identify compromised files and system changes",
+            "Determine scope of compromise and data exfiltration",
+            "Document findings for incident response and remediation",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Prevention and Mitigation",
+        },
+        {
+          type: "list",
+          items: [
+            "Input Validation: Strictly validate all user inputs",
+            "Parameterization: Use parameterized queries and commands",
+            "Least Privilege: Run web applications with minimal permissions",
+            "WAF Deployment: Use Web Application Firewalls to block attacks",
+            "Security Monitoring: Implement real-time log analysis",
+            "Regular Updates: Keep all software and frameworks updated",
+            "Code Review: Conduct security-focused code reviews",
+          ],
+        },
+        {
+          type: "heading",
+          level: 2,
+          text: "Common Command Injection Payloads",
+        },
+        {
+          type: "code",
+          language: "bash",
+          text: `# Windows
+& whoami
+| dir
+; powershell -c "Get-Process"
+
+# Linux
+; cat /etc/passwd
+| ls -la /
+&& id
+
+# Chained commands
+; whoami && ipconfig
+| cat /etc/passwd; ls /root`,
+        },
+        {
+          type: "paragraph",
+          text: "Drone Alone — but not undetected! 🚁🔍",
+        },
+        {
+          type: "paragraph",
+          text: "Challenge Complete!",
+        },
+        {
+          type: "paragraph",
+          text: "LinkedIn: https://www.linkedin.com/in/melvin-cyberops/",
+        },
+        {
+          type: "paragraph",
+          text: "Portfolio: https://melvin-cyberops-portfolio.vercel.app/",
+        },
+      ],
+    },
   ],
 };
