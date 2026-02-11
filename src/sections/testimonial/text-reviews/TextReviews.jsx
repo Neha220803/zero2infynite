@@ -1,5 +1,6 @@
 import React from "react";
 import "./TextReviews.css";
+import { Row } from "react-bootstrap";
 
 // Sample data array
 const reviews = [
@@ -146,6 +147,13 @@ const getUserInitials = (name) => {
 const TextReviewsCardsSectionComp = () => {
   return (
     <div className="reviews-containe pb-5 container">
+      <Row className="mb-3">
+        <h2 className="text-secondary">Zero2infynite Training Reviews</h2>
+        <p>
+          Hear from our students about their experiences with Zero2infynite. You
+          can find their testimonials below.
+        </p>
+      </Row>
       {reviews.map((review, index) => (
         <div key={index} className="review-item">
           <div className="review-card">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "./HearFromStu.css";
 
 const HearFromStudentsComp = () => {
@@ -12,48 +12,67 @@ const HearFromStudentsComp = () => {
   const testimonials = [
     {
       name: "Nithish",
-      video: "How I Built My First App in 30 Days",
+      video: "Student Success Story",
       description:
-        "Join me as I document my journey building a full-stack web application from scratch. I'll show you the challenges I faced, the mistakes I made, and how I overcame them to create something amazing.",
-
+        "A cybersecurity professional from K7 Computing shares their honest feedback after completing our Cyber Security Training Program. Coming from an established cybersecurity organization, this testimonial highlights the practical depth, real-time attack simulations, and advanced lab exposure provided during the training.",
       bgColor: "testimonial-card-red",
-      youtubeId: "1K_UtWDyNTE",
-      embedParams: "si=SOWmrskAfaB2BYab",
+      youtubeId: "5OlymlkPLIw",
+      embedParams: "si=zKaZ-WV82ryQzSYD",
     },
     {
-      name: "Nithya",
-      video: "My Morning Routine That Changed Everything",
+      name: "Ganesh",
+      video: "My Learning Journey",
       description:
-        "After struggling with productivity for years, I discovered this simple morning routine that completely transformed my life. In this video, I share the exact steps and science behind why it works.",
+        "Ganesh shares his genuine experience after completing our Cyber Security Training Program. He talks about the practical lab sessions, real-time attack simulations, and how the training helped him build strong technical skills in ethical hacking and security testing.",
       bgColor: "testimonial-card-blue",
-      youtubeId: "dQw4w9WgXcQ",
-      embedParams: "si=ABC123XYZ789",
+      youtubeId: "q7Tj2KbY_cY",
+      embedParams: "si=qDa8T5NAaO_Jj9KO",
+    },
+    {
+      name: "Vignesh",
+      video: "Cyber Security Learning Experience",
+      description:
+        "Worked as a NOC (Network Operations Center) Analyst, shares his honest experience after completing our Cyber Security Training Program. Coming from a networking and monitoring background, Vignesh explains how this training helped him expand his skills beyond network monitoring into penetration testing, vulnerability assessment, and advanced security concepts.",
+      bgColor: "testimonial-card-brown",
+      youtubeId: "BymDqodszS0",
+      embedParams: "si=zSKN4lMJFE4FWfya",
     },
     {
       name: "Sathya",
-      video: "Testing Viral TikTok Life Hacks",
+      video: "Cyber Security Course Review",
       description:
-        "I spent 24 hours testing the most popular life hacks from TikTok to see which ones actually work. Some of these results will shock you! Make sure to watch till the end for the biggest surprise.",
+        "Our student shares their genuine experience after completing our Cyber Security Training Program. From hands-on labs to real-time attack simulations, this course is designed to build practical skills required in today’s cybersecurity industry.",
+      bgColor: "testimonial-card-blue",
+      youtubeId: "OUOxaX1MX5Q",
+      embedParams: "si=UEbVsdI9sIdhaB0J",
+    },
+    {
+      name: "Yamini Bala",
+      video: "From Beginner to Cyber Security Professional",
+      description:
+        "Yamini Bala shares her genuine experience after completing our Cyber Security Training Program. She talks about the structured learning approach, hands-on lab sessions, and real-time cyber attack simulations that helped her build strong technical confidence.",
       bgColor: "testimonial-card-brown",
-      youtubeId: "9bZkp7q19f0",
-      embedParams: "si=DEF456UVW012",
+      youtubeId: "9V1XoHygDNk",
+      embedParams: "si=yvd9Z9pi9xDuRsx5",
+    },
+    {
+      name: "Stalin",
+      video: "Student CEH Practical Cleared",
+      description:
+        "Stalin, a working SOC Analyst, shares his genuine experience after successfully completing the CEH Practical Examination from Zero2infynite. He talks about the comprehensive training, hands-on labs, and real-time attack simulations that helped him build strong technical skills.",
+      bgColor: "testimonial-card-red",
+      youtubeId: "hp4zoXZjVgs",
+      embedParams: "si=VqViYKO8f6Nor5VV",
     },
   ];
 
   return (
     <>
       <Container className="d-flex flex-column align-items-center justify-content-center py-5">
-        <Row className="mb-5">
-          <h2 className="text-secondary">Zero2infynite Training Reviews</h2>
-          <p>
-            Hear from our students about their experiences with Zero2infynite.
-            You can find their testimonials below.
-          </p>
-        </Row>
         <Row>
           <h1 className="hear-from-stu-heading">Hear it From Our Students</h1>
         </Row>
-        {/* <Row>
+        <Row>
           {testimonials.map((testimonial, index) => (
             <Col xs={12} md={6} lg={4} className="mb-4" key={index}>
               <Card className={`testimonial-card ${testimonial.bgColor}`}>
@@ -108,7 +127,7 @@ const HearFromStudentsComp = () => {
               </Card>
             </Col>
           ))}
-        </Row> */}
+        </Row>
       </Container>
     </>
   );
