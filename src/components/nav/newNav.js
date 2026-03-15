@@ -496,7 +496,7 @@ const SimpleNavbar = () => {
               href="tel:+919087924334"
               className="text-decoration-none d-none d-md-flex align-items-center justify-content-center"
             >
-              <FaPhoneAlt className="me-1" /> +91 96000 46662
+              <FaPhoneAlt className="me-1" /> +91 81110 00953
             </a>
           </div>
         </Container>
