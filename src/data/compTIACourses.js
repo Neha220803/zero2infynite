@@ -25,7 +25,7 @@ export const compTIACourses = {
       aboutUs: [
         "Zero2Infynite is here to help you achieve your goals. We evaluate each student's unique needs and provide personalized guidance. Unlike typical institutes that stop at training, we offer continuous support until you reach your goals.",
         "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
-        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph's College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
+        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for top institutions. We also hold MOUs with top colleges",
         "We have successfully placed the majority of our students in the cybersecurity field. Additionally, we've helped experienced professionals transition into cybersecurity by carefully assessing and building on their existing skills. We've also supported working cybersecurity professionals in earning international certifications to boost their skills, salaries, and career positions.",
       ],
     },
@@ -471,7 +471,7 @@ export const compTIACourses = {
       aboutUs: [
         "Zero2Infynite is here to help you achieve your goals. We evaluate each student's unique needs and provide personalized guidance. Unlike typical institutes that stop at training, we offer continuous support until you reach your goals.",
         "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
-        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph's College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
+        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for top institutions. We also hold MOUs with top colleges.",
         "We have successfully placed the majority of our students in the cybersecurity field. Additionally, we've helped experienced professionals transition into cybersecurity by carefully assessing and building on their existing skills. We've also supported working cybersecurity professionals in earning international certifications to boost their skills, salaries, and career positions.",
       ],
     },
@@ -917,7 +917,7 @@ export const compTIACourses = {
       aboutUs: [
         "Zero2Infynite is here to help you achieve your goals. We evaluate each student's unique needs and provide personalized guidance. Unlike typical institutes that stop at training, we offer continuous support until you reach your goals.",
         "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
-        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph's College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
+        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for top institutions. We also hold MOUs with top colleges.",
         "We have successfully placed the majority of our students in the cybersecurity field. Additionally, we've helped experienced professionals transition into cybersecurity by carefully assessing and building on their existing skills. We've also supported working cybersecurity professionals in earning international certifications to boost their skills, salaries, and career positions.",
       ],
     },
@@ -1363,7 +1363,7 @@ export const compTIACourses = {
       aboutUs: [
         "Zero2Infynite is here to help you achieve your goals. We evaluate each student's unique needs and provide personalized guidance. Unlike typical institutes that stop at training, we offer continuous support until you reach your goals.",
         "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
-        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph's College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
+        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for top institutions. We also hold MOUs with top colleges.",
         "We have successfully placed the majority of our students in the cybersecurity field. Additionally, we've helped experienced professionals transition into cybersecurity by carefully assessing and building on their existing skills. We've also supported working cybersecurity professionals in earning international certifications to boost their skills, salaries, and career positions.",
       ],
     },

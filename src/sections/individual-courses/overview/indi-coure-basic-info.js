@@ -101,6 +101,12 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                 )}
               </p>
 
+              {courseData.description.aboutUs.slice(0, 2).map((paragraph, index) => (
+                <p key={index} className="indi-course-description">
+                  {renderTextWithHighlights(paragraph, courseData.highlights)}
+                </p>
+              ))}
+
               <p className="indi-course-description text-primary pointer">
                 <a
                   style={{ color: "#012356", cursor: "pointer" }}
@@ -110,8 +116,8 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                 </a>
               </p>
 
-              {courseData.description.aboutUs.map((paragraph, index) => (
-                <p key={index} className="indi-course-description">
+              {courseData.description.aboutUs.slice(2).map((paragraph, index) => (
+                <p key={index + 2} className="indi-course-description">
                   {renderTextWithHighlights(paragraph, courseData.highlights)}
                 </p>
               ))}
