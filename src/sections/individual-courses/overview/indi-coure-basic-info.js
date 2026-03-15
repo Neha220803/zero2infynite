@@ -225,6 +225,8 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                 </p>
               )}
               {courseData.careerPaths && (
+                <>
+                <h4>Top Domains in Cyber Security</h4>
                 <p className="indi-course-description">
                   <ol>
                     {courseData.careerPaths.map((path, index) => (
@@ -232,6 +234,7 @@ const IndiCourseBasicInfo = ({ courseType }) => {
                     ))}
                   </ol>
                 </p>
+                </>
               )}
               {courseData.bellowcareerPaths && (
                 <p className="indi-course-description">

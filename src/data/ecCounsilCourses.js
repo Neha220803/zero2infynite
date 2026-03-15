@@ -97,10 +97,10 @@ export const ecCouncilCourses = {
 
     // Pricing Information
     pricing: {
-      fullCourse: 34000,
+      fullCourse: 49000,
       trainingOnly: 17000,
       description:
-        "Certified Ethical Hacking (CEH) from Zero2infynite offers Ec-Council and Comptia Certification which will help to enter into the cyber security domain. We are an authorized training centre of Ec-council. The total cost of Ec-council certification with training is 34000. You can also attend training for 17000. Later you can pay the remaining amount and get the International certification. ",
+        "Certified Ethical Hacking (CEH) from Zero2infynite offers Ec-Council and Comptia Certification which will help to enter into the cyber security domain. We are an authorized training centre of Ec-council. The total cost of Ec-council certification with training is 49000. You can also attend training for 17000. Later you can pay the remaining amount and get the International certification. ",
     },
 
     // Career Opportunities
@@ -278,48 +278,185 @@ export const ecCouncilCourses = {
       ],
     },
 
-    syllabusModules: [
-      {
-        title: "Module 1: Introduction to Ethical Hacking",
-        topics: [
-          "Information Security Overview",
-          "Hacking Concepts and Methodology",
-          "Ethical Hacking Scope and Limitations",
-        ],
-      },
-      {
-        title: "Module 2: Footprinting and Reconnaissance",
-        topics: [
-          "Network Scanning Techniques",
-          "Information Gathering Methods",
-          "Social Engineering Tactics",
-        ],
-      },
-      {
-        title: "Module 3: System Hacking",
-        topics: [
-          "Password Cracking Techniques",
-          "Privilege Escalation",
-          "Maintaining Access",
-        ],
-      },
-      {
-        title: "Module 4: Network Security",
-        topics: [
-          "Wireless Network Vulnerabilities",
-          "Web Application Security",
-          "Network Defense Mechanisms",
-        ],
-      },
-      {
-        title: "Module 5: Tools and Practical Applications",
-        topics: [
-          "Security Tools and Software",
-          "Penetration Testing",
-          "Real-world Attack Scenarios",
-        ],
-      },
-    ],
+   syllabusModules: [
+    {
+      title: "Module 1: Introduction to Ethical Hacking",
+      topics: [
+        "Information Security Overview",
+        "Types of Hackers",
+        "Ethical Hacking Concepts",
+        "Information Security Controls",
+        "Penetration Testing Concepts"
+      ]
+    },
+    {
+      title: "Module 2: Footprinting and Reconnaissance",
+      topics: [
+        "Footprinting Concepts",
+        "Google Hacking",
+        "Whois Footprinting",
+        "DNS Footprinting",
+        "Email Footprinting"
+      ]
+    },
+    {
+      title: "Module 3: Scanning Networks",
+      topics: [
+        "Network Scanning Concepts",
+        "Port Scanning Techniques",
+        "Vulnerability Scanning",
+        "Firewall and IDS Evasion"
+      ]
+    },
+    {
+      title: "Module 4: Enumeration",
+      topics: [
+        "NetBIOS Enumeration",
+        "SNMP Enumeration",
+        "LDAP Enumeration",
+        "SMB Enumeration"
+      ]
+    },
+    {
+      title: "Module 5: Vulnerability Analysis",
+      topics: [
+        "Vulnerability Research",
+        "Vulnerability Scoring Systems",
+        "Automated Vulnerability Scanning",
+        "Vulnerability Assessment Tools"
+      ]
+    },
+    {
+      title: "Module 6: System Hacking",
+      topics: [
+        "Password Cracking",
+        "Privilege Escalation",
+        "Executing Applications",
+        "Maintaining Access",
+        "Clearing Logs"
+      ]
+    },
+    {
+      title: "Module 7: Malware Threats",
+      topics: [
+        "Types of Malware",
+        "Trojans",
+        "Viruses and Worms",
+        "Malware Analysis"
+      ]
+    },
+    {
+      title: "Module 8: Sniffing",
+      topics: [
+        "Packet Sniffing",
+        "Active and Passive Sniffing",
+        "MAC Attacks",
+        "Sniffing Countermeasures"
+      ]
+    },
+    {
+      title: "Module 9: Social Engineering",
+      topics: [
+        "Human-based Attacks",
+        "Computer-based Social Engineering",
+        "Insider Threats",
+        "Social Engineering Countermeasures"
+      ]
+    },
+    {
+      title: "Module 10: Denial-of-Service",
+      topics: [
+        "DoS Attack Techniques",
+        "DDoS Attacks",
+        "Botnets",
+        "DoS Countermeasures"
+      ]
+    },
+    {
+      title: "Module 11: Session Hijacking",
+      topics: [
+        "Session Hijacking Concepts",
+        "TCP/IP Hijacking",
+        "Man-in-the-Middle Attacks"
+      ]
+    },
+    {
+      title: "Module 12: Evading IDS, Firewalls, and Honeypots",
+      topics: [
+        "Firewall Concepts",
+        "IDS and IPS",
+        "Honeypots",
+        "IDS Evasion Techniques"
+      ]
+    },
+    {
+      title: "Module 13: Hacking Web Servers",
+      topics: [
+        "Web Server Attacks",
+        "Web Server Misconfiguration",
+        "Web Server Attack Methodology"
+      ]
+    },
+    {
+      title: "Module 14: Hacking Web Applications",
+      topics: [
+        "Web Application Threats",
+        "SQL Injection",
+        "Cross-Site Scripting",
+        "Web Application Security Tools"
+      ]
+    },
+    {
+      title: "Module 15: SQL Injection",
+      topics: [
+        "SQL Injection Types",
+        "SQL Injection Detection",
+        "SQL Injection Countermeasures"
+      ]
+    },
+    {
+      title: "Module 16: Hacking Wireless Networks",
+      topics: [
+        "Wireless Encryption",
+        "Wireless Threats",
+        "Wi-Fi Hacking Techniques"
+      ]
+    },
+    {
+      title: "Module 17: Hacking Mobile Platforms",
+      topics: [
+        "Android Security",
+        "iOS Security",
+        "Mobile Device Management",
+        "Mobile Threats"
+      ]
+    },
+    {
+      title: "Module 18: IoT and OT Hacking",
+      topics: [
+        "IoT Architecture",
+        "IoT Vulnerabilities",
+        "OT Security Challenges"
+      ]
+    },
+    {
+      title: "Module 19: Cloud Computing",
+      topics: [
+        "Cloud Security Concepts",
+        "Cloud Threats",
+        "Cloud Security Tools"
+      ]
+    },
+    {
+      title: "Module 20: Cryptography",
+      topics: [
+        "Encryption Algorithms",
+        "Public Key Infrastructure",
+        "Digital Signatures",
+        "Cryptographic Attacks"
+      ]
+    }
+  ],
 
     // Highlighted Keywords (for styling)
     highlights: [
