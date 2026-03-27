@@ -85,6 +85,10 @@ function Layout() {
           path="/ec-council/ctia"
           element={<IndividualCourses courseType="CTIA" />}
         />
+        <Route
+          path="/ec-council/csa"
+          element={<IndividualCourses courseType="CSA" />}
+        />
 
         <Route
           path="/comptia/security-plus"

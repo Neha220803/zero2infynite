@@ -8,6 +8,7 @@ import cpentStuCerti from "../assets/images/indi_course/cpent.png";
 import wahsStuCerti from "../assets/images/indi_course/wahs.png";
 import cjavaStuCertfi from "../assets/images/indi_course/cjava.png";
 import cnetCerti from "../assets/images/indi_course/cnet.png";
+import csaCerti from "../assets/images/indi_course/csa.jpg";
 import ctiaCerti from "../assets/images/indi_course/ctia.png";
 import ccseStuCerti from "../assets/images/indi_course/ccse.png";
 import ecdeStuCerti from "../assets/images/indi_course/ecde.png";
@@ -278,185 +279,185 @@ export const ecCouncilCourses = {
       ],
     },
 
-   syllabusModules: [
-    {
-      title: "Module 1: Introduction to Ethical Hacking",
-      topics: [
-        "Information Security Overview",
-        "Types of Hackers",
-        "Ethical Hacking Concepts",
-        "Information Security Controls",
-        "Penetration Testing Concepts"
-      ]
-    },
-    {
-      title: "Module 2: Footprinting and Reconnaissance",
-      topics: [
-        "Footprinting Concepts",
-        "Google Hacking",
-        "Whois Footprinting",
-        "DNS Footprinting",
-        "Email Footprinting"
-      ]
-    },
-    {
-      title: "Module 3: Scanning Networks",
-      topics: [
-        "Network Scanning Concepts",
-        "Port Scanning Techniques",
-        "Vulnerability Scanning",
-        "Firewall and IDS Evasion"
-      ]
-    },
-    {
-      title: "Module 4: Enumeration",
-      topics: [
-        "NetBIOS Enumeration",
-        "SNMP Enumeration",
-        "LDAP Enumeration",
-        "SMB Enumeration"
-      ]
-    },
-    {
-      title: "Module 5: Vulnerability Analysis",
-      topics: [
-        "Vulnerability Research",
-        "Vulnerability Scoring Systems",
-        "Automated Vulnerability Scanning",
-        "Vulnerability Assessment Tools"
-      ]
-    },
-    {
-      title: "Module 6: System Hacking",
-      topics: [
-        "Password Cracking",
-        "Privilege Escalation",
-        "Executing Applications",
-        "Maintaining Access",
-        "Clearing Logs"
-      ]
-    },
-    {
-      title: "Module 7: Malware Threats",
-      topics: [
-        "Types of Malware",
-        "Trojans",
-        "Viruses and Worms",
-        "Malware Analysis"
-      ]
-    },
-    {
-      title: "Module 8: Sniffing",
-      topics: [
-        "Packet Sniffing",
-        "Active and Passive Sniffing",
-        "MAC Attacks",
-        "Sniffing Countermeasures"
-      ]
-    },
-    {
-      title: "Module 9: Social Engineering",
-      topics: [
-        "Human-based Attacks",
-        "Computer-based Social Engineering",
-        "Insider Threats",
-        "Social Engineering Countermeasures"
-      ]
-    },
-    {
-      title: "Module 10: Denial-of-Service",
-      topics: [
-        "DoS Attack Techniques",
-        "DDoS Attacks",
-        "Botnets",
-        "DoS Countermeasures"
-      ]
-    },
-    {
-      title: "Module 11: Session Hijacking",
-      topics: [
-        "Session Hijacking Concepts",
-        "TCP/IP Hijacking",
-        "Man-in-the-Middle Attacks"
-      ]
-    },
-    {
-      title: "Module 12: Evading IDS, Firewalls, and Honeypots",
-      topics: [
-        "Firewall Concepts",
-        "IDS and IPS",
-        "Honeypots",
-        "IDS Evasion Techniques"
-      ]
-    },
-    {
-      title: "Module 13: Hacking Web Servers",
-      topics: [
-        "Web Server Attacks",
-        "Web Server Misconfiguration",
-        "Web Server Attack Methodology"
-      ]
-    },
-    {
-      title: "Module 14: Hacking Web Applications",
-      topics: [
-        "Web Application Threats",
-        "SQL Injection",
-        "Cross-Site Scripting",
-        "Web Application Security Tools"
-      ]
-    },
-    {
-      title: "Module 15: SQL Injection",
-      topics: [
-        "SQL Injection Types",
-        "SQL Injection Detection",
-        "SQL Injection Countermeasures"
-      ]
-    },
-    {
-      title: "Module 16: Hacking Wireless Networks",
-      topics: [
-        "Wireless Encryption",
-        "Wireless Threats",
-        "Wi-Fi Hacking Techniques"
-      ]
-    },
-    {
-      title: "Module 17: Hacking Mobile Platforms",
-      topics: [
-        "Android Security",
-        "iOS Security",
-        "Mobile Device Management",
-        "Mobile Threats"
-      ]
-    },
-    {
-      title: "Module 18: IoT and OT Hacking",
-      topics: [
-        "IoT Architecture",
-        "IoT Vulnerabilities",
-        "OT Security Challenges"
-      ]
-    },
-    {
-      title: "Module 19: Cloud Computing",
-      topics: [
-        "Cloud Security Concepts",
-        "Cloud Threats",
-        "Cloud Security Tools"
-      ]
-    },
-    {
-      title: "Module 20: Cryptography",
-      topics: [
-        "Encryption Algorithms",
-        "Public Key Infrastructure",
-        "Digital Signatures",
-        "Cryptographic Attacks"
-      ]
-    }
-  ],
+    syllabusModules: [
+      {
+        title: "Module 1: Introduction to Ethical Hacking",
+        topics: [
+          "Information Security Overview",
+          "Types of Hackers",
+          "Ethical Hacking Concepts",
+          "Information Security Controls",
+          "Penetration Testing Concepts",
+        ],
+      },
+      {
+        title: "Module 2: Footprinting and Reconnaissance",
+        topics: [
+          "Footprinting Concepts",
+          "Google Hacking",
+          "Whois Footprinting",
+          "DNS Footprinting",
+          "Email Footprinting",
+        ],
+      },
+      {
+        title: "Module 3: Scanning Networks",
+        topics: [
+          "Network Scanning Concepts",
+          "Port Scanning Techniques",
+          "Vulnerability Scanning",
+          "Firewall and IDS Evasion",
+        ],
+      },
+      {
+        title: "Module 4: Enumeration",
+        topics: [
+          "NetBIOS Enumeration",
+          "SNMP Enumeration",
+          "LDAP Enumeration",
+          "SMB Enumeration",
+        ],
+      },
+      {
+        title: "Module 5: Vulnerability Analysis",
+        topics: [
+          "Vulnerability Research",
+          "Vulnerability Scoring Systems",
+          "Automated Vulnerability Scanning",
+          "Vulnerability Assessment Tools",
+        ],
+      },
+      {
+        title: "Module 6: System Hacking",
+        topics: [
+          "Password Cracking",
+          "Privilege Escalation",
+          "Executing Applications",
+          "Maintaining Access",
+          "Clearing Logs",
+        ],
+      },
+      {
+        title: "Module 7: Malware Threats",
+        topics: [
+          "Types of Malware",
+          "Trojans",
+          "Viruses and Worms",
+          "Malware Analysis",
+        ],
+      },
+      {
+        title: "Module 8: Sniffing",
+        topics: [
+          "Packet Sniffing",
+          "Active and Passive Sniffing",
+          "MAC Attacks",
+          "Sniffing Countermeasures",
+        ],
+      },
+      {
+        title: "Module 9: Social Engineering",
+        topics: [
+          "Human-based Attacks",
+          "Computer-based Social Engineering",
+          "Insider Threats",
+          "Social Engineering Countermeasures",
+        ],
+      },
+      {
+        title: "Module 10: Denial-of-Service",
+        topics: [
+          "DoS Attack Techniques",
+          "DDoS Attacks",
+          "Botnets",
+          "DoS Countermeasures",
+        ],
+      },
+      {
+        title: "Module 11: Session Hijacking",
+        topics: [
+          "Session Hijacking Concepts",
+          "TCP/IP Hijacking",
+          "Man-in-the-Middle Attacks",
+        ],
+      },
+      {
+        title: "Module 12: Evading IDS, Firewalls, and Honeypots",
+        topics: [
+          "Firewall Concepts",
+          "IDS and IPS",
+          "Honeypots",
+          "IDS Evasion Techniques",
+        ],
+      },
+      {
+        title: "Module 13: Hacking Web Servers",
+        topics: [
+          "Web Server Attacks",
+          "Web Server Misconfiguration",
+          "Web Server Attack Methodology",
+        ],
+      },
+      {
+        title: "Module 14: Hacking Web Applications",
+        topics: [
+          "Web Application Threats",
+          "SQL Injection",
+          "Cross-Site Scripting",
+          "Web Application Security Tools",
+        ],
+      },
+      {
+        title: "Module 15: SQL Injection",
+        topics: [
+          "SQL Injection Types",
+          "SQL Injection Detection",
+          "SQL Injection Countermeasures",
+        ],
+      },
+      {
+        title: "Module 16: Hacking Wireless Networks",
+        topics: [
+          "Wireless Encryption",
+          "Wireless Threats",
+          "Wi-Fi Hacking Techniques",
+        ],
+      },
+      {
+        title: "Module 17: Hacking Mobile Platforms",
+        topics: [
+          "Android Security",
+          "iOS Security",
+          "Mobile Device Management",
+          "Mobile Threats",
+        ],
+      },
+      {
+        title: "Module 18: IoT and OT Hacking",
+        topics: [
+          "IoT Architecture",
+          "IoT Vulnerabilities",
+          "OT Security Challenges",
+        ],
+      },
+      {
+        title: "Module 19: Cloud Computing",
+        topics: [
+          "Cloud Security Concepts",
+          "Cloud Threats",
+          "Cloud Security Tools",
+        ],
+      },
+      {
+        title: "Module 20: Cryptography",
+        topics: [
+          "Encryption Algorithms",
+          "Public Key Infrastructure",
+          "Digital Signatures",
+          "Cryptographic Attacks",
+        ],
+      },
+    ],
 
     // Highlighted Keywords (for styling)
     highlights: [
@@ -3278,7 +3279,357 @@ export const ecCouncilCourses = {
     ],
   },
 
-  CSA: {},
+  CSA: {
+    // Basic Course Information
+    title: "EC-Council Certified SOC Analyst (CSA)",
+    badge: "Most Popular",
+    rating: {
+      stars: 5,
+      text: "Top Rating | Read Reviews",
+    },
+
+    // Course Description
+    description: {
+      intro:
+        "Are you looking for an affordable EC-Council Certified SOC Analyst (CSA) course with EC-Council International certification to improve your  Penetration Testing skills..?",
+
+      brochureLink: {
+        text: "Click here to download the EC-Council Certified SOC Analyst (CSA) brochure and syllabus",
+        url: "https://drive.google.com/file/d/1KNsDoMj-6sHJlbClrDaFMzNzFBoWD-jw/view?usp=sharing",
+      },
+
+      aboutUs: [
+        "Zero2Infynite is here to help you achieve your goals. We are an authorized EC-Council Accredited Training Center (ATC) partner.",
+        "We take pride in our 100% pass rate for international certifications—something you may not get if you purchase courses directly or through other providers.",
+        "Our trainers bring real-world industry experience and also assist with job referrals. They have designed cybersecurity course syllabi for prestigious institutions such as SRM Valliammai Engineering College, St. Joseph’s College, and others. We also hold MOUs with top colleges including VIT Chennai, St. Joseph's, SRM, and VELS University.",
+      ],
+    },
+
+    // Contact Information
+    contact: {
+      phone: "+91 81110 00953",
+      phoneFormatted: "+ 91 81110 00953",
+    },
+
+    // Course Features
+    features: [
+      {
+        icon: "GiTeacher",
+        text: "Real-time network security training",
+        color: "#666666",
+      },
+      {
+        icon: "BookHalf",
+        text: "Updated CND syllabus",
+        color: "text-success",
+      },
+      {
+        icon: "Calendar2Check",
+        text: "Flexible Learning Modes",
+        color: "#955EAE",
+      },
+      {
+        icon: "Award",
+        text: "100% Success Rate",
+        color: "text-warning",
+      },
+      {
+        icon: "BriefcaseFill",
+        text: "Network Security Career Assistance",
+        color: "#275EAE",
+      },
+      {
+        icon: "Tools",
+        text: "Hands-On Network Defense Lab",
+        color: "text-secondary",
+      },
+      {
+        icon: "SiGoogleclassroom",
+        text: "Free Demo sessions",
+        color: "text-danger",
+      },
+      {
+        icon: "CurrencyDollar",
+        text: "Training that fits your budget",
+        color: "text-success",
+      },
+      {
+        icon: "PiCertificate",
+        text: "International CND Certification Preparation",
+        color: "text-warning",
+      },
+    ],
+
+    additionalInfoHeading:
+      "Why EC-Council Certified SOC Analyst (CSA) course in Zero2infynite is best among others ?",
+    additionalInfoSubHeading:
+      "Learn CSA Anytime, Anywhere through online and offline",
+    // Additional Information
+    additionalInfo:
+      "EC-Council Certified SOC Analyst (CSA) from Zero2infynite offers EC-Council International certification to upskill your Network defending knowledge. We are an authorized training centre of EC-Council. This (CSA) course will help you to enter into Networking and SOC analyst job roles. Also bring strong understanding about how network works. Our Trainers trained Cyber crime officers from various states, managers in IT industry, College and school students.",
+
+    // Batch Schedule Information
+    batchSchedule: {
+      title:
+        "Upcoming Batches Schedule for Certified Network Defender Training in Chennai",
+      description:
+        "Zero2infinite provides flexible timings to all our students. Here are the Network Security training classes in Chennai schedule in our branches. If this schedule doesn't match please let us know. We will try to arrange appropriate timing based on your flexible timings.",
+
+      batchTemplates: [
+        {
+          type: "Weekend",
+          days: "Saturday(Saturday - Sunday )",
+          id: 1,
+          dayOffset: 0,
+        },
+        {
+          type: "Weekdays",
+          days: "Tuesday (Monday - Friday)",
+          id: 2,
+          dayOffset: 2,
+        },
+        {
+          type: "Weekdays",
+          days: "Thursday (Monday - Friday)",
+          id: 3,
+          dayOffset: 4,
+        },
+        {
+          type: "Weekend",
+          days: "Saturday (Saturday - Sunday)",
+          id: 4,
+          dayOffset: 6,
+        },
+      ],
+
+      tableHeaders: ["Date", "Mode", "Days", "Actions"],
+
+      actionButtons: {
+        courseFees: {
+          text: "Course Fees",
+          variant: "outline-primary",
+          className: "course-fees-btn",
+        },
+        checkAvailability: {
+          text: "Check Availability",
+          variant: "primary",
+          className: "check-availability-btn",
+        },
+      },
+
+      bottomActions: {
+        customBatch: {
+          text: "Can't find a batch you were looking for?",
+          variant: "outline-primary",
+          className: "batch-action-btn",
+        },
+        requestBatch: {
+          text: "Request Custom Batch",
+          variant: "primary",
+          className: "batch-action-btn",
+        },
+      },
+
+      updateInterval: 2 * 24 * 60 * 60 * 1000,
+    },
+
+    // Trainer Profile Information
+    trainerProfile: {
+      title: "Trainer Profile",
+      qualities: [
+        "Our Trainers are real time trainers who completed certifications like CEH, OSCP+",
+        "Trainers with more than 3 years experience are handling sessions in Zero2infynite",
+        "Expert mentors deliver individualized coaching and career advice.",
+        "Patiently address and clarify students' critical doubts.",
+        "Provide individual attention to help each student work with cybersecurity tools and troubleshoot issues.",
+        "Trainers offer flexible scheduling to match students' availability.",
+      ],
+    },
+
+    // Certifications Information
+    certifications: {
+      title: "Certifications",
+      sections: [
+        {
+          title:
+            "EC-Council Certified SOC Analyst (CSA) certification and Exams",
+          content: [
+            "We are the only institute offering low-cost EC-Council Certified SOC Analyst certification with career shift guidance, hands-on training, and industry-standard curriculum. All our students have successfully cleared their exams. We’ve updated the EC-Council license image and a sample EC-Council certificate on this page for your reference. Students who opt for training only will receive customized sessions along with a Zero2infynite certification.",
+            "Our (CSA) certification prepares you for real-world network defense scenarios with practical threat detection and incident response procedures.",
+          ],
+          image: {
+            src: csaCerti,
+            alt: "CSA Certification Image",
+            className: "certification-image",
+          },
+        },
+      ],
+    },
+
+    // FAQ Information
+    faq: {
+      title: "Frequently Asked Questions",
+      defaultActiveKey: "1",
+      questions: [
+        {
+          eventKey: "0",
+          question: "What is the CSA course about?",
+          answer:
+            "The Certified SOC Analyst (CSA) course by EC-Council is designed to train security professionals in Security Operations Center (SOC) operations, threat detection, incident response, and security monitoring. It focuses on log analysis, SIEM tools, threat intelligence integration, and developing skills to identify, analyze, and respond to security incidents in real-time.",
+        },
+        {
+          eventKey: "1",
+          question: "How long is the course?",
+          answer:
+            "The CSA course typically runs for 3 to 5 days in an instructor-led bootcamp format. Self-paced online training options are also available, allowing learners to complete the course at their own speed.",
+        },
+        {
+          eventKey: "2",
+          question: "What are the prerequisites?",
+          answer:
+            "Participants should have a foundational understanding of cybersecurity concepts, network security, and operating systems. Prior experience in IT security, network administration, or incident response is recommended but not mandatory. Familiarity with security tools and basic scripting knowledge is beneficial.",
+        },
+        {
+          eventKey: "3",
+          question: "Is there a certificate?",
+          answer:
+            "Yes, after successfully completing the course, you will receive a certificate of completion. To earn the official EC-Council CSA certification, you must pass the certification exam conducted by EC-Council.",
+        },
+        {
+          eventKey: "4",
+          question: "What support is available during the course?",
+          answer:
+            "The course provides access to expert trainers, digital courseware, practical labs, and hands-on SOC simulation exercises. You'll also receive guidance on SIEM platforms, log analysis, threat detection techniques, incident response procedures, and integrating threat intelligence into SOC workflows.",
+        },
+        {
+          eventKey: "5",
+          question: "Is the course content downloadable?",
+          answer:
+            "Yes, EC-Council provides official e-courseware, lab manuals, SOC tools documentation, and reference materials in downloadable format. Some training providers may also provide recorded sessions for revision.",
+        },
+        {
+          eventKey: "6",
+          question: "What is the refund policy?",
+          answer:
+            "Refund and payment policies vary depending on the training provider. Most offer flexible installment plans, and refunds are subject to their terms and conditions. Please confirm with the provider before enrollment.",
+        },
+      ],
+    },
+
+    syllabusModules: [
+      {
+        title: "Module 1: Security Operations and Management",
+        topics: [
+          "SOC fundamentals and organizational security management",
+          "SOC capabilities, operations, and workflow",
+          "Components of SOC and SOC models",
+          "SOC maturity models and generations",
+          "SOC KPIs and metrics",
+          "People, technology, and processes in SOC operations",
+        ],
+      },
+      {
+        title:
+          "Module 2: Understanding Cyber Threats, IoCs, and Attack Methodology",
+        topics: [
+          "Common cyberattack types and vectors",
+          "Indicators of Compromise (IoCs) identification",
+          "Attacker tactics, techniques, and procedures (TTPs)",
+          "Cyber Kill Chain methodology",
+          "Threat actor behavior and motivations",
+          "Attack surfaces and vulnerability analysis",
+        ],
+      },
+      {
+        title: "Module 3: Log Management",
+        topics: [
+          "Log sources and log formats (Windows, Linux, Mac, Firewall, Router, IIS, Apache, Database)",
+          "Centralized logging architecture",
+          "Log collection, transmission, and storage",
+          "Log normalization and parsing",
+          "Log correlation and analysis",
+          "AI-powered script for log storage",
+          "Alerting and reporting mechanisms",
+        ],
+      },
+      {
+        title: "Module 4: Incident Detection and Triage",
+        topics: [
+          "SIEM fundamentals and capabilities",
+          "SIEM deployment strategies and architecture",
+          "Use case development and management process",
+          "Signature and anomaly-based detection technologies",
+          "Alert triage and prioritization",
+          "Incident detection at application, insider, network, and host levels",
+          "SIEM tools: Splunk, AlienVault OSSIM, ELK Stack, ArcSight, QRadar, LogRhythm",
+        ],
+      },
+      {
+        title: "Module 5: Proactive Threat Detection",
+        topics: [
+          "Cyber Threat Intelligence (CTI) fundamentals",
+          "Threat intelligence lifecycle and sources",
+          "Threat Intelligence Platforms (TIP) and integration with SIEM",
+          "Threat hunting types, process, and methodologies",
+          "Threat hunting frameworks and tools",
+          "Threat hunting with PowerShell scripts and AI",
+          "Threat hunting with YARA rules",
+          "Enhanced threat detection with AI and ML",
+          "Integrating IoCs into ELK Stack and OSSIM",
+        ],
+      },
+      {
+        title: "Module 6: Incident Response",
+        topics: [
+          "Incident response lifecycle and stages",
+          "SOC and Incident Response Team (IRT) collaboration",
+          "Incident escalation procedures",
+          "Incident handling and coordination",
+          "Service desk ticketing systems",
+          "Incident documentation and reporting",
+          "Post-incident activities and lessons learned",
+        ],
+      },
+      {
+        title: "Module 7: Forensic Investigation and Malware Analysis",
+        topics: [
+          "Digital forensics fundamentals in SOC operations",
+          "Forensic investigation techniques and tools",
+          "Evidence collection and preservation",
+          "Malware analysis methodologies",
+          "Identifying attack methods and IoCs through forensics",
+          "Memory forensics and disk forensics",
+          "Forensic analysis for enhanced future defenses",
+        ],
+      },
+      {
+        title: "Module 8: SOC for Cloud Environments",
+        topics: [
+          "Cloud SOC architecture and processes",
+          "Microsoft Azure SOC and Microsoft Sentinel",
+          "AWS SOC architecture and AWS Security Hub",
+          "Google Cloud Platform (GCP) Security Operations Center and Security Command Center",
+          "Centralized logging with OpenSearch",
+          "Cloud-native security tools and monitoring",
+          "Automated incident detection and response in cloud environments",
+          "Chronicle for cloud security operations",
+        ],
+      },
+    ],
+
+    // Highlighted Keywords (for styling)
+    highlights: [
+      "affordable Certified Network Defender course",
+      "secure a job, boost your salary, or advance your career in the network security domain",
+      "help you achieve your goals in network security and defense",
+      "we offer continuous support until you reach your goals",
+      "authorized EC-Council Accredited Training Center (ATC) partner",
+      "100% pass rate",
+      "real-world network security experience and also assist with job referrals",
+      "placed the majority of our students in the network security and cybersecurity field",
+      "helped experienced professionals transition into network defense",
+    ],
+  },
 
   CCSE: {
     title: "Certified Cloud Security Engineer (C|CSE)",
@@ -3933,10 +4284,6 @@ export const ecCouncilCourses = {
       "helped experienced professionals transition into network defense",
     ],
   },
-
-  // You can add more EC-Council courses here like:
-  // ECSA: { ... },
-  // etc.
 };
 
 export default ecCouncilCourses;
