@@ -7,8 +7,8 @@ const TestimonialHeaderComp = () => {
     <header className="testimonial-header-bg-img  d-flex flex-column align-items-center justify-content-center text-center">
       <h1>Most trusted promising training platform</h1>
       <p>
-        Besant Technologies is rated as the No.1 Online Training Instuitite with
-        100% placement support.
+        Zero2Infynite is rated as the No.1 Online Training Instuitite with 100%
+        placement support.
       </p>
       <Button
         variant="primary"
