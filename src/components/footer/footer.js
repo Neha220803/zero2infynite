@@ -17,8 +17,8 @@ const FooterComp = () => {
         <Row className="justify-content-center align-items-center text-center">
           <Col xs={6} className="right-margin py-2">
             <a
-              href="https://wa.me/918111000953"
-              className="text-white text-decoration-none d-flex justify-content-center align-items-center"
+              href="https://wa.me/919600046662"
+               className="text-white text-decoration-none d-flex justify-content-center align-items-center"
             >
               <FaWhatsapp className="me-2 footer-icons" id="whatsapp-icon" />
               Whatsapp us
@@ -32,7 +32,7 @@ const FooterComp = () => {
               <div className="d-flex justify-content-center align-items-center">
                 <FaPhone className="me-2 " />
                 <span className="d-md-block d-none me-2">Call us </span> +91
-                8111000953{" "}
+                9600046662{" "}
               </div>
             </a>
           </Col>
